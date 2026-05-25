@@ -12,6 +12,9 @@ MLOps-Kit/
 ├── mlflow/            # MLflow learning artifacts (notes, snippets)
 │   ├── notes/
 │   └── snippets/
+├── kubeflow/          # Kubeflow learning artifacts (notes, manifests)
+│   ├── notes/
+│   └── manifests/
 └── wnb/               # Weights & Biases learning artifacts (notes, scripts)
     ├── notes/
     └── scripts/

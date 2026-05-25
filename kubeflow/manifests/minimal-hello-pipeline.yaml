@@ -1,0 +1,49 @@
+# kf-003 — Minimal Kubeflow component/workflow
+#
+# Upload this YAML to the Kubeflow Pipelines UI to create a single-step pipeline.
+# Opens the Central Dashboard -> Pipelines -> Upload Pipeline.
+#
+# Equivalent Python using the kfp SDK:
+#   from kfp import dsl
+#   @dsl.pipeline(name="hello-pipeline")
+#   def hello_pipeline():
+#       dsl.ContainerOp(name="echo", image="alpine:3.18", command=["echo", "Hello from Kubeflow"])
+#   from kfp import compiler; compiler.Compiler().compile(hello_pipeline, "hello.yaml")
+
+apiVersion: pipelines.kubeflow.org/v1beta1
+kind: Pipeline
+metadata:
+  name: hello-pipeline
+  description: "A minimal one-step pipeline"
+spec:
+  pipelineSpec:
+    deploymentSpec:
+      executors:
+        echo-comp:
+          container:
+            image: alpine:3.18
+            command:
+            - echo
+            args:
+            - "Hello from Kubeflow"
+    pipelineInfo:
+      name: hello-pipeline
+    root:
+      dag:
+        tasks:
+          echo:
+            cachingOptions:
+              enableCache: true
+            componentRef:
+              name: comp-echo
+            taskInfo:
+              name: echo
+    components:
+      comp-echo:
+        implementation:
+          container:
+            image: alpine:3.18
+            command:
+            - echo
+            args:
+            - "Hello from Kubeflow"

@@ -11,3 +11,4 @@
 |------|-------|---------|---------|
 | MLflow | [`mlflow/notes/`](../mlflow/notes/) | [`mlflow/snippets/`](../mlflow/snippets/) | — |
 | W&B | [`wnb/notes/`](../wnb/notes/) | [`wnb/scripts/`](../wnb/scripts/) | — |
+| Kubeflow | [`kubeflow/notes/`](../kubeflow/notes/) | — | [`kubeflow/manifests/`](../kubeflow/manifests/) |

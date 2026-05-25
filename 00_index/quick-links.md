@@ -1,5 +1,10 @@
 # Quick Links
 
+## Project
+
+- [README](../README.md) — Project overview and repository structure
+- [CHANGELOG](../CHANGELOG.md) — Record of completed tasks
+
 ## Tools
 
 | Tool | Notes | Scripts | Configs |

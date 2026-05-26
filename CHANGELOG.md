@@ -22,3 +22,8 @@
 - dvc-001: notes(primer) — What is DVC? — quick primer
 - dvc-002: notes — Install DVC and version my first dataset
 - dvc-003: snippet(bash) — Track a data pipeline end-to-end with DVC
+
+## 2026-05-26 (Round 2)
+
+- wnb-002: snippet(python) — Minimal experiment tracking with W&B SDK: log metrics and artifacts
+- wnb-003: config(yaml) — Configure a W&B hyperparameter sweep with search strategy

@@ -19,3 +19,6 @@
 - meta-002: config(yaml) — Install Metaflow and set up my first project scaffold
 - mlf-005: snippet(python) — Minimal model training with MLflow autologging and model registration
 - mlf-006: config(yaml) — Define an MLflow Project with conda environment and parameters
+- dvc-001: notes(primer) — What is DVC? — quick primer
+- dvc-002: notes — Install DVC and version my first dataset
+- dvc-003: snippet(bash) — Track a data pipeline end-to-end with DVC

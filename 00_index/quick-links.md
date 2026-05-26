@@ -1,16 +1,31 @@
 # Quick Links
 
-## Project
+## I need to...
 
+### Set up a tool for the first time
+- [MLflow primer](../mlflow/notes/0000-primer-mlflow.md)
+- [MLflow server setup](../mlflow/notes/2026-05-24-first-mlflow-server.md)
+- [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
+- [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
+- [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
+- [DVC primer](../dvc/notes/0000-primer-dvc.md)
+- [W&B primer](../wnb/notes/0000-primer-wnb.md)
+- [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
+
+### Run an experiment
+- [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
+- [MLflow first run](../mlflow/snippets/log_first_run.py)
+- [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
+- [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
+
+### Configure a project
+- [MLflow project config](../mlflow/configs/mlflow-project.yaml)
+- [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
+- [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
+
+### Version data
+- [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
+
+## Project
 - [README](../README.md) — Project overview and repository structure
 - [CHANGELOG](../CHANGELOG.md) — Record of completed tasks
-
-## Tools
-
-| Tool | Notes | Scripts | Snippets | Configs |
-|------|-------|---------|----------|---------|
-| MLflow | [`mlflow/notes/`](../mlflow/notes/) | — | [`mlflow/snippets/`](../mlflow/snippets/) | [`mlflow/configs/`](../mlflow/configs/) |
-| Metaflow | [`metaflow/notes/`](../metaflow/notes/) | — | — | [`metaflow/configs/`](../metaflow/configs/) |
-| Kubeflow | [`kubeflow/notes/`](../kubeflow/notes/) | — | — | [`kubeflow/manifests/`](../kubeflow/manifests/) |
-| DVC | [`dvc/notes/`](../dvc/notes/) | — | [`dvc/snippets/`](../dvc/snippets/) | — |
-| W&B | [`wnb/notes/`](../wnb/notes/) | [`wnb/scripts/`](../wnb/scripts/) | [`wnb/snippets/`](../wnb/snippets/) | [`wnb/configs/`](../wnb/configs/) |

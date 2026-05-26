@@ -1,0 +1,23 @@
+conda:
+  env:
+    name: metaflow-project
+    channels:
+      - conda-forge
+      - defaults
+    dependencies:
+      - python=3.10
+      - pip
+      - pip:
+          - metaflow
+          - pandas
+          - numpy
+          - scikit-learn
+          - boto3
+metaflow:
+  profile: default
+  datastore: local
+  metadata: local
+  project:
+    name: metaflow-playground
+    flows:
+      - hello_flow.py

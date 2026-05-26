@@ -17,3 +17,5 @@
 - gen-004: docs(markdown) — Add CHANGELOG.md reference to README documented files
 - meta-001: notes(primer) — What is Metaflow? — quick primer
 - meta-002: config(yaml) — Install Metaflow and set up my first project scaffold
+- mlf-005: snippet(python) — Minimal model training with MLflow autologging and model registration
+- mlf-006: config(yaml) — Define an MLflow Project with conda environment and parameters

@@ -1,0 +1,29 @@
+name: iris-classifier
+conda_env:
+  channels:
+    - conda-forge
+  dependencies:
+    - python=3.9
+    - pip
+    - pip:
+      - mlflow
+      - scikit-learn
+      - pandas
+
+entry_points:
+  main:
+    parameters:
+      n_estimators:
+        type: int
+        default: 100
+      max_depth:
+        type: int
+        default: 3
+      random_seed:
+        type: int
+        default: 42
+    command: |
+      python train.py \
+        --n-estimators {n_estimators} \
+        --max-depth {max_depth} \
+        --random-seed {random_seed}

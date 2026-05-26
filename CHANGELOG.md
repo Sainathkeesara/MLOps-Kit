@@ -11,3 +11,9 @@
 - kf-001: notes(primer) — What is Kubeflow? — quick primer
 - kf-002: notes — Install Kubeflow locally and explore the UI — what's there
 - kf-003: manifest(yaml) — Deploy a minimal Kubeflow component/workflow and inspect the dashboard
+
+## 2026-05-26
+
+- gen-004: docs(markdown) — Add CHANGELOG.md reference to README documented files
+- meta-001: notes(primer) — What is Metaflow? — quick primer
+- meta-002: config(yaml) — Install Metaflow and set up my first project scaffold

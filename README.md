@@ -15,7 +15,15 @@ MLOps-Kit/
 ├── kubeflow/          # Kubeflow learning artifacts (notes, manifests)
 │   ├── notes/
 │   └── manifests/
+├── metaflow/          # Metaflow learning artifacts (notes, configs)
+│   ├── notes/
+│   └── configs/
+├── dvc/               # DVC learning artifacts (notes, snippets)
+│   ├── notes/
+│   └── snippets/
 └── wnb/               # Weights & Biases learning artifacts (notes, scripts)
     ├── notes/
     └── scripts/
 ```
+
+The [CHANGELOG](CHANGELOG.md) tracks every completed task with its ID, tool, and a one-line summary — useful for seeing progress at a glance.

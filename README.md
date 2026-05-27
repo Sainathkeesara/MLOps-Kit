@@ -3,7 +3,7 @@
 > A working engineer's MLOps reference — MLflow, Kubeflow, DVC, Metaflow, and Weights & Biases notes, snippets, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Files](https://img.shields.io/badge/files-25-blue)
+![Files](https://img.shields.io/badge/files-24-blue)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)
@@ -16,7 +16,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs |
 |------|-------|----------|---------|---------|-----------|------|
-| MLflow | 3 | 2 | — | 1 | — | — |
+| MLflow | 4 | 3 | — | 1 | — | — |
 | Kubeflow | 3 | — | — | — | 1 | — |
 | Metaflow | 2 | — | — | 1 | — | — |
 | DVC | 2 | 1 | — | — | — | — |
@@ -34,7 +34,9 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 
 - **`CHANGELOG.md`** — Record of completed tasks and additions
 - **`00_index/`** — Index, quick-links, glossary
-- **`mlflow/`** — MLflow notes, configs, snippets
+- **`mlflow/configs/`** — MLflow Project configurations and YAML definitions
+- **`mlflow/notes/`** — MLflow learning notes and primers
+- **`mlflow/snippets/`** — MLflow runnable code examples
 - **`kubeflow/`** — Kubeflow notes, manifests
 - **`metaflow/`** — Metaflow notes, configs
 - **`dvc/`** — DVC notes, snippets

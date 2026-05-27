@@ -25,11 +25,13 @@
 - [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
+- [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
 
 ### Configure a project
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
+- [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 

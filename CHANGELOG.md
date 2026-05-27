@@ -52,3 +52,8 @@
 
 - kub-001: notes — Follow the official Kubeflow Pipelines quickstart and document what tripped me up
 - kub-002: snippet(python) — Minimal pipeline with Kubeflow Pipelines V2 SDK
+
+## 2026-05-27 (Round 5)
+
+- mfl-002: snippet(python) — Minimal parameterized DAG with branching and merging
+- wnb-005: snippet(python) — Log my first metrics and configuration with W&B Python SDK

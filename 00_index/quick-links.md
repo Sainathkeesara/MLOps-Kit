@@ -17,7 +17,9 @@
 ### Run an experiment
 - [Metaflow end-to-end flow](../metaflow/notes/2026-05-27-first-end-to-end-flow.md)
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
+- [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)
 - [MLflow first run](../mlflow/snippets/log_first_run.py)
+- [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
 

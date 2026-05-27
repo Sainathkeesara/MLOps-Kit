@@ -14,6 +14,7 @@
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
 - [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md)
+- [W&B first experiment tracking](../wnb/notes/2026-05-27-install-wandb-first-experiment.md)
 
 ### Run an experiment
 - [Metaflow end-to-end flow](../metaflow/notes/2026-05-27-first-end-to-end-flow.md)
@@ -22,6 +23,7 @@
 - [MLflow first run](../mlflow/snippets/log_first_run.py)
 - [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
+- [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
 
 ### Configure a project

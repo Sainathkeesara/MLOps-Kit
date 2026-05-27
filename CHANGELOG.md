@@ -41,3 +41,9 @@
 - mlf-005: notes — Install MLflow and run my first tracking experiment
 - mlf-006: snippet(python) — Log my first metrics and parameters with MLflow Tracking
 - gen-001: docs — Document mlflow/configs/ in README structure
+
+## 2026-05-27 (Round 3)
+
+- wnb-003: notes — Install W&B and run my first experiment tracking
+- wnb-004: snippet(python) — Log my first metrics and parameters with W&B
+- gen-002: docs — Document CHANGELOG.md in MLOps-Kit README

@@ -20,7 +20,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 | Kubeflow | 3 | — | — | — | 1 | — |
 | Metaflow | 2 | — | — | 1 | — | — |
 | DVC | 2 | 1 | — | — | — | — |
-| W&B | 2 | 1 | 1 | 1 | — | 1 |
+| W&B | 2 | 2 | 1 | 1 | — | 1 |
+| Root | — | — | — | — | — | 1 |
 
 ## Quick links
 

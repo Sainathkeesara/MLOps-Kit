@@ -55,5 +55,6 @@
 
 ## 2026-05-27 (Round 5)
 
-- mfl-002: snippet(python) — Minimal parameterized DAG with branching and merging
-- wnb-005: snippet(python) — Log my first metrics and configuration with W&B Python SDK
+- kub-003: script(bash) — Diagnose Kubeflow backend service health with a verification script
+- mfl-001: notes — Follow the official Metaflow quickstart and document what tripped me up
+- gen-001: docs — Document kubeflow/snippets/ directory in README layout

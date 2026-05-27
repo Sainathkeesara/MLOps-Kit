@@ -36,6 +36,8 @@
 
 ## 2026-05-27 (Round 2)
 
+- kub-004: notes — Set up a local Kind cluster for Kubeflow and verify CRDs
+- gen-003: docs — Document CHANGELOG.md and wnb/ subdirectories in MLOps-Kit README structure
 - mlf-005: notes — Install MLflow and run my first tracking experiment
 - mlf-006: snippet(python) — Log my first metrics and parameters with MLflow Tracking
 - gen-001: docs — Document mlflow/configs/ in README structure

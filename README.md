@@ -3,7 +3,7 @@
 > A working engineer's MLOps reference — MLflow, Kubeflow, DVC, Metaflow, and Weights & Biases notes, snippets, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Files](https://img.shields.io/badge/files-23-blue)
+![Files](https://img.shields.io/badge/files-24-blue)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)
@@ -14,13 +14,13 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 
 ## Coverage
 
-| Tool | Notes | Snippets | Scripts | Configs | Manifests |
-|------|-------|----------|---------|---------|-----------|
-| MLflow | 4 | 3 | — | 1 | — |
-| Kubeflow | 2 | — | — | — | 1 |
-| Metaflow | 1 | — | — | 1 | — |
-| DVC | 2 | 1 | — | — | — |
-| W&B | 2 | — | 1 | — | — |
+| Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs |
+|------|-------|----------|---------|---------|-----------|------|
+| MLflow | 4 | 3 | — | 1 | — | — |
+| Kubeflow | 3 | — | — | — | 1 | — |
+| Metaflow | 2 | — | — | 1 | — | — |
+| DVC | 2 | 1 | — | — | — | — |
+| W&B | 2 | 1 | 1 | 1 | — | 1 |
 
 ## Quick links
 
@@ -32,6 +32,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 
 ## Layout
 
+- **`CHANGELOG.md`** — Record of completed tasks and additions
 - **`00_index/`** — Index, quick-links, glossary
 - **`mlflow/configs/`** — MLflow Project configurations and YAML definitions
 - **`mlflow/notes/`** — MLflow learning notes and primers
@@ -39,7 +40,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 - **`kubeflow/`** — Kubeflow notes, manifests
 - **`metaflow/`** — Metaflow notes, configs
 - **`dvc/`** — DVC notes, snippets
-- **`wnb/`** — Weights & Biases notes, scripts
+- **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs
 
 ## Status
 

@@ -8,6 +8,7 @@
 - [MLflow quickstart trip-ups](../mlflow/notes/2026-05-27-mlflow-quickstart-trip-ups.md)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
+- [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)

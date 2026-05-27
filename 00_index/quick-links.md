@@ -9,6 +9,7 @@
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
+- [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
@@ -30,6 +31,7 @@
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
+- [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 
 ### Version data
 - [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)

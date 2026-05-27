@@ -47,3 +47,8 @@
 - wnb-003: notes — Install W&B and run my first experiment tracking
 - wnb-004: snippet(python) — Log my first metrics and parameters with W&B
 - gen-002: docs — Document CHANGELOG.md in MLOps-Kit README
+
+## 2026-05-27 (Round 4)
+
+- kub-001: notes — Follow the official Kubeflow Pipelines quickstart and document what tripped me up
+- kub-002: snippet(python) — Minimal pipeline with Kubeflow Pipelines V2 SDK

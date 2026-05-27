@@ -17,10 +17,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs |
 |------|-------|----------|---------|---------|-----------|------|
 | MLflow | 4 | 3 | — | 1 | — | — |
-| Kubeflow | 3 | — | — | — | 1 | — |
+| Kubeflow | 4 | 1 | 1 | — | 1 | — |
 | Metaflow | 2 | — | — | 1 | — | — |
 | DVC | 2 | 1 | — | — | — | — |
-| W&B | 2 | 2 | 1 | 1 | — | 1 |
+| W&B | 3 | 2 | 1 | 1 | — | 1 |
 | Root | — | — | — | — | — | 1 |
 
 ## Quick links
@@ -28,6 +28,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 - [`dvc/notes/0000-primer-dvc.md`](dvc/notes/0000-primer-dvc.md) — DVC primer and setup notes
 - [`dvc/notes/2026-05-26-first-dataset-version.md`](dvc/notes/2026-05-26-first-dataset-version.md) — First dataset versioning walkthrough
 - [`dvc/snippets/tried_dvc_pipeline.sh`](dvc/snippets/tried_dvc_pipeline.sh) — DVC pipeline experiment
+- [`kubeflow/scripts/tried_diagnosing_kubeflow_health.sh`](kubeflow/scripts/tried_diagnosing_kubeflow_health.sh) — Kubeflow backend health check
+- [`kubeflow/snippets/tried_pipeline_v2_sdk.py`](kubeflow/snippets/tried_pipeline_v2_sdk.py) — KFP V2 pipeline example
 - [`mlflow/configs/mlflow-project.yaml`](mlflow/configs/mlflow-project.yaml) — MLflow Project configuration
 - [`mlflow/snippets/2026-05-26-autolog_and_register.py`](mlflow/snippets/2026-05-26-autolog_and_register.py) — Autologging and model registry example
 
@@ -38,7 +40,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 - **`mlflow/configs/`** — MLflow Project configurations and YAML definitions
 - **`mlflow/notes/`** — MLflow learning notes and primers
 - **`mlflow/snippets/`** — MLflow runnable code examples
-- **`kubeflow/`** — Kubeflow notes, manifests
+- **`kubeflow/`** — Kubeflow notes, manifests, snippets
+- **`kubeflow/snippets/`** — Kubeflow Pipelines V2 SDK examples and health-check scripts
 - **`metaflow/`** — Metaflow notes, configs
 - **`dvc/`** — DVC notes, snippets
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs
@@ -48,4 +51,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 Working through first-contact notes and runnable experiments for each tool. Currently filling out DVC and MLflow workflows alongside Kubeflow and Metaflow foundations.
 
 ---
-_Last updated: 2026-05-27_
+_Last updated: 2026-05-27 (added kubeflow/scripts/, kubeflow/snippets/)

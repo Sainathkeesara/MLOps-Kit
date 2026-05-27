@@ -52,3 +52,9 @@
 
 - kub-001: notes — Follow the official Kubeflow Pipelines quickstart and document what tripped me up
 - kub-002: snippet(python) — Minimal pipeline with Kubeflow Pipelines V2 SDK
+
+## 2026-05-27 (Round 5)
+
+- kub-003: script(bash) — Diagnose Kubeflow backend service health with a verification script
+- mfl-001: notes — Follow the official Metaflow quickstart and document what tripped me up
+- gen-001: docs — Document kubeflow/snippets/ directory in README layout

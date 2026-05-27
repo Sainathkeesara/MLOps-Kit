@@ -11,6 +11,7 @@
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
+- [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
@@ -18,6 +19,7 @@
 - [W&B first experiment tracking](../wnb/notes/2026-05-27-install-wandb-first-experiment.md)
 
 ### Run an experiment
+- [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - [Metaflow end-to-end flow](../metaflow/notes/2026-05-27-first-end-to-end-flow.md)
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
 - [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)

@@ -33,3 +33,9 @@
 - meta-003: notes — Run my first end-to-end Metaflow flow and record what happened
 - mlf-004: notes — Follow the official MLflow quickstart and write up what tripped me up
 - wnb-001: docs — Follow the official W&B quickstart and write up what tripped me up
+
+## 2026-05-27 (Round 2)
+
+- mlf-005: notes — Install MLflow and run my first tracking experiment
+- mlf-006: snippet(python) — Log my first metrics and parameters with MLflow Tracking
+- gen-001: docs — Document mlflow/configs/ in README structure

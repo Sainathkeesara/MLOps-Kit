@@ -58,3 +58,7 @@
 - kub-003: script(bash) — Diagnose Kubeflow backend service health with a verification script
 - mfl-001: notes — Follow the official Metaflow quickstart and document what tripped me up
 - gen-001: docs — Document kubeflow/snippets/ directory in README layout
+
+## 2026-05-28
+
+- mfl-003: notebook — Step through a basic Metaflow flow end-to-end with data and decisions

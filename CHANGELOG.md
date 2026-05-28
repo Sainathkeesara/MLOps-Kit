@@ -62,3 +62,8 @@
 ## 2026-05-28
 
 - mfl-003: notebook — Step through a basic Metaflow flow end-to-end with data and decisions
+
+## 2026-05-28 (Round 2)
+
+- mflow-005: config(yaml) — Define an MLflow Project with MLproject and conda environment
+- mflow-004: notes — Follow the official MLflow Tracking quickstart and write up what tripped me up

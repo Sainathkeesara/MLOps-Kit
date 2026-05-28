@@ -1,0 +1,31 @@
+name: housing-price-predictor
+conda_env: conda.yaml
+
+entry_points:
+  train:
+    parameters:
+      learning_rate:
+        type: float
+        default: 0.01
+      n_estimators:
+        type: int
+        default: 100
+      max_depth:
+        type: int
+        default: 5
+    command: |
+      python train.py \
+        --learning-rate {learning_rate} \
+        --n-estimators {n_estimators} \
+        --max-depth {max_depth}
+
+  predict:
+    parameters:
+      model_uri:
+        type: string
+      input_csv:
+        type: string
+    command: |
+      python predict.py \
+        --model-uri {model_uri} \
+        --input-csv {input_csv}

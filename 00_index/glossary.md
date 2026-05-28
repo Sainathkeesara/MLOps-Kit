@@ -8,11 +8,17 @@
 ## Kubeflow
 - **Pipeline** — A DAG-based definition of an ML workflow composed of components, defined as a YAML manifest or compiled from the Kubeflow Pipelines SDK.
 - **Manifest** — A YAML file describing a Kubeflow resource (pipeline, component, experiment, run).
+- **KFP SDK** — The Kubeflow Pipelines SDK (v2) used to define, compile, and run pipelines in Python.
+- **Pipeline root** — The storage location (S3, MinIO, GCS) where KFP stores pipeline artifacts and outputs.
+- **`dsl.component`** — A decorator in the KFP SDK that marks a Python function as a reusable pipeline component.
 
 ## Metaflow
 - **Flow** — A directed acyclic graph of steps that defines an ML workflow in Metaflow.
 - **Step** — A single unit of work in a Metaflow flow, decorated with `@step`.
 - **Namespace** — A Metaflow concept for isolating runs and data across users or environments.
+- **Branching** — A pattern where a step fans out to multiple parallel steps via `self.next(step_a, step_b)`.
+- **Join** — A step that collects outputs from multiple parallel branches using the `inputs` parameter.
+- **Parameter** — A CLI-defined flow parameter declared with `Parameter()` that can be overridden at runtime.
 
 ## MLflow
 - **MLflow Project** — A reusable, packaging-format for ML code with a `MLproject` file specifying entry points and environments.

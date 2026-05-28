@@ -29,6 +29,7 @@
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
+- [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
 
 ### Configure a project
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)

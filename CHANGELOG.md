@@ -77,3 +77,8 @@
 
 - kub-004: notes — Install Kubeflow on a local Kind cluster and document what tripped me up
 - kub-005: script(bash) — Script to verify Kubeflow component readiness after local deployment
+
+## 2026-05-30 (Round 3)
+
+- dvc-005: script(bash) — Initialize a DVC project and track my first dataset
+- mfl-004: notes — Install Metaflow and set up my dev environment

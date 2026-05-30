@@ -3,6 +3,7 @@
 ## I need to...
 
 ### Set up a tool for the first time
+- [Metaflow install and dev environment setup](../metaflow/notes/2026-05-30-install-metaflow-and-setup-dev-env.md)
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md)
 - [MLflow server setup](../mlflow/notes/2026-05-24-first-mlflow-server.md)
 - [MLflow quickstart trip-ups](../mlflow/notes/2026-05-27-mlflow-quickstart-trip-ups.md)
@@ -48,6 +49,7 @@
 - [W&B project settings config](../wnb/configs/project-settings.yaml)
 
 ### Version data
+- [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
 
 ## Project

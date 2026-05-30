@@ -72,3 +72,8 @@
 
 - kub-006: config(yaml) — Configure Kubeflow pipeline resource requests and limits
 - wnb-006: config(yaml) — Configure W&B project settings and tracking environment
+
+## 2026-05-30 (Round 2)
+
+- kub-004: notes — Install Kubeflow on a local Kind cluster and document what tripped me up
+- kub-005: script(bash) — Script to verify Kubeflow component readiness after local deployment

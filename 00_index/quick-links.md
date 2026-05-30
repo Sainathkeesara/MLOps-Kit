@@ -11,6 +11,7 @@
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
+- [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
@@ -21,6 +22,7 @@
 
 ### Run an experiment
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
+- [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
 - [Metaflow end-to-end flow](../metaflow/notes/2026-05-27-first-end-to-end-flow.md)
 - [Metaflow data + decision flow](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb)
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)

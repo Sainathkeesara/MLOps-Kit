@@ -67,3 +67,8 @@
 
 - mflow-005: config(yaml) — Define an MLflow Project with MLproject and conda environment
 - mflow-004: notes — Follow the official MLflow Tracking quickstart and write up what tripped me up
+
+## 2026-05-30
+
+- kub-006: config(yaml) — Configure Kubeflow pipeline resource requests and limits
+- wnb-006: config(yaml) — Configure W&B project settings and tracking environment

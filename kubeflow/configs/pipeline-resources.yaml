@@ -1,0 +1,59 @@
+# kub-006 — Kubeflow pipeline resource requests and limits
+#
+# L1 config for setting compute resources on pipeline components.
+# These settings control CPU/memory allocation for each container in the pipeline.
+
+apiVersion: pipelines.kubeflow.org/v1beta1
+kind: Pipeline
+metadata:
+  name: resource-limited-pipeline
+spec:
+  pipelineSpec:
+    pipelineInfo:
+      name: resource-limited-pipeline
+    deploymentSpec:
+      executors:
+        data-prep-exec:
+          container:
+            # Each component has its own resource requirements
+            resources:
+              requests:
+                cpu: "0.5"
+                memory: "512Mi"
+              limits:
+                cpu: "1"
+                memory: "1Gi"
+        train-exec:
+          container:
+            # Training usually needs more resources
+            resources:
+              requests:
+                cpu: "1"
+                memory: "1Gi"
+              limits:
+                cpu: "2"
+                memory: "2Gi"
+    root:
+      dag:
+        tasks:
+          data-prep:
+            componentRef:
+              name: data-prep-comp
+            # Override resources at task level if needed
+          train:
+            componentRef:
+              name: train-comp
+            # Inherit or override executor settings
+    components:
+      data-prep-comp:
+        implementation:
+          container:
+            image: python:3.11-slim
+            command: ["python", "-c"]
+            args: ["print('preparing data')"]
+      train-comp:
+        implementation:
+          container:
+            image: python:3.11-slim
+            command: ["python", "-c"]
+            args: ["print('training')"]

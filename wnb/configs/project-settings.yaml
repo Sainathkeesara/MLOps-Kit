@@ -1,0 +1,44 @@
+# wnb-006 — W&B project settings and tracking environment
+#
+# L1 config for configuring Weights & Biases project settings.
+# Use this to set default project, tracking environment, and run settings.
+
+# Default settings applied to all runs in this project
+# Place in your project root as wandb.yaml or pass via environment variables
+
+project:
+  name: mlops-kit-wandb
+  # Entity is the team or user account that owns the project
+  entity: null
+  # Team is optional — used for shared projects
+  team: null
+
+# Run configuration
+run:
+  # Job type helps organize runs in the UI
+  job_type: training
+  # Group runs by this value
+  group: null
+  # Display name shown in the dashboard
+  display_name: null
+
+# Environment configuration
+environment:
+  # Offline mode for testing without internet
+  offline: false
+  # Silent mode suppresses output
+  silent: false
+  # Show tqdm progress bars in notebooks
+  show_progress: true
+
+# Artifact settings
+artifacts:
+  # Default artifact type for model saves
+  type: model
+  # Auto-sync git metadata on runs
+  auto_git: true
+
+# Reporting settings
+reporting:
+  # Send anonymous usage stats
+  anonymous: false

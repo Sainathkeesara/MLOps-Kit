@@ -82,3 +82,7 @@
 
 - dvc-005: script(bash) — Initialize a DVC project and track my first dataset
 - mfl-004: notes — Install Metaflow and set up my dev environment
+
+## 2026-05-30 (Round 4)
+
+- mflow-001: script(python) — Build a custom MLflow model flavor from scratch

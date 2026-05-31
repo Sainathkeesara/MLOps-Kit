@@ -37,6 +37,9 @@
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
 - [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
 
+### Compare model versions
+- [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
+
 ### Configure a project
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)

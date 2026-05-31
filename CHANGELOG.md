@@ -86,3 +86,7 @@
 ## 2026-05-30 (Round 4)
 
 - mflow-001: script(python) — Build a custom MLflow model flavor from scratch
+
+## 2026-05-31
+
+- mflow-002: docs — Comparing registered model versions with MLflow Model Registry

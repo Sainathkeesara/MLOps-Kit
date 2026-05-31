@@ -20,6 +20,7 @@
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
 - [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md)
 - [W&B first experiment tracking](../wnb/notes/2026-05-27-install-wandb-first-experiment.md)
+- [W&B experiment tracking session](../wnb/notes/2026-05-31-first-wandb-experiment-tracking.md)
 
 ### Run an experiment
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch

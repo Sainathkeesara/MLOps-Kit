@@ -90,3 +90,4 @@
 ## 2026-05-31
 
 - mflow-002: docs — Comparing registered model versions with MLflow Model Registry
+- wnb-004: notes — Install W&B and run my first experiment tracking session

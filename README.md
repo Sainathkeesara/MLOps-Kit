@@ -16,11 +16,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs |
 |------|-------|----------|---------|---------|-----------|------|
-| MLflow | 4 | 3 | — | 1 | — | — |
-| Kubeflow | 4 | 1 | 1 | — | 1 | — |
-| Metaflow | 3 | 1 | — | 1 | — | — |
-| DVC | 2 | 1 | — | — | — | — |
-| W&B | 3 | 3 | 1 | 1 | — | 1 |
+| MLflow | 5 | 3 | 1 | 3 | — | 1 |
+| Kubeflow | 5 | 1 | 2 | 1 | 1 | — |
+| Metaflow | 4 | 1 | — | 1 | — | — |
+| DVC | 2 | 1 | 1 | — | — | — |
+| W&B | 3 | 3 | 1 | 2 | — | 1 |
 | Root | — | — | — | — | — | 2 |
 
 ## Quick links
@@ -46,4 +46,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow parameterized DAG patterns, W&B first-metrics snippets, and Kubeflow health diagnostics.
 
 ---
-_Last updated: 2026-05-27_
+_Last updated: 2026-05-31_

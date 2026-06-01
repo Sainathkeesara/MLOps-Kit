@@ -94,4 +94,5 @@
 
 ## 2026-06-01
 
-- mflow-003: notebook — MLflow autologging vs manual tracking: a side-by-side comparison
+- wnb-002: notes(primer) — What is Weights & Biases? — quick primer
+- wnb-004: notes — Install W&B and run my first experiment tracking session

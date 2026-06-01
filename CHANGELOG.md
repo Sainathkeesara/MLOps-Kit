@@ -96,3 +96,4 @@
 
 - wnb-002: notes(primer) — What is Weights & Biases? — quick primer
 - wnb-004: notes — Install W&B and run my first experiment tracking session
+- feast-001: notes(primer) — What is Feast? — quick primer

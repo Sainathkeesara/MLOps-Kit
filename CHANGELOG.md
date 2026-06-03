@@ -102,3 +102,9 @@
 
 - feast-002: notes — Install Feast and run my first feature retrieval
 - feast-003: snippet(python) — Define and apply my first feature view with Feast
+
+## 2026-06-03 (Round 2)
+
+- mfl-005: snippet(python) — My first linear Metaflow DAG with parameters
+- wnb-003: snippet(python) — Log my first metrics and parameters with W&B SDK
+- gen-001: docs — Document metaflow/notebooks/ folder in README Layout section

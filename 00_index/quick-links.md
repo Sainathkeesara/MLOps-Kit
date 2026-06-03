@@ -40,6 +40,7 @@
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
+- [W&B first run snippet](../wnb/snippets/tried_logging_first_run.py)
 - [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
 
 ### Compare model versions
@@ -53,6 +54,7 @@
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)
 - [MLflow conda environment](../mlflow/configs/conda.yaml)
 - [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
+- [Metaflow linear DAG with parameters](../metaflow/snippets/tried_first_linear_dag.py)
 - [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)

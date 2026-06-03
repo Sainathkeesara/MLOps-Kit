@@ -23,6 +23,7 @@
 - [W&B experiment tracking session](../wnb/notes/2026-05-31-first-wandb-experiment-tracking.md)
 - [W&B first tracking session](../wnb/notes/2026-06-01-my-first-wandb-session.md)
 - [Feast primer](../feast/notes/0000-primer-feast.md)
+- [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
 
 ### Run an experiment
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
@@ -43,6 +44,9 @@
 
 ### Compare model versions
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
+
+### Define features
+- [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
 
 ### Configure a project
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)

@@ -108,3 +108,9 @@
 - mfl-005: snippet(python) — My first linear Metaflow DAG with parameters
 - wnb-003: snippet(python) — Log my first metrics and parameters with W&B SDK
 - gen-001: docs — Document metaflow/notebooks/ folder in README Layout section
+
+## 2026-06-04
+
+- kub-002: snippet(python) — Deploy my first Kubeflow pipeline with Python SDK
+- gen-002: docs — Document kubeflow/configs/ folder in README Layout section
+- gen-003: docs — Document dvc/scripts/ folder in README Layout section

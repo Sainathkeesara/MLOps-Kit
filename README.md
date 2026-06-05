@@ -40,6 +40,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
+- **`mlflow/scripts/`** — MLflow custom model flavors, automation, and utility scripts
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, and configs
 
 ## Status
@@ -47,4 +48,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 Working through first-contact notes and runnable experiments for each tool. Recently added Feast primer and install notes, Metaflow linear DAG, and W&B first-run snippet.
 
 ---
-_Last updated: 2026-06-04_
+_Last updated: 2026-06-05_

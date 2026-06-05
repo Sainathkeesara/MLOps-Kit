@@ -37,7 +37,6 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 - **`CHANGELOG.md`** — Record of completed tasks and additions
 - **`00_index/`** — Index, quick-links, glossary
 - **`dvc/`** — DVC notes, snippets, and scripts
-- **`feast/`** — Feast notes and snippets
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks

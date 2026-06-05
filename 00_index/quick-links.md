@@ -58,6 +58,7 @@
 - [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
+- [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config](../wnb/configs/sweep_config.yaml)
 - [W&B project settings config](../wnb/configs/project-settings.yaml)

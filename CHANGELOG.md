@@ -120,3 +120,7 @@
 - mfl-001: notes — Install Metaflow and run my first flow end-to-end
 - wnb-005: notes — Configure W&B settings and run first team experiment
 - gen-004: docs — Document mlflow/scripts/ folder in README Layout section
+
+## 2026-06-05 (Round 2)
+
+- gen-004 (rework): docs — Document mlflow/scripts/ folder in README Layout section

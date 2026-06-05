@@ -25,6 +25,14 @@
 - **Autologging** — Automatic logging of metrics, parameters, and model artifacts by MLflow's `autolog()` integration with common ML frameworks.
 - **Model Registry** — A centralized model store in MLflow for versioning, annotating, and managing model lifecycle stages.
 
+## Feast
+- **Feature Store** — A centralized system for managing and serving ML features consistently across training and inference.
+- **Feature View** — A defined feature or group of features with a data source, transformation logic, and optional metadata.
+- **Entity** — A primary key or identifier (e.g. `user_id`, `product_id`) that features are associated with.
+- **Feature Service** — A deployed server that serves the latest feature values for real-time inference.
+- **Offline Store** — A data store (e.g. BigQuery, Snowflake, Parquet) that holds historical feature data for training.
+- **Online Store** — A low-latency data store (e.g. Redis, DynamoDB) that holds the latest feature values for serving.
+
 ## Weights & Biases
 - **Run** — A single execution of an experiment tracked in W&B, with logged metrics, hyperparameters, and outputs.
 - **Sweep** — A hyperparameter optimisation job in W&B that orchestrates multiple runs with a search strategy (grid, random, Bayesian).

@@ -17,10 +17,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs |
 |------|-------|----------|---------|---------|-----------|------|
 | MLflow | 5 | 3 | 1 | 3 | — | 1 |
-| Kubeflow | 5 | 1 | 2 | 1 | 1 | — |
-| Metaflow | 4 | 2 | — | 1 | — | — |
+| Kubeflow | 5 | 2 | 2 | 1 | 1 | — |
+| Metaflow | 5 | 2 | — | 1 | — | — |
 | DVC | 2 | 1 | 1 | — | — | — |
-| W&B | 5 | 4 | 1 | 2 | — | 1 |
+| W&B | 6 | 4 | 1 | 2 | — | 1 |
 | Root | — | — | — | — | — | 2 |
 
 ## Quick links
@@ -40,7 +40,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 - **`dvc/`** — DVC notes, snippets, and scripts
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets
-- **`mlflow/`** — MLflow notes, configs, and snippets
+- **`mlflow/`** — MLflow notes, configs, scripts, notebooks, and snippets
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, and configs
 
 ## Status
@@ -48,4 +48,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for five core MLOps 
 Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow linear DAG with parameters, W&B first-run snippet, and updated README layout.
 
 ---
-_Last updated: 2026-06-03_
+_Last updated: 2026-06-05_

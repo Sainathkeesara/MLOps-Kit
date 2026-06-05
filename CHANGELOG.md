@@ -114,3 +114,9 @@
 - kub-002: snippet(python) — Deploy my first Kubeflow pipeline with Python SDK
 - gen-002: docs — Document kubeflow/configs/ folder in README Layout section
 - gen-003: docs — Document dvc/scripts/ folder in README Layout section
+
+## 2026-06-05
+
+- mfl-001: notes — Install Metaflow and run my first flow end-to-end
+- wnb-005: notes — Configure W&B settings and run first team experiment
+- gen-004: docs — Document mlflow/scripts/ folder in README Layout section

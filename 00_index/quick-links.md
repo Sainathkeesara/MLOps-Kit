@@ -11,12 +11,13 @@
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
-- [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
+- [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-27-pipelines-quickstart-trip-ups.md)
 - [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
 - [Metaflow first end-to-end flow](../metaflow/notes/2026-06-05-first-flow-end-to-end.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
+- [DVC get started trip-ups](../dvc/notes/2026-06-05-get-started.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
 - [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md)
@@ -42,6 +43,7 @@
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
+- [DVC minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py)
 - [W&B first run snippet](../wnb/snippets/tried_logging_first_run.py)
 - [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
 
@@ -64,6 +66,7 @@
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config](../wnb/configs/sweep_config.yaml)
 - [W&B project settings config](../wnb/configs/project-settings.yaml)
+- [DVC pipeline config](../dvc/configs/pipeline.yaml)
 
 ### Version data
 - [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)

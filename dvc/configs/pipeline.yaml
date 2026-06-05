@@ -1,0 +1,18 @@
+stages:
+  prepare:
+    cmd: python prepare.py data/data.xml data/prepared
+    deps:
+      - data/data.xml
+      - prepare.py
+    outs:
+      - data/prepared
+
+  train:
+    cmd: python train.py data/prepared model.pkl
+    deps:
+      - data/prepared
+      - train.py
+    outs:
+      - model.pkl
+    metrics:
+      - metric.json

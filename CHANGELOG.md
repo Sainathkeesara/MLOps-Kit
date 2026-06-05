@@ -117,6 +117,9 @@
 
 ## 2026-06-05
 
+- dvc-001: notes — Follow the official DVC Get Started guide and document what tripped me up
+- dvc-002: snippet(python) — Minimal data versioning with DVC Python API
+- dvc-003: config(yaml) — Define a DVC pipeline with dvc.yaml from scratch
 - mfl-001: notes — Install Metaflow and run my first flow end-to-end
 - wnb-005: notes — Configure W&B settings and run first team experiment
 - gen-004: docs — Document mlflow/scripts/ folder in README Layout section

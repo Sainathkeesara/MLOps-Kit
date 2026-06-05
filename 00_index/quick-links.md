@@ -15,6 +15,7 @@
 - [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
+- [Metaflow first end-to-end flow](../metaflow/notes/2026-06-05-first-flow-end-to-end.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
@@ -24,6 +25,7 @@
 - [W&B first tracking session](../wnb/notes/2026-06-01-my-first-wandb-session.md)
 - [Feast primer](../feast/notes/0000-primer-feast.md)
 - [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
+- [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
 
 ### Run an experiment
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch

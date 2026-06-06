@@ -13,6 +13,7 @@
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-27-pipelines-quickstart-trip-ups.md)
 - [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
+- [Kubeflow minikube and CLI setup](../kubeflow/notes/2026-06-06-install-minikube-and-kubeflow-cli.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
 - [Metaflow first end-to-end flow](../metaflow/notes/2026-06-05-first-flow-end-to-end.md)
@@ -60,6 +61,7 @@
 - [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
 - [Metaflow linear DAG with parameters](../metaflow/snippets/tried_first_linear_dag.py)
 - [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
+- [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK

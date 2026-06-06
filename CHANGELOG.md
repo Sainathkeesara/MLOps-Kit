@@ -133,3 +133,5 @@
 - gen-005: docs — Document mlflow/docs/ folder in README Layout section
 - gen-006: docs — Document 00_index/topics.md file in README Layout section
 - gen-007: docs — Document mlflow/notebooks/ folder in README Layout section
+- kub-006: notes — Install minikube and Kubeflow CLI, verify local setup
+- mfl-008: snippet(python) — Minimal first flow with Metaflow Python SDK

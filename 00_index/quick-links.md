@@ -84,3 +84,8 @@
 - [.git/ folder layout doc](../General/docs/2026-06-06-added-dot-git-folder-to-layout.md) — Documented .git/ in README Layout section
 - [README.md in layout doc](../General/docs/2026-06-06-added-readme-md-to-layout.md) — Documented README.md in README Layout section
 - [feast/ folder layout doc](../General/docs/2026-06-06-added-feast-folder-to-layout.md) — Documented feast/ in README Layout section
+- [General/ folder layout doc](../General/docs/2026-06-06-document-general-folder-in-readme.md) — Documented General/ in README Layout section
+- [CHANGELOG.md in layout doc](../General/docs/2026-06-06-document-changelog-in-readme.md) — Documented CHANGELOG.md in README Layout section
+- [Kubeflow central dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First wander through the Kubeflow Central Dashboard
+- [W&B quickstart trip-ups](../wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up
+- [W&B minimal tracking snippet](../wnb/snippets/2026-06-06-minimal-tracking.py) — First cut: minimal experiment tracking with W&B Python API

@@ -1,11 +1,11 @@
-# Added `feast/` to README Layout section
+# Adding feast/ to README
 
-Spotted that `feast/` is a top-level directory in the repo but wasn't listed in the README Layout section. Feast got its first tasks a few days ago (primer, install notes, snippets) so the folder has real content now.
+I notice the README Layout section doesn't list feast/ even though it's a real directory now. Feast has notes and a snippet.
 
-Added it between `dvc/` and `kubeflow/` to keep alphabetical order:
+I'm putting it between dvc/ and kubeflow/ so alpha order stays:
 
 ```
 - **`feast/`** — Feast feature store notes, snippets, and configs
 ```
 
-The Coverage table already had a Feast row so this just brings the Layout section in sync with reality.
+Coverage table already has a Feast row so I don't need to touch that. Just syncing the Layout section.

@@ -34,13 +34,16 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 ## Layout
 
-- **`CHANGELOG.md`** — Record of completed tasks and additions
+- **`.git/`** — Git version history, branches, and object store
 - **`00_index/`** — Index, quick-links, glossary
+- **`CHANGELOG.md`** — Record of completed tasks and additions
 - **`dvc/`** — DVC notes, snippets, and scripts
+- **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`mlflow/scripts/`** — MLflow custom model flavors, automation, and utility scripts
+- **`README.md`** — Project overview, coverage table, and quick links
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, and configs
 
 ## Status
@@ -48,4 +51,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 Working through first-contact notes and runnable experiments for each tool. Recently added Feast primer and install notes, Metaflow linear DAG, and W&B first-run snippet.
 
 ---
-_Last updated: 2026-06-05_
+_Last updated: 2026-06-06_

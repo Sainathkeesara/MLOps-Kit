@@ -130,6 +130,6 @@
 
 ## 2026-06-06
 
-- gen-008: docs — Document .git/ folder in README Layout section
-- gen-009: docs — Document README.md in README Layout section
-- gen-010: docs — Document feast/ folder in README Layout section
+- gen-005: docs — Document mlflow/docs/ folder in README Layout section
+- gen-006: docs — Document 00_index/topics.md file in README Layout section
+- gen-007: docs — Document mlflow/notebooks/ folder in README Layout section

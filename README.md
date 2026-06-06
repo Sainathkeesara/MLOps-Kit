@@ -36,12 +36,14 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 - **`.git/`** — Git version history, branches, and object store
 - **`00_index/`** — Index, quick-links, glossary
-- **`CHANGELOG.md`** — Record of completed tasks and additions
+- **`00_index/topics.md`** — Topic-based index of all tool-specific artifacts and files
 - **`dvc/`** — DVC notes, snippets, and scripts
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
+- **`mlflow/docs/`** — MLflow reference documentation, comparisons, and how-to guides
+- **`mlflow/notebooks/`** — MLflow Jupyter notebooks for guided experiments and walkthroughs
 - **`mlflow/scripts/`** — MLflow custom model flavors, automation, and utility scripts
 - **`README.md`** — Project overview, coverage table, and quick links
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, and configs

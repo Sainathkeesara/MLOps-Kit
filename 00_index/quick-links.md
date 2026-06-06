@@ -17,6 +17,7 @@
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
 - [Metaflow first end-to-end flow](../metaflow/notes/2026-06-05-first-flow-end-to-end.md)
+- [Metaflow second pass through quickstart](../metaflow/notes/2026-06-06-revisiting-quickstart.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [DVC get started trip-ups](../dvc/notes/2026-06-05-get-started.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
@@ -62,6 +63,7 @@
 - [Metaflow linear DAG with parameters](../metaflow/snippets/tried_first_linear_dag.py)
 - [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
 - [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
+- [Metaflow model serving flow](../metaflow/snippets/tried_serving_model.py)
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK

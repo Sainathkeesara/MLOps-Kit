@@ -135,3 +135,8 @@
 - gen-007: docs — Document mlflow/notebooks/ folder in README Layout section
 - kub-006: notes — Install minikube and Kubeflow CLI, verify local setup
 - mfl-008: snippet(python) — Minimal first flow with Metaflow Python SDK
+
+## 2026-06-06 (Round 2)
+
+- mfl-006: notes — Follow the official Metaflow quickstart and document what tripped me up
+- mfl-007: snippet(python) — Minimal model serving with Metaflow Python API

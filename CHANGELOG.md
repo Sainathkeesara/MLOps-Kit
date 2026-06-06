@@ -145,3 +145,5 @@
 - wnb-005: notes — Follow the official Weights & Biases quickstart and document what tripped me up
 - wnb-006: snippet(python) — Minimal experiment tracking with Weights & Biases Python API
 - wnb-007: config(yaml) — Define a W&B hyperparameter sweep with a sweep config YAML
+- mfl-006: notes — Follow the official Metaflow quickstart and document what tripped me up
+- mfl-007: snippet(python) — Minimal model serving with Metaflow Python API

@@ -127,3 +127,9 @@
 ## 2026-06-05 (Round 2)
 
 - gen-004 (rework): docs — Document mlflow/scripts/ folder in README Layout section
+
+## 2026-06-06
+
+- gen-005: docs — Document mlflow/docs/ folder in README Layout section
+- gen-006: docs — Document 00_index/topics.md file in README Layout section
+- gen-007: docs — Document mlflow/notebooks/ folder in README Layout section

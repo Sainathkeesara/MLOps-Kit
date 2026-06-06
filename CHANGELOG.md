@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-06 (Round 2)
+
+- gen-012 (rework): docs — Add feast/ root folder to README Layout section and Coverage table
+
 ## 2026-05-25
 
 - wnb-001: notes(primer) — What is W&B? — quick primer
@@ -134,7 +138,7 @@
 - gen-006: docs — Document 00_index/topics.md file in README Layout section
 - gen-007: docs — Document mlflow/notebooks/ folder in README Layout section
 - gen-011: docs — Restructure MLOps-Kit: document feast/ folder in README Layout and Coverage sections
-- gen-012: docs — Document General/ folder in README Layout section (Repo Auditor discovered UF anomaly)
+- gen-012: docs — Add feast/ root folder to README Layout section and Coverage table (Repo Auditor discovered UF anomaly)
 - gen-013: docs — Document General/ folder in README Layout section (Repo Auditor discovered UF anomaly)
 - gen-014: docs — Document CHANGELOG.md in README Layout section (Repo Auditor discovered UF anomaly)
 - kub-006: notes — Install minikube and Kubeflow CLI, verify local setup

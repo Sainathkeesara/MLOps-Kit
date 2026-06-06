@@ -28,12 +28,14 @@
 - [Feast primer](../feast/notes/0000-primer-feast.md)
 - [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
 - [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
+- [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
 
 ### Run an experiment
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
 - [Metaflow end-to-end flow](../metaflow/notes/2026-05-27-first-end-to-end-flow.md)
+- [Metaflow UI exploration](../metaflow/notes/2026-06-06-explore-ui-and-inspect-run.md)
 - [Metaflow data + decision flow](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb)
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
 - [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)

@@ -133,5 +133,15 @@
 - gen-005: docs — Document mlflow/docs/ folder in README Layout section
 - gen-006: docs — Document 00_index/topics.md file in README Layout section
 - gen-007: docs — Document mlflow/notebooks/ folder in README Layout section
+- gen-011: docs — Restructure MLOps-Kit: document feast/ folder in README Layout and Coverage sections
+- gen-012: docs — Document General/ folder in README Layout section (Repo Auditor discovered UF anomaly)
+- gen-013: docs — Document General/ folder in README Layout section (Repo Auditor discovered UF anomaly)
+- gen-014: docs — Document CHANGELOG.md in README Layout section (Repo Auditor discovered UF anomaly)
 - kub-006: notes — Install minikube and Kubeflow CLI, verify local setup
+- kub-007: notes — Explore the Kubeflow Central Dashboard — what's there
+- mfl-002: notes — Explore Metaflow UI and inspect a completed flow run
 - mfl-008: snippet(python) — Minimal first flow with Metaflow Python SDK
+- wnb-004: notes — Run my first model training experiment with W&B and review the dashboard
+- wnb-005: notes — Follow the official Weights & Biases quickstart and document what tripped me up
+- wnb-006: snippet(python) — Minimal experiment tracking with Weights & Biases Python API
+- wnb-007: config(yaml) — Define a W&B hyperparameter sweep with a sweep config YAML

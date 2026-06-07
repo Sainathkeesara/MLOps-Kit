@@ -67,6 +67,7 @@
 - [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
 - [Metaflow model serving flow](../metaflow/snippets/tried_serving_model.py)
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
+- [W&B hyperparameter sweep config](../wnb/configs/sweep_config.yaml) — Define a Bayes-optimized sweep for learning rate, batch size, and dropout
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)

@@ -4,53 +4,48 @@
 
 ## What is it?
 
-Kubeflow is a platform for running machine learning workflows on Kubernetes. I think of it as "ML ops for people who already have a Kubernetes cluster." If MLflow tracks experiments and DVC versions data, Kubeflow orchestrates the whole pipeline — from data prep through training to serving — on top of K8s.
+Kubeflow is a Kubernetes-native platform for machine learning workflows. It sits on top of Kubernetes and gives me a set of tools specifically designed for training, tuning, and deploying models at scale. Think of it this way: Kubernetes is the operating system for my cluster, and Kubeflow is the ML toolbox that runs on top of it. If I already know how to work with containers and `kubectl`, Kubeflow feels like a natural extension — just with ML-specific abstractions instead of raw pod specs.
 
 ## What does it do?
 
-It lets you define ML pipelines as a series of components (each running in its own container), execute them on a Kubernetes cluster, track experiments, and deploy trained models as inference services. It bundles Jupyter notebooks, a pipeline dashboard, and integration with tools like Katib (hyperparameter tuning) and KServe (model serving).
+The main things I care about right now are **Kubeflow Pipelines** (build and run ML workflows as a series of steps), **Kubeflow Notebooks** (spawn Jupyter-like environments on the cluster), and **KServe** (serve models with a single command). The Pipelines piece is what most people start with — I can chain together data-prep, training, and evaluation steps into a reusable workflow, then trigger it from a web UI or CLI.
 
 ## Why does it exist?
 
-Before Kubeflow, teams deploying ML on Kubernetes had to wire everything together themselves — spin up containers, manage storage, set up monitoring, handle retries. Every team built their own brittle glue. Kubeflow assembles the common pieces into one distributable platform so you focus on the ML code, not the plumbing.
+Before Kubeflow, if I wanted to run an ML experiment on Kubernetes I had to write custom YAML, manage storage mounts by hand, and wire together monitoring and serving myself. Every team reinvented the same glue code. Kubeflow provides a shared, opinionated layer so I can focus on the ML logic instead of the infrastructure plumbing. Data scientists, ML engineers, and platform teams all use it to move experiments from notebook to production without leaving the Kubernetes ecosystem.
 
 ## Key terminology
 
-- **Pipeline** — A directed acyclic graph (DAG) of containerized components. Example: a three-step pipeline that preprocesses data, trains a model, then evaluates it.
-- **Component** — A single step in a pipeline, packaged as a container with defined inputs and outputs. Example: a component that normalizes CSV columns, outputs a cleaned Parquet file.
-- **Experiment** — A logical grouping of pipeline runs. Example: "try-all-learning-rates" groups 10 runs with different LR values.
-- **Run** — A single execution of a pipeline. Example: one run of the training pipeline with batch_size=32.
-- **Recurring Run** — A pipeline that executes on a schedule. Example: retrain a model every Monday at midnight.
-- **Notebook Server** — A Jupyter environment spun up inside the cluster, with pre-configured ML libraries. Example: launch a notebook server with 2 CPUs and 4 GB RAM from the Central Dashboard.
-- **Central Dashboard** — The web UI that ties all Kubeflow components together. Example: visit http://localhost:8080 to see pipelines, notebooks, and experiments in one place.
+- **Pipeline** — A directed acyclic graph (DAG) of steps that defines an ML workflow. Example: a pipeline that reads data, trains a model, and evaluates it.
+- **Component** — A single step inside a pipeline, packaged as a lightweight container. Example: a "train" component that takes a dataset path and outputs a model artifact.
+- **Experiment** — A named grouping for pipeline runs so I can compare related executions. Example: an experiment called `iris-classifier` that holds all my tuning runs.
+- **Run** — One execution of a pipeline with specific input parameters and outputs. Example: run #17 of my experiment with `learning_rate=0.01`.
+- **KFP (Kubeflow Pipelines SDK)** — The Python library I use to define pipelines and components. Example: `from kfp import dsl` to build a DAG.
+- **KServe** — The model-serving component that deploys a trained model as a scalable REST endpoint. Example: `kserve deploy` to expose my model on `/v1/models/...`.
+- **Notebook controller** — The operator that manages Jupyter notebook instances on the cluster. Example: spin up a notebook with a pre-installed image and GPUs attached.
 
 ## A tiny example
 
-```yaml
-apiVersion: pipelines.kubeflow.org/v1beta1
-kind: Pipeline
-metadata:
-  name: hello-kubeflow
-spec:
-  pipelineSpec:
-    description: "A minimal one-step pipeline"
-    root:
-      dag:
-        tasks:
-          echo:
-            componentRef:
-              name: comp-echo
-    components:
-      comp-echo:
-        implementation:
-          container:
-            image: alpine:3.18
-            command: ["echo"]
-            args: ["Hello from Kubeflow"]
+```python
+from kfp import dsl
+from kfp.dsl import Dataset, Model, Metrics
+
+@dsl.component
+def train(model: dsl.Output[Model], metrics: dsl.Output[Metrics]):
+    # a toy training step
+    model.metadata["accuracy"] = 0.94
+    metrics.log_metric("accuracy", 0.94)
+
+@dsl.pipeline(name="my-first-pipeline")
+def my_pipeline():
+    train()
+
+from kfp.client import Client
+Client().create_run_from_pipeline_func(my_pipeline, experiment_name="demo")
 ```
 
-This defines the simplest possible pipeline — a single component that prints a message. I'd upload the YAML through the Kubeflow Pipelines UI to create my first run.
+This defines a one-step pipeline with the KFP SDK and submits it to a Kubeflow cluster. The UI will show the run under the `demo` experiment.
 
 ## What I'll cover next
 
-After this primer I want to install Kubeflow locally (probably with the kind-based quickstart), click around the dashboard once it's up, then build my first real pipeline component that does actual ML work.
+Next I want to install Kubeflow on a local cluster (probably Kind), build a slightly longer pipeline with a real dataset, and then play with the UI to inspect run artifacts and compare metrics across executions.

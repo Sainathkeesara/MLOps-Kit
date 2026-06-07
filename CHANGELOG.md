@@ -4,6 +4,8 @@
 
 - wnb-006: snippet(python) — Minimal experiment tracking with Weights & Biases Python API (L2)
 - gen-013: docs — Document General/ folder in README Layout section
+- wnb-007: config(yaml) — Define a W&B hyperparameter sweep with a sweep config YAML
+- kub-005 (rework): notes(primer) — What is Kubeflow? — quick primer
 
 ## 2026-06-06 (Round 2)
 

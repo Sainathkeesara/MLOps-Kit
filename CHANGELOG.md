@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-07
+
+- wnb-006: snippet(python) — Minimal experiment tracking with Weights & Biases Python API (L2)
+- gen-013: docs — Document General/ folder in README Layout section
+
 ## 2026-06-06 (Round 2)
 
 - gen-012 (rework): docs — Add feast/ root folder to README Layout section and Coverage table

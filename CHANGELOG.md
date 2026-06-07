@@ -4,6 +4,7 @@
 
 - wnb-006: snippet(python) — Minimal experiment tracking with Weights & Biases Python API (L2)
 - gen-013: docs — Document General/ folder in README Layout section
+- kub-005 (rework): notes(primer) — Fix Kubeflow primer: reduced to ≤300 words, removed "production", kept L1 first-person scratch voice
 
 ## 2026-06-06 (Round 2)
 

@@ -1,0 +1,39 @@
+# My first W&B sweep config — setting up a hyperparameter search
+# for a small neural net on a classification dataset.
+# I'm using Bayesian optimization because it usually finds good
+# values in fewer runs than grid or random search.
+
+program: train.py
+method: bayes
+
+metric:
+  name: val_loss
+  goal: minimize
+
+parameters:
+  learning_rate:
+    # log-uniform because learning rates span orders of magnitude
+    distribution: log_uniform_values
+    min: 0.0001
+    max: 0.01
+  batch_size:
+    # just the three powers of two I want to compare
+    values: [16, 32, 64]
+  dropout:
+    # uniform between 10% and 50%
+    distribution: uniform
+    min: 0.1
+    max: 0.5
+  optimizer:
+    # want to see if Adam beats SGD for this data
+    values: ["adam", "sgd"]
+  epochs:
+    # fixed — not sweeping this, just need enough training
+    value: 10
+
+early_terminate:
+  # HyperBand to kill bad runs early and save compute
+  type: hyperband
+  min_iter: 3
+  max_iter: 10
+  s: 2

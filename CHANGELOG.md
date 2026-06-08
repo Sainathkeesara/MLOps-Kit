@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-08
+
+- wnb-007 (rework): config(yaml) — Define a W&B hyperparameter sweep with a sweep config YAML (L2)
+
 ## 2026-06-07
 
 - wnb-006: snippet(python) — Minimal experiment tracking with Weights & Biases Python API (L2)

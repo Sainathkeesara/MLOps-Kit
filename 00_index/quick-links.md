@@ -70,7 +70,8 @@
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
-- [W&B sweep config](../wnb/configs/sweep_config.yaml)
+- [W&B sweep config (my first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — My first W&B hyperparameter sweep config with Bayesian optimization
+- [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)
 - [W&B project settings config](../wnb/configs/project-settings.yaml)
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
 

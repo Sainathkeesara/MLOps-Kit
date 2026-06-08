@@ -2,6 +2,7 @@
 
 ## 2026-06-08
 
+- mfl-008: notes — How Metaflow's @step decorator enforces DAG ordering (L2)
 - wnb-007 (rework): config(yaml) — Define a W&B hyperparameter sweep with a sweep config YAML (L2)
 
 ## 2026-06-07

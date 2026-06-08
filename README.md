@@ -18,7 +18,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 |------|-------|----------|---------|---------|-----------|------|-----------|
 | MLflow | 5 | 3 | 1 | 3 | — | 1 | 1 |
 | Kubeflow | 6 | 1 | 2 | 1 | 1 | — | — |
-| Metaflow | 4 | 2 | — | 1 | — | — | 1 |
+| Metaflow | 5 | 2 | — | 1 | — | — | 1 |
 | DVC | 2 | 1 | 1 | — | — | — | — |
 | W&B | 5 | 5 | 1 | 2 | — | 1 | — |
 | Feast | 2 | 1 | — | — | — | — | — |

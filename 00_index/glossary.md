@@ -15,6 +15,8 @@
 ## Metaflow
 - **Flow** — A directed acyclic graph of steps that defines an ML workflow in Metaflow.
 - **Step** — A single unit of work in a Metaflow flow, decorated with `@step`.
+- **Self.next()** — The mechanism by which Metaflow builds the DAG; each step calls `self.next()` to specify which step(s) run next, supporting linear, fan-out, and join patterns.
+- **DAG ordering** — The implicit graph structure derived from `self.next()` calls in each step; no separate YAML or configuration file is needed.
 - **Namespace** — A Metaflow concept for isolating runs and data across users or environments.
 - **Branching** — A pattern where a step fans out to multiple parallel steps via `self.next(step_a, step_b)`.
 - **Join** — A step that collects outputs from multiple parallel branches using the `inputs` parameter.
@@ -36,4 +38,6 @@
 ## Weights & Biases
 - **Run** — A single execution of an experiment tracked in W&B, with logged metrics, hyperparameters, and outputs.
 - **Sweep** — A hyperparameter optimisation job in W&B that orchestrates multiple runs with a search strategy (grid, random, Bayesian).
+- **Bayesian optimization** — A sweep search strategy that uses past run results to choose the next set of hyperparameters, converging to good values in fewer runs than grid or random search.
+- **HyperBand** — An early-termination algorithm that allocates resources to promising runs and stops poorly performing ones early, saving compute time.
 - **Artifact** — A versioned file or directory (dataset, model, output) stored and tracked in W&B.

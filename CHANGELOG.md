@@ -4,6 +4,7 @@
 
 - mfl-008: notes — How Metaflow's @step decorator enforces DAG ordering (L2)
 - wnb-007 (rework): config(yaml) — Define a W&B hyperparameter sweep with a sweep config YAML (L2)
+- kub-004: manifest(yaml) — Deploy a Kubeflow pipeline with Kubernetes Job set (L2)
 
 ## 2026-06-07
 

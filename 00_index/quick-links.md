@@ -11,7 +11,8 @@
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
-- [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-27-pipelines-quickstart-trip-ups.md)
+- [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
+- [Kubeflow Pipelines quickstart second pass trip-ups](../kubeflow/notes/2026-06-08-kubeflow-pipelines-quickstart-trip-ups.md)
 - [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
 - [Kubeflow minikube and CLI setup](../kubeflow/notes/2026-06-06-install-minikube-and-kubeflow-cli.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
@@ -87,6 +88,7 @@
 - [.git/ folder layout doc](../General/docs/2026-06-06-added-dot-git-folder-to-layout.md) — Documented .git/ in README Layout section
 - [README.md in layout doc](../General/docs/2026-06-06-added-readme-md-to-layout.md) — Documented README.md in README Layout section
 - [feast/ folder layout doc](../General/docs/2026-06-06-added-feast-folder-to-layout.md) — Documented feast/ in README Layout section
+- [feast/ folder Layout + Coverage doc](../General/docs/2026-06-08-document-feast-folder-in-readme.md) — Documented feast/ in README Layout and Coverage sections
 - [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section
 - [CHANGELOG.md in layout doc](../General/docs/2026-06-06-document-changelog-in-readme.md) — Documented CHANGELOG.md in README Layout section
 - [Kubeflow central dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First wander through the Kubeflow Central Dashboard

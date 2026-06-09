@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-09
+
+- kub-010: notes — KFP v2 SDK gotchas and first component exploration (L2)
+- kub-011: snippet(python) — Minimal KFP v2 pipeline end-to-end with Python SDK (L2)
+
 ## 2026-06-08
 
 - gen-011: docs — Document feast/ folder in README Layout and Coverage sections

@@ -21,7 +21,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 | Metaflow | 5 | 2 | — | 1 | — | — | 1 |
 | DVC | 2 | 1 | 1 | — | — | — | — |
 | W&B | 5 | 5 | 1 | 2 | — | 1 | — |
-| Feast | 2 | 1 | — | — | — | — | — |
+| Feast | 2 | 1 | — | 1 | — | — | — |
 | Root | — | — | — | — | — | 2 | — |
 
 ## Quick links
@@ -39,7 +39,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 - **`00_index/topics.md`** — Topic-based index of all tool-specific artifacts and files
 - **`dvc/`** — DVC notes, snippets, and scripts
 - **`feast/`** — Feast feature store notes, snippets, and configs
-- **`General/`** — Cross-tool documentation and project-level guides
+ - **`feast/configs/`** — Feast feature store YAML configurations
+ - **`General/`** — Cross-tool documentation and project-level guides
 - **`CHANGELOG.md`** — Chronological record of project changes and feature additions
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets

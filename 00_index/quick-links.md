@@ -56,7 +56,8 @@
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
 
 ### Define features
-- [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
+ - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
+ - [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
 
 ### Configure a project
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
@@ -89,7 +90,8 @@
 - [README.md in layout doc](../General/docs/2026-06-06-added-readme-md-to-layout.md) — Documented README.md in README Layout section
 - [feast/ folder layout doc](../General/docs/2026-06-06-added-feast-folder-to-layout.md) — Documented feast/ in README Layout section
 - [feast/ folder Layout + Coverage doc](../General/docs/2026-06-08-document-feast-folder-in-readme.md) — Documented feast/ in README Layout and Coverage sections
-- [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section
+ - [feast/configs/ Layout doc](../General/docs/2026-06-09-document-feast-configs-in-readme.md) — Documented feast/configs/ in README Layout section
+ - [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section
 - [CHANGELOG.md in layout doc](../General/docs/2026-06-06-document-changelog-in-readme.md) — Documented CHANGELOG.md in README Layout section
 - [Kubeflow central dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First wander through the Kubeflow Central Dashboard
 - [W&B quickstart trip-ups](../wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up

@@ -66,7 +66,9 @@
 - [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
 - [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
 - [Metaflow model serving flow](../metaflow/snippets/tried_serving_model.py)
+- [Metaflow @step decorator DAG ordering](../metaflow/notes/2026-06-08-step-decorator-dag-ordering.md) — How Metaflow builds and enforces the DAG through `self.next()` calls
 - [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
+- [Kubeflow pipeline with K8s Job set](../kubeflow/manifests/2026-06-08-pipeline-job-set.yaml) — multi-component pipeline (prep → train → evaluate) as a Kubernetes Job set
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)

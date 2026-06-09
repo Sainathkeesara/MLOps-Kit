@@ -40,6 +40,7 @@
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
 - [Kubeflow Central Dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First walk through the Kubeflow Central Dashboard
+- [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — KFP v2 SDK surprises during component writing and pipeline compilation
 - [Metaflow end-to-end flow](../metaflow/notes/2026-05-27-first-end-to-end-flow.md)
 - [Metaflow UI exploration](../metaflow/notes/2026-06-06-explore-ui-and-inspect-run.md)
 - [Metaflow data + decision flow](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb)
@@ -76,6 +77,7 @@
 - [Kubeflow pipeline with K8s Job set](../kubeflow/manifests/2026-06-08-pipeline-job-set.yaml) — multi-component pipeline (prep → train → evaluate) as a Kubernetes Job set
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
+- [KFP v2 end-to-end snippet](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py) — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization
 - [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)

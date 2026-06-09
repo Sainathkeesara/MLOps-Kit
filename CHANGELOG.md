@@ -4,6 +4,8 @@
 
 - kub-010: notes — KFP v2 SDK gotchas and first component exploration (L2)
 - kub-011: snippet(python) — Minimal KFP v2 pipeline end-to-end with Python SDK (L2)
+- gen-019: config(yaml) — Populate feast/configs/ with Feast feature_store.yaml and related configs
+- gen-017: docs — Document feast/configs/ folder in README Layout and Coverage sections
 
 ## 2026-06-08
 
@@ -12,6 +14,8 @@
 - mfl-008: notes — How Metaflow's @step decorator enforces DAG ordering (L2)
 - wnb-007 (rework): config(yaml) — Define a W&B hyperparameter sweep with a sweep config YAML (L2)
 - kub-004: manifest(yaml) — Deploy a Kubeflow pipeline with Kubernetes Job set (L2)
+- gen-011: docs — Document feast/ folder in README Layout and Coverage sections
+- kub-003: notes — Second pass through Kubeflow Pipelines quickstart and what tripped me up
 
 ## 2026-06-07
 

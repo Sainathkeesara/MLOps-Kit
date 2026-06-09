@@ -10,6 +10,8 @@
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
+- [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
+- [Kubeflow Pipelines quickstart second pass trip-ups](../kubeflow/notes/2026-06-08-kubeflow-pipelines-quickstart-trip-ups.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-27-pipelines-quickstart-trip-ups.md)
 - [Kubeflow Pipelines quickstart second pass trip-ups](../kubeflow/notes/2026-06-08-kubeflow-pipelines-quickstart-trip-ups.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
@@ -58,7 +60,8 @@
 - [DVC minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py)
 
 ### Define features
-- [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
+ - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
+ - [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
 
 ### Configure a project
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
@@ -95,6 +98,8 @@
 - [README.md in layout doc](../General/docs/2026-06-06-added-readme-md-to-layout.md) — Documented README.md in README Layout section
 - [feast/ folder layout doc](../General/docs/2026-06-06-added-feast-folder-to-layout.md) — Documented feast/ in README Layout section
 - [feast/ folder Layout + Coverage doc](../General/docs/2026-06-08-document-feast-folder-in-readme.md) — Documented feast/ in README Layout and Coverage sections
+ - [feast/configs/ Layout doc](../General/docs/2026-06-09-document-feast-configs-in-readme.md) — Documented feast/configs/ in README Layout section
+ - [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section
 - [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section
 - [CHANGELOG.md in layout doc](../General/docs/2026-06-06-document-changelog-in-readme.md) — Documented CHANGELOG.md in README Layout section
 - [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section

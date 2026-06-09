@@ -1,0 +1,143 @@
+# kub-004 — Kubeflow pipeline with parallel and sequential components
+#
+# A multi-step pipeline manifest showing a "Kubernetes Job set" pattern:
+# three components (prep, train, evaluate) running as individual K8s Pods
+# orchestrated by Kubeflow Pipelines.
+#
+# Upload to the KFP UI -> Pipelines -> Upload Pipeline, or submit via SDK:
+#   client = kfp.Client(host='http://localhost:8080')
+#   client.create_run_from_pipeline_func(pipeline_func, ...)
+
+apiVersion: pipelines.kubeflow.org/v1beta1
+kind: Pipeline
+metadata:
+  name: ml-pipeline-job-set
+  description: "Three-step ML pipeline: data prep, training, evaluation"
+spec:
+  pipelineSpec:
+    deploymentSpec:
+      executors:
+        prep-comp:
+          container:
+            image: python:3.9-slim
+            command:
+            - python
+            - -c
+            - |
+              import json, os
+              data = {"samples": 100, "features": ["x1","x2","x3"]}
+              os.makedirs("/tmp/data", exist_ok=True)
+              json.dump(data, open("/tmp/data/metadata.json","w"))
+              print("Data prepared")
+        train-comp:
+          container:
+            image: python:3.9-slim
+            command:
+            - python
+            - -c
+            - |
+              import json
+              meta = json.load(open("/tmp/data/metadata.json"))
+              result = {"accuracy": 0.87, "loss": 0.34, "epochs": 5}
+              json.dump(result, open("/tmp/data/metrics.json","w"))
+              print(f"Trained on {meta['samples']} samples — acc={result['accuracy']}")
+        eval-comp:
+          container:
+            image: python:3.9-slim
+            command:
+            - python
+            - -c
+            - |
+              import json
+              m = json.load(open("/tmp/data/metrics.json"))
+              passed = m["accuracy"] > 0.8
+              print(f"Evaluation: accuracy={m['accuracy']} — {'PASS' if passed else 'FAIL'}")
+    pipelineInfo:
+      name: ml-pipeline-job-set
+    root:
+      dag:
+        tasks:
+          prep:
+            cachingOptions:
+              enableCache: true
+            componentRef:
+              name: comp-prep
+            taskInfo:
+              name: prep
+          train:
+            cachingOptions:
+              enableCache: true
+            componentRef:
+              name: comp-train
+            dependsOn:
+            - prep
+            taskInfo:
+              name: train
+          evaluate:
+            cachingOptions:
+              enableCache: true
+            componentRef:
+              name: comp-eval
+            dependsOn:
+            - train
+            taskInfo:
+              name: evaluate
+    components:
+      comp-prep:
+        implementation:
+          container:
+            image: python:3.9-slim
+            command:
+            - python
+            - -c
+            - |
+              import json, os
+              data = {"samples": 100, "features": ["x1","x2","x3"]}
+              os.makedirs("/tmp/data", exist_ok=True)
+              json.dump(data, open("/tmp/data/metadata.json","w"))
+              print("Data prepared")
+        outputDefinitions:
+          artifacts:
+            metadata:
+              artifactType:
+                schemaTitle: system.Dataset
+      comp-train:
+        implementation:
+          container:
+            image: python:3.9-slim
+            command:
+            - python
+            - -c
+            - |
+              import json
+              meta = json.load(open("/tmp/data/metadata.json"))
+              result = {"accuracy": 0.87, "loss": 0.34, "epochs": 5}
+              json.dump(result, open("/tmp/data/metrics.json","w"))
+              print(f"Trained on {meta['samples']} samples — acc={result['accuracy']}")
+        inputDefinitions:
+          artifacts:
+            metadata:
+              artifactType:
+                schemaTitle: system.Dataset
+        outputDefinitions:
+          artifacts:
+            metrics:
+              artifactType:
+                schemaTitle: system.Metrics
+      comp-eval:
+        implementation:
+          container:
+            image: python:3.9-slim
+            command:
+            - python
+            - -c
+            - |
+              import json
+              m = json.load(open("/tmp/data/metrics.json"))
+              passed = m["accuracy"] > 0.8
+              print(f"Evaluation: accuracy={m['accuracy']} — {'PASS' if passed else 'FAIL'}")
+        inputDefinitions:
+          artifacts:
+            metrics:
+              artifactType:
+                schemaTitle: system.Metrics

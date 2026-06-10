@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-10
+
+- mflow-007: snippet(python) — Minimal model serving with MLflow Python API (L2)
+
 ## 2026-06-09
 
 - kub-010: notes — KFP v2 SDK gotchas and first component exploration (L2)

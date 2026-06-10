@@ -47,6 +47,7 @@
 - [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)
 - [MLflow first run](../mlflow/snippets/log_first_run.py)
 - [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
+- [MLflow autologging pipeline snippet](../mlflow/snippets/2026-06-10-autologging-pipeline.py) — End-to-end training pipeline with MLflow autologging and model registry promotion
 - [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb) — Side-by-side comparison of two tracking approaches
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)

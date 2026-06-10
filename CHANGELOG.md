@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-10
+
+- mflow-008: snippet(python) — End-to-end training pipeline with MLflow autologging and model registry promotion (L3)
+- mfl-008: notes — How Metaflow's @step decorator enforces DAG ordering (L2)
+
 ## 2026-06-09
 
 - kub-010: notes — KFP v2 SDK gotchas and first component exploration (L2)

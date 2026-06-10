@@ -4,6 +4,7 @@
 
 - kub-010: notes — KFP v2 SDK gotchas and first component exploration (L2)
 - kub-011: snippet(python) — Minimal KFP v2 pipeline end-to-end with Python SDK (L2)
+- kub-003 (rework): notes — Third pass through Kubeflow Pipelines quickstart: component output artifact behavior, SDK client API drift, and minikube image pulling
 - gen-019: config(yaml) — Populate feast/configs/ with Feast feature_store.yaml and related configs
 - gen-017: docs — Document feast/configs/ folder in README Layout and Coverage sections
 

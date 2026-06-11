@@ -56,6 +56,7 @@
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
 - [W&B minimal tracking snippet](../wnb/snippets/2026-06-06-minimal-tracking.py) — Minimal experiment tracking with W&B
 - [W&B first run snippet](../wnb/snippets/tried_logging_first_run.py)
+- [W&B artifact logging snippet](../wnb/snippets/tried_artifact_logging.py) — Save and log model and dataset artifacts with wandb.Artifact
 - [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
 - [DVC minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py)
@@ -71,6 +72,7 @@
 - [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
 - [Metaflow linear DAG with parameters](../metaflow/snippets/tried_first_linear_dag.py)
 - [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
+- [Metaflow parameterized flow](../metaflow/snippets/tried_parameterizing_a_flow.py) — Pass runtime config via @parameters decorator
 - [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
 - [Metaflow model serving flow](../metaflow/snippets/tried_serving_model.py)
 - [Metaflow @step decorator DAG ordering](../metaflow/notes/2026-06-08-step-decorator-dag-ordering.md) — How Metaflow builds and enforces the DAG through `self.next()` calls

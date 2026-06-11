@@ -4,6 +4,7 @@
 
 - mflow-013: config(yaml) — Define mlflow_tracking.yaml with local backend store configuration (L1)
 - mflow-008: snippet(python) — Build an end-to-end training pipeline with MLflow autologging (L3)
+- mflow-009: docs — Production MLflow tracking server deployment with Nginx auth proxy (L3)
 
 ## 2026-06-10
 

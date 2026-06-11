@@ -2,8 +2,7 @@
 
 ## 2026-06-10
 
-- mflow-008: snippet(python) — End-to-end training pipeline with MLflow autologging and model registry promotion (L3)
-- mfl-008: notes — How Metaflow's @step decorator enforces DAG ordering (L2)
+- mflow-007: snippet(python) — Minimal model serving with MLflow Python API (L2)
 
 ## 2026-06-09
 

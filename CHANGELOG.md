@@ -4,6 +4,8 @@
 
 - mflow-013: config(yaml) — Define mlflow_tracking.yaml with local backend store configuration (L1)
 - mflow-008: snippet(python) — Build an end-to-end training pipeline with MLflow autologging (L3)
+- wnb-009: snippet(python) — Minimal W&B artifact logging with Python API (L2)
+- mfl-009: snippet(python) — Parameterize a Metaflow flow with @parameters decorator (L2)
 - mflow-009: docs — Production MLflow tracking server deployment with Nginx auth proxy (L3)
 
 ## 2026-06-10

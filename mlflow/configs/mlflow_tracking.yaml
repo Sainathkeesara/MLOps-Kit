@@ -1,0 +1,10 @@
+backend_store_uri: sqlite:///mlflow.db
+default_artifact_root: ./mlruns
+
+# Alternative: use file-based backend (default when no config given)
+# backend_store_uri: ./mlruns
+# default_artifact_root: ./mlruns
+
+# For shared deployments, switch to PostgreSQL or MySQL:
+# backend_store_uri: postgresql://user:password@localhost/mlflow
+# default_artifact_root: /shared/mlflow/artifacts

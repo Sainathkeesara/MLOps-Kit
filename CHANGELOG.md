@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-12
+
+- mfl-010: notes — How I wired Metaflow into a CI/CD workflow with GitHub Actions (L2)
+
 ## 2026-06-11
 
 - mflow-013: config(yaml) — Define mlflow_tracking.yaml with local backend store configuration (L1)

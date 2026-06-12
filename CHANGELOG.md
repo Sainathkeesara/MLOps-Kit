@@ -2,6 +2,7 @@
 
 ## 2026-06-12
 
+- mfl-011 (rework): script(python) — Build a 5-step ML pipeline with Metaflow from scratch (load → clean → feature engineering → train → evaluate) (L3)
 - mfl-010: notes — How I wired Metaflow into a CI/CD workflow with GitHub Actions (L2)
 
 ## 2026-06-11

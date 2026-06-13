@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-13
+
+- kub-008: snippet(python) — Minimal Kubeflow Pipelines component with Python SDK — just adds two numbers (L1)
+- gen-014: docs — Actually added CHANGELOG.md to README Layout section (second pass after auditor UF flag)
+
 ## 2026-06-12
 
 - mfl-011 (rework): script(python) — Build a 5-step ML pipeline with Metaflow from scratch (load → clean → feature engineering → train → evaluate) (L3)

@@ -49,4 +49,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 Working through first-contact notes and runnable experiments for each tool. Recently added W&B sweep config, Kubeflow Central Dashboard notes, and Metaflow quickstart revisit.
 
 ---
-_Last updated: 2026-06-10_
+_Last updated: 2026-06-13_

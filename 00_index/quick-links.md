@@ -84,6 +84,7 @@
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
 - [KFP v2 end-to-end snippet](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py) — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
+- [KFP minimal component](../kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization
 - [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)
@@ -108,3 +109,4 @@
 - [feast/configs/ Layout doc](../General/docs/2026-06-09-document-feast-configs-in-readme.md) — Documented feast/configs/ in README Layout section
 - [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section
 - [CHANGELOG.md in layout doc](../General/docs/2026-06-06-document-changelog-in-readme.md) — Documented CHANGELOG.md in README Layout section
+- [CHANGELOG.md in layout (second pass)](../General/docs/2026-06-13-changelog-in-readme-layout.md) — Actually added CHANGELOG.md to README Layout section

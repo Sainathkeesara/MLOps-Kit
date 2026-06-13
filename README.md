@@ -35,6 +35,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 ## Layout
 
 - **`00_index/`** — Topic index, quick links, and glossary
+- **`CHANGELOG.md`** — Chronological record of project changes and feature additions
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`General/`** — Cross-tool documentation and project-level guides

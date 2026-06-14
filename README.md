@@ -22,7 +22,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 8 | 5 | 1 | 3 | — | 1 | — |
 | Feast | 2 | 1 | — | 2 | — | — | — |
-| General | — | — | — | — | — | 5 | — |
+| General | — | — | — | — | — | 6 | — |
 
 ## Quick links
 
@@ -37,6 +37,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 - **`00_index/`** — Topic index, quick links, and glossary
 - **`CHANGELOG.md`** — Chronological record of project changes and feature additions
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
+- **`dvc/configs/`** — DVC pipeline YAML configuration
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`General/`** — Cross-tool documentation and project-level guides
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
@@ -49,4 +50,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 Working through first-contact notes and runnable experiments for each tool. Recently added W&B sweep config, Kubeflow Central Dashboard notes, and Metaflow quickstart revisit.
 
 ---
-_Last updated: 2026-06-13_
+_Last updated: 2026-06-14_

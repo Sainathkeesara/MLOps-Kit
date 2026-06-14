@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-14
+
+- gen-016: docs — Document dvc/configs/ folder in README Layout and Coverage sections (Repo Auditor discovered UF anomaly)
+
 ## 2026-06-13
 
 - gen-015: docs — Document 00_index/ folder in README Layout section (Repo Auditor discovered UF anomaly)

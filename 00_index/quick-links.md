@@ -103,6 +103,7 @@
 ## Project
 - [README](../README.md) — Project overview and repository structure
 - [CHANGELOG](../CHANGELOG.md) — Record of completed tasks
+- [00_index/ folder layout doc](../General/docs/2026-06-13-document-00-index-folder-in-readme.md) — Documented 00_index/ in README Layout section
 - [.git/ folder layout doc](../General/docs/2026-06-06-added-dot-git-folder-to-layout.md) — Documented .git/ in README Layout section
 - [README.md in layout doc](../General/docs/2026-06-06-added-readme-md-to-layout.md) — Documented README.md in README Layout section
 - [feast/ folder layout doc](../General/docs/2026-06-06-added-feast-folder-to-layout.md) — Documented feast/ in README Layout section

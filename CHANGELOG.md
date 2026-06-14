@@ -2,6 +2,7 @@
 
 ## 2026-06-13
 
+- gen-015: docs — Document 00_index/ folder in README Layout section (Repo Auditor discovered UF anomaly)
 - kub-008: snippet(python) — Minimal Kubeflow Pipelines component with Python SDK — just adds two numbers (L1)
 - gen-014: docs — Actually added CHANGELOG.md to README Layout section (second pass after auditor UF flag)
 

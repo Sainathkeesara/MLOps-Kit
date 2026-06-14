@@ -2,6 +2,7 @@
 
 ## 2026-06-14
 
+- gen-016: docs — Document dvc/configs/ folder in README Layout and Coverage sections (Repo Auditor discovered UF anomaly)
 - kub-009: snippet(python) — Minimal KFP v2 pipeline with the Python SDK (L2)
 - mflow-012: snippet(python) — Install MLflow and log my first run with metrics and parameters (L1)
 

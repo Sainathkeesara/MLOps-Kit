@@ -105,6 +105,10 @@
 ## Project
 - [README](../README.md) — Project overview and repository structure
 - [CHANGELOG](../CHANGELOG.md) — Record of completed tasks
+- [Root layout audit](../General/docs/2026-06-14-root-layout-audit.md) — Checked actual root entries and made `.git/` / `dvc/configs/` visible in README
+- [Empty root item pass](../General/docs/2026-06-14-empty-root-item-pass.md) — Second pass on empty root-item task text
+- [README.md layout pass](../General/docs/2026-06-14-readme-md-layout-pass.md) — Confirmed README.md entry and aligned README counts
+- [dvc/configs/ Layout + Coverage doc](../General/docs/2026-06-14-document-dvc-configs-in-readme.md) — Documented dvc/configs/ in README Layout and Coverage sections
 - [00_index/ folder layout doc](../General/docs/2026-06-13-document-00-index-folder-in-readme.md) — Documented 00_index/ in README Layout section
 - [.git/ folder layout doc](../General/docs/2026-06-06-added-dot-git-folder-to-layout.md) — Documented .git/ in README Layout section
 - [README.md in layout doc](../General/docs/2026-06-06-added-readme-md-to-layout.md) — Documented README.md in README Layout section

@@ -16,8 +16,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks |
 |------|-------|----------|---------|---------|-----------|------|-----------|
-| MLflow | 5 | 4 | 1 | 3 | — | 2 | 1 |
-| Kubeflow | 10 | 3 | 2 | 1 | 2 | — | — |
+| MLflow | 5 | 5 | 1 | 3 | — | 2 | 1 |
+| Kubeflow | 10 | 4 | 2 | 1 | 2 | — | — |
 | Metaflow | 9 | 4 | — | 1 | — | — | 1 |
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 8 | 5 | 1 | 3 | — | 1 | — |

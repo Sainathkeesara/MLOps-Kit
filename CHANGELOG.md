@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-14
+
+- kub-009: snippet(python) — Minimal KFP v2 pipeline with the Python SDK (L2)
+- mflow-012: snippet(python) — Install MLflow and log my first run with metrics and parameters (L1)
+
 ## 2026-06-13
 
 - gen-015: docs — Document 00_index/ folder in README Layout section (Repo Auditor discovered UF anomaly)

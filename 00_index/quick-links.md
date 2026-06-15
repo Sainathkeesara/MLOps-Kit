@@ -35,6 +35,7 @@
 - [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
 
 ### Run an experiment
+- [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch (L3)
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)

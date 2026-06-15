@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-15
+
+- wnb-010: script(python) — Build a hyperparameter sweep with W&B from scratch (L3)
+
 ## 2026-06-14
 
 - gen-020: docs — Root layout audit for README (L1)

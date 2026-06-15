@@ -3,6 +3,8 @@
 ## 2026-06-15
 
 - wnb-010: script(python) — Build a hyperparameter sweep with W&B from scratch (L3)
+- wnb-011: docs — How I wired W&B artifact tracking into a data pipeline (L3)
+- mfl-008: notes — How Metaflow's @step decorator enforces DAG ordering (L2)
 
 ## 2026-06-14
 

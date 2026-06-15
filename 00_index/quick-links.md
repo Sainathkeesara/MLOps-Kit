@@ -88,6 +88,7 @@
 - [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
 - [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
 - [KFP v2 end-to-end snippet](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py) — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
+- [KFP v2 conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py) — Pipeline with conditional deploy/retrain branching and per-component resource constraints (L3)
 - [KFP v2 minimal pipeline](../kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py) — Minimal KFP v2 pipeline with add + multiply arithmetic steps (L2)
 - [KFP minimal component](../kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)

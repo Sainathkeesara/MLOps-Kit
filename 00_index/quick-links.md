@@ -62,6 +62,7 @@
 - [W&B minimal tracking snippet](../wnb/snippets/2026-06-06-minimal-tracking.py) — Minimal experiment tracking with W&B
 - [W&B first run snippet](../wnb/snippets/tried_logging_first_run.py)
 - [W&B artifact logging snippet](../wnb/snippets/tried_artifact_logging.py) — Save and log model and dataset artifacts with wandb.Artifact
+- [W&B artifact tracking in a data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md) — Link raw data, processed data, and model artifacts to a pipeline run
 - [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
 - [DVC minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py)

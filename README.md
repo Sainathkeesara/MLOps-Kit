@@ -3,7 +3,7 @@
 > A working engineer's MLOps reference — MLflow, Kubeflow, DVC, Metaflow, Feast, and Weights & Biases notes, snippets, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Files](https://img.shields.io/badge/files-81-blue)
+![Files](https://img.shields.io/badge/files-82-blue)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-121011?logo=gnu-bash&logoColor=white)
@@ -17,7 +17,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks |
 |------|-------|----------|---------|---------|-----------|------|-----------|
 | MLflow | 5 | 5 | 1 | 3 | — | 2 | 1 |
-| Kubeflow | 10 | 4 | 2 | 1 | 2 | — | — |
+| Kubeflow | 10 | 5 | 2 | 1 | 2 | — | — |
 | Metaflow | 9 | 4 | — | 1 | — | — | 1 |
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 8 | 5 | 1 | 3 | — | 1 | — |
@@ -51,4 +51,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 Working through first-contact notes and runnable experiments for each tool. Recently added W&B sweep config, Kubeflow Central Dashboard notes, and Metaflow quickstart revisit.
 
 ---
-_Last updated: 2026-06-14_
+_Last updated: 2026-06-15_

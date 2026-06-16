@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-16
+
+- kub-011 (rework): docs — Kubeflow pipeline debugging: infrastructure failures and pod log analysis (L3)
+
 ## 2026-06-15
 
 - wnb-010: script(python) — Build a hyperparameter sweep with W&B from scratch (L3)

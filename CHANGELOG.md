@@ -2,6 +2,7 @@
 
 ## 2026-06-16
 
+- mfl-012: docs — Metaflow resource management: @conda, @resources, and timeout configuration (L3)
 - kub-012: notebook — KFP hyperparameter tuning: Katib vs custom ParallelFor comparison (L3)
 - kub-011 (rework): docs — Kubeflow pipeline debugging: infrastructure failures and pod log analysis (L3)
 

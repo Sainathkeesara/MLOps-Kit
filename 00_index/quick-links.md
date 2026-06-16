@@ -72,6 +72,9 @@
  - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
  - [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
 
+### Manage compute and environments
+- [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
+
 ### Configure a project
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)

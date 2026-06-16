@@ -1,7 +1,28 @@
 # Changelog
 
+## 2026-06-16
+
+- kub-011 (rework): docs — Kubeflow pipeline debugging: infrastructure failures and pod log analysis (L3)
+
+## 2026-06-15
+
+- wnb-010: script(python) — Build a hyperparameter sweep with W&B from scratch (L3)
+- wnb-011: docs — How I wired W&B artifact tracking into a data pipeline (L3)
+- mfl-008: notes — How Metaflow's @step decorator enforces DAG ordering (L2)
+- kub-010: snippet(python) — Kubeflow pipeline with conditional branching and resource constraints (L3)
+
+## 2026-06-14
+
+- gen-020: docs — Root layout audit for README (L1)
+- gen-019: docs — Empty root item pass for README Layout (L1)
+- gen-018: docs — README.md layout pass and root item check (L1)
+- gen-016: docs — Document dvc/configs/ folder in README Layout and Coverage sections (Repo Auditor discovered UF anomaly)
+- kub-009: snippet(python) — Minimal KFP v2 pipeline with the Python SDK (L2)
+- mflow-012: snippet(python) — Install MLflow and log my first run with metrics and parameters (L1)
+
 ## 2026-06-13
 
+- gen-015: docs — Document 00_index/ folder in README Layout section (Repo Auditor discovered UF anomaly)
 - kub-008: snippet(python) — Minimal Kubeflow Pipelines component with Python SDK — just adds two numbers (L1)
 - gen-014: docs — Actually added CHANGELOG.md to README Layout section (second pass after auditor UF flag)
 

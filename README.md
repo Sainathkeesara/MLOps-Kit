@@ -3,7 +3,7 @@
 > A working engineer's MLOps reference — MLflow, Kubeflow, DVC, Metaflow, Feast, and Weights & Biases notes, snippets, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Files](https://img.shields.io/badge/files-101-blue)
+![Files](https://img.shields.io/badge/files-82-blue)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-121011?logo=gnu-bash&logoColor=white)
@@ -16,13 +16,13 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks |
 |------|-------|----------|---------|---------|-----------|------|-----------|
-| MLflow | 5 | 8 | 1 | 4 | — | 2 | 1 |
-| Kubeflow | 10 | 4 | 2 | 1 | 2 | — | — |
-| Metaflow | 9 | 5 | 1 | 1 | — | — | 1 |
+| MLflow | 5 | 5 | 1 | 3 | — | 2 | 1 |
+| Kubeflow | 10 | 5 | 2 | 1 | 2 | 1 | — |
+| Metaflow | 9 | 4 | — | 1 | — | — | 1 |
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 8 | 6 | 1 | 3 | — | 1 | — |
 | Feast | 2 | 1 | — | 2 | — | — | — |
-| General | — | — | — | — | — | 8 | — |
+| General | — | — | — | — | — | 13 | — |
 
 ## Quick links
 
@@ -34,12 +34,14 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 ## Layout
 
+- **`.git/`** — Git version history, branches, and object store
 - **`00_index/`** — Topic index, quick links, and glossary
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
+- **`dvc/configs/`** — DVC pipeline YAML configuration
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`General/`** — Cross-tool documentation and project-level guides
-- **`kubeflow/`** — Kubeflow notes, configs, manifests, scripts, and snippets
+- **`kubeflow/`** — Kubeflow notes, docs, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, and configs
@@ -49,4 +51,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 Working through first-contact notes and runnable experiments for each tool. Recently added Kubeflow KFP components, MLflow end-to-end autologging pipeline, Metaflow CI/CD with GitHub Actions, and production MLflow tracking server setup.
 
 ---
-_Last updated: 2026-06-13_
+_Last updated: 2026-06-15_

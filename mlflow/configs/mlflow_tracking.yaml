@@ -1,10 +1,20 @@
+# mlflow_tracking.yaml
+# Local MLflow Tracking Server config — SQLite backend + local artifact store.
+# Start with: mlflow server --config mlflow_tracking.yaml
+
 backend_store_uri: sqlite:///mlflow.db
 default_artifact_root: ./mlruns
 
-# Alternative: use file-based backend (default when no config given)
-# backend_store_uri: ./mlruns
-# default_artifact_root: ./mlruns
+# Where the tracking server listens (default: 127.0.0.1:5000)
+host: 127.0.0.1
+port: 5000
 
-# For shared deployments, switch to PostgreSQL or MySQL:
-# backend_store_uri: postgresql://user:password@localhost/mlflow
-# default_artifact_root: /shared/mlflow/artifacts
+# Serve from this path if behind a reverse proxy
+# serve_artifacts: true
+# artifacts_destination: ./mlruns
+
+# Disable the built-in model registry (use file-based by default)
+# default_model_registry: sqlite:///mlflow.db
+
+# Experiment name for the default experiment
+# experiment_name: Default

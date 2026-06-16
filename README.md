@@ -20,23 +20,23 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 | Kubeflow | 10 | 5 | 2 | 1 | 2 | 1 | — |
 | Metaflow | 9 | 4 | — | 1 | — | — | 1 |
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
-| W&B | 8 | 5 | 1 | 3 | — | 1 | — |
+| W&B | 8 | 6 | 1 | 3 | — | 1 | — |
 | Feast | 2 | 1 | — | 2 | — | — | — |
 | General | — | — | — | — | — | 13 | — |
 
 ## Quick links
 
-- [`metaflow/notes/2026-06-06-revisiting-quickstart.md`](metaflow/notes/2026-06-06-revisiting-quickstart.md) — Second pass through the Metaflow quickstart
-- [`kubeflow/notes/2026-06-06-explore-central-dashboard.md`](kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First walk through the Kubeflow Central Dashboard
-- [`wnb/configs/2026-06-08-first-sweep-config.yaml`](wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with W&B Bayesian optimization
-- [`wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md`](wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up
-- [`feast/notes/0000-primer-feast.md`](feast/notes/0000-primer-feast.md) — Feast primer: what it is and how it fits in the stack
+- [`kubeflow/snippets/tried_my_first_component.py`](kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
+- [`mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py`](mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
+- [`metaflow/scripts/2026-06-12-five-step-ml-pipeline.py`](metaflow/scripts/2026-06-12-five-step-ml-pipeline.py) — End-to-end pipeline: load, clean, feature engineering, train, evaluate
+- [`metaflow/notes/2026-06-12-ci-cd-with-github-actions.md`](metaflow/notes/2026-06-12-ci-cd-with-github-actions.md) — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
+- [`mlflow/docs/production-tracking-server-nginx-auth.md`](mlflow/docs/production-tracking-server-nginx-auth.md) — Deploy a production MLflow Tracking Server behind an Nginx reverse proxy with HTTP basic auth
 
 ## Layout
 
 - **`.git/`** — Git version history, branches, and object store
 - **`00_index/`** — Topic index, quick links, and glossary
-- **`CHANGELOG.md`** — Chronological record of project changes and feature additions
+- **`CHANGELOG.md`** — Chronological record of project changes
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`dvc/configs/`** — DVC pipeline YAML configuration
 - **`feast/`** — Feast feature store notes, snippets, and configs
@@ -48,7 +48,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added W&B sweep config, Kubeflow Central Dashboard notes, and Metaflow quickstart revisit.
+Working through first-contact notes and runnable experiments for each tool. Recently added Kubeflow KFP components, MLflow end-to-end autologging pipeline, Metaflow CI/CD with GitHub Actions, and production MLflow tracking server setup.
 
 ---
 _Last updated: 2026-06-15_

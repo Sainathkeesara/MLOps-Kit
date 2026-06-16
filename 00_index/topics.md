@@ -12,6 +12,8 @@
 ## Feast
 - [primer] `feast/notes/0000-primer-feast.md` — Feast overview and key concepts
 - [notes] `feast/notes/2026-06-03-install-feast-first-feature-retrieval.md` — Installing Feast and running first feature retrieval
+- [config] `feast/configs/feature_store.yaml` — Feature store configuration with SQLite online store
+- [config] `feast/configs/README.md` — Feast configs directory overview
 - [snippet] `feast/snippets/tried_first_feature_view.py` — Define and apply a first feature view
 
 ## General
@@ -20,6 +22,9 @@
 - [docs] `General/docs/2026-06-06-added-readme-md-to-layout.md` — Documented README.md in README Layout section
 - [docs] `General/docs/2026-06-06-document-changelog-in-readme.md` — Documented CHANGELOG.md in README Layout section
 - [docs] `General/docs/2026-06-07-document-general-folder-in-readme.md` — Documented General/ in README Layout section
+- [docs] `General/docs/2026-06-08-document-feast-folder-in-readme.md` — Documented feast/ in README Layout and Coverage sections
+- [docs] `General/docs/2026-06-09-document-feast-configs-in-readme.md` — Documented feast/configs/ in README Layout section
+- [docs] `General/docs/2026-06-13-changelog-in-readme-layout.md` — Added CHANGELOG.md to README Layout section
 
 ## Kubeflow
 - [primer] `kubeflow/notes/0000-primer-kubeflow.md` — Kubeflow overview and architecture
@@ -29,12 +34,18 @@
 - [notes] `kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md` — Installing Kubeflow on a Kind cluster
 - [notes] `kubeflow/notes/2026-06-06-explore-central-dashboard.md` — First walk through the Kubeflow Central Dashboard
 - [notes] `kubeflow/notes/2026-06-06-install-minikube-and-kubeflow-cli.md` — Installing minikube and Kubeflow CLI, verifying local setup
+- [notes] `kubeflow/notes/2026-06-08-kubeflow-pipelines-quickstart-trip-ups.md` — Kubeflow Pipelines quickstart second pass trip-ups
+- [notes] `kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md` — KFP v2 SDK surprises during component writing and pipeline compilation
+- [notes] `kubeflow/notes/2026-06-09-kubeflow-pipelines-quickstart-trip-ups.md` — Kubeflow Pipelines quickstart third pass trip-ups
 - [config] `kubeflow/configs/pipeline-resources.yaml` — Pipeline resource requests and limits
 - [manifest] `kubeflow/manifests/minimal-hello-pipeline.yaml` — Minimal hello-world pipeline manifest
+- [manifest] `kubeflow/manifests/2026-06-08-pipeline-job-set.yaml` — Multi-component pipeline (prep, train, evaluate) as a Kubernetes Job set
 - [script] `kubeflow/scripts/tried_check_kubeflow_readiness.sh` — Verify Kubeflow component readiness
 - [script] `kubeflow/scripts/tried_diagnosing_kubeflow_health.sh` — Diagnosing Kubeflow backend service health
 - [snippet] `kubeflow/snippets/tried_deploy_first_pipeline.py` — Deploy and run a Kubeflow pipeline via SDK
 - [snippet] `kubeflow/snippets/tried_pipeline_v2_sdk.py` — Minimal pipeline with Kubeflow Pipelines V2 SDK
+- [snippet] `kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py` — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
+- [snippet] `kubeflow/snippets/tried_my_first_component.py` — My first Kubeflow Pipelines component — just adds two numbers
 
 ## Metaflow
 - [primer] `metaflow/notes/0000-primer-metaflow.md` — Metaflow primer and key concepts
@@ -44,11 +55,15 @@
 - [notes] `metaflow/notes/2026-06-05-first-flow-end-to-end.md` — Installing Metaflow and running a first flow end-to-end
 - [notes] `metaflow/notes/2026-06-06-explore-ui-and-inspect-run.md` — Exploring Metaflow UI and inspecting a completed run
 - [notes] `metaflow/notes/2026-06-06-revisiting-quickstart.md` — Second pass through the Metaflow quickstart
+- [notes] `metaflow/notes/2026-06-08-step-decorator-dag-ordering.md` — How Metaflow builds and enforces the DAG through `self.next()` calls
+- [notes] `metaflow/notes/2026-06-12-ci-cd-with-github-actions.md` — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
 - [config] `metaflow/configs/metaflow-project-scaffold.yaml` — Project scaffold configuration for Metaflow
 - [notebook] `metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb` — End-to-end Metaflow flow with data and decisions
+- [script] `metaflow/scripts/2026-06-12-five-step-ml-pipeline.py` — End-to-end pipeline: load, clean, feature engineering, train, evaluate
 - [snippet] `metaflow/snippets/2026-06-06-minimal-first-flow.py` — Minimal first flow with Metaflow Python SDK
 - [snippet] `metaflow/snippets/tried_first_linear_dag.py` — Minimal linear DAG with parameters
 - [snippet] `metaflow/snippets/tried_parameterized_dag.py` — Parameterized DAG with branching and merging
+- [snippet] `metaflow/snippets/tried_parameterizing_a_flow.py` — Pass runtime config via @parameters decorator
 - [snippet] `metaflow/snippets/tried_serving_model.py` — Minimal model serving with Metaflow Python API
 
 ## MLflow
@@ -60,12 +75,19 @@
 - [config] `mlflow/configs/MLproject` — MLflow Project definition with entry points
 - [config] `mlflow/configs/conda.yaml` — Conda environment for MLflow Project
 - [config] `mlflow/configs/mlflow-project.yaml` — Alternative MLflow Project configuration
+- [config] `mlflow/configs/mlflow_tracking.yaml` — Local backend store configuration for MLflow Tracking server
 - [docs] `mlflow/docs/comparing-model-versions.md` — Comparing registered model versions with Model Registry
+- [docs] `mlflow/docs/production-tracking-server-nginx-auth.md` — Deploy a production MLflow Tracking Server behind an Nginx reverse proxy with HTTP basic auth
 - [notebook] `mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb` — Side-by-side comparison of autologging and manual tracking
 - [script] `mlflow/scripts/custom_model_flavor.py` — Building a custom MLflow model flavor
 - [snippet] `mlflow/snippets/2026-05-26-autolog_and_register.py` — Autologging and model registry example
+- [snippet] `mlflow/snippets/2026-06-10-autologging-pipeline.py` — Training pipeline with autologging enabled
+- [snippet] `mlflow/snippets/2026-06-10-minimal-model-serving.py` — Load a saved model and serve predictions with MLflow Python API
+- [snippet] `mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py` — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
 - [snippet] `mlflow/snippets/log_first_run.py` — Logging a first MLflow run
+- [snippet] `mlflow/snippets/tried_end_to_end_training.py` — Build an end-to-end training pipeline with MLflow autologging
 - [snippet] `mlflow/snippets/tried_logging_metrics.py` — Logging first metrics and parameters with MLflow Tracking
+- [snippet] `mlflow/snippets/tried_serving_a_model.py` — Train, log, load, and serve predictions via the Python API
 
 ## Weights & Biases
 - [primer] `wnb/notes/0000-primer-wnb.md` — W&B primer and setup
@@ -83,6 +105,7 @@
 - [script] `wnb/scripts/train_small_model_with_wandb.py` — Training script instrumented with W&B
 - [snippet] `wnb/snippets/2026-06-06-minimal-tracking.py` — Minimal experiment tracking with W&B Python API
 - [snippet] `wnb/snippets/log_metrics_and_artifacts.py` — Logging metrics and artifacts with W&B SDK
+- [snippet] `wnb/snippets/tried_artifact_logging.py` — Save and log model and dataset artifacts with wandb.Artifact
 - [snippet] `wnb/snippets/tried_first_metrics_and_config.py` — First metrics and config logging experiment
 - [snippet] `wnb/snippets/tried_logging_first_run.py` — First run logging with W&B
 - [snippet] `wnb/snippets/tried_logging_metrics_and_params.py` — Logging first metrics and parameters with W&B

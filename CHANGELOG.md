@@ -2,6 +2,8 @@
 
 ## 2026-06-17
 
+- mfl-013: notebook — Compare Metaflow full run vs resume workflow during iterative model development (L3)
+- wnb-014: notes — Explore the W&B dashboard: runs, projects, and experiment comparison (L1)
 - wnb-013: config(yaml) — Declarative hyperparameter sweep config with W&B YAML (L3)
 
 ## 2026-06-16

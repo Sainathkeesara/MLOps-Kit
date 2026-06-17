@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-17
+
+- wnb-013: config(yaml) — Declarative hyperparameter sweep config with W&B YAML (L3)
+
 ## 2026-06-16
 
 - mfl-012: docs — Metaflow resource management: @conda, @resources, and timeout configuration (L3)

@@ -20,7 +20,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 | Kubeflow | 10 | 5 | 2 | 1 | 2 | 1 | — |
 | Metaflow | 9 | 4 | — | 1 | — | 1 | 1 |
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
-| W&B | 8 | 6 | 1 | 3 | — | 1 | — |
+| W&B | 8 | 6 | 1 | 4 | — | 1 | — |
 | Feast | 2 | 1 | — | 2 | — | — | — |
 | General | — | — | — | — | — | 13 | — |
 
@@ -51,4 +51,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 Working through first-contact notes and runnable experiments for each tool. Recently added Kubeflow KFP components, MLflow end-to-end autologging pipeline, Metaflow CI/CD with GitHub Actions, and production MLflow tracking server setup.
 
 ---
-_Last updated: 2026-06-16_
+_Last updated: 2026-06-17_

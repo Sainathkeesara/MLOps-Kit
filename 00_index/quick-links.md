@@ -100,6 +100,7 @@
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization
 - [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)
+- [W&B declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration (L3)
 - [W&B project settings config](../wnb/configs/project-settings.yaml)
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
  - [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server

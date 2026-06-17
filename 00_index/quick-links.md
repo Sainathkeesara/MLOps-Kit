@@ -33,6 +33,7 @@
 - [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
 - [W&B quickstart trip-ups](../wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md)
 - [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
+- [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps (L3)
 
 ### Run an experiment
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch (L3)

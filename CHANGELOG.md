@@ -5,6 +5,7 @@
 - mfl-012: docs — Metaflow resource management: @conda, @resources, and timeout configuration (L3)
 - kub-012: notebook — KFP hyperparameter tuning: Katib vs custom ParallelFor comparison (L3)
 - kub-011 (rework): docs — Kubeflow pipeline debugging: infrastructure failures and pod log analysis (L3)
+- wnb-012: notebook — W&B sweep config vs Python API for hyperparameter optimization (L3)
 
 ## 2026-06-15
 

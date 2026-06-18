@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-18
+
+- kub-014: dockerfile — Custom Kubeflow Pipelines component Dockerfile with scikit-learn and cloudpickle (L4)
+
 ## 2026-06-17
 
 - mfl-013: notebook — Compare Metaflow full run vs resume workflow during iterative model development (L3)

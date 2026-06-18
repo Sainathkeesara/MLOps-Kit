@@ -99,6 +99,7 @@
 - [Katib vs ParallelFor for HP tuning](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb) — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization (L3)
 - [KFP v2 minimal pipeline](../kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py) — Minimal KFP v2 pipeline with add + multiply arithmetic steps (L2)
 - [KFP minimal component](../kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
+- [KFP custom sklearn component Dockerfile](../kubeflow/dockerfiles/sklearn-train-component.Dockerfile) — Build a custom container component with RandomForest training, argument parsing, and cloudpickle serialization (L4)
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization
 - [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)

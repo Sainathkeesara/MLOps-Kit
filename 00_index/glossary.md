@@ -11,6 +11,9 @@
 - **KFP SDK** — The Kubeflow Pipelines SDK (v2) used to define, compile, and run pipelines in Python.
 - **Pipeline root** — The storage location (S3, MinIO, GCS) where KFP stores pipeline artifacts and outputs.
 - **`dsl.component`** — A decorator in the KFP SDK that marks a Python function as a reusable pipeline component.
+- **Katib** — Kubeflow's native hyperparameter tuning service that provides search algorithms (grid, random, Bayesian) and early stopping.
+- **ParallelFor** — A KFP DSL construct (`dsl.ParallelFor`) that iterates over a list of parameters in parallel, creating a fan-out pattern in the pipeline graph.
+- **Argo Workflow** — The underlying Kubernetes-native workflow engine that executes each KFP pipeline step as a separate pod.
 
 ## Metaflow
 - **Flow** — A directed acyclic graph of steps that defines an ML workflow in Metaflow.
@@ -21,6 +24,10 @@
 - **Branching** — A pattern where a step fans out to multiple parallel steps via `self.next(step_a, step_b)`.
 - **Join** — A step that collects outputs from multiple parallel branches using the `inputs` parameter.
 - **Parameter** — A CLI-defined flow parameter declared with `Parameter()` that can be overridden at runtime.
+- **`@conda`** — A step-level decorator that creates an isolated Conda environment with pinned dependencies for reproducible runs.
+- **`@resources`** — A step-level decorator that declares CPU, memory, and GPU requirements for scheduling on remote backends.
+- **`@timeout`** — A step-level decorator that caps the maximum execution time for a step, causing the flow to fail fast if exceeded.
+- **Resume** — A Metaflow CLI feature (`--resume`) that re-runs a flow from a specified step using cached results for all prior steps, accelerating iterative development.
 
 ## MLflow
 - **MLflow Project** — A reusable, packaging-format for ML code with a `MLproject` file specifying entry points and environments.

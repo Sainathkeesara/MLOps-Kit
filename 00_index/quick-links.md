@@ -79,6 +79,7 @@
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
 
 ### Configure a project
+- [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)
 - [MLflow conda environment](../mlflow/configs/conda.yaml)

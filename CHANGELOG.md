@@ -2,6 +2,7 @@
 
 ## 2026-06-18
 
+- kub-015: manifest(yaml) — Katib hyperparameter tuning job with random search and PyTorch training (L4)
 - kub-014: dockerfile — Custom Kubeflow Pipelines component Dockerfile with scikit-learn and cloudpickle (L4)
 - kub-013: template — Project scaffold: Kubeflow Pipelines + MLflow tracking integration (L4)
 

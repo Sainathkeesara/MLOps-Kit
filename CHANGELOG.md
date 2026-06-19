@@ -3,7 +3,7 @@
 ## 2026-06-19
 
 - kub-016: docs — Wiring Kubeflow Pipelines to an in-cluster MLflow tracking server (L4)
-- zenml-001: notes(primer) — What is ZenML? — quick primer (L1)
+- zenml-001 (rework): notes(primer) — What is ZenML? — quick primer (L1) — removed "production" from stack definition, kept L1 first-person voice
 
 ## 2026-06-18
 

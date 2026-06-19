@@ -2,6 +2,7 @@
 
 ## 2026-06-19
 
+- zenml-002: snippet(python) — Create and run my first ZenML pipeline with a training step (L1)
 - kub-016: docs — Wiring Kubeflow Pipelines to an in-cluster MLflow tracking server (L4)
 - zenml-001: notes(primer) — What is ZenML? — quick primer (L1)
 

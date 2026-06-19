@@ -2,6 +2,9 @@
 
 ## 2026-06-19
 
+- mfl-014: docs — foreach vs @batch in Metaflow: comparing fan-out and resource scaling approaches (L3)
+- zenml-003: notes — Explore the ZenML dashboard and configure my first stack (L1)
+
 - kub-016: docs — Wiring Kubeflow Pipelines to an in-cluster MLflow tracking server (L4)
 - zenml-001 (rework): notes(primer) — What is ZenML? — quick primer (L1) — removed "production" from stack definition, kept L1 first-person voice
 

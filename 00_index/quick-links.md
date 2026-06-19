@@ -3,6 +3,7 @@
 ## I need to...
 
 ### Set up a tool for the first time
+- [ZenML primer](../zenml/notes/0000-primer-zenml.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [DVC get started trip-ups](../dvc/notes/2026-06-05-get-started.md)
 - [Feast primer](../feast/notes/0000-primer-feast.md)
@@ -37,6 +38,7 @@
 - [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps (L3)
 
 ### Run an experiment
+- [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md) — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch (L3)
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)

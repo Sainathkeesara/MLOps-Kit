@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-19
+
+- kub-016: docs — Wiring Kubeflow Pipelines to an in-cluster MLflow tracking server (L4)
+- zenml-001: notes(primer) — What is ZenML? — quick primer (L1)
+
 ## 2026-06-18
 
 - kub-015: manifest(yaml) — Katib hyperparameter tuning job with random search and PyTorch training (L4)

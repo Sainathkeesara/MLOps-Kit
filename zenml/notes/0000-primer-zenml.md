@@ -18,7 +18,7 @@ Before ZenML, teams would cobble together a pipeline by gluing a tracking tool (
 
 - **Pipeline** — A directed acyclic graph of steps, defined as a Python function with `@pipeline`. Example: a training pipeline with `ingest_data() -> prepare_features() -> train_model() -> evaluate_model()`.
 - **Step** — A single unit of work, defined with `@step`. Each step runs in its own execution context. Example: `@step` def `train_model(X_train, y_train)` that returns a trained classifier.
-- **Stack** — A configuration that says "here are my orchestrator, artifact store, metadata store, and container registry." Switching stacks is how you move from local to production.
+- **Stack** — A configuration that says "here are my orchestrator, artifact store, metadata store, and container registry." Switching stacks is how I move from running things on my laptop to running them on a remote cluster.
 - **Artifact store** — Where step outputs are saved (local filesystem, S3, GCS, MinIO).
 - **Metadata store** — A database (SQLite, MySQL, PostgreSQL) that logs pipeline runs, step status, parameters, and artifact URIs.
 - **Orchestrator** — The backend that actually runs the pipeline steps (local, Kubeflow, Airflow, Vertex AI, etc.).

@@ -2,6 +2,7 @@
 
 ## 2026-06-20
 
+- wnb-016 (rework): docs — W&B Model Registry end-to-end workflow with corrected link_artifact APIs (L4)
 - wnb-015: script(python) — Reusable sweep + evaluation pipeline with W&B Python SDK (L4)
 
 ## 2026-06-19

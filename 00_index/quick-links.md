@@ -80,6 +80,9 @@
  - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
  - [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
 
+### Register and promote models
+- [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md) — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases (L4)
+
 ### Manage compute and environments
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
@@ -114,7 +117,7 @@
 - [W&B declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration (L3)
 - [W&B project settings config](../wnb/configs/project-settings.yaml)
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
- - [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
+- [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
 
 ### Compare model versions
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry

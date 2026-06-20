@@ -79,6 +79,9 @@
  - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
  - [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
 
+### Register and promote models
+- [W&B Artifacts + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md) — Track model artifacts and promote them through the W&B Model Registry with aliases (L4)
+
 ### Manage compute and environments
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)

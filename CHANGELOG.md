@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-20
+
+- wnb-015: script(python) — Reusable sweep + evaluation pipeline with W&B Python SDK (L4)
+
 ## 2026-06-19
 
 - zenml-002: snippet(python) — Create and run my first ZenML pipeline with a training step (L1)

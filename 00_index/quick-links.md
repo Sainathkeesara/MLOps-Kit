@@ -116,6 +116,7 @@
 - [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)
 - [W&B declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration (L3)
 - [W&B project settings config](../wnb/configs/project-settings.yaml)
+- [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Deploy a W&B Launch agent locally with Docker Compose (L4)
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
 - [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
 

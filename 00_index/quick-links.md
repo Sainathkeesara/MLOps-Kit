@@ -4,6 +4,7 @@
 
 ### Set up a tool for the first time
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md)
+- [ZenML dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md) — Exploring the ZenML dashboard and configuring an S3 artifact store stack (L1)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [DVC get started trip-ups](../dvc/notes/2026-06-05-get-started.md)
 - [Feast primer](../feast/notes/0000-primer-feast.md)
@@ -80,6 +81,7 @@
 
 ### Manage compute and environments
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
+- [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
 
 ### Configure a project
 - [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)

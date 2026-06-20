@@ -42,6 +42,7 @@
 - [ZenML first training pipeline](../zenml/snippets/tried_first_training_pipeline.py) — First ZenML pipeline with data loading and model training (L1)
 - [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md) — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch (L3)
+- [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training (L4)
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)

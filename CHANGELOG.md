@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-20
+
+- wnb-016 (rework): docs — W&B Model Registry end-to-end workflow with corrected link_artifact APIs (L4)
+
 ## 2026-06-19
 
 - zenml-002: snippet(python) — Create and run my first ZenML pipeline with a training step (L1)

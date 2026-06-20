@@ -22,6 +22,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 8 | 6 | 1 | 4 | — | 1 | — |
 | Feast | 2 | 1 | — | 2 | — | — | — |
+| ZenML | 1 | 1 | — | — | — | — | — |
 | General | — | — | — | — | — | 13 | — |
 
 ## Quick links
@@ -40,6 +41,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`dvc/configs/`** — DVC pipeline YAML configuration
 - **`feast/`** — Feast feature store notes, snippets, and configs
+- **`zenml/`** — ZenML notes and snippets
 - **`General/`** — Cross-tool documentation and project-level guides
 - **`kubeflow/`** — Kubeflow notes, docs, configs, manifests, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets

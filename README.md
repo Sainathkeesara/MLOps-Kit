@@ -16,9 +16,9 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks |
 |------|-------|----------|---------|---------|-----------|------|-----------|
-| MLflow | 5 | 5 | 1 | 3 | — | 2 | 1 |
-| Kubeflow | 10 | 5 | 2 | 1 | 2 | 1 | — |
-| Metaflow | 9 | 4 | — | 1 | — | 1 | 1 |
+| MLflow | 5 | 9 | 1 | 4 | — | 2 | 1 |
+| Kubeflow | 10 | 6 | 2 | 1 | 2 | 1 | 1 |
+| Metaflow | 9 | 5 | 1 | 1 | — | 1 | 2 |
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 9 | 6 | 3 | 4 | — | 2 | 1 |
 | Feast | 2 | 1 | — | 2 | — | — | — |
@@ -27,30 +27,28 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 
 ## Quick links
 
-- [`kubeflow/snippets/tried_my_first_component.py`](kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
-- [`mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py`](mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
-- [`metaflow/scripts/2026-06-12-five-step-ml-pipeline.py`](metaflow/scripts/2026-06-12-five-step-ml-pipeline.py) — End-to-end pipeline: load, clean, feature engineering, train, evaluate
-- [`metaflow/notes/2026-06-12-ci-cd-with-github-actions.md`](metaflow/notes/2026-06-12-ci-cd-with-github-actions.md) — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
-- [`mlflow/docs/production-tracking-server-nginx-auth.md`](mlflow/docs/production-tracking-server-nginx-auth.md) — Deploy a production MLflow Tracking Server behind an Nginx reverse proxy with HTTP basic auth
+- [`metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb`](metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb) — Compare a fresh run against a resumed run during iterative model development
+- [`wnb/notes/2026-06-17-first-dashboard-exploration.md`](wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
+- [`wnb/configs/2026-06-17-declarative-sweep-config.yaml`](wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration
+- [`wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb`](wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps
+- [`metaflow/docs/metaflow-resource-management.md`](metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts
 
 ## Layout
 
-- **`.git/`** — Git version history, branches, and object store
 - **`00_index/`** — Topic index, quick links, and glossary
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
-- **`dvc/configs/`** — DVC pipeline YAML configuration
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`zenml/`** — ZenML notes and snippets
 - **`General/`** — Cross-tool documentation and project-level guides
-- **`kubeflow/`** — Kubeflow notes, docs, configs, manifests, scripts, and snippets
-- **`metaflow/`** — Metaflow notes, configs, notebooks, and snippets
+- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, and snippets
+- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, and configs
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added Kubeflow KFP components, MLflow end-to-end autologging pipeline, Metaflow CI/CD with GitHub Actions, and production MLflow tracking server setup.
+Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow full-run vs resume notebook, W&B dashboard exploration notes, declarative sweep config, and hyperparameter optimization notebook.
 
 ---
 _Last updated: 2026-06-20_

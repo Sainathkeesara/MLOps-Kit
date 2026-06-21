@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-21
+
+- wnb-018: template — Project scaffold: W&B experiment tracking with CI/CD pipeline (L4)
+
 ## 2026-06-20
 
 - wnb-016 (rework): docs — W&B Model Registry end-to-end workflow with corrected link_artifact APIs (L4)

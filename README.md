@@ -14,24 +14,24 @@ Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps
 
 ## Coverage
 
-| Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks | Dockerfiles | Templates |
-|------|-------|----------|---------|---------|-----------|------|-----------|-------------|-----------|
-| MLflow | 5 | 9 | 1 | 4 | — | 2 | 1 | — | — |
-| Kubeflow | 10 | 6 | 2 | 1 | 3 | 2 | 1 | 3 | 8 |
-| Metaflow | 9 | 5 | 1 | 1 | — | 2 | 2 | — | — |
-| DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
-| W&B | 9 | 6 | 3 | 4 | 1 | 3 | 1 | — | — |
-| Feast | 2 | 1 | — | 2 | — | — | — | — | — |
-| ZenML | 2 | 1 | — | — | — | — | — | — | — |
-| General | — | — | — | — | — | 13 | — | — | — |
+| Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks |
+|------|-------|----------|---------|---------|-----------|------|-----------|
+| MLflow | 5 | 9 | 1 | 4 | — | 2 | 1 |
+| Kubeflow | 10 | 6 | 2 | 1 | 2 | 1 | 1 |
+| Metaflow | 9 | 5 | 1 | 1 | — | 1 | 2 |
+| DVC | 3 | 2 | 1 | 1 | — | — | — |
+| W&B | 9 | 6 | 3 | 4 | — | 2 | 1 |
+| Feast | 2 | 1 | — | 2 | — | — | — |
+| ZenML | 1 | 1 | — | — | — | — | — |
+| General | — | — | — | — | — | 13 | — |
 
 ## Quick links
 
-- [`wnb/docs/artifact-model-registry-workflow.md`](wnb/docs/artifact-model-registry-workflow.md) — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases
-- [`wnb/scripts/sweep_and_eval_pipeline.py`](wnb/scripts/sweep_and_eval_pipeline.py) — Reusable sweep and evaluation pipeline with sklearn support and CLI subcommands
-- [`metaflow/docs/foreach-vs-batch.md`](metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch
-- [`zenml/notes/2026-06-19-first-dashboard-and-stack.md`](zenml/notes/2026-06-19-first-dashboard-and-stack.md) — Exploring the ZenML dashboard and configuring an S3 artifact store stack
-- [`zenml/snippets/tried_first_training_pipeline.py`](zenml/snippets/tried_first_training_pipeline.py) — First ZenML pipeline with data loading and model training
+- [`metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb`](metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb) — Compare a fresh run against a resumed run during iterative model development
+- [`wnb/notes/2026-06-17-first-dashboard-exploration.md`](wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
+- [`wnb/configs/2026-06-17-declarative-sweep-config.yaml`](wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration
+- [`wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb`](wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps
+- [`metaflow/docs/metaflow-resource-management.md`](metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts
 
 ## Layout
 
@@ -40,15 +40,15 @@ Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`General/`** — Cross-tool documentation and project-level guides
-- **`kubeflow/`** — Kubeflow notes, docs, configs, manifests, scripts, snippets, notebooks, Dockerfiles, and templates
-- **`metaflow/`** — Metaflow notes, configs, notebooks, scripts, and snippets
+- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, and snippets
+- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, and manifests
 - **`zenml/`** — ZenML notes and snippets
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added Kubeflow KFP + MLflow tracking integration, Kubeflow Katib HPO with PyTorch, W&B Model Registry workflow, reusable sweep and eval pipeline, Metaflow foreach vs @batch comparison, and ZenML pipeline snippets.
+Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow full-run vs resume notebook, W&B dashboard exploration notes, declarative sweep config, and hyperparameter optimization notebook.
 
 ---
 _Last updated: 2026-06-21_

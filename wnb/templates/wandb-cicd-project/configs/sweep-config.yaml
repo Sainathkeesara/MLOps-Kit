@@ -1,0 +1,16 @@
+program: sweep.py
+method: bayes
+metric:
+  name: f1
+  goal: maximize
+parameters:
+  n_estimators:
+    values: [50, 100, 150, 200]
+  max_depth:
+    values: [3, 5, 7, None]
+early_terminate:
+  type: hyperband
+  min_iter: 3
+command:
+  - python
+  - sweep.py

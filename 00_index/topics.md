@@ -43,16 +43,17 @@
 - [notes] `kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md` — KFP v2 SDK surprises during component writing and pipeline compilation
 - [notes] `kubeflow/notes/2026-06-09-kubeflow-pipelines-quickstart-trip-ups.md` — Kubeflow Pipelines quickstart third pass trip-ups
 - [config] `kubeflow/configs/pipeline-resources.yaml` — Pipeline resource requests and limits
+- [docs] `kubeflow/docs/kubeflow-pipeline-debugging.md` — Diagnose infrastructure failures and pod log issues in KFP pipelines
 - [manifest] `kubeflow/manifests/minimal-hello-pipeline.yaml` — Minimal hello-world pipeline manifest
 - [manifest] `kubeflow/manifests/2026-06-08-pipeline-job-set.yaml` — Multi-component pipeline (prep, train, evaluate) as a Kubernetes Job set
-- [manifest] `kubeflow/manifests/katib-hpo-random-search-pytorch.yaml` — Hyperparameter tuning experiment with random search and PyTorch training
-- [docs] `kubeflow/docs/kubeflow-mlflow-tracking-integration.md` — Wire KFP pipeline components to an in-cluster MLflow tracking server
-- [docs] `kubeflow/docs/kubeflow-pipeline-debugging.md` — Diagnose infrastructure failures and pod log issues in KFP pipelines
+- [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
 - [script] `kubeflow/scripts/tried_check_kubeflow_readiness.sh` — Verify Kubeflow component readiness
 - [script] `kubeflow/scripts/tried_diagnosing_kubeflow_health.sh` — Diagnosing Kubeflow backend service health
 - [snippet] `kubeflow/snippets/tried_deploy_first_pipeline.py` — Deploy and run a Kubeflow pipeline via SDK
 - [snippet] `kubeflow/snippets/tried_pipeline_v2_sdk.py` — Minimal pipeline with Kubeflow Pipelines V2 SDK
 - [snippet] `kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py` — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
+- [snippet] `kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py` — Minimal KFP v2 pipeline with add + multiply arithmetic steps
+- [snippet] `kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py` — Pipeline with conditional deploy/retrain branching and per-component resource constraints
 - [snippet] `kubeflow/snippets/tried_my_first_component.py` — My first Kubeflow Pipelines component — just adds two numbers
 - [snippet] `kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py` — Minimal KFP v2 pipeline with add + multiply arithmetic steps
 - [snippet] `kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py` — Pipeline with conditional deploy/retrain branching and per-component resource constraints
@@ -80,7 +81,6 @@
 - [notes] `metaflow/notes/2026-06-08-step-decorator-dag-ordering.md` — How Metaflow builds and enforces the DAG through `self.next()` calls
 - [notes] `metaflow/notes/2026-06-12-ci-cd-with-github-actions.md` — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
 - [config] `metaflow/configs/metaflow-project-scaffold.yaml` — Project scaffold configuration for Metaflow
-- [docs] `metaflow/docs/foreach-vs-batch.md` — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch
 - [docs] `metaflow/docs/metaflow-resource-management.md` — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts
 - [notebook] `metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb` — End-to-end Metaflow flow with data and decisions
 - [notebook] `metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb` — Compare a fresh run against a resumed run during iterative model development
@@ -129,13 +129,10 @@
 - [config] `wnb/configs/2026-06-17-declarative-sweep-config.yaml` — YAML-based hyperparameter sweep for team collaboration
 - [config] `wnb/configs/project-settings.yaml` — W&B project settings and tracking environment
 - [config] `wnb/configs/sweep_config.yaml` — W&B hyperparameter sweep configuration
-- [docs] `wnb/docs/wandb-quickstart-trip-ups.md` — W&B quickstart trip-ups
-- [docs] `wnb/docs/artifact-model-registry-workflow.md` — Integrate W&B Artifacts with the Model Registry for versioned model governance
 - [docs] `wnb/docs/artifact-tracking-in-data-pipeline.md` — Link raw data, processed data, and model artifacts to a pipeline run
-- [manifest] `wnb/manifests/wandb-launch-agent-docker-compose.yaml` — Deploy a W&B Launch agent locally with Docker Compose
+- [docs] `wnb/docs/wandb-quickstart-trip-ups.md` — W&B quickstart trip-ups
 - [notebook] `wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb` — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps
 - [script] `wnb/scripts/hyperparameter_sweep.py` — Build a hyperparameter sweep with W&B from scratch
-- [script] `wnb/scripts/sweep_and_eval_pipeline.py` — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task training
 - [script] `wnb/scripts/train_small_model_with_wandb.py` — Training script instrumented with W&B
 - [snippet] `wnb/snippets/2026-06-06-minimal-tracking.py` — Minimal experiment tracking with W&B Python API
 - [snippet] `wnb/snippets/log_metrics_and_artifacts.py` — Logging metrics and artifacts with W&B SDK

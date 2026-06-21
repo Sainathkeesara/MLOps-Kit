@@ -1,0 +1,53 @@
+# wnb-017 — Docker Compose for W&B Launch agent with local worker setup
+#
+# Runs a W&B Launch agent in a container that polls a queue on the
+# W&B server and executes jobs as child Docker containers on the host.
+# The agent delegates actual computation to dynamically spawned
+# containers, not to sidecars — hence the docker.sock bind mount.
+#
+# Prerequisites:
+#   - Docker Engine 20.10+ with Compose Plugin v2
+#   - A W&B account with Launch enabled (team or enterprise plan)
+#   - WANDB_API_KEY set in the environment or a .env file
+#
+# Quick start:
+#   export WANDB_API_KEY=your-api-key
+#   docker compose up -d
+#
+# Inspect agent logs:
+#   docker compose logs -f launch-agent
+#
+# Stop:
+#   docker compose down
+#
+# Environment variables that can be set in .env or outer shell:
+#   WANDB_API_KEY       — required: W&B API key
+#   WANDB_ENTITY        — default: my-entity
+#   WANDB_PROJECT       — default: my-project
+#   WANDB_LAUNCH_QUEUE  — default: default
+#   WANDB_BASE_URL      — default: https://api.wandb.ai (set for private server)
+#   LAUNCH_WORK_DIR     — default: ./workspace
+
+version: "3.8"
+
+services:
+  launch-agent:
+    image: wandb/agent:latest
+    container_name: wandb-launch-agent
+    restart: unless-stopped
+    environment:
+      WANDB_API_KEY: ${WANDB_API_KEY:?error: WANDB_API_KEY must be set}
+      WANDB_ENTITY: ${WANDB_ENTITY:-my-entity}
+      WANDB_PROJECT: ${WANDB_PROJECT:-my-project}
+      WANDB_LAUNCH_QUEUE: ${WANDB_LAUNCH_QUEUE:-default}
+      WANDB_BASE_URL: ${WANDB_BASE_URL:-https://api.wandb.ai}
+      WANDB_LAUNCH_WORK_DIR: /home/wandb/workspace
+      WANDB_AGENT_MAX_JOBS: ${WANDB_AGENT_MAX_JOBS:-4}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${LAUNCH_WORK_DIR:-./workspace}:/home/wandb/workspace
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

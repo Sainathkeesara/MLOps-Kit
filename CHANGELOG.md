@@ -1,7 +1,12 @@
 # Changelog
 
+## 2026-06-21
+
+- wnb-018: template — Project scaffold: W&B experiment tracking with CI/CD pipeline (L4)
+
 ## 2026-06-20
 
+- wnb-017: manifest(yaml) — Docker Compose for W&B Launch agent with local worker setup (L4)
 - wnb-016 (rework): docs — W&B Model Registry end-to-end workflow with corrected link_artifact APIs (L4)
 - wnb-015: script(python) — Reusable sweep + evaluation pipeline with W&B Python SDK (L4)
 

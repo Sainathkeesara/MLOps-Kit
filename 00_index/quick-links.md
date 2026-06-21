@@ -90,6 +90,7 @@
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
 
 ### Configure a project
+- [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)
 - [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)
@@ -118,6 +119,7 @@
 - [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)
 - [W&B declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration (L3)
 - [W&B project settings config](../wnb/configs/project-settings.yaml)
+- [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Deploy a W&B Launch agent locally with Docker Compose (L4)
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
 - [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
 

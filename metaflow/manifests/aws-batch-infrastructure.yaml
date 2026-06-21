@@ -1,0 +1,175 @@
+# mfl-016 — Metaflow: Infrastructure-as-code for Metaflow flows on AWS Batch
+#
+# Terraform-like manifest for provisioning AWS Batch resources needed to run
+# Metaflow flows at scale. The configuration defines compute environments,
+# job queues, and IAM roles for scalable flow execution.
+#
+# Prerequisites:
+#   - AWS account with Batch, EC2, IAM, and S3 permissions
+#   - Terraform 1.5+ installed locally
+#   - AWS credentials configured (~/.aws/credentials or environment)
+#
+# Usage:
+#   terraform init
+#   terraform plan -var="aws_region=us-east-1"
+#   terraform apply
+#
+# After deployment, configure Metaflow:
+#   metaflow configure batch --profile my-batch-profile
+#
+# Monitor:
+#   aws batch describe-compute-environments --compute-environments MetaflowComputeEnv
+#   aws batch describe-job-queues --job-queues MetaflowJobQueue
+
+# Configure the AWS provider
+provider:
+  aws:
+    region: us-east-1
+
+# S3 bucket for Metaflow datastore
+resource:
+  aws_s3_bucket:
+    metaflow_datastore:
+      bucket: metaflow-batch-flows-data
+      acl: private
+      versioning:
+        enabled: true
+      server_side_encryption_configuration:
+        rule:
+          - apply:
+              sse_algorithm: AES256
+
+  # IAM role for AWS Batch compute instances
+  aws_iam_role:
+    batch_ec2_role:
+      name: MetaflowBatchEC2ServiceRole
+      assume_role_policy:
+        version: "2012-10-17"
+        statement:
+          - effect: Allow
+            principal:
+              service: batch.amazonaws.com
+            action: sts:AssumeRole
+
+    batch_job_execution_role:
+      name: MetaflowBatchJobExecutionRole
+      assume_role_policy:
+        version: "2012-10-17"
+        statement:
+          - effect: Allow
+            principal:
+              service: batch.amazonaws.com
+            action: sts:AssumeRole
+
+  # IAM instance profile for EC2 instances in compute environment
+  aws_iam_instance_profile:
+    batch_instance_profile:
+      name: MetaflowBatchInstanceProfile
+      role: aws_iam_role.batch_ec2_role.arn
+
+  # Compute environment for Metaflow flows
+  aws_batch_compute_environment:
+    metaflow_compute_env:
+      compute_environment_name: MetaflowComputeEnv
+      type: MANAGED
+      state: ENABLED
+      compute_resources:
+        type: EC2
+        allocation_strategy: BEST_FIT_PROGRESSIVE
+        min_vcpus: 0
+        max_vcpus: 32
+        desired_vcpus: 0
+        instance_types:
+          - c5.large
+          - c5.xlarge
+          - c5.2xlarge
+          - m5.large
+          - m5.xlarge
+        subnets:
+          - subnet-12345abc
+          - subnet-67890def
+        security_group_ids:
+          - sg-12345abc
+        instance_role: aws_iam_instance_profile.batch_instance_profile.arn
+
+  # Job queue for Metaflow flows
+  aws_batch_job_queue:
+    metaflow_job_queue:
+      job_queue_name: MetaflowJobQueue
+      state: ENABLED
+      priority: 1
+      compute_environments:
+        - MetaflowComputeEnv
+
+  # Security group for compute instances
+  aws_security_group:
+    batch_security_group:
+      name: MetaflowBatchSG
+      description: Security group for Metaflow Batch compute
+      vpc_id: vpc-12345abc
+      ingress:
+        - from_port: 443
+          to_port: 443
+          protocol: tcp
+          cidr_blocks:
+            - 0.0.0.0/0
+
+  # IAM policy for S3 access
+  aws_iam_role_policy:
+    batch_s3_access:
+      name: MetaflowS3Access
+      role: aws_iam_role.batch_job_execution_role.name
+      policy:
+        version: "2012-10-17"
+        statement:
+          - effect: Allow
+            action:
+              - s3:GetObject
+              - s3:PutObject
+              - s3:DeleteObject
+            resource:
+              - arn:aws:s3:::metaflow-batch-flows-data/*
+
+# Variables for customization
+variable:
+  aws_region:
+    description: AWS region for deployment
+    type: string
+    default: us-east-1
+
+  vpc_id:
+    description: VPC ID for Batch compute resources
+    type: string
+
+  subnet_ids:
+    description: List of subnet IDs for Batch compute
+    type: list
+    default: []
+
+  security_group_id:
+    description: Security group ID for Batch compute
+    type: string
+
+# Metadata tags
+tags:
+  Project: Metaflow-Batch-Infrastructure
+  Environment: dev
+  Owner: mlops-team
+
+# Rollback
+# Delete the compute environment and job queue first, then the VPC resources.
+# terraform destroy -target aws_batch_job_queue.metaflow_job_queue
+# terraform destroy -target aws_batch_compute_environment.metaflow_compute_env
+# terraform destroy -target aws_s3_bucket.metaflow_datastore
+
+# Common errors
+# - "ComputeEnvironment Order field required" — Ensure compute_environments list is not empty in the job queue.
+# - "IAM role not found" — Verify the instance profile ARN is valid; check IAM propagation delays.
+# - "subnet-xxxxxx not found" — Ensure VPC and subnets exist in the target region; replace placeholders.
+# - "AccessDenied" when Metaflow tries to write to S3 — Check the job execution role policy has PutObject permission.
+# - "No space left on device" during environment build — Increase disk space or use larger instance types.
+
+# References
+# - https://docs.metaflow.org/scaling/batch
+# - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/batch_compute_environment
+# - https://docs.aws.amazon.com/batch/latest/userguide/compute-environment-settings.html

@@ -3,7 +3,6 @@
 ## 2026-06-21
 
 - wnb-018: template — Project scaffold: W&B experiment tracking with CI/CD pipeline (L4)
-- mfl-015: script(python) — Reusable Metaflow helper for batch inference with configurable parallel splits (L4)
 
 ## 2026-06-20
 

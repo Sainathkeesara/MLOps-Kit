@@ -33,7 +33,8 @@
 - [W&B experiment tracking session](../wnb/notes/2026-05-31-first-wandb-experiment-tracking.md)
 - [W&B first tracking session](../wnb/notes/2026-06-01-my-first-wandb-session.md)
 - [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
-- [W&B quickstart trip-ups](../wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md)
+- [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md) — W&B quickstart trip-ups
+- [W&B quickstart trip-ups (notes)](../wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md)
 - [W&B dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
 - [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
 - [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps (L3)
@@ -58,6 +59,7 @@
 - [Metaflow batch inference splits](../metaflow/scripts/batch_inference_splits.py) — Reusable Metaflow flow for sharded batch inference with `--splits` and `@batch`
 - [MLflow model serving](../mlflow/snippets/tried_serving_a_model.py) — Train, log, load, and serve predictions via the Python API
 - [MLflow install and first run snippet](../mlflow/snippets/tried_install_and_log_first_run.py) — Install MLflow and log first run with params and metrics (L1)
+- [MLflow autologging pipeline](../mlflow/snippets/2026-06-10-autologging-pipeline.py) — Training pipeline with autologging enabled
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
 - [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)
 - [MLflow first run](../mlflow/snippets/log_first_run.py)
@@ -89,6 +91,7 @@
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
 
 ### Configure a project
+- [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)
 - [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)

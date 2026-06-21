@@ -89,6 +89,7 @@
 ### Manage compute and environments
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
+- [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns (L4)
 
 ### Configure a project
 - [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)

@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-06-21
+
+- wnb-018: template — Project scaffold: W&B experiment tracking with CI/CD pipeline (L4)
+
+## 2026-06-20
+
+- wnb-017: manifest(yaml) — Docker Compose for W&B Launch agent with local worker setup (L4)
+- wnb-016 (rework): docs — W&B Model Registry end-to-end workflow with corrected link_artifact APIs (L4)
+- wnb-015: script(python) — Reusable sweep + evaluation pipeline with W&B Python SDK (L4)
+
+## 2026-06-19
+
+- zenml-002: snippet(python) — Create and run my first ZenML pipeline with a training step (L1)
+- mfl-014: docs — foreach vs @batch in Metaflow: comparing fan-out and resource scaling approaches (L3)
+- zenml-003: notes — Explore the ZenML dashboard and configure my first stack (L1)
+- kub-016: docs — Wiring Kubeflow Pipelines to an in-cluster MLflow tracking server (L4)
+- zenml-001 (rework): notes(primer) — What is ZenML? — quick primer (L1) — removed "production" from stack definition, kept L1 first-person voice
+
+## 2026-06-18
+
+- kub-015: manifest(yaml) — Katib hyperparameter tuning job with random search and PyTorch training (L4)
+- kub-014: dockerfile — Custom Kubeflow Pipelines component Dockerfile with scikit-learn and cloudpickle (L4)
+- kub-013: template — Project scaffold: Kubeflow Pipelines + MLflow tracking integration (L4)
+
 ## 2026-06-17
 
 - mfl-013: notebook — Compare Metaflow full run vs resume workflow during iterative model development (L3)

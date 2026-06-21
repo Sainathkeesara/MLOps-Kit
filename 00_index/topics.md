@@ -55,6 +55,20 @@
 - [snippet] `kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py` — Minimal KFP v2 pipeline with add + multiply arithmetic steps
 - [snippet] `kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py` — Pipeline with conditional deploy/retrain branching and per-component resource constraints
 - [snippet] `kubeflow/snippets/tried_my_first_component.py` — My first Kubeflow Pipelines component — just adds two numbers
+- [snippet] `kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py` — Minimal KFP v2 pipeline with add + multiply arithmetic steps
+- [snippet] `kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py` — Pipeline with conditional deploy/retrain branching and per-component resource constraints
+- [dockerfile] `kubeflow/dockerfiles/requirements.txt` — Python dependencies for custom KFP component Docker image
+- [dockerfile] `kubeflow/dockerfiles/sklearn-train-component.Dockerfile` — Build a custom container component with RandomForest training
+- [dockerfile] `kubeflow/dockerfiles/train.py` — Training script used in the custom KFP Dockerfile component
+- [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
+- [template] `kubeflow/templates/kubeflow-mlflow-project/README.md` — Template project wiring KFP pipelines with MLflow experiment tracking
+- [template] `kubeflow/templates/kubeflow-mlflow-project/components/__init__.py` — Template component package init
+- [template] `kubeflow/templates/kubeflow-mlflow-project/components/evaluate.py` — Template evaluation component
+- [template] `kubeflow/templates/kubeflow-mlflow-project/components/train.py` — Template training component
+- [template] `kubeflow/templates/kubeflow-mlflow-project/configs/mlflow-config.yaml` — Template MLflow configuration for KFP project
+- [template] `kubeflow/templates/kubeflow-mlflow-project/pipeline.py` — Template KFP pipeline definition
+- [template] `kubeflow/templates/kubeflow-mlflow-project/requirements.txt` — Template project Python dependencies
+- [template] `kubeflow/templates/kubeflow-mlflow-project/run.py` — Template pipeline runner script
 
 ## Metaflow
 - [primer] `metaflow/notes/0000-primer-metaflow.md` — Metaflow primer and key concepts
@@ -126,3 +140,8 @@
 - [snippet] `wnb/snippets/tried_first_metrics_and_config.py` — First metrics and config logging experiment
 - [snippet] `wnb/snippets/tried_logging_first_run.py` — First run logging with W&B
 - [snippet] `wnb/snippets/tried_logging_metrics_and_params.py` — Logging first metrics and parameters with W&B
+
+## ZenML
+- [primer] `zenml/notes/0000-primer-zenml.md` — ZenML overview and key concepts
+- [notes] `zenml/notes/2026-06-19-first-dashboard-and-stack.md` — Exploring the ZenML dashboard and configuring an S3 artifact store stack
+- [snippet] `zenml/snippets/tried_first_training_pipeline.py` — First ZenML pipeline with data loading and model training

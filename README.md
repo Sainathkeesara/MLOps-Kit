@@ -1,16 +1,16 @@
 # MLOps-Kit
 
-> A working engineer's MLOps reference — MLflow, Kubeflow, DVC, Metaflow, Feast, and Weights & Biases notes, snippets, and configs.
+> A working engineer's MLOps reference — MLflow, Kubeflow, DVC, Metaflow, Feast, Weights & Biases, and ZenML notes, snippets, and configs.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Files](https://img.shields.io/badge/files-136-blue)
+![Files](https://img.shields.io/badge/files-138-blue)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-CB171E?logo=yaml&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-121011?logo=gnu-bash&logoColor=white)
 
 ## What's in here
 
-Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps tools. Each tool has its own directory with a primer, setup notes, and working examples — from experiment tracking with MLflow and W&B, to data versioning with DVC, pipeline orchestration with Kubeflow, workflow management with Metaflow, and feature stores with Feast.
+Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps tools. Each tool has its own directory with a primer, setup notes, and working examples — from experiment tracking with MLflow and W&B, to data versioning with DVC, pipeline orchestration with Kubeflow, workflow management with Metaflow, feature stores with Feast, and pipeline frameworks with ZenML.
 
 ## Coverage
 
@@ -39,16 +39,16 @@ Hands-on notes, runnable snippets, and ready-to-use configs for six core MLOps t
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`feast/`** — Feast feature store notes, snippets, and configs
-- **`zenml/`** — ZenML notes and snippets
 - **`General/`** — Cross-tool documentation and project-level guides
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, and snippets
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, and snippets
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
-- **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, and configs
+- **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, and manifests
+- **`zenml/`** — ZenML notes and snippets
 
 ## Status
 
 Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow full-run vs resume notebook, W&B dashboard exploration notes, declarative sweep config, and hyperparameter optimization notebook.
 
 ---
-_Last updated: 2026-06-20_
+_Last updated: 2026-06-21_

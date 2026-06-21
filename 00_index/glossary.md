@@ -42,9 +42,15 @@
 - **Offline Store** — A data store (e.g. BigQuery, Snowflake, Parquet) that holds historical feature data for training.
 - **Online Store** — A low-latency data store (e.g. Redis, DynamoDB) that holds the latest feature values for serving.
 
+## ZenML
+- **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.
+- **@step** — A ZenML decorator that marks a function as a single pipeline step.
+- **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.
+
 ## Weights & Biases
 - **Run** — A single execution of an experiment tracked in W&B, with logged metrics, hyperparameters, and outputs.
 - **Sweep** — A hyperparameter optimisation job in W&B that orchestrates multiple runs with a search strategy (grid, random, Bayesian).
 - **Bayesian optimization** — A sweep search strategy that uses past run results to choose the next set of hyperparameters, converging to good values in fewer runs than grid or random search.
 - **HyperBand** — An early-termination algorithm that allocates resources to promising runs and stops poorly performing ones early, saving compute time.
 - **Artifact** — A versioned file or directory (dataset, model, output) stored and tracked in W&B.
+- **Alias** — A mutable label (e.g. `staging`, `production`) pinned to a specific artifact version in the Model Registry for consumption and promotion workflows.

@@ -2,6 +2,7 @@
 
 ## 2026-06-21
 
+- mfl-016: manifest(yaml) — Infrastructure-as-code for Metaflow flows on AWS Batch (L4)
 - wnb-018: template — Project scaffold: W&B experiment tracking with CI/CD pipeline (L4)
 
 ## 2026-06-20

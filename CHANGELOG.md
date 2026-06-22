@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-22
+
+- clml-001: notes(primer) — What is ClearML Orchestration? — quick primer (L1)
+- clml-002: snippet(python) — Install ClearML and run my first task from a Python script (L1)
+
 ## 2026-06-21
 
 - mfl-017: docs — Metaflow + W&B integration: tracking artifacts and metrics across flows (L4)

@@ -1,5 +1,9 @@
 # Topics
 
+## ClearML
+- [primer] `clearml/notes/0000-primer-clearml-orchestration.md` — ClearML concepts, setup, and orchestration fundamentals
+- [snippet] `clearml/snippets/tried_install_and_first_task.py` — Install ClearML and run my first task from a Python script (L1)
+
 ## DVC
 - [primer] `dvc/notes/0000-primer-dvc.md` — DVC concepts, setup, and first steps
 - [notes] `dvc/notes/2026-05-26-first-dataset-version.md` — Versioning a dataset with DVC
@@ -16,21 +20,6 @@
 - [config] `feast/configs/README.md` — Feast configs directory overview
 - [snippet] `feast/snippets/tried_first_feature_view.py` — Define and apply a first feature view
 
-## General
-- [docs] `General/docs/2026-06-06-added-dot-git-folder-to-layout.md` — Added .git/ to README Layout section
-- [docs] `General/docs/2026-06-06-added-feast-folder-to-layout.md` — Added feast/ to README Layout section
-- [docs] `General/docs/2026-06-06-added-readme-md-to-layout.md` — Documented README.md in README Layout section
-- [docs] `General/docs/2026-06-06-document-changelog-in-readme.md` — Documented CHANGELOG.md in README Layout section
-- [docs] `General/docs/2026-06-07-document-general-folder-in-readme.md` — Documented General/ in README Layout section
-- [docs] `General/docs/2026-06-08-document-feast-folder-in-readme.md` — Documented feast/ in README Layout and Coverage sections
-- [docs] `General/docs/2026-06-09-document-feast-configs-in-readme.md` — Documented feast/configs/ in README Layout section
-- [docs] `General/docs/2026-06-13-changelog-in-readme-layout.md` — Added CHANGELOG.md to README Layout section
-- [docs] `General/docs/2026-06-13-document-00-index-folder-in-readme.md` — Documented 00_index/ in README Layout section
-- [docs] `General/docs/2026-06-14-document-dvc-configs-in-readme.md` — Documented dvc/configs/ in README Layout and Coverage sections
-- [docs] `General/docs/2026-06-14-empty-root-item-pass.md` — Second pass on empty root-item task text
-- [docs] `General/docs/2026-06-14-readme-md-layout-pass.md` — Confirmed README.md entry and aligned README counts
-- [docs] `General/docs/2026-06-14-root-layout-audit.md` — Checked actual root entries and made .git/ / dvc/configs/ visible in README
-
 ## Kubeflow
 - [primer] `kubeflow/notes/0000-primer-kubeflow.md` — Kubeflow overview and architecture
 - [notes] `kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md` — Kubeflow installation and UI walkthrough
@@ -43,7 +32,9 @@
 - [notes] `kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md` — KFP v2 SDK surprises during component writing and pipeline compilation
 - [notes] `kubeflow/notes/2026-06-09-kubeflow-pipelines-quickstart-trip-ups.md` — Kubeflow Pipelines quickstart third pass trip-ups
 - [config] `kubeflow/configs/pipeline-resources.yaml` — Pipeline resource requests and limits
+- [config] `kubeflow/configs/README.md` — Kubeflow configs directory overview
 - [docs] `kubeflow/docs/kubeflow-pipeline-debugging.md` — Diagnose infrastructure failures and pod log issues in KFP pipelines
+- [docs] `kubeflow/docs/kubeflow-mlflow-tracking-integration.md` — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
 - [manifest] `kubeflow/manifests/minimal-hello-pipeline.yaml` — Minimal hello-world pipeline manifest
 - [manifest] `kubeflow/manifests/2026-06-08-pipeline-job-set.yaml` — Multi-component pipeline (prep, train, evaluate) as a Kubernetes Job set
 - [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
@@ -55,12 +46,9 @@
 - [snippet] `kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py` — Minimal KFP v2 pipeline with add + multiply arithmetic steps
 - [snippet] `kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py` — Pipeline with conditional deploy/retrain branching and per-component resource constraints
 - [snippet] `kubeflow/snippets/tried_my_first_component.py` — My first Kubeflow Pipelines component — just adds two numbers
-- [snippet] `kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py` — Minimal KFP v2 pipeline with add + multiply arithmetic steps
-- [snippet] `kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py` — Pipeline with conditional deploy/retrain branching and per-component resource constraints
 - [dockerfile] `kubeflow/dockerfiles/requirements.txt` — Python dependencies for custom KFP component Docker image
 - [dockerfile] `kubeflow/dockerfiles/sklearn-train-component.Dockerfile` — Build a custom container component with RandomForest training
 - [dockerfile] `kubeflow/dockerfiles/train.py` — Training script used in the custom KFP Dockerfile component
-- [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
 - [template] `kubeflow/templates/kubeflow-mlflow-project/README.md` — Template project wiring KFP pipelines with MLflow experiment tracking
 - [template] `kubeflow/templates/kubeflow-mlflow-project/components/__init__.py` — Template component package init
 - [template] `kubeflow/templates/kubeflow-mlflow-project/components/evaluate.py` — Template evaluation component
@@ -80,11 +68,18 @@
 - [notes] `metaflow/notes/2026-06-06-revisiting-quickstart.md` — Second pass through the Metaflow quickstart
 - [notes] `metaflow/notes/2026-06-08-step-decorator-dag-ordering.md` — How Metaflow builds and enforces the DAG through `self.next()` calls
 - [notes] `metaflow/notes/2026-06-12-ci-cd-with-github-actions.md` — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
+- [notes] `metaflow/notes/README.md` — Metaflow notes directory overview
+- [notes] `metaflow/scripts/README.md` — Metaflow scripts directory overview
 - [config] `metaflow/configs/metaflow-project-scaffold.yaml` — Project scaffold configuration for Metaflow
 - [docs] `metaflow/docs/metaflow-resource-management.md` — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts
+- [docs] `metaflow/docs/foreach-vs-batch.md` — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch
+- [docs] `metaflow/docs/metaflow-wandb-integration.md` — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns
 - [notebook] `metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb` — End-to-end Metaflow flow with data and decisions
 - [notebook] `metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb` — Compare a fresh run against a resumed run during iterative model development
 - [script] `metaflow/scripts/2026-06-12-five-step-ml-pipeline.py` — End-to-end pipeline: load, clean, feature engineering, train, evaluate
+- [script] `metaflow/scripts/batch_inference_splits.py` — Reusable Metaflow flow for sharded batch inference with `--splits` and `@batch`
+- [manifest] `metaflow/manifests/README.md` — Metaflow manifests directory overview
+- [manifest] `metaflow/manifests/aws-batch-infrastructure.yaml` — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles
 - [snippet] `metaflow/snippets/2026-06-06-minimal-first-flow.py` — Minimal first flow with Metaflow Python SDK
 - [snippet] `metaflow/snippets/tried_first_linear_dag.py` — Minimal linear DAG with parameters
 - [snippet] `metaflow/snippets/tried_parameterized_dag.py` — Parameterized DAG with branching and merging
@@ -101,6 +96,7 @@
 - [config] `mlflow/configs/conda.yaml` — Conda environment for MLflow Project
 - [config] `mlflow/configs/mlflow-project.yaml` — Alternative MLflow Project configuration
 - [config] `mlflow/configs/mlflow_tracking.yaml` — Local backend store configuration for MLflow Tracking server
+- [config] `mlflow/configs/README.md` — MLflow configs directory overview
 - [docs] `mlflow/docs/comparing-model-versions.md` — Comparing registered model versions with Model Registry
 - [docs] `mlflow/docs/production-tracking-server-nginx-auth.md` — Deploy a production MLflow Tracking Server behind an Nginx reverse proxy with HTTP basic auth
 - [notebook] `mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb` — Side-by-side comparison of autologging and manual tracking
@@ -129,10 +125,12 @@
 - [config] `wnb/configs/2026-06-17-declarative-sweep-config.yaml` — YAML-based hyperparameter sweep for team collaboration
 - [config] `wnb/configs/project-settings.yaml` — W&B project settings and tracking environment
 - [config] `wnb/configs/sweep_config.yaml` — W&B hyperparameter sweep configuration
+- [docs] `wnb/docs/artifact-model-registry-workflow.md` — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases
 - [docs] `wnb/docs/artifact-tracking-in-data-pipeline.md` — Link raw data, processed data, and model artifacts to a pipeline run
 - [docs] `wnb/docs/wandb-quickstart-trip-ups.md` — W&B quickstart trip-ups
 - [notebook] `wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb` — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps
 - [script] `wnb/scripts/hyperparameter_sweep.py` — Build a hyperparameter sweep with W&B from scratch
+- [script] `wnb/scripts/sweep_and_eval_pipeline.py` — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training
 - [script] `wnb/scripts/train_small_model_with_wandb.py` — Training script instrumented with W&B
 - [snippet] `wnb/snippets/2026-06-06-minimal-tracking.py` — Minimal experiment tracking with W&B Python API
 - [snippet] `wnb/snippets/log_metrics_and_artifacts.py` — Logging metrics and artifacts with W&B SDK
@@ -140,6 +138,14 @@
 - [snippet] `wnb/snippets/tried_first_metrics_and_config.py` — First metrics and config logging experiment
 - [snippet] `wnb/snippets/tried_logging_first_run.py` — First run logging with W&B
 - [snippet] `wnb/snippets/tried_logging_metrics_and_params.py` — Logging first metrics and parameters with W&B
+- [template] `wnb/templates/wandb-cicd-project/README.md` — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline
+- [template] `wnb/templates/wandb-cicd-project/components/__init__.py` — Template component package init
+- [template] `wnb/templates/wandb-cicd-project/configs/sweep-config.yaml` — Template sweep configuration
+- [template] `wnb/templates/wandb-cicd-project/evaluate.py` — Template evaluation script
+- [template] `wnb/templates/wandb-cicd-project/requirements.txt` — Template project dependencies
+- [template] `wnb/templates/wandb-cicd-project/sweep.py` — Template sweep definition
+- [template] `wnb/templates/wandb-cicd-project/train.py` — Template training script
+- [manifest] `wnb/manifests/wandb-launch-agent-docker-compose.yaml` — Deploy a W&B Launch agent locally with Docker Compose
 
 ## ZenML
 - [primer] `zenml/notes/0000-primer-zenml.md` — ZenML overview and key concepts

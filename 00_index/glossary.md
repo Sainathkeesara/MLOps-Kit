@@ -47,6 +47,13 @@
 - **@step** — A ZenML decorator that marks a function as a single pipeline step.
 - **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.
 
+## ClearML
+- **Task** — The fundamental unit of work in ClearML; wraps a Python script with metadata like parameters, requirements, and outputs.
+- **Queue** — A named queue holding tasks awaiting execution by an agent.
+- **Agent** — A service that polls a queue and executes tasks, optionally inside Docker containers.
+- **Pipeline** — A DAG of Tasks connected via dependencies, defined with the PipelineController API.
+- **Artifact** — A file or model produced or consumed by a Task; stored and versioned in ClearML.
+
 ## Weights & Biases
 - **Run** — A single execution of an experiment tracked in W&B, with logged metrics, hyperparameters, and outputs.
 - **Sweep** — A hyperparameter optimisation job in W&B that orchestrates multiple runs with a search strategy (grid, random, Bayesian).

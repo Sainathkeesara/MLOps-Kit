@@ -18,7 +18,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps
 |------|-------|----------|---------|---------|-----------|------|-----------|
 | MLflow | 5 | 9 | 1 | 4 | — | 2 | 1 |
 | Kubeflow | 10 | 6 | 2 | 1 | 2 | 1 | 1 |
-| Metaflow | 9 | 5 | 1 | 1 | — | 1 | 2 |
+| Metaflow | 9 | 5 | 1 | 1 | 1 | 1 | 2 |
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 9 | 6 | 3 | 4 | — | 2 | 1 |
 | Feast | 2 | 1 | — | 2 | — | — | — |
@@ -41,7 +41,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`General/`** — Cross-tool documentation and project-level guides
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, and snippets
-- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, and snippets
+- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, and manifests
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, and manifests
 - **`zenml/`** — ZenML notes and snippets

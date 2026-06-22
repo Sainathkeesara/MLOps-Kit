@@ -3,6 +3,8 @@
 ## I need to...
 
 ### Set up a tool for the first time
+- [ClearML Orchestration primer](../clearml/notes/0000-primer-clearml-orchestration.md)
+- [ClearML install and first task](../clearml/snippets/tried_install_and_first_task.py) — Install ClearML and run my first task from a Python script (L1)
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md)
 - [ZenML dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md) — Exploring the ZenML dashboard and configuring an S3 artifact store stack (L1)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)

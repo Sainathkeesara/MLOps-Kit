@@ -5,6 +5,7 @@
 ### Set up a tool for the first time
 - [ClearML Orchestration primer](../clearml/notes/0000-primer-clearml-orchestration.md)
 - [ClearML install and first task](../clearml/snippets/tried_install_and_first_task.py) — Install ClearML and run my first task from a Python script (L1)
+- [ClearML Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md) — First walk through the ClearML web UI: projects, experiments, and dashboards (L1)
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md)
 - [ZenML dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md) — Exploring the ZenML dashboard and configuring an S3 artifact store stack (L1)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
@@ -29,6 +30,7 @@
 - [MLflow tracking server with Nginx auth proxy](../mlflow/docs/production-tracking-server-nginx-auth.md) — Deploy a production MLflow Tracking Server behind an Nginx reverse proxy with HTTP basic auth
 - [MLflow quickstart trip-ups](../mlflow/notes/2026-05-27-mlflow-quickstart-trip-ups.md)
 - [MLflow Tracking quickstart trip-ups](../mlflow/notes/2026-05-28-mlflow-tracking-quickstart-trip-ups.md)
+- [Evidently AI primer](../evidently/notes/0000-primer-evidently.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
 - [W&B first experiment tracking](../wnb/notes/2026-05-27-install-wandb-first-experiment.md)
@@ -43,6 +45,7 @@
 
 ### Run an experiment
 - [ZenML first training pipeline](../zenml/snippets/tried_first_training_pipeline.py) — First ZenML pipeline with data loading and model training (L1)
+- [Evidently first drift report](../evidently/snippets/first_drift_report.py) — Install Evidently and generate my first data drift report (L1)
 - [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md) — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch (L3)
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training (L4)

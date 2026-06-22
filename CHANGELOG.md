@@ -2,6 +2,7 @@
 
 ## 2026-06-21
 
+- mfl-017: docs — Metaflow + W&B integration: tracking artifacts and metrics across flows (L4)
 - mfl-016: manifest(yaml) — Infrastructure-as-code for Metaflow flows on AWS Batch (L4)
 - wnb-018: template — Project scaffold: W&B experiment tracking with CI/CD pipeline (L4)
 

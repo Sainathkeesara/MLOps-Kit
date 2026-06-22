@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-22
+
+- mfl-018: template — Project scaffold: Metaflow project structure with CI/CD and testing (L4)
+
 ## 2026-06-21
 
 - mfl-017: docs — Metaflow + W&B integration: tracking artifacts and metrics across flows (L4)

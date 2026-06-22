@@ -1,0 +1,13 @@
+# Metaflow project configuration for the ML pipeline scaffold.
+# Set these values for your target environment.
+# References:
+#   https://docs.metaflow.org/v/v/python-client/metaflow-config
+
+metaflow:
+  profile: default
+  datastore: local  # switch to "s3" for remote artifact storage
+  metadata: local   # switch to "service" for a remote metadata service
+  project:
+    name: metaflow-ml-pipeline
+    flows:
+      - flow.py

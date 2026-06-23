@@ -97,6 +97,7 @@
 - [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns (L4)
 
 ### Configure a project
+- [Metaflow + CI/CD project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Template project wiring Metaflow ML pipelines with CI/CD, testing, and environment management (L4)
 - [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)
 - [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)

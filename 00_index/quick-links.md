@@ -97,39 +97,40 @@
 - [Metaflow + W&B integration](metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns (L4)
 
 ### Configure a project
-- [W&B + CI/CD project scaffold](wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)
-- [Kubeflow + MLflow project scaffold](kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
-- [MLflow project config](mlflow/configs/mlflow-project.yaml)
-- [MLflow MLproject + conda env](mlflow/configs/MLproject)
-- [MLflow conda environment](mlflow/configs/conda.yaml)
-- [Metaflow project scaffold](metaflow/configs/metaflow-project-scaffold.yaml)
-- [Metaflow linear DAG with parameters](metaflow/snippets/tried_first_linear_dag.py)
-- [Metaflow parameterized DAG with branching and merging](metaflow/snippets/tried_parameterized_dag.py)
-- [Metaflow parameterized flow](metaflow/snippets/tried_parameterizing_a_flow.py) — Pass runtime config via @parameters decorator
-- [Metaflow minimal first flow](metaflow/snippets/2026-06-06-minimal-first-flow.py)
-- [Metaflow model serving flow](metaflow/snippets/tried_serving_model.py)
-- [Metaflow @step decorator DAG ordering](metaflow/notes/2026-06-08-step-decorator-dag-ordering.md) — How Metaflow builds and enforces the DAG through `self.next()` calls
-- [Metaflow CI/CD with GitHub Actions](metaflow/notes/2026-06-12-ci-cd-with-github-actions.md) — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
-- [Katib HPO random search + PyTorch](kubeflow/manifests/katib-hpo-random-search-pytorch.yaml) — Hyperparameter tuning experiment with random search algorithm and PyTorch training (L4)
-- [Kubeflow pipeline manifest](kubeflow/manifests/minimal-hello-pipeline.yaml)
-- [Kubeflow pipeline with K8s Job set](kubeflow/manifests/2026-06-08-pipeline-job-set.yaml) — Multi-component pipeline (prep → train → evaluate) as a Kubernetes Job set
-- [Kubeflow V2 pipeline snippet](kubeflow/snippets/tried_pipeline_v2_sdk.py)
-- [Kubeflow deploy pipeline snippet](kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
-- [KFP v2 end-to-end snippet](kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py) — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
-- [KFP v2 conditional branching pipeline](kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py) — Pipeline with conditional deploy/retrain branching and per-component resource constraints (L3)
-- [Katib vs ParallelFor for HP tuning](kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb) — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization (L3)
-- [KFP v2 minimal pipeline](kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py) — Minimal KFP v2 pipeline with add + multiply arithmetic steps (L2)
-- [KFP minimal component](kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
-- [KFP custom sklearn component Dockerfile](kubeflow/dockerfiles/sklearn-train-component.Dockerfile) — Build a custom container component with RandomForest training, argument parsing, and cloudpickle serialization (L4)
-- [Kubeflow pipeline resources config](kubeflow/configs/pipeline-resources.yaml)
-- [W&B sweep config (first)](wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization
-- [W&B sweep config (reference)](wnb/configs/sweep_config.yaml)
-- [W&B declarative sweep config](wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration (L3)
-- [W&B project settings config](wnb/configs/project-settings.yaml)
-- [W&B Launch agent Docker Compose](wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Deploy a W&B Launch agent locally with Docker Compose (L4)
-- [Metaflow AWS Batch infrastructure](metaflow/manifests/aws-batch-infrastructure.yaml) — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles (L4)
-- [DVC pipeline config](dvc/configs/pipeline.yaml)
-- [MLflow tracking server config](mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
+- [Metaflow + CI/CD project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Template project wiring Metaflow ML pipelines with CI/CD, testing, and environment management (L4)
+- [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)
+- [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
+- [MLflow project config](../mlflow/configs/mlflow-project.yaml)
+- [MLflow MLproject + conda env](../mlflow/configs/MLproject)
+- [MLflow conda environment](../mlflow/configs/conda.yaml)
+- [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
+- [Metaflow linear DAG with parameters](../metaflow/snippets/tried_first_linear_dag.py)
+- [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
+- [Metaflow parameterized flow](../metaflow/snippets/tried_parameterizing_a_flow.py) — Pass runtime config via @parameters decorator
+- [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
+- [Metaflow model serving flow](../metaflow/snippets/tried_serving_model.py)
+- [Metaflow @step decorator DAG ordering](../metaflow/notes/2026-06-08-step-decorator-dag-ordering.md) — How Metaflow builds and enforces the DAG through `self.next()` calls
+- [Metaflow CI/CD with GitHub Actions](../metaflow/notes/2026-06-12-ci-cd-with-github-actions.md) — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
+- [Katib HPO random search + PyTorch](../kubeflow/manifests/katib-hpo-random-search-pytorch.yaml) — Hyperparameter tuning experiment with random search algorithm and PyTorch training (L4)
+- [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
+- [Kubeflow pipeline with K8s Job set](../kubeflow/manifests/2026-06-08-pipeline-job-set.yaml) — multi-component pipeline (prep → train → evaluate) as a Kubernetes Job set
+- [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
+- [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
+- [KFP v2 end-to-end snippet](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py) — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
+- [KFP v2 conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py) — Pipeline with conditional deploy/retrain branching and per-component resource constraints (L3)
+- [Katib vs ParallelFor for HP tuning](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb) — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization (L3)
+- [KFP v2 minimal pipeline](../kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py) — Minimal KFP v2 pipeline with add + multiply arithmetic steps (L2)
+- [KFP minimal component](../kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
+- [KFP custom sklearn component Dockerfile](../kubeflow/dockerfiles/sklearn-train-component.Dockerfile) — Build a custom container component with RandomForest training, argument parsing, and cloudpickle serialization (L4)
+- [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
+- [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization
+- [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)
+- [W&B declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration (L3)
+- [W&B project settings config](../wnb/configs/project-settings.yaml)
+- [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Deploy a W&B Launch agent locally with Docker Compose (L4)
+- [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml) — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles (L4)
+- [DVC pipeline config](../dvc/configs/pipeline.yaml)
+- [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
 
 ### Compare model versions
 - [Comparing registered model versions](mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry

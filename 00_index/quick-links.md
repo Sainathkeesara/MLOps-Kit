@@ -85,16 +85,16 @@
 - [DVC minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py)
 
 ### Define features
- - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
- - [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
+- [My first feature view with Feast](feast/snippets/tried_first_feature_view.py)
+- [Feast feature store config](feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
 
 ### Register and promote models
-- [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md) — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases (L4)
+- [W&B Model Registry workflow](wnb/docs/artifact-model-registry-workflow.md) — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases (L4)
 
 ### Manage compute and environments
-- [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
-- [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
-- [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns (L4)
+- [Metaflow resource management](metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
+- [Metaflow foreach vs @batch](metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
+- [Metaflow + W&B integration](metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns (L4)
 
 ### Configure a project
 - [Metaflow + CI/CD project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Template project wiring Metaflow ML pipelines with CI/CD, testing, and environment management (L4)
@@ -133,25 +133,12 @@
 - [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
 
 ### Compare model versions
-- [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
+- [Comparing registered model versions](mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
 
 ### Version data
-- [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
-- [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
+- [DVC init and first dataset track](dvc/scripts/tried_init_dvc_and_track_dataset.sh)
+- [DVC first dataset version](dvc/notes/2026-05-26-first-dataset-version.md)
 
 ## Project
-- [README](../README.md) — Project overview and repository structure
-- [CHANGELOG](../CHANGELOG.md) — Record of completed tasks
-- [Root layout audit](../General/docs/2026-06-14-root-layout-audit.md) — Checked actual root entries and made `.git/` / `dvc/configs/` visible in README
-- [Empty root item pass](../General/docs/2026-06-14-empty-root-item-pass.md) — Second pass on empty root-item task text
-- [README.md layout pass](../General/docs/2026-06-14-readme-md-layout-pass.md) — Confirmed README.md entry and aligned README counts
-- [dvc/configs/ Layout + Coverage doc](../General/docs/2026-06-14-document-dvc-configs-in-readme.md) — Documented dvc/configs/ in README Layout and Coverage sections
-- [00_index/ folder layout doc](../General/docs/2026-06-13-document-00-index-folder-in-readme.md) — Documented 00_index/ in README Layout section
-- [.git/ folder layout doc](../General/docs/2026-06-06-added-dot-git-folder-to-layout.md) — Documented .git/ in README Layout section
-- [README.md in layout doc](../General/docs/2026-06-06-added-readme-md-to-layout.md) — Documented README.md in README Layout section
-- [feast/ folder layout doc](../General/docs/2026-06-06-added-feast-folder-to-layout.md) — Documented feast/ in README Layout section
-- [feast/ folder Layout + Coverage doc](../General/docs/2026-06-08-document-feast-folder-in-readme.md) — Documented feast/ in README Layout and Coverage sections
-- [feast/configs/ Layout doc](../General/docs/2026-06-09-document-feast-configs-in-readme.md) — Documented feast/configs/ in README Layout section
-- [General/ folder layout doc](../General/docs/2026-06-07-document-general-folder-in-readme.md) — Documented General/ in README Layout section
-- [CHANGELOG.md in layout doc](../General/docs/2026-06-06-document-changelog-in-readme.md) — Documented CHANGELOG.md in README Layout section
-- [CHANGELOG.md in layout (second pass)](../General/docs/2026-06-13-changelog-in-readme-layout.md) — Actually added CHANGELOG.md to README Layout section
+- [README](README.md) — Project overview and repository structure
+- [CHANGELOG](CHANGELOG.md) — Record of completed tasks

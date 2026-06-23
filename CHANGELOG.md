@@ -2,7 +2,11 @@
 
 ## 2026-06-22
 
-- mfl-018: template — Project scaffold: Metaflow project structure with CI/CD and testing (L4)
+- clml-001: notes(primer) — What is ClearML Orchestration? — quick primer (L1)
+- clml-002: snippet(python) — Install ClearML and run my first task from a Python script (L1)
+- clml-003: notes — ClearML Web UI — first look at projects, experiments, and dashboards (L1)
+- evid-001: notes(primer) — What is Evidently AI? — quick primer (L1)
+- evid-002: snippet(python) — Install Evidently and generate my first data drift report (L1)
 
 ## 2026-06-21
 

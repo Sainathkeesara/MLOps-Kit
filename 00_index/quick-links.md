@@ -140,6 +140,11 @@
 - [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
 
+### Learn foundational concepts
+- [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — What experiment tracking is and why it matters for MLOps (L1)
+- [Model Registry primer](../docs/concepts/model-registry/0000-primer-model-registry.md) — What a model registry is and why it matters for ML pipelines (L1)
+- [Data Versioning primer](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — What data versioning is and why it matters for reproducible ML (L1)
+
 ## Project
 - [README](../README.md) — Project overview and repository structure
 - [CHANGELOG](../CHANGELOG.md) — Record of completed tasks

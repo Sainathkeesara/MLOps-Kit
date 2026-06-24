@@ -144,6 +144,11 @@
 - [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — What experiment tracking is and why it matters for MLOps (L1)
 - [Model Registry primer](../docs/concepts/model-registry/0000-primer-model-registry.md) — What a model registry is and why it matters for ML pipelines (L1)
 - [Data Versioning primer](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — What data versioning is and why it matters for reproducible ML (L1)
+- [Pipeline Orchestration primer](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — What pipeline orchestration is and why it matters for ML workflows (L1)
+- [Feature Store primer](../docs/concepts/feature-store/0000-primer-feature-store.md) — What a feature store is and why it matters in production ML (L1)
+- [Model Serving primer](../docs/concepts/model-serving/0000-primer-model-serving.md) — What model serving is and why it matters for ML deployment (L1)
+- [Containerization primer](../docs/concepts/containerization/0000-primer-containerization.md) — What containerization is and why it matters in MLOps (L1)
+- [Monitoring & Drift primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — What monitoring and drift detection is and why it matters for model reliability (L1)
 
 ## Project
 - [README](../README.md) — Project overview and repository structure

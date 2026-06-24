@@ -2,7 +2,11 @@
 
 ## 2026-06-24
 
-- zenml-004: config(yaml) — ZenML stack configuration with MLflow tracking and S3 artifact store (L1)
+- con-004: notes(primer) — Pipeline Orchestration — what it is and why it matters for ML workflows (L1)
+- con-005: notes(primer) — Feature Store — what it is and why it matters in production ML (L1)
+- con-006: notes(primer) — Model Serving — what it is and why it matters for ML deployment (L1)
+- con-007: notes(primer) — Containerization — what it is and why it matters in MLOps (L1)
+- con-008: notes(primer) — Monitoring & Drift — what it is and why it matters for model reliability (L1)
 
 ## 2026-06-23
 

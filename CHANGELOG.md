@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-24
+
+- zenml-004: config(yaml) — ZenML stack configuration with MLflow tracking and S3 artifact store (L1)
+
 ## 2026-06-22
 
 - clml-001: notes(primer) — What is ClearML Orchestration? — quick primer (L1)

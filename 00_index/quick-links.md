@@ -85,16 +85,16 @@
 - [DVC minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py)
 
 ### Define features
-- [My first feature view with Feast](feast/snippets/tried_first_feature_view.py)
-- [Feast feature store config](feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
+- [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
+- [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
 
 ### Register and promote models
-- [W&B Model Registry workflow](wnb/docs/artifact-model-registry-workflow.md) — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases (L4)
+- [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md) — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases (L4)
 
 ### Manage compute and environments
-- [Metaflow resource management](metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
-- [Metaflow foreach vs @batch](metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
-- [Metaflow + W&B integration](metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns (L4)
+- [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts (L3)
+- [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch (L3)
+- [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns (L4)
 
 ### Configure a project
 - [Metaflow + CI/CD project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Template project wiring Metaflow ML pipelines with CI/CD, testing, and environment management (L4)
@@ -131,14 +131,15 @@
 - [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml) — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles (L4)
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
 - [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
+- [ZenML stack config](../zenml/configs/zenml-stack.yaml) — ZenML stack with MLflow tracking and S3 artifact store
 
 ### Compare model versions
-- [Comparing registered model versions](mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
+- [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
 
 ### Version data
-- [DVC init and first dataset track](dvc/scripts/tried_init_dvc_and_track_dataset.sh)
-- [DVC first dataset version](dvc/notes/2026-05-26-first-dataset-version.md)
+- [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
+- [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
 
 ## Project
-- [README](README.md) — Project overview and repository structure
-- [CHANGELOG](CHANGELOG.md) — Record of completed tasks
+- [README](../README.md) — Project overview and repository structure
+- [CHANGELOG](../CHANGELOG.md) — Record of completed tasks

@@ -10,7 +10,7 @@
 
 ## What's in here
 
-Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps tools. Each tool has its own directory with a primer, setup notes, and working examples — from experiment tracking with MLflow and W&B, to data versioning with DVC, pipeline orchestration with Kubeflow, workflow management with Metaflow, feature stores with Feast, orchestration with ClearML, and pipeline frameworks with ZenML.
+Hands-on notes, runnable snippets, and ready-to-use configs for eight core MLOps tools. Each tool has its own directory with a primer, setup notes, and working examples — from experiment tracking with MLflow and W&B, to data versioning with DVC, pipeline orchestration with Kubeflow, workflow management with Metaflow, feature stores with Feast, orchestration with ClearML, pipeline frameworks with ZenML, and drift monitoring with Evidently AI. ZenML configs are now tracked separately.
 
 ## Coverage
 
@@ -22,7 +22,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps
 | DVC | 3 | 2 | 1 | 1 | — | — | — |
 | W&B | 9 | 6 | 3 | 4 | 1 | 3 | 1 |
 | Feast | 2 | 1 | — | 2 | — | — | — |
-| ZenML | 2 | 1 | — | — | — | — | — |
+| Evidently AI | 1 | 1 | — | — | — | — | — |
+| ZenML | 2 | 1 | — | 1 | — | — | — |
 | ClearML | 1 | 1 | — | — | — | — | — |
 
 ## Quick links
@@ -38,13 +39,14 @@ Hands-on notes, runnable snippets, and ready-to-use configs for seven core MLOps
 - **`00_index/`** — Topic index, quick links, and glossary
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`clearml/`** — ClearML Orchestration notes and snippets (L1)
-- **`dvc/`** — DVC notes, snippets, scripts, and configs
-- **`feast/`** — Feast feature store notes, snippets, and configs
+ - **`dvc/`** — DVC notes, snippets, scripts, and configs
+ - **`evidently/`** — Evidently AI drift monitoring and data quality notes and snippets (L1)
+ - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, and manifests
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
-- **`zenml/`** — ZenML notes and snippets (L1)
+- **`zenml/`** — ZenML notes, snippets, and configs (L1)
 
 ## Status
 

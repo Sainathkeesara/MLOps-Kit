@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-23
+
+- con-001: notes(primer) — Experiment Tracking — what it is and why it matters for MLOps (L1)
+- con-002: notes(primer) — Model Registry — what it is and why it matters in ML pipelines (L1)
+- con-003: notes(primer) — Data Versioning — what it is and why it matters for reproducible ML (L1)
+
 ## 2026-06-22
 
 - clml-001: notes(primer) — What is ClearML Orchestration? — quick primer (L1)

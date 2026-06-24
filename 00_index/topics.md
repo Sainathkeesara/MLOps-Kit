@@ -1,7 +1,13 @@
 # Topics
 
+## Concepts
+- [doc] `docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md` — Primer on experiment tracking concepts and tooling (L1)
+- [doc] `docs/concepts/data-versioning/0000-primer-data-versioning.md` — Primer on data versioning concepts and DVC fundamentals (L1)
+- [doc] `docs/concepts/model-registry/0000-primer-model-registry.md` — Primer on model registry concepts and governance patterns (L1)
+
 ## ClearML
 - [primer] `clearml/notes/0000-primer-clearml-orchestration.md` — ClearML concepts, setup, and orchestration fundamentals
+- [notes] `clearml/notes/2026-06-22-clearml-web-ui-exploration.md` — First walk through the ClearML web UI: projects, experiments, and dashboards (L1)
 - [snippet] `clearml/snippets/tried_install_and_first_task.py` — Install ClearML and run my first task from a Python script (L1)
 
 ## DVC
@@ -12,6 +18,10 @@
 - [script] `dvc/scripts/tried_init_dvc_and_track_dataset.sh` — Initialize a DVC project and track a dataset
 - [snippet] `dvc/snippets/tried_dvc_pipeline.sh` — Shell snippet for a DVC pipeline run
 - [snippet] `dvc/snippets/minimal_dvc_versioning.py` — Minimal data versioning with DVC Python API
+
+## Evidently AI
+- [primer] `evidently/notes/0000-primer-evidently.md` — Evidently AI overview and key concepts
+- [snippet] `evidently/snippets/first_drift_report.py` — Install Evidently and generate my first data drift report (L1)
 
 ## Feast
 - [primer] `feast/notes/0000-primer-feast.md` — Feast overview and key concepts
@@ -31,15 +41,19 @@
 - [notes] `kubeflow/notes/2026-06-08-kubeflow-pipelines-quickstart-trip-ups.md` — Kubeflow Pipelines quickstart second pass trip-ups
 - [notes] `kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md` — KFP v2 SDK surprises during component writing and pipeline compilation
 - [notes] `kubeflow/notes/2026-06-09-kubeflow-pipelines-quickstart-trip-ups.md` — Kubeflow Pipelines quickstart third pass trip-ups
+- [notes] `kubeflow/notes/README.md` — Kubeflow notes directory overview
 - [config] `kubeflow/configs/pipeline-resources.yaml` — Pipeline resource requests and limits
 - [config] `kubeflow/configs/README.md` — Kubeflow configs directory overview
 - [docs] `kubeflow/docs/kubeflow-pipeline-debugging.md` — Diagnose infrastructure failures and pod log issues in KFP pipelines
 - [docs] `kubeflow/docs/kubeflow-mlflow-tracking-integration.md` — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
 - [manifest] `kubeflow/manifests/minimal-hello-pipeline.yaml` — Minimal hello-world pipeline manifest
 - [manifest] `kubeflow/manifests/2026-06-08-pipeline-job-set.yaml` — Multi-component pipeline (prep, train, evaluate) as a Kubernetes Job set
+- [manifest] `kubeflow/manifests/README.md` — Kubeflow manifests directory overview
+- [manifest] `kubeflow/manifests/katib-hpo-random-search-pytorch.yaml` — Hyperparameter tuning experiment with random search algorithm and PyTorch training (L4)
 - [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
 - [script] `kubeflow/scripts/tried_check_kubeflow_readiness.sh` — Verify Kubeflow component readiness
 - [script] `kubeflow/scripts/tried_diagnosing_kubeflow_health.sh` — Diagnosing Kubeflow backend service health
+- [script] `kubeflow/scripts/README.md` — Kubeflow scripts directory overview
 - [snippet] `kubeflow/snippets/tried_deploy_first_pipeline.py` — Deploy and run a Kubeflow pipeline via SDK
 - [snippet] `kubeflow/snippets/tried_pipeline_v2_sdk.py` — Minimal pipeline with Kubeflow Pipelines V2 SDK
 - [snippet] `kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py` — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
@@ -71,6 +85,7 @@
 - [notes] `metaflow/notes/README.md` — Metaflow notes directory overview
 - [notes] `metaflow/scripts/README.md` — Metaflow scripts directory overview
 - [config] `metaflow/configs/metaflow-project-scaffold.yaml` — Project scaffold configuration for Metaflow
+- [config] `metaflow/configs/README.md` — Metaflow configs directory overview
 - [docs] `metaflow/docs/metaflow-resource-management.md` — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts
 - [docs] `metaflow/docs/foreach-vs-batch.md` — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch
 - [docs] `metaflow/docs/metaflow-wandb-integration.md` — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns
@@ -85,6 +100,18 @@
 - [snippet] `metaflow/snippets/tried_parameterized_dag.py` — Parameterized DAG with branching and merging
 - [snippet] `metaflow/snippets/tried_parameterizing_a_flow.py` — Pass runtime config via @parameters decorator
 - [snippet] `metaflow/snippets/tried_serving_model.py` — Minimal model serving with Metaflow Python API
+- [template] `metaflow/templates/metaflow-project-scaffold/.github/workflows/ci-cd.yml` — CI/CD workflow for Metaflow project testing and deployment
+- [template] `metaflow/templates/metaflow-project-scaffold/README.md` — Template project wiring Metaflow ML pipelines with CI/CD, testing, and environment management (L4)
+- [template] `metaflow/templates/metaflow-project-scaffold/components/__init__.py` — Template component package init
+- [template] `metaflow/templates/metaflow-project-scaffold/components/data.py` — Template data loading component
+- [template] `metaflow/templates/metaflow-project-scaffold/components/evaluate.py` — Template evaluation component
+- [template] `metaflow/templates/metaflow-project-scaffold/components/train.py` — Template training component
+- [template] `metaflow/templates/metaflow-project-scaffold/configs/metaflow-config.yaml` — Template Metaflow configuration for project scaffold
+- [template] `metaflow/templates/metaflow-project-scaffold/flow.py` — Template Metaflow flow definition
+- [template] `metaflow/templates/metaflow-project-scaffold/requirements.txt` — Template project Python dependencies
+- [template] `metaflow/templates/metaflow-project-scaffold/run.py` — Template pipeline runner script
+- [template] `metaflow/templates/metaflow-project-scaffold/tests/__init__.py` — Template tests package init
+- [template] `metaflow/templates/metaflow-project-scaffold/tests/test_flow.py` — Template test for Metaflow flow
 
 ## MLflow
 - [primer] `mlflow/notes/0000-primer-mlflow.md` — MLflow concepts and setup
@@ -138,6 +165,7 @@
 - [snippet] `wnb/snippets/tried_first_metrics_and_config.py` — First metrics and config logging experiment
 - [snippet] `wnb/snippets/tried_logging_first_run.py` — First run logging with W&B
 - [snippet] `wnb/snippets/tried_logging_metrics_and_params.py` — Logging first metrics and parameters with W&B
+- [template] `wnb/templates/wandb-cicd-project/.github/workflows/ci-cd.yml` — CI/CD workflow for W&B experiment tracking project
 - [template] `wnb/templates/wandb-cicd-project/README.md` — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline
 - [template] `wnb/templates/wandb-cicd-project/components/__init__.py` — Template component package init
 - [template] `wnb/templates/wandb-cicd-project/configs/sweep-config.yaml` — Template sweep configuration

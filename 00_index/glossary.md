@@ -1,5 +1,16 @@
 # Glossary
 
+## Foundations
+- **Experiment tracking** — The practice of recording hyperparameters, metrics, dataset versions, and artifacts during ML training runs for reproducibility and comparison.
+- **Data versioning** — The practice of taking snapshots of datasets so you can recreate any past state, similar to git but for data files.
+- **Model registry** — A central store for versioning, annotating, and promoting trained ML models through staging to production.
+- **Metric** — A numeric value computed during or after training (accuracy, loss, F1 score) used to evaluate model performance.
+- **Parameter (hyperparameter)** — A configuration value set before training that controls the learning process (learning rate, batch size, epochs).
+- **Run ID** — A unique identifier (UUID or timestamp) for a single experiment execution, linking metrics, params, and artifacts together.
+- **Dashboard** — The web UI where you browse runs, compare metrics, and search experiments by parameter or metric value.
+- **Pointer file** — A small text file tracked in git that maps to the actual dataset artifact in remote storage (e.g. `data.csv.dvc`).
+- **Promotion** — Moving a model version from one stage to another (e.g. staging → production) after validation passes.
+
 ## DVC
 - **DVC** — Data Version Control; an open-source tool for versioning datasets and ML pipeline stages alongside code.
 - **Pipeline stage** — A step in a DVC pipeline (e.g. prepare, train, evaluate) defined in `dvc.yaml` with inputs, outputs, and commands.
@@ -46,6 +57,10 @@
 - **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.
 - **@step** — A ZenML decorator that marks a function as a single pipeline step.
 - **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.
+- **Artifact store** — Where ZenML step outputs are saved (local filesystem, S3, GCS, MinIO).
+- **Metadata store** — A database (SQLite, MySQL, PostgreSQL) that logs pipeline runs, step status, parameters, and artifact URIs.
+- **Orchestrator** — The backend that actually runs the pipeline steps (local, Kubeflow, Airflow, Vertex AI, etc.).
+- **Materializer** — A component that knows how to serialize and deserialize a Python type to and from the artifact store.
 
 ## ClearML
 - **Task** — The fundamental unit of work in ClearML; wraps a Python script with metadata like parameters, requirements, and outputs.
@@ -53,6 +68,8 @@
 - **Agent** — A service that polls a queue and executes tasks, optionally inside Docker containers.
 - **Pipeline** — A DAG of Tasks connected via dependencies, defined with the PipelineController API.
 - **Artifact** — A file or model produced or consumed by a Task; stored and versioned in ClearML.
+- **ClearML Server** — The backend that stores task metadata, logs, artifacts, and serves the web UI.
+- **Configuration** — A set of hyperparameters or settings tied to a Task, stored as key-value pairs or nested dicts.
 
 ## Weights & Biases
 - **Run** — A single execution of an experiment tracked in W&B, with logged metrics, hyperparameters, and outputs.

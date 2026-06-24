@@ -2,6 +2,7 @@
 
 ## ClearML
 - [primer] `clearml/notes/0000-primer-clearml-orchestration.md` — ClearML concepts, setup, and orchestration fundamentals
+- [notes] `clearml/notes/2026-06-22-clearml-web-ui-exploration.md` — First walk through the ClearML web UI: projects, experiments, and dashboards (L1)
 - [snippet] `clearml/snippets/tried_install_and_first_task.py` — Install ClearML and run my first task from a Python script (L1)
 
 ## DVC
@@ -150,4 +151,5 @@
 ## ZenML
 - [primer] `zenml/notes/0000-primer-zenml.md` — ZenML overview and key concepts
 - [notes] `zenml/notes/2026-06-19-first-dashboard-and-stack.md` — Exploring the ZenML dashboard and configuring an S3 artifact store stack
+- [config] `zenml/configs/zenml-stack.yaml` — ZenML stack with MLflow tracking and S3 artifact store
 - [snippet] `zenml/snippets/tried_first_training_pipeline.py` — First ZenML pipeline with data loading and model training

@@ -1,0 +1,29 @@
+# ZenML stack configuration with MLflow tracking and remote artifact store
+# This config sets up an MLflow experiment tracker alongside an S3 artifact store.
+
+stack:
+  name: mlflow-artifact-stack
+  orchestrator:
+    type: local
+    name: default-orchestrator
+
+  artifact_store:
+    type: s3
+    name: s3-artifact-store
+    config:
+      path: s3://my-mlflow-bucket
+      client_kwargs:
+        region_name: us-east-1
+
+  metadata_store:
+    type: sqlite
+    name: default-metadata-store
+    config:
+      path: zenml-metadata.db
+
+  experiment_tracker:
+    type: mlflow
+    name: mlflow-tracker
+    config:
+      tracking_uri: http://127.0.0.1:5000
+      experiment_name: zenml-experiments

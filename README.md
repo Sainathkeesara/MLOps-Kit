@@ -3,10 +3,10 @@
 > A working engineer's MLOps reference — notes, snippets, and configs for MLflow, Kubeflow, Metaflow, DVC, W&B, Feast, ZenML, ClearML, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Files](https://img.shields.io/badge/files-148-blue)
-![Python](https://img.shields.io/badge/Python-46-3776AB?logo=python&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-68-000000?logo=markdown&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-19-CB171E?logo=yaml&logoColor=white)
+![Python](https://img.shields.io/badge/Python-55-3776AB?logo=python&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-72-000000?logo=markdown&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-20-CB171E?logo=yaml&logoColor=white)
+![Files](https://img.shields.io/badge/files-166-blue)
 
 ## What's in here
 
@@ -28,11 +28,9 @@ Hands-on notes, runnable snippets, and ready-to-use configs for eight core MLOps
 
 ## Quick links
 
-- [`metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb`](metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb) — Compare a fresh run against a resumed run during iterative model development (L2)
-- [`wnb/notes/2026-06-17-first-dashboard-exploration.md`](wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison (L2)
-- [`wnb/configs/2026-06-17-declarative-sweep-config.yaml`](wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration (L3)
-- [`wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb`](wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps (L3)
 - [`clearml/notes/0000-primer-clearml-orchestration.md`](clearml/notes/0000-primer-clearml-orchestration.md) — ClearML concepts, setup, and orchestration fundamentals (L1)
+- [`docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md`](docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — Primer on experiment tracking concepts and tooling (L1)
+- [`docs/concepts/data-versioning/0000-primer-data-versioning.md`](docs/concepts/data-versioning/0000-primer-data-versioning.md) — Primer on data versioning concepts and DVC fundamentals (L1)
 
 ## Layout
 
@@ -43,14 +41,14 @@ Hands-on notes, runnable snippets, and ready-to-use configs for eight core MLOps
  - **`evidently/`** — Evidently AI drift monitoring and data quality notes and snippets (L1)
  - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
-- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, and manifests
+- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, and templates
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
 - **`zenml/`** — ZenML notes, snippets, and configs (L1)
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow full-run vs resume notebook, W&B dashboard exploration notes, declarative sweep config, and ClearML Orchestration primer.
+Working through first-contact notes and runnable experiments for each tool. Recently added foundational concept primers for experiment tracking, data versioning, and model registry; ZenML stack config with S3 artifact store; ClearML Orchestration primer and first task snippet.
 
 ---
-_Last updated: 2026-06-22_
+_Last updated: 2026-06-24_

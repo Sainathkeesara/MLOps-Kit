@@ -149,6 +149,9 @@
 - [Model Serving primer](../docs/concepts/model-serving/0000-primer-model-serving.md) — What model serving is and why it matters for ML deployment (L1)
 - [Containerization primer](../docs/concepts/containerization/0000-primer-containerization.md) — What containerization is and why it matters in MLOps (L1)
 - [Monitoring & Drift primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — What monitoring and drift detection is and why it matters for model reliability (L1)
+- [Experiment Tracking exercise (snippet)](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py) — Practice logging params, metrics, and artifacts with experiment tracking (L2)
+- [Experiment Tracking run comparison (script)](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py) — Compare training runs with different hyperparameters side by side (L2)
+- [Model Registry exercise (snippet)](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) — Practice registering, versioning, and aliasing models (L2)
 
 ## Project
 - [README](../README.md) — Project overview and repository structure

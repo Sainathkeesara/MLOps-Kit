@@ -1,6 +1,6 @@
 # MLOps-Kit
 
-> A working engineer's MLOps reference — MLflow, Kubeflow, DVC, Metaflow, Feast, Weights & Biases, and ZenML notes, snippets, and configs.
+> A working engineer's MLOps reference — notes, snippets, and configs for MLflow, Kubeflow, Metaflow, DVC, W&B, Feast, ZenML, ClearML, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Files](https://img.shields.io/badge/files-148-blue)
@@ -36,7 +36,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for eight core MLOps
 
 ## Layout
 
-- **`00_index/`** — Topic index, quick links, and glossary
+- **`00_index/`** — Topic index, quick links, glossary, and learning path
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`clearml/`** — ClearML Orchestration notes and snippets (L1)
  - **`dvc/`** — DVC notes, snippets, scripts, and configs

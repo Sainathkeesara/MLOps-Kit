@@ -10,21 +10,21 @@
 
 ## What's in here
 
-Hands-on notes, runnable snippets, and ready-to-use configs for eight core MLOps tools. Each tool has its own directory with a primer, setup notes, and working examples — from experiment tracking with MLflow and W&B, to data versioning with DVC, pipeline orchestration with Kubeflow, workflow management with Metaflow, feature stores with Feast, orchestration with ClearML, pipeline frameworks with ZenML, and drift monitoring with Evidently AI. ZenML configs are now tracked separately.
+Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools — from experiment tracking with MLflow and W&B to data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML, pipeline frameworks with ZenML, and drift monitoring with Evidently. Eight cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
 ## Coverage
 
-| Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks |
-|------|-------|----------|---------|---------|-----------|------|-----------|
-| MLflow | 5 | 9 | 1 | 5 | — | 2 | 1 |
-| Kubeflow | 11 | 6 | 3 | 2 | 4 | 2 | 1 |
-| Metaflow | 10 | 5 | 3 | 2 | 2 | 3 | 2 |
-| DVC | 3 | 2 | 1 | 1 | — | — | — |
-| W&B | 9 | 6 | 3 | 4 | 1 | 3 | 1 |
-| Feast | 2 | 1 | — | 2 | — | — | — |
-| Evidently AI | 1 | 1 | — | — | — | — | — |
-| ZenML | 2 | 1 | — | 1 | — | — | — |
-| ClearML | 1 | 1 | — | — | — | — | — |
+| Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks | Templates | Dockerfiles |
+|------|-------|----------|---------|---------|-----------|------|-----------|-----------|-------------|
+| MLflow | 5 | 9 | 1 | 5 | — | 2 | 1 | — | — |
+| Kubeflow | 11 | 7 | 3 | 2 | 4 | 3 | 2 | 8 | 4 |
+| Metaflow | 10 | 5 | 3 | 2 | 2 | 3 | 2 | 12 | — |
+| DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
+| W&B | 9 | 6 | 3 | 4 | 1 | 3 | 1 | 8 | — |
+| Feast | 2 | 1 | — | 2 | — | — | — | — | — |
+| Evidently AI | 1 | 1 | — | — | — | — | — | — | — |
+| ZenML | 2 | 1 | — | 1 | — | — | — | — | — |
+| ClearML | 2 | 1 | — | — | — | — | — | — | — |
 
 ## Quick links
 
@@ -37,9 +37,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs for eight core MLOps
 - **`00_index/`** — Topic index, quick links, glossary, and learning path
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`clearml/`** — ClearML Orchestration notes and snippets (L1)
- - **`dvc/`** — DVC notes, snippets, scripts, and configs
- - **`evidently/`** — Evidently AI drift monitoring and data quality notes and snippets (L1)
- - **`feast/`** — Feast feature store notes, snippets, and configs
+- **`docs/`** — Cross-cutting concept primers: containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration
+- **`dvc/`** — DVC notes, snippets, scripts, and configs
+- **`evidently/`** — Evidently AI drift monitoring and data quality notes and snippets (L1)
+- **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, and templates
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks

@@ -6,9 +6,14 @@
 
 Start here with the core MLOps concepts that every tool builds upon. These primers are lighter reads than tool-specific docs and give you the vocabulary to understand what comes next.
 
-- **Experiment Tracking** — Track model runs, metrics, and parameters. Primer available in [MLflow](../mlflow/notes/0000-primer-mlflow.md) and [Weights & Biases](../wnb/notes/0000-primer-wnb.md).
-- **Pipeline Orchestration** — Define and run ML workflows as DAGs. Primer available in [Kubeflow](../kubeflow/notes/0000-primer-kubeflow.md) and [Metaflow](../metaflow/notes/0000-primer-metaflow.md).
-- **Containerization** — Package ML code and models for reproducible deployment. Covered in Kubeflow's [dockerfiles](../kubeflow/dockerfiles/).
+- **Experiment Tracking** — Track model runs, metrics, and parameters. [Primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md).
+- **Pipeline Orchestration** — Define and run ML workflows as DAGs. [Primer](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md).
+- **Containerization** — Package ML code for reproducible deployment. [Primer](../docs/concepts/containerization/0000-primer-containerization.md).
+- **Data Versioning** — Version datasets and models alongside code. [Primer](../docs/concepts/data-versioning/0000-primer-data-versioning.md).
+- **Model Registry** — Govern model lifecycle from staging to production. [Primer](../docs/concepts/model-registry/0000-primer-model-registry.md).
+- **Feature Store** — Manage and serve ML features consistently. [Primer](../docs/concepts/feature-store/0000-primer-feature-store.md).
+- **Model Serving** — Deploy models for inference. [Primer](../docs/concepts/model-serving/0000-primer-model-serving.md).
+- **Monitoring & Drift** — Detect distribution shifts and performance degradation. [Primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md).
 
 ## Stage 2: Core Tools
 
@@ -18,22 +23,24 @@ These tools are unlocked from the start and cover the fundamentals of the MLOps 
 - **Weights & Biases** (L4) — Experiment tracking, artifact management, and hyperparameter sweeps. Begin with the [primer](../wnb/notes/0000-primer-wnb.md) or [dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md).
 - **Kubeflow** (L4) — Kubernetes-native pipeline orchestration and serving. Start with the [primer](../kubeflow/notes/0000-primer-kubeflow.md) and local [Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md).
 - **Metaflow** (L4) — Human-centric ML workflow orchestration on AWS. Begin with the [primer](../metaflow/notes/0000-primer-metaflow.md) and [end-to-end flow notes](../metaflow/notes/2026-06-05-first-flow-end-to-end.md).
-- **ZenML** (L1) — Modular MLOps pipelines with stack abstraction. Start with the [primer](../zenml/notes/0000-primer-zenml.md) and [dashboard setup](../zenml/notes/2026-06-19-first-dashboard-and-stack.md).
+- **ZenML** (L1) — Modular MLOps pipelines with stack abstraction. Start with the [primer](../zenml/notes/0000-primer-zenml.md), [dashboard setup](../zenml/notes/2026-06-19-first-dashboard-and-stack.md), and [stack config](../zenml/configs/zenml-stack.yaml).
 
 ## Stage 3: Building Skills
 
 Tools that expand your toolkit with specialised capabilities, or deeper tooling within the core families you already know.
 
-- **ClearML Orchestration** (L1) — Managed MLOps platform with built-in experiment tracking. Requires Pipeline Orchestration foundation. Primer available in [clearml/notes/0000-primer-clearml-orchestration.md](../clearml/notes/0000-primer-clearml-orchestration.md).
+- **ClearML Orchestration** (L1) — Managed MLOps platform with built-in experiment tracking. Requires Pipeline Orchestration foundation. [Primer](../clearml/notes/0000-primer-clearml-orchestration.md) and [web UI walkthrough](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md).
 
 ## Stage 4: Advanced Tools
 
 Tools that depend on multiple foundational concepts and integrate several tool families.
 
-- **DVC** — Data versioning for ML pipelines. Currently locked; requires Experiment Tracking + Data Versioning at L2.
-- **Feast** — Centralized feature management. Currently locked; requires Data Versioning + Model Registry at L2.
-- **KServe** (L1) — Model serving on Kubernetes. Parent: Kubeflow must reach L4. Covered in [kubeflow/templates/kubeflow-mlflow-project/README.md](../kubeflow/templates/kubeflow-mlflow-project/README.md).
-- **Seldon Core** (L1) — Advanced model deployment on Kubernetes. Parent: Kubeflow must reach L4.
+- **DVC** — Data versioning for ML pipelines. Unlocked after MLflow L1 complete; requires Experiment Tracking + Data Versioning at L2. [Primer](../dvc/notes/0000-primer-dvc.md).
+- **Feast** — Centralized feature management. Unlocked after MLflow L2 complete; requires Data Versioning + Model Registry at L2. [Primer](../feast/notes/0000-primer-feast.md).
+- **Evidently AI** — Monitoring and drift detection. Unlocked after Kubeflow L4 complete; requires Monitoring & Drift at L2. [Primer](../evidently/notes/0000-primer-evidently.md).
+- **KServe** — Model serving on Kubernetes. Parent: Kubeflow must reach L4. Requires Containerization + Pipeline Orchestration at L2.
+- **Seldon Core** — Advanced model deployment on Kubernetes. Parent: Kubeflow must reach L4. Requires Containerization + Model Serving at L2.
+- **BentoML** — Model serving and packaging. Requires DVC L1 and MLflow L3. ⏳
 
 ## Stage 5: Mastery
 

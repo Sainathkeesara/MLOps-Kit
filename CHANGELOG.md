@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-25
+
+- con-012: snippet(python) — Practice: experiment tracking fundamentals exercises (L2)
+- con-013: script(python) — Applying experiment tracking to compare ML training runs (L2)
+- con-014: snippet(python) — Practice: model registry fundamentals exercises (L2)
+
 ## 2026-06-24
 
 - con-004: notes(primer) — Pipeline Orchestration — what it is and why it matters for ML workflows (L1)

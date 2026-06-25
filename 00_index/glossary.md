@@ -16,6 +16,24 @@
 - **Pipeline stage** — A step in a DVC pipeline (e.g. prepare, train, evaluate) defined in `dvc.yaml` with inputs, outputs, and commands.
 - **`.dvc` file** — A lightweight metafile that tracks a dataset or model file, storing its hash and cache location instead of the file itself.
 
+## ClearML
+- **Task** — The atomic unit of work in ClearML; a single script execution logged as an experiment with parameters, metrics, and artifacts.
+- **Project** — A logical grouping of ClearML tasks for organizing experiments and comparing results across runs.
+- **Queue** — A named buffer that holds tasks waiting to be executed by a ClearML worker, enabling remote or distributed execution.
+
+## Evidently
+- **Data Drift** — A statistical shift in input feature distributions between a reference dataset and the current production dataset, detected by Evidently.
+- **Test Suite** — A structured set of data and model quality checks (e.g. drift, nulls, value ranges) that pass or fail against defined thresholds.
+- **Report** — A generated artifact (JSON or HTML) containing drift metrics, visualizations, and test results for a given dataset pair.
+
+## Feast
+- **Feature Store** — A centralized system for managing and serving ML features consistently across training and inference.
+- **Feature View** — A defined feature or group of features with a data source, transformation logic, and optional metadata.
+- **Entity** — A primary key or identifier (e.g. `user_id`, `product_id`) that features are associated with.
+- **Feature Service** — A deployed server that serves the latest feature values for real-time inference.
+- **Offline Store** — A data store (e.g. BigQuery, Snowflake, Parquet) that holds historical feature data for training.
+- **Online Store** — A low-latency data store (e.g. Redis, DynamoDB) that holds the latest feature values for serving.
+
 ## Kubeflow
 - **Pipeline** — A DAG-based definition of an ML workflow composed of components, defined as a YAML manifest or compiled from the Kubeflow Pipelines SDK.
 - **Manifest** — A YAML file describing a Kubeflow resource (pipeline, component, experiment, run).
@@ -78,3 +96,8 @@
 - **HyperBand** — An early-termination algorithm that allocates resources to promising runs and stops poorly performing ones early, saving compute time.
 - **Artifact** — A versioned file or directory (dataset, model, output) stored and tracked in W&B.
 - **Alias** — A mutable label (e.g. `staging`, `production`) pinned to a specific artifact version in the Model Registry for consumption and promotion workflows.
+
+## ZenML
+- **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.
+- **@step** — A ZenML decorator that marks a function as a single pipeline step.
+- **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.

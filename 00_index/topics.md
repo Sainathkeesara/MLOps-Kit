@@ -19,9 +19,9 @@
 - [snippet] `dvc/snippets/tried_dvc_pipeline.sh` — Shell snippet for a DVC pipeline run
 - [snippet] `dvc/snippets/minimal_dvc_versioning.py` — Minimal data versioning with DVC Python API
 
-## Evidently AI
-- [primer] `evidently/notes/0000-primer-evidently.md` — Evidently AI overview and key concepts
-- [snippet] `evidently/snippets/first_drift_report.py` — Install Evidently and generate my first data drift report (L1)
+## Evidently
+- [primer] `evidently/notes/0000-primer-evidently.md` — Evidently AI concepts and data drift monitoring
+- [snippet] `evidently/snippets/first_drift_report.py` — Install Evidently and generate a first data drift report
 
 ## Feast
 - [primer] `feast/notes/0000-primer-feast.md` — Feast overview and key concepts
@@ -48,9 +48,8 @@
 - [docs] `kubeflow/docs/kubeflow-mlflow-tracking-integration.md` — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
 - [manifest] `kubeflow/manifests/minimal-hello-pipeline.yaml` — Minimal hello-world pipeline manifest
 - [manifest] `kubeflow/manifests/2026-06-08-pipeline-job-set.yaml` — Multi-component pipeline (prep, train, evaluate) as a Kubernetes Job set
-- [manifest] `kubeflow/manifests/README.md` — Kubeflow manifests directory overview
-- [manifest] `kubeflow/manifests/katib-hpo-random-search-pytorch.yaml` — Hyperparameter tuning experiment with random search algorithm and PyTorch training (L4)
-- [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
+- [manifest] `kubeflow/manifests/katib-hpo-random-search-pytorch.yaml` — Hyperparameter tuning experiment with random search and PyTorch training
+- [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP HPO
 - [script] `kubeflow/scripts/tried_check_kubeflow_readiness.sh` — Verify Kubeflow component readiness
 - [script] `kubeflow/scripts/tried_diagnosing_kubeflow_health.sh` — Diagnosing Kubeflow backend service health
 - [script] `kubeflow/scripts/README.md` — Kubeflow scripts directory overview
@@ -154,8 +153,9 @@
 - [config] `wnb/configs/sweep_config.yaml` — W&B hyperparameter sweep configuration
 - [docs] `wnb/docs/artifact-model-registry-workflow.md` — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases
 - [docs] `wnb/docs/artifact-tracking-in-data-pipeline.md` — Link raw data, processed data, and model artifacts to a pipeline run
+- [docs] `wnb/docs/artifact-model-registry-workflow.md` — Integrate W&B Artifacts with the Model Registry for versioned model governance
 - [docs] `wnb/docs/wandb-quickstart-trip-ups.md` — W&B quickstart trip-ups
-- [notebook] `wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb` — Side-by-side comparison of declarative YAML vs programmatic Python API for defining hyperparameter sweeps
+- [notebook] `wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb` — Side-by-side comparison of declarative YAML vs programmatic Python API for hyperparameter sweeps
 - [script] `wnb/scripts/hyperparameter_sweep.py` — Build a hyperparameter sweep with W&B from scratch
 - [script] `wnb/scripts/sweep_and_eval_pipeline.py` — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training
 - [script] `wnb/scripts/train_small_model_with_wandb.py` — Training script instrumented with W&B

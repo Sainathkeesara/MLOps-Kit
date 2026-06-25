@@ -4,57 +4,53 @@
 
 ## Stage 1: Foundations
 
-Before picking up any tool, build a shared vocabulary for the four concepts that underpin this kit:
-- **Experiment Tracking** — Capture, compare, and reproduce result sets from training runs. Unlocks: MLflow, W&B.
-- **Data Versioning** — Track datasets and data lineage alongside code. Unlocks: DVC, Feast.
-- **Pipeline Orchestration** — Define, schedule, and monitor multi-step ML workflows. Unlocks: Kubeflow, Metaflow, ZenML.
-- **Monitoring & Drift** — Detect statistical or performance degradation in production inputs and predictions. Unlocks: Evidently AI.
+Start here with the core MLOps concepts that every other tool builds upon:
 
-Start with the primer for any tool you're already using — the primers (files prefixed `0000-`) are written as first-day walkthroughs and assume only basic Python familiarity.
+- **Experiment Tracking** — Track model runs, metrics, and parameters. Primer available in [MLflow](../mlflow/notes/0000-primer-mlflow.md) and [Weights & Biases](../wnb/notes/0000-primer-wnb.md).
+- **Pipeline Orchestration** — Define and run ML workflows as DAGs. Primer available in [Kubeflow](../kubeflow/notes/0000-primer-kubeflow.md) and [Metaflow](../metaflow/notes/0000-primer-metaflow.md).
+- **Containerization** — Package ML code and models for reproducible deployment. Covered in Kubeflow's [dockerfiles](../kubeflow/dockerfiles/).
 
 ## Stage 2: Core Tools
 
-Pick one core tool and work through its primer, setup notes, and first runnable snippet before moving to the next.
+These tools are unlocked from the start and cover the fundamentals of the MLOps lifecycle:
 
-- **MLflow** — Experiment tracking and model registry. Start with the primer, then install and log your first run. Content covers L1–L4: server setup, autologging, model serving, and registry workflows.
-- **Weights & Biases** — Dashboard-driven experiment tracking with built-in hyperparameter sweeps. Content covers L1–L4: first experiment, sweep configs, artifact tracking, CI/CD templates, and dashboard exploration.
-- **Kubeflow** — Kubernetes-native pipeline orchestration. Start with the Kind-cluster or minikube setup notes, then build your first pipeline component. Content covers L1–L4: KFP SDK, manifests, Katib HPO, debugging, and MLflow integration.
+- **MLflow** (L1) — Experiment tracking, model registry, and project packaging. Start with the [primer](../mlflow/notes/0000-primer-mlflow.md) and [first run notes](../mlflow/notes/2026-05-27-install-mlflow-first-run.md).
+- **Weights & Biases** (L4) — Experiment tracking, artifact management, and hyperparameter sweeps. Begin with the [primer](../wnb/notes/0000-primer-wnb.md) or [dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md).
+- **Kubeflow** (L4) — Kubernetes-native pipeline orchestration and serving. Start with the [primer](../kubeflow/notes/0000-primer-kubeflow.md) and local [Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md).
+- **Metaflow** (L4) — Human-centric ML workflow orchestration on AWS. Begin with the [primer](../metaflow/notes/0000-primer-metaflow.md) and [end-to-end flow notes](../metaflow/notes/2026-06-05-first-flow-end-to-end.md).
+- **ZenML** (L1) — Modular MLOps pipelines with stack abstraction. Start with the [primer](../zenml/notes/0000-primer-zenml.md) and [dashboard setup](../zenml/notes/2026-06-19-first-dashboard-and-stack.md).
 
 ## Stage 3: Building Skills
 
-Once the three core tools feel familiar, layer in workflow frameworks, feature stores, and drift monitoring.
+Tools that expand your toolkit with specialized capabilities:
 
-- **Metaflow** — Human-friendly DAG orchestration with built-in versioning and resume. Content covers L1–L4: first flow, DAG ordering, resource management, foreach vs @batch, CI/CD wiring, and W&B integration.
-- **Feast** — Feature store for consistent training and serving. Content covers L1: first feature view, feature store config, and online/offline store setup with SQLite.
-- **ZenML** — Modular pipeline framework with pluggable stacks. Content covers L1–L2: dashboard exploration, S3 artifact store stack, and first training pipeline.
-- **Evidently AI** — Data drift and model quality monitoring. Content covers L1: primer and first drift report generation.
+- **ClearML Orchestration** (L1) — Managed MLOps platform with built-in experiment tracking. Requires Pipeline Orchestration foundation. Primer available in [clearml/notes/0000-primer-clearml-orchestration.md](../clearml/notes/0000-primer-clearml-orchestration.md).
 
 ## Stage 4: Advanced Tools
 
-These tools reward users who have already built intuition for at least one core tool. Work through them in the order that matches your project needs.
+These tools have additional prerequisites and integrate with multiple foundational concepts:
 
-- **ClearML** — Task orchestration and MLOps platform. Content covers L1: install, first task, and web UI walkthrough.
-- **DVC** — Data versioning tied to Git. Content covers L1–L2: pipeline definition, dataset tracking, and get-started primer.
+- **DVC** — Data versioning for ML pipelines. Currently locked; requires Experiment Tracking + Data Versioning at L2.
+- **Feast** — Centralized feature management. Currently locked; requires Data Versioning + Model Registry at L2.
+- **KServe** (L1) — Model serving on Kubernetes. Parent: Kubeflow must reach L4. Covered in [kubeflow/templates/kubeflow-mlflow-project/README.md](../kubeflow/templates/kubeflow-mlflow-project/README.md).
+- **Seldon Core** (L1) — Advanced model deployment on Kubernetes. Parent: Kubeflow must reach L4.
 
-## Mastery
+## Stage 5: Mastery
 
-The tools below are catalogued in the hierarchy but have limited content on disk so far. Whenever new content lands, the learning path will be updated to point directly to it.
-
-- **Model Serving** — Deploy models with KServe, Seldon Core, or SageMaker (⏳).
-- **Containerization patterns** — Build and tune custom KFP component containers (Dockerfile reference available under kubeflow).
-- **Advanced Monitoring** — Extend Evidently test suites beyond drift to model quality and data integrity (⏳).
+Tools that require deep platform integration and advanced deployment patterns. ZenML has reached L1 and offers infrastructure abstraction for pipeline orchestration.
 
 ## Progression Map
 
 ```
- Foundation concepts (Stage 1) unlock every Core Tool.
- The Core Tools (Stage 2) provide the vocabulary needed
- to work with Building-Skills tools (Stage 3).
- Advanced tools (Stage 4) layer on top of that foundation:
- ──────────────────────────────
-   Concepts        ->  Stage 2
-                            \       ->  Stage 3
-                             \            \
-                              Stage 4  (independent per project need)
- ──────────────────────────────
+Stage 1: Experiment Tracking ─┬─► MLflow ─┬─► ZenML
+                                │
+                                └─► W&B ────┘
+
+Stage 1: Pipeline Orchestration ─┬─► Kubeflow ─┬─► KServe
+                                               ├─► Seldon Core
+                                               └─► Containerization (L2)
+
+                                └─► Metaflow ──► ClearML Orchestration
 ```
+
+_Progress by working through primer notes first, then experiment snippets, and finally the integration docs that tie tools together._

@@ -97,8 +97,9 @@
 - [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns
 
 ### Configure a project
-- [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline
-- [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking
+- [Metaflow + CI/CD project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Template project wiring Metaflow ML pipelines with CI/CD, testing, and environment management (L4)
+- [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)
+- [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)
 - [MLflow conda environment](../mlflow/configs/conda.yaml)
@@ -129,6 +130,8 @@
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Deploy a W&B Launch agent locally with Docker Compose
 - [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml) — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
+- [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
+- [ZenML stack config](../zenml/configs/zenml-stack.yaml) — ZenML stack with MLflow tracking and S3 artifact store
 
 ### Compare model versions
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
@@ -136,3 +139,17 @@
 ### Version data
 - [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
+
+### Learn foundational concepts
+- [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — What experiment tracking is and why it matters for MLOps (L1)
+- [Model Registry primer](../docs/concepts/model-registry/0000-primer-model-registry.md) — What a model registry is and why it matters for ML pipelines (L1)
+- [Data Versioning primer](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — What data versioning is and why it matters for reproducible ML (L1)
+- [Pipeline Orchestration primer](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — What pipeline orchestration is and why it matters for ML workflows (L1)
+- [Feature Store primer](../docs/concepts/feature-store/0000-primer-feature-store.md) — What a feature store is and why it matters in production ML (L1)
+- [Model Serving primer](../docs/concepts/model-serving/0000-primer-model-serving.md) — What model serving is and why it matters for ML deployment (L1)
+- [Containerization primer](../docs/concepts/containerization/0000-primer-containerization.md) — What containerization is and why it matters in MLOps (L1)
+- [Monitoring & Drift primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — What monitoring and drift detection is and why it matters for model reliability (L1)
+
+## Project
+- [README](../README.md) — Project overview and repository structure
+- [CHANGELOG](../CHANGELOG.md) — Record of completed tasks

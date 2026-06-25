@@ -1,12 +1,12 @@
 # MLOps-Kit
 
-> A working engineer's MLOps reference — MLflow, Kubeflow, Metaflow, Weights & Biases, DVC, Feast, ClearML, Evidently, and ZenML: notes, snippets, configs, and templates.
+> A working engineer's MLOps reference — notes, snippets, and configs for MLflow, Kubeflow, Metaflow, DVC, W&B, Feast, ZenML, ClearML, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Files](https://img.shields.io/badge/files-176-blue)
 ![Python](https://img.shields.io/badge/Python-55-3776AB?logo=python&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-84-000000?logo=markdown&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-22-CB171E?logo=yaml&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-72-000000?logo=markdown&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-20-CB171E?logo=yaml&logoColor=white)
+![Files](https://img.shields.io/badge/files-166-blue)
 
 ## What's in here
 
@@ -28,11 +28,9 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 
 ## Quick links
 
-- [`docs/concepts/containerization/0000-primer-containerization.md`](docs/concepts/containerization/0000-primer-containerization.md) — What containerization is and why it matters in MLOps (L1)
-- [`docs/concepts/feature-store/0000-primer-feature-store.md`](docs/concepts/feature-store/0000-primer-feature-store.md) — What a feature store is and why it matters in production ML (L1)
-- [`docs/concepts/model-serving/0000-primer-model-serving.md`](docs/concepts/model-serving/0000-primer-model-serving.md) — What model serving is and why it matters for ML deployment (L1)
-- [`docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md`](docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — What monitoring and drift detection is and why it matters for model reliability (L1)
-- [`docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md`](docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — What pipeline orchestration is and why it matters for ML workflows (L1)
+- [`clearml/notes/0000-primer-clearml-orchestration.md`](clearml/notes/0000-primer-clearml-orchestration.md) — ClearML concepts, setup, and orchestration fundamentals (L1)
+- [`docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md`](docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — Primer on experiment tracking concepts and tooling (L1)
+- [`docs/concepts/data-versioning/0000-primer-data-versioning.md`](docs/concepts/data-versioning/0000-primer-data-versioning.md) — Primer on data versioning concepts and DVC fundamentals (L1)
 
 ## Layout
 
@@ -44,14 +42,14 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 - **`evidently/`** — Evidently AI drift monitoring and data quality notes and snippets (L1)
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
-- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, templates, and manifests
+- **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, and templates
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
 - **`zenml/`** — ZenML notes, snippets, and configs (L1)
 
 ## Status
 
-Working through first-contact notes and concept primers. Recently added eight cross-cutting MLOps concept primers covering containerization, feature stores, model serving, monitoring & drift, and pipeline orchestration, plus a ZenML stack config.
+Working through first-contact notes and runnable experiments for each tool. Recently added foundational concept primers for experiment tracking, data versioning, and model registry; ZenML stack config with S3 artifact store; ClearML Orchestration primer and first task snippet.
 
 ---
-_Last updated: 2026-06-25_
+_Last updated: 2026-06-24_

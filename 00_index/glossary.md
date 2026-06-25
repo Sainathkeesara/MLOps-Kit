@@ -1,9 +1,38 @@
 # Glossary
 
+## Foundations
+- **Experiment tracking** — The practice of recording hyperparameters, metrics, dataset versions, and artifacts during ML training runs for reproducibility and comparison.
+- **Data versioning** — The practice of taking snapshots of datasets so you can recreate any past state, similar to git but for data files.
+- **Model registry** — A central store for versioning, annotating, and promoting trained ML models through staging to production.
+- **Metric** — A numeric value computed during or after training (accuracy, loss, F1 score) used to evaluate model performance.
+- **Parameter (hyperparameter)** — A configuration value set before training that controls the learning process (learning rate, batch size, epochs).
+- **Run ID** — A unique identifier (UUID or timestamp) for a single experiment execution, linking metrics, params, and artifacts together.
+- **Dashboard** — The web UI where you browse runs, compare metrics, and search experiments by parameter or metric value.
+- **Pointer file** — A small text file tracked in git that maps to the actual dataset artifact in remote storage (e.g. `data.csv.dvc`).
+- **Promotion** — Moving a model version from one stage to another (e.g. staging → production) after validation passes.
+
 ## DVC
 - **DVC** — Data Version Control; an open-source tool for versioning datasets and ML pipeline stages alongside code.
 - **Pipeline stage** — A step in a DVC pipeline (e.g. prepare, train, evaluate) defined in `dvc.yaml` with inputs, outputs, and commands.
 - **`.dvc` file** — A lightweight metafile that tracks a dataset or model file, storing its hash and cache location instead of the file itself.
+
+## ClearML
+- **Task** — The atomic unit of work in ClearML; a single script execution logged as an experiment with parameters, metrics, and artifacts.
+- **Project** — A logical grouping of ClearML tasks for organizing experiments and comparing results across runs.
+- **Queue** — A named buffer that holds tasks waiting to be executed by a ClearML worker, enabling remote or distributed execution.
+
+## Evidently
+- **Data Drift** — A statistical shift in input feature distributions between a reference dataset and the current production dataset, detected by Evidently.
+- **Test Suite** — A structured set of data and model quality checks (e.g. drift, nulls, value ranges) that pass or fail against defined thresholds.
+- **Report** — A generated artifact (JSON or HTML) containing drift metrics, visualizations, and test results for a given dataset pair.
+
+## Feast
+- **Feature Store** — A centralized system for managing and serving ML features consistently across training and inference.
+- **Feature View** — A defined feature or group of features with a data source, transformation logic, and optional metadata.
+- **Entity** — A primary key or identifier (e.g. `user_id`, `product_id`) that features are associated with.
+- **Feature Service** — A deployed server that serves the latest feature values for real-time inference.
+- **Offline Store** — A data store (e.g. BigQuery, Snowflake, Parquet) that holds historical feature data for training.
+- **Online Store** — A low-latency data store (e.g. Redis, DynamoDB) that holds the latest feature values for serving.
 
 ## Kubeflow
 - **Pipeline** — A DAG-based definition of an ML workflow composed of components, defined as a YAML manifest or compiled from the Kubeflow Pipelines SDK.
@@ -46,9 +75,10 @@
 - **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.
 - **@step** — A ZenML decorator that marks a function as a single pipeline step.
 - **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.
-- **Artifact Store** — A stack component that stores pipeline artifacts (datasets, models, metadata); supports local filesystems, S3, GCS, and Azure.
-- **Orchestrator** — A stack component that manages pipeline execution; supports local, Kubernetes, Airflow, and other backends.
-- **Metadata Store** — A stack component that tracks pipeline and step metadata, typically backed by SQLite or MySQL.
+- **Artifact store** — Where ZenML step outputs are saved (local filesystem, S3, GCS, MinIO).
+- **Metadata store** — A database (SQLite, MySQL, PostgreSQL) that logs pipeline runs, step status, parameters, and artifact URIs.
+- **Orchestrator** — The backend that actually runs the pipeline steps (local, Kubeflow, Airflow, Vertex AI, etc.).
+- **Materializer** — A component that knows how to serialize and deserialize a Python type to and from the artifact store.
 
 ## ClearML
 - **Task** — The fundamental unit of work in ClearML; wraps a Python script with metadata like parameters, requirements, and outputs.
@@ -56,6 +86,8 @@
 - **Agent** — A service that polls a queue and executes tasks, optionally inside Docker containers.
 - **Pipeline** — A DAG of Tasks connected via dependencies, defined with the PipelineController API.
 - **Artifact** — A file or model produced or consumed by a Task; stored and versioned in ClearML.
+- **ClearML Server** — The backend that stores task metadata, logs, artifacts, and serves the web UI.
+- **Configuration** — A set of hyperparameters or settings tied to a Task, stored as key-value pairs or nested dicts.
 
 ## Evidently AI
 - **Drift Report** — A JSON or HTML report generated by Evidently that compares two datasets (reference and current) and quantifies statistical drift across features.
@@ -69,3 +101,8 @@
 - **HyperBand** — An early-termination algorithm that allocates resources to promising runs and stops poorly performing ones early, saving compute time.
 - **Artifact** — A versioned file or directory (dataset, model, output) stored and tracked in W&B.
 - **Alias** — A mutable label (e.g. `staging`, `production`) pinned to a specific artifact version in the Model Registry for consumption and promotion workflows.
+
+## ZenML
+- **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.
+- **@step** — A ZenML decorator that marks a function as a single pipeline step.
+- **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.

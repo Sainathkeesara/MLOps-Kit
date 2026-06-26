@@ -67,6 +67,7 @@
 - [snippet] `kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py` — Minimal KFP v2 pipeline with add + multiply arithmetic steps
 - [snippet] `kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py` — Pipeline with conditional deploy/retrain branching and per-component resource constraints
 - [snippet] `kubeflow/snippets/tried_my_first_component.py` — My first Kubeflow Pipelines component — just adds two numbers
+- [dockerfile] `kubeflow/dockerfiles/README.md` — Kubeflow dockerfiles directory overview
 - [dockerfile] `kubeflow/dockerfiles/requirements.txt` — Python dependencies for custom KFP component Docker image
 - [dockerfile] `kubeflow/dockerfiles/sklearn-train-component.Dockerfile` — Build a custom container component with RandomForest training
 - [dockerfile] `kubeflow/dockerfiles/train.py` — Training script used in the custom KFP Dockerfile component
@@ -90,7 +91,6 @@
 - [notes] `metaflow/notes/2026-06-08-step-decorator-dag-ordering.md` — How Metaflow builds and enforces the DAG through `self.next()` calls
 - [notes] `metaflow/notes/2026-06-12-ci-cd-with-github-actions.md` — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
 - [notes] `metaflow/notes/README.md` — Metaflow notes directory overview
-- [notes] `metaflow/scripts/README.md` — Metaflow scripts directory overview
 - [config] `metaflow/configs/metaflow-project-scaffold.yaml` — Project scaffold configuration for Metaflow
 - [config] `metaflow/configs/README.md` — Metaflow configs directory overview
 - [docs] `metaflow/docs/metaflow-resource-management.md` — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts
@@ -100,6 +100,7 @@
 - [notebook] `metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb` — Compare a fresh run against a resumed run during iterative model development
 - [script] `metaflow/scripts/2026-06-12-five-step-ml-pipeline.py` — End-to-end pipeline: load, clean, feature engineering, train, evaluate
 - [script] `metaflow/scripts/batch_inference_splits.py` — Reusable Metaflow flow for sharded batch inference with `--splits` and `@batch`
+- [script] `metaflow/scripts/README.md` — Metaflow scripts directory overview
 - [manifest] `metaflow/manifests/README.md` — Metaflow manifests directory overview
 - [manifest] `metaflow/manifests/aws-batch-infrastructure.yaml` — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles
 - [snippet] `metaflow/snippets/2026-06-06-minimal-first-flow.py` — Minimal first flow with Metaflow Python SDK
@@ -172,6 +173,7 @@
 - [snippet] `wnb/snippets/tried_first_metrics_and_config.py` — First metrics and config logging experiment
 - [snippet] `wnb/snippets/tried_logging_first_run.py` — First run logging with W&B
 - [snippet] `wnb/snippets/tried_logging_metrics_and_params.py` — Logging first metrics and parameters with W&B
+- [manifest] `wnb/manifests/wandb-launch-agent-docker-compose.yaml` — Deploy a W&B Launch agent locally with Docker Compose
 - [template] `wnb/templates/wandb-cicd-project/.github/workflows/ci-cd.yml` — CI/CD workflow for W&B experiment tracking project
 - [template] `wnb/templates/wandb-cicd-project/README.md` — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline
 - [template] `wnb/templates/wandb-cicd-project/components/__init__.py` — Template component package init
@@ -180,7 +182,6 @@
 - [template] `wnb/templates/wandb-cicd-project/requirements.txt` — Template project dependencies
 - [template] `wnb/templates/wandb-cicd-project/sweep.py` — Template sweep definition
 - [template] `wnb/templates/wandb-cicd-project/train.py` — Template training script
-- [manifest] `wnb/manifests/wandb-launch-agent-docker-compose.yaml` — Deploy a W&B Launch agent locally with Docker Compose
 
 ## ZenML
 - [primer] `zenml/notes/0000-primer-zenml.md` — ZenML overview and key concepts

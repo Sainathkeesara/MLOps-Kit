@@ -38,7 +38,6 @@
 - [W&B first tracking session](../wnb/notes/2026-06-01-my-first-wandb-session.md)
 - [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
 - [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md) — W&B quickstart trip-ups
-- [W&B quickstart trip-ups (notes)](../wnb/notes/2026-06-06-first-wandb-quickstart-trip-ups.md)
 - [W&B dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
 - [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
 - [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for hyperparameter sweeps

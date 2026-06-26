@@ -2,10 +2,12 @@
 
 > A working engineer's MLOps reference — notes, snippets, and configs for MLflow, Kubeflow, Metaflow, DVC, W&B, Feast, ZenML, ClearML, and Evidently AI.
 
-![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Python](https://img.shields.io/badge/Python-55-3776AB?logo=python&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-72-000000?logo=markdown&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-20-CB171E?logo=yaml&logoColor=white)
+![Last commit](https://img.shields.io/github/last-commit/sainathkeesara-mlops/MLOps-Kit)
+![Python](https://img.shields.io/badge/Python-58-3776AB?logo=python&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-84-000000?logo=markdown&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-22-CB171E?logo=yaml&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-5-F37626?logo=jupyter&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-4-4EAA25?logo=gnu-bash&logoColor=white)
 ![Files](https://img.shields.io/badge/files-166-blue)
 
 ## What's in here
@@ -17,7 +19,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|-----------|------|-----------|-----------|-------------|
 | MLflow | 5 | 9 | 1 | 5 | — | 2 | 1 | — | — |
-| Kubeflow | 11 | 7 | 3 | 2 | 4 | 3 | 2 | 8 | 4 |
+| Kubeflow | 11 | 7 | 3 | 2 | 4 | 3 | 2 | 8 | 3 |
 | Metaflow | 10 | 5 | 3 | 2 | 2 | 3 | 2 | 12 | — |
 | DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
 | W&B | 9 | 6 | 3 | 4 | 1 | 3 | 1 | 8 | — |
@@ -28,9 +30,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 
 ## Quick links
 
-- [`clearml/notes/0000-primer-clearml-orchestration.md`](clearml/notes/0000-primer-clearml-orchestration.md) — ClearML concepts, setup, and orchestration fundamentals (L1)
-- [`docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md`](docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — Primer on experiment tracking concepts and tooling (L1)
-- [`docs/concepts/data-versioning/0000-primer-data-versioning.md`](docs/concepts/data-versioning/0000-primer-data-versioning.md) — Primer on data versioning concepts and DVC fundamentals (L1)
+- [docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py](docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py) — Compare training runs with different hyperparameters side by side (L2)
+- [docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py](docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py) — Practice logging params, metrics, and artifacts with experiment tracking (L2)
+- [docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py](docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) — Practice registering, versioning, and aliasing models (L2)
+- [docs/concepts/containerization/0000-primer-containerization.md](docs/concepts/containerization/0000-primer-containerization.md) — Containerization primer for MLOps
+- [docs/concepts/feature-store/0000-primer-feature-store.md](docs/concepts/feature-store/0000-primer-feature-store.md) — Feature store primer for production ML
 
 ## Layout
 
@@ -49,7 +53,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added foundational concept primers for experiment tracking, data versioning, and model registry; ZenML stack config with S3 artifact store; ClearML Orchestration primer and first task snippet.
+Working through first-contact notes and runnable experiments for each tool. Recently added foundational concept primers for containerization and feature stores; experiment tracking and model registry exercises (L2); ZenML stack config with S3 artifact store; ClearML Orchestration primer and first task snippet.
 
 ---
-_Last updated: 2026-06-24_
+_Last updated: 2026-06-25_

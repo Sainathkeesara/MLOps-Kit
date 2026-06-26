@@ -2,11 +2,13 @@
 
 > A working engineer's MLOps reference — notes, snippets, and configs for MLflow, Kubeflow, Metaflow, DVC, W&B, Feast, ZenML, ClearML, and Evidently AI.
 
-![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
+![Last commit](https://img.shields.io/github/last-commit/sainathkeesara-mlops/MLOps-Kit)
 ![Python](https://img.shields.io/badge/Python-58-3776AB?logo=python&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-84-000000?logo=markdown&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-22-CB171E?logo=yaml&logoColor=white)
-![Files](https://img.shields.io/badge/files-179-blue)
+![Jupyter](https://img.shields.io/badge/Jupyter-5-F37626?logo=jupyter&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-4-4EAA25?logo=gnu-bash&logoColor=white)
+![Files](https://img.shields.io/badge/files-166-blue)
 
 ## What's in here
 
@@ -17,7 +19,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 | Tool | Notes | Snippets | Scripts | Configs | Manifests | Docs | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|-----------|------|-----------|-----------|-------------|
 | MLflow | 5 | 9 | 1 | 5 | — | 2 | 1 | — | — |
-| Kubeflow | 11 | 7 | 3 | 2 | 4 | 3 | 2 | 8 | 4 |
+| Kubeflow | 11 | 7 | 3 | 2 | 4 | 3 | 2 | 8 | 3 |
 | Metaflow | 10 | 5 | 3 | 2 | 2 | 3 | 2 | 12 | — |
 | DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
 | W&B | 9 | 6 | 3 | 4 | 1 | 3 | 1 | 8 | — |
@@ -28,11 +30,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 
 ## Quick links
 
-- [`docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py`](docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py) — Compare training runs with different hyperparameters side by side (L2)
-- [`docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py`](docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py) — Practice logging params, metrics, and artifacts with experiment tracking (L2)
-- [`docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py`](docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) — Practice registering, versioning, and aliasing models (L2)
-- [`docs/concepts/containerization/0000-primer-containerization.md`](docs/concepts/containerization/0000-primer-containerization.md) — What containerization is and why it matters in MLOps (L1)
-- [`docs/concepts/feature-store/0000-primer-feature-store.md`](docs/concepts/feature-store/0000-primer-feature-store.md) — What a feature store is and why it matters in production ML (L1)
+- [docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py](docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py) — Compare training runs with different hyperparameters side by side (L2)
+- [docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py](docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py) — Practice logging params, metrics, and artifacts with experiment tracking (L2)
+- [docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py](docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) — Practice registering, versioning, and aliasing models (L2)
+- [docs/concepts/containerization/0000-primer-containerization.md](docs/concepts/containerization/0000-primer-containerization.md) — Containerization primer for MLOps
+- [docs/concepts/feature-store/0000-primer-feature-store.md](docs/concepts/feature-store/0000-primer-feature-store.md) — Feature store primer for production ML
 
 ## Layout
 
@@ -51,7 +53,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs for nine MLOps tools
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently expanded foundational concept primers to cover experiment tracking, data versioning, model registry, pipeline orchestration, feature store, model serving, containerization, and monitoring & drift; added ZenML stack configuration with S3 artifact store, ClearML Orchestration primer and first task snippet, and concept-level L2 scripts and snippets for experiment tracking and model registry.
+Working through first-contact notes and runnable experiments for each tool. Recently added foundational concept primers for containerization and feature stores; experiment tracking and model registry exercises (L2); ZenML stack config with S3 artifact store; ClearML Orchestration primer and first task snippet.
 
 ---
 _Last updated: 2026-06-25_

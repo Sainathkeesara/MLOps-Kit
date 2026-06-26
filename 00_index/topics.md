@@ -1,9 +1,17 @@
 # Topics
 
 ## Concepts
-- [doc] `docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md` — Primer on experiment tracking concepts and tooling (L1)
+- [doc] `docs/concepts/containerization/0000-primer-containerization.md` — Containerization primer for MLOps (L1)
 - [doc] `docs/concepts/data-versioning/0000-primer-data-versioning.md` — Primer on data versioning concepts and DVC fundamentals (L1)
+- [doc] `docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md` — Primer on experiment tracking concepts and tooling (L1)
+- [doc] `docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py` — Compare training runs with different hyperparameters side by side (L2)
+- [doc] `docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py` — Practice logging params, metrics, and artifacts with experiment tracking (L2)
+- [doc] `docs/concepts/feature-store/0000-primer-feature-store.md` — Feature store primer for production ML (L1)
+- [doc] `docs/concepts/model-serving/0000-primer-model-serving.md` — Primer on model serving patterns and considerations (L1)
 - [doc] `docs/concepts/model-registry/0000-primer-model-registry.md` — Primer on model registry concepts and governance patterns (L1)
+- [doc] `docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py` — Practice registering, versioning, and aliasing models (L2)
+- [doc] `docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md` — Primer on monitoring and drift detection concepts (L1)
+- [doc] `docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md` — Pipeline orchestration primer for ML workflows (L1)
 
 ## ClearML
 - [primer] `clearml/notes/0000-primer-clearml-orchestration.md` — ClearML concepts, setup, and orchestration fundamentals
@@ -153,7 +161,6 @@
 - [config] `wnb/configs/sweep_config.yaml` — W&B hyperparameter sweep configuration
 - [docs] `wnb/docs/artifact-model-registry-workflow.md` — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases
 - [docs] `wnb/docs/artifact-tracking-in-data-pipeline.md` — Link raw data, processed data, and model artifacts to a pipeline run
-- [docs] `wnb/docs/artifact-model-registry-workflow.md` — Integrate W&B Artifacts with the Model Registry for versioned model governance
 - [docs] `wnb/docs/wandb-quickstart-trip-ups.md` — W&B quickstart trip-ups
 - [notebook] `wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb` — Side-by-side comparison of declarative YAML vs programmatic Python API for hyperparameter sweeps
 - [script] `wnb/scripts/hyperparameter_sweep.py` — Build a hyperparameter sweep with W&B from scratch
@@ -179,3 +186,4 @@
 - [primer] `zenml/notes/0000-primer-zenml.md` — ZenML overview and key concepts
 - [notes] `zenml/notes/2026-06-19-first-dashboard-and-stack.md` — Exploring the ZenML dashboard and configuring an S3 artifact store stack
 - [snippet] `zenml/snippets/tried_first_training_pipeline.py` — First ZenML pipeline with data loading and model training
+- [config] `zenml/configs/zenml-stack.yaml` — ZenML stack with MLflow tracking and S3 artifact store

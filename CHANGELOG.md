@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-29
+
+- kub-017: script(python) — Reusable KFP pipeline component factory with resource config and caching (L4)
+
 ## 2026-06-25
 
 - con-012: snippet(python) — Practice: experiment tracking fundamentals exercises (L2)

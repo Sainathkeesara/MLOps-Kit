@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-30
+
+- kub-021: template — Kubeflow pipeline project scaffold with CI/CD and unit testing (L5)
+
 ## 2026-06-29
 
 - kub-017: script(python) — Reusable KFP pipeline component factory with resource config and caching (L4)

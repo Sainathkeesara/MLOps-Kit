@@ -65,10 +65,12 @@
 - [Metaflow 5-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py) — End-to-end pipeline: load → clean → feature engineering → train → evaluate
 - [Metaflow batch inference splits](../metaflow/scripts/batch_inference_splits.py) — Reusable Metaflow flow for sharded batch inference with `--splits` and `@batch`
 - [MLflow model serving](../mlflow/snippets/tried_serving_a_model.py) — Train, log, load, and serve predictions via the Python API
+- [MLflow install and first experiment](../mlflow/snippets/tried_installing_mlflow_first_experiment.py) — Install MLflow and log my first experiment with the Python SDK
 - [MLflow install and first run snippet](../mlflow/snippets/tried_install_and_log_first_run.py) — Install MLflow and log first run with params and metrics
 - [MLflow autologging pipeline](../mlflow/snippets/2026-06-10-autologging-pipeline.py) — Training pipeline with autologging enabled
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
 - [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)
+- [MLflow UI exploration notes](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md) — First walk through the MLflow UI: runs, parameters, metrics, and compare mode
 - [MLflow first run](../mlflow/snippets/log_first_run.py)
 - [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
 - [MLflow minimal model serving](../mlflow/snippets/2026-06-10-minimal-model-serving.py) — Load a saved model and serve predictions with MLflow Python API

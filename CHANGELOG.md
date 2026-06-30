@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-30
+
+- mflow-012: snippet(python) — Install MLflow and log my first experiment with the Python SDK (L1)
+- mflow-013: notes — Explore the MLflow UI — what's there (L1)
+
 ## 2026-06-29
 
 - kub-017: script(python) — Reusable KFP pipeline component factory with resource config and caching (L4)

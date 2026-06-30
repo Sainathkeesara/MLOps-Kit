@@ -2,7 +2,8 @@
 
 ## 2026-06-30
 
-- kub-021: template — Kubeflow pipeline project scaffold with CI/CD and unit testing (L5)
+- mflow-012: snippet(python) — Install MLflow and log my first experiment with the Python SDK (L1)
+- mflow-013: notes — Explore the MLflow UI — what's there (L1)
 
 ## 2026-06-29
 

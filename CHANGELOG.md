@@ -1,8 +1,8 @@
 # Changelog
 
-## 2026-06-30
+## 2026-06-29
 
-- kub-018: docs — Choosing between KFP v1 and v2 DSL: migration patterns and breaking changes (L5)
+- kub-017: script(python) — Reusable KFP pipeline component factory with resource config and caching (L4)
 
 ## 2026-06-25
 

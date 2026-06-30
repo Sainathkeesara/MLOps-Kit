@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-30
+
+- kub-018: docs — Choosing between KFP v1 and v2 DSL: migration patterns and breaking changes (L5)
+
 ## 2026-06-25
 
 - con-012: snippet(python) — Practice: experiment tracking fundamentals exercises (L2)

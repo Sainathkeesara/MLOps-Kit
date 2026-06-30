@@ -54,12 +54,15 @@
 - [config] `kubeflow/configs/README.md` — Kubeflow configs directory overview
 - [docs] `kubeflow/docs/kubeflow-pipeline-debugging.md` — Diagnose infrastructure failures and pod log issues in KFP pipelines
 - [docs] `kubeflow/docs/kubeflow-mlflow-tracking-integration.md` — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
+- [docs] `kubeflow/docs/choosing-between-kfp-v1-and-v2-dsl.md` — Compare KFP v1 and v2 DSLs, document breaking changes, and migration patterns for upgrading pipelines (L4)
 - [manifest] `kubeflow/manifests/minimal-hello-pipeline.yaml` — Minimal hello-world pipeline manifest
 - [manifest] `kubeflow/manifests/2026-06-08-pipeline-job-set.yaml` — Multi-component pipeline (prep, train, evaluate) as a Kubernetes Job set
 - [manifest] `kubeflow/manifests/katib-hpo-random-search-pytorch.yaml` — Hyperparameter tuning experiment with random search and PyTorch training
 - [notebook] `kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb` — Compare Katib managed tuning vs custom ParallelFor grid search for KFP HPO
 - [script] `kubeflow/scripts/tried_check_kubeflow_readiness.sh` — Verify Kubeflow component readiness
 - [script] `kubeflow/scripts/tried_diagnosing_kubeflow_health.sh` — Diagnosing Kubeflow backend service health
+- [script] `kubeflow/scripts/component_factory.py` — Reusable KFP pipeline component factory with resource config and caching (L4)
+- [script] `kubeflow/scripts/kfp_component_factory.py` — KFP component factory with decorator-based factory and resource constraints (L4)
 - [script] `kubeflow/scripts/README.md` — Kubeflow scripts directory overview
 - [snippet] `kubeflow/snippets/tried_deploy_first_pipeline.py` — Deploy and run a Kubeflow pipeline via SDK
 - [snippet] `kubeflow/snippets/tried_pipeline_v2_sdk.py` — Minimal pipeline with Kubeflow Pipelines V2 SDK

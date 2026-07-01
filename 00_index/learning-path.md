@@ -19,9 +19,9 @@ Start here with the core MLOps concepts that every tool builds upon. These prime
 
 These tools are unlocked from the start and cover the fundamentals of the MLOps lifecycle.
 
-- **MLflow** (L1) — Experiment tracking, model registry, and project packaging. Start with the [primer](../mlflow/notes/0000-primer-mlflow.md) and [first run notes](../mlflow/notes/2026-05-27-install-mlflow-first-run.md).
+- **MLflow** (L1) — Experiment tracking, model registry, and project packaging. Start with the [primer](../mlflow/notes/0000-primer-mlflow.md), [first run notes](../mlflow/notes/2026-05-27-install-mlflow-first-run.md), and [UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md).
 - **Weights & Biases** (L4) — Experiment tracking, artifact management, and hyperparameter sweeps. Begin with the [primer](../wnb/notes/0000-primer-wnb.md) or [dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md).
-- **Kubeflow** (L4) — Kubernetes-native pipeline orchestration and serving. Start with the [primer](../kubeflow/notes/0000-primer-kubeflow.md) and [Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md).
+- **Kubeflow** (L4) — Kubernetes-native pipeline orchestration and serving. Start with the [primer](../kubeflow/notes/0000-primer-kubeflow.md) and [Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md). For advanced project scaffolding with CI/CD and unit testing, see the [pipeline scaffold template](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md).
 - **Metaflow** (L4) — Human-centric ML workflow orchestration on AWS. Begin with the [primer](../metaflow/notes/0000-primer-metaflow.md) and [end-to-end flow notes](../metaflow/notes/2026-06-05-first-flow-end-to-end.md).
 - **ZenML** (L1) — Modular MLOps pipelines with stack abstraction. Start with the [primer](../zenml/notes/0000-primer-zenml.md) and [stack config](../zenml/configs/zenml-stack.yaml).
 

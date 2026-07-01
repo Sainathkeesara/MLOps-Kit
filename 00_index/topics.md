@@ -55,6 +55,7 @@
 - [docs] `kubeflow/docs/kubeflow-pipeline-debugging.md` — Diagnose infrastructure failures and pod log issues in KFP pipelines
 - [docs] `kubeflow/docs/kubeflow-mlflow-tracking-integration.md` — Wire KFP pipeline components to an in-cluster MLflow tracking server (L4)
 - [docs] `kubeflow/docs/choosing-between-kfp-v1-and-v2-dsl.md` — Compare KFP v1 and v2 DSLs, document breaking changes, and migration patterns for upgrading pipelines (L4)
+- [docs] `kubeflow/docs/README.md` — Kubeflow docs directory overview
 - [manifest] `kubeflow/manifests/minimal-hello-pipeline.yaml` — Minimal hello-world pipeline manifest
 - [manifest] `kubeflow/manifests/2026-06-08-pipeline-job-set.yaml` — Multi-component pipeline (prep, train, evaluate) as a Kubernetes Job set
 - [manifest] `kubeflow/manifests/katib-hpo-random-search-pytorch.yaml` — Hyperparameter tuning experiment with random search and PyTorch training
@@ -82,6 +83,19 @@
 - [template] `kubeflow/templates/kubeflow-mlflow-project/pipeline.py` — Template KFP pipeline definition
 - [template] `kubeflow/templates/kubeflow-mlflow-project/requirements.txt` — Template project Python dependencies
 - [template] `kubeflow/templates/kubeflow-mlflow-project/run.py` — Template pipeline runner script
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/.github/workflows/ci-cd.yml` — CI/CD workflow for Kubeflow pipeline project
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/README.md` — Template project with KFP pipeline, CI/CD, unit testing, and modular components (L5)
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/components/__init__.py` — Template component package init
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/components/evaluate.py` — Template evaluation component
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/components/train.py` — Template training component
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/pipeline.py` — Template KFP pipeline definition
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/requirements.txt` — Template project Python dependencies
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/run.py` — Template pipeline runner script
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/scripts/evaluate_logic.py` — Template evaluation logic module
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/scripts/train_logic.py` — Template training logic module
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/tests/__init__.py` — Template tests package init
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/tests/conftest.py` — Template test configuration
+- [template] `kubeflow/templates/kubeflow-pipeline-scaffold/tests/test_components.py` — Template component unit tests
 
 ## Metaflow
 - [primer] `metaflow/notes/0000-primer-metaflow.md` — Metaflow primer and key concepts
@@ -130,6 +144,7 @@
 - [notes] `mlflow/notes/2026-05-27-install-mlflow-first-run.md` — Installing MLflow and running a first tracking experiment
 - [notes] `mlflow/notes/2026-05-27-mlflow-quickstart-trip-ups.md` — MLflow quickstart trip-ups
 - [notes] `mlflow/notes/2026-05-28-mlflow-tracking-quickstart-trip-ups.md` — MLflow Tracking quickstart trip-ups
+- [notes] `mlflow/notes/2026-06-30-exploring-mlflow-ui.md` — First walk through the MLflow UI: runs, parameters, metrics, and compare mode
 - [config] `mlflow/configs/MLproject` — MLflow Project definition with entry points
 - [config] `mlflow/configs/conda.yaml` — Conda environment for MLflow Project
 - [config] `mlflow/configs/mlflow-project.yaml` — Alternative MLflow Project configuration
@@ -146,6 +161,7 @@
 - [snippet] `mlflow/snippets/log_first_run.py` — Logging a first MLflow run
 - [snippet] `mlflow/snippets/tried_end_to_end_training.py` — Build an end-to-end training pipeline with MLflow autologging
 - [snippet] `mlflow/snippets/tried_install_and_log_first_run.py` — Install MLflow and log first run with params and metrics
+- [snippet] `mlflow/snippets/tried_installing_mlflow_first_experiment.py` — Install MLflow and log my first experiment with the Python SDK
 - [snippet] `mlflow/snippets/tried_logging_metrics.py` — Logging first metrics and parameters with MLflow Tracking
 - [snippet] `mlflow/snippets/tried_serving_a_model.py` — Train, log, load, and serve predictions via the Python API
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-01
+
+- mflow-026: config(yaml) — Configure MLflow tracking server with SQLite backend and S3 artifact store (L1)
+- wnb-030: snippet(python) — Log my first W&B run with metrics and config (L1)
+
 ## 2026-06-30
 
 - mflow-012: snippet(python) — Install MLflow and log my first experiment with the Python SDK (L1)

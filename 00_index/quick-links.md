@@ -82,6 +82,7 @@
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
 - [W&B minimal tracking snippet](../wnb/snippets/2026-06-06-minimal-tracking.py) — Minimal experiment tracking with W&B
 - [W&B first run snippet](../wnb/snippets/tried_logging_first_run.py)
+- [W&B first run with config snippet](../wnb/snippets/tried_first_wandb_run_with_config.py) — Log my first W&B run with metrics and config dict
 - [W&B artifact logging snippet](../wnb/snippets/tried_artifact_logging.py) — Save and log model and dataset artifacts with wandb.Artifact
 - [W&B artifact tracking in a data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md) — Link raw data, processed data, and model artifacts to a pipeline run
 - [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
@@ -135,7 +136,8 @@
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Deploy a W&B Launch agent locally with Docker Compose
 - [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml) — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
-- [MLflow tracking server config](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
+- [MLflow tracking server config (SQLite)](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
+- [MLflow tracking server config (SQLite + S3)](../mlflow/configs/2026-07-01-tracking-server-s3.yaml) — MLflow tracking server with SQLite backend and S3 artifact store — first attempt
 - [ZenML stack config](../zenml/configs/zenml-stack.yaml) — ZenML stack with MLflow tracking and S3 artifact store
 
 ### Compare model versions

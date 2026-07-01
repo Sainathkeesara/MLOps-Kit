@@ -1,0 +1,15 @@
+# trying to set up an MLflow tracking server with S3 for artifacts
+# not sure about the region/endpoint yet — placeholder values
+# run with: mlflow server --config 2026-07-01-tracking-server-s3.yaml
+
+backend_store_uri: sqlite:///mlflow.db
+default_artifact_root: s3://my-mlflow-artifacts
+
+# S3 credentials — MLflow picks these up from env vars AWS_ACCESS_KEY_ID etc.
+# s3_upload_artifact_extra_args:
+#   ServerSideEncryption: AES256
+
+host: 0.0.0.0
+port: 5000
+
+# workers: 4

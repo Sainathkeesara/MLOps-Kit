@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-02
+
+- wnb-031: notes — Explore the W&B dashboard — what's there (L1)
+- kub-025: snippet(python) — Install kfp SDK and compile my first hello-world pipeline (L1)
+
 ## 2026-07-01
 
 - mflow-026: config(yaml) — Configure MLflow tracking server with SQLite backend and S3 artifact store (L1)

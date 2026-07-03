@@ -74,6 +74,8 @@
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
 - [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)
 - [MLflow UI exploration notes](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md) — First walk through the MLflow UI: runs, parameters, metrics, and compare mode
+- [MLflow quickstart trip-ups (July 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md) — Following the official MLflow quickstart and what tripped me up
+- [MLflow autolog training snippet](../mlflow/snippets/tried_autolog_training.py) — Minimal model training with MLflow autologging (L2)
 - [MLflow first run](../mlflow/snippets/log_first_run.py)
 - [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
 - [MLflow minimal model serving](../mlflow/snippets/2026-06-10-minimal-model-serving.py) — Load a saved model and serve predictions with MLflow Python API

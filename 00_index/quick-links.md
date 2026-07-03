@@ -12,6 +12,7 @@
 - [DVC get started trip-ups](../dvc/notes/2026-06-05-get-started.md)
 - [Feast primer](../feast/notes/0000-primer-feast.md)
 - [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
+- [KServe primer](../kserve/notes/0000-primer-kserve.md)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
@@ -31,6 +32,7 @@
 - [MLflow quickstart trip-ups](../mlflow/notes/2026-05-27-mlflow-quickstart-trip-ups.md)
 - [MLflow Tracking quickstart trip-ups](../mlflow/notes/2026-05-28-mlflow-tracking-quickstart-trip-ups.md)
 - [Evidently AI primer](../evidently/notes/0000-primer-evidently.md)
+- [Evidently Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md) — What I learned comparing Report and TestSuite APIs in Evidently
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
 - [W&B first experiment tracking](../wnb/notes/2026-05-27-install-wandb-first-experiment.md)
@@ -49,6 +51,7 @@
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
+- [KServe first InferenceService](../kserve/snippets/first_inferenceservice.py) — Install KServe and deploy my first InferenceService (L1)
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
 - [Kubeflow component factory](../kubeflow/scripts/component_factory.py) — Reusable KFP component factory with resource config and caching

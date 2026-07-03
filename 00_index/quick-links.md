@@ -41,6 +41,7 @@
 - [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
 - [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md) — W&B quickstart trip-ups
 - [W&B dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
+- [W&B dashboard — what's there](../wnb/notes/2026-07-02-whats-on-the-wandb-dashboard.md) — Workspace tabs, run detail view, compare mode, and custom charts
 - [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
 - [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for hyperparameter sweeps
 
@@ -132,6 +133,7 @@
 - [Katib vs ParallelFor for HP tuning](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb) — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
 - [KFP v2 minimal pipeline](../kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py) — Minimal KFP v2 pipeline with add + multiply arithmetic steps
 - [KFP minimal component](../kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
+- [KFP SDK install + hello-world pipeline](../kubeflow/snippets/tried_install_kfp_and_first_pipeline.py) — Install kfp SDK and compile my first hello-world pipeline
 - [KFP custom sklearn component Dockerfile](../kubeflow/dockerfiles/sklearn-train-component.Dockerfile) — Build a custom container component with RandomForest training
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization

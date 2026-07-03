@@ -1,13 +1,16 @@
 # Changelog
 
-## 2026-07-02
+## 2026-07-03
 
-- mflow-027: snippet(python) — Minimal model training with MLflow autologging (L2)
-- wnb-031: notes — Explore the W&B dashboard: what's there (L1)
+- kserve-001: notes(primer) — What is KServe? — quick primer (L1)
+- kserve-002: snippet(python) — Install KServe and deploy my first InferenceService (L1)
+- evid-003: notes — What I learned comparing Report and TestSuite APIs in Evidently (L1)
 
 ## 2026-07-01
 
 - mflow-026: config(yaml) — Configure MLflow tracking server with SQLite backend and S3 artifact store (L1)
+- mflow-026: notes — Follow the official MLflow quickstart and write up what tripped me up (L2)
+- mflow-027: snippet(python) — Minimal model training with MLflow autologging (L2)
 - wnb-030: snippet(python) — Log my first W&B run with metrics and config (L1)
 
 ## 2026-06-30

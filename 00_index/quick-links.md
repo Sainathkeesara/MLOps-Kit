@@ -12,6 +12,7 @@
 - [DVC get started trip-ups](../dvc/notes/2026-06-05-get-started.md)
 - [Feast primer](../feast/notes/0000-primer-feast.md)
 - [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
+- [KServe primer](../kserve/notes/0000-primer-kserve.md)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
@@ -31,6 +32,7 @@
 - [MLflow quickstart trip-ups](../mlflow/notes/2026-05-27-mlflow-quickstart-trip-ups.md)
 - [MLflow Tracking quickstart trip-ups](../mlflow/notes/2026-05-28-mlflow-tracking-quickstart-trip-ups.md)
 - [Evidently AI primer](../evidently/notes/0000-primer-evidently.md)
+- [Evidently Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md) — What I learned comparing Report and TestSuite APIs in Evidently
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
 - [W&B first experiment tracking](../wnb/notes/2026-05-27-install-wandb-first-experiment.md)
@@ -39,7 +41,7 @@
 - [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
 - [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md) — W&B quickstart trip-ups
 - [W&B dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
-   - [W&B dashboard overview](../wnb/notes/2026-07-01-exploring-wandb-dashboard.md) — Exploring the W&B UI: runs table, charts, compare mode, and artifacts
+- [W&B dashboard — what's there](../wnb/notes/2026-07-02-whats-on-the-wandb-dashboard.md) — Workspace tabs, run detail view, compare mode, and custom charts
 - [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
 - [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for hyperparameter sweeps
 
@@ -50,6 +52,7 @@
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
+- [KServe first InferenceService](../kserve/snippets/first_inferenceservice.py) — Install KServe and deploy my first InferenceService (L1)
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
 - [Kubeflow component factory](../kubeflow/scripts/component_factory.py) — Reusable KFP component factory with resource config and caching
@@ -72,13 +75,14 @@
 - [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
 - [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)
 - [MLflow UI exploration notes](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md) — First walk through the MLflow UI: runs, parameters, metrics, and compare mode
+- [MLflow quickstart trip-ups (July 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md) — Following the official MLflow quickstart and what tripped me up
+- [MLflow autolog training snippet](../mlflow/snippets/tried_autolog_training.py) — Minimal model training with MLflow autologging (L2)
 - [MLflow first run](../mlflow/snippets/log_first_run.py)
 - [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
 - [MLflow minimal model serving](../mlflow/snippets/2026-06-10-minimal-model-serving.py) — Load a saved model and serve predictions with MLflow Python API
 - [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb) — Side-by-side comparison of two tracking approaches
 - [MLflow end-to-end training with autologging](../mlflow/snippets/tried_end_to_end_training.py) — Build an end-to-end training pipeline with MLflow autologging
 - [MLflow autologging pipeline (wine)](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
-   - [MLflow minimal autologging snippet](../mlflow/snippets/2026-07-02-minimal-autologging.py) — Minimal model training with MLflow autologging (L2)
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
@@ -129,6 +133,7 @@
 - [Katib vs ParallelFor for HP tuning](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb) — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
 - [KFP v2 minimal pipeline](../kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py) — Minimal KFP v2 pipeline with add + multiply arithmetic steps
 - [KFP minimal component](../kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
+- [KFP SDK install + hello-world pipeline](../kubeflow/snippets/tried_install_kfp_and_first_pipeline.py) — Install kfp SDK and compile my first hello-world pipeline
 - [KFP custom sklearn component Dockerfile](../kubeflow/dockerfiles/sklearn-train-component.Dockerfile) — Build a custom container component with RandomForest training
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
 - [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization

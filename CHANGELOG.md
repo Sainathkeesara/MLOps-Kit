@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-03
+
+- kserve-001: notes(primer) — What is KServe? — quick primer (L1)
+- kserve-002: snippet(python) — Install KServe and deploy my first InferenceService (L1)
+- evid-003: notes — What I learned comparing Report and TestSuite APIs in Evidently (L1)
+
 ## 2026-07-01
 
 - mflow-026: config(yaml) — Configure MLflow tracking server with SQLite backend and S3 artifact store (L1)

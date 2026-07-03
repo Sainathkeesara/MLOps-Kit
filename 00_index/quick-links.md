@@ -67,6 +67,7 @@
 - [Metaflow full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb) — Compare a fresh run against a resumed run during iterative model development
 - [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
 - [Metaflow 5-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py) — End-to-end pipeline: load → clean → feature engineering → train → evaluate
+- [Metaflow end-to-end experiment](../metaflow/scripts/2026-07-03-end-to-end-experiment.py) — Experiment with Metaflow tracking, model logging, and run comparison via Client API (L2)
 - [Metaflow batch inference splits](../metaflow/scripts/batch_inference_splits.py) — Reusable Metaflow flow for sharded batch inference with `--splits` and `@batch`
 - [MLflow model serving](../mlflow/snippets/tried_serving_a_model.py) — Train, log, load, and serve predictions via the Python API
 - [MLflow install and first experiment](../mlflow/snippets/tried_installing_mlflow_first_experiment.py) — Install MLflow and log my first experiment with the Python SDK

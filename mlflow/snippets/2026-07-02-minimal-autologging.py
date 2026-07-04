@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# last_verified: 2026-07-04 · mlflow 2.17.x
 # mflow-027 — Minimal model training with MLflow autologging (L2)
 # Simple training script to test autolog behavior.
 

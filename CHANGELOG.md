@@ -6,6 +6,7 @@
 - kserve-003: config(yaml) — Minimal InferenceService YAML for a sklearn model (L1)
 - seldon-001: notes(primer) — What is Seldon Core? — quick primer (L1)
 - seldon-002: snippet(python) — Install Seldon Core and deploy my first model with the Python SDK (L1)
+- mflow-027: snippet(python) — Minimal model training with MLflow autologging (L2)
 
 ## 2026-07-03
 

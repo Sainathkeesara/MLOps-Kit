@@ -88,6 +88,7 @@
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
 - [W&B minimal tracking snippet](../wnb/snippets/2026-06-06-minimal-tracking.py) — Minimal experiment tracking with W&B
+- [W&B first experiment with SDK](../wnb/snippets/2026-07-04-first-experiment-wb-sdk.py) — Log my first experiment with W&B Python SDK (L1)
 - [W&B first run snippet](../wnb/snippets/tried_logging_first_run.py)
 - [W&B first run with config snippet](../wnb/snippets/tried_first_wandb_run_with_config.py) — Log my first W&B run with metrics and config dict
 - [W&B artifact logging snippet](../wnb/snippets/tried_artifact_logging.py) — Save and log model and dataset artifacts with wandb.Artifact

@@ -2,6 +2,7 @@
 
 ## 2026-07-04
 
+- wnb-032: snippet(python) — Log my first experiment with W&B Python SDK (L1)
 - kserve-003: config(yaml) — Minimal InferenceService YAML for a sklearn model (L1)
 - seldon-001: notes(primer) — What is Seldon Core? — quick primer (L1)
 - seldon-002: snippet(python) — Install Seldon Core and deploy my first model with the Python SDK (L1)

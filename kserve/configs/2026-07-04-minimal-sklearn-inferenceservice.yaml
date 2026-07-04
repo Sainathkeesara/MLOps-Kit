@@ -1,0 +1,12 @@
+# last_verified: 2026-07-04 · kserve n/a
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: sklearn-iris
+  namespace: default
+spec:
+  predictor:
+    model:
+      modelFormat:
+        name: sklearn
+      storageUri: gs://your-bucket/models/iris-model.pkl

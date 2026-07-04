@@ -167,6 +167,11 @@
 - [Experiment Tracking run comparison (script)](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py) — Compare training runs with different hyperparameters side by side (L2)
 - [Model Registry exercise (snippet)](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) — Practice registering, versioning, and aliasing models (L2)
 
+### Configure a deployment
+- [KServe minimal InferenceService YAML](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml) — Minimal InferenceService for a sklearn model (L1)
+- [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — What is Seldon Core? (L1)
+- [Seldon Core install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py) — Install Seldon Core and deploy my first model via Python (L1)
+
 ## Project
 - [README](../README.md) — Project overview and repository structure
 - [CHANGELOG](../CHANGELOG.md) — Record of completed tasks

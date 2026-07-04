@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-04
+
+- kserve-003: config(yaml) — Minimal InferenceService YAML for a sklearn model (L1)
+- seldon-001: notes(primer) — What is Seldon Core? — quick primer (L1)
+- seldon-002: snippet(python) — Install Seldon Core and deploy my first model with the Python SDK (L1)
+
 ## 2026-07-03
 
 - kserve-001: notes(primer) — What is KServe? — quick primer (L1)

@@ -11,6 +11,7 @@
 - kserve-001: notes(primer) — What is KServe? — quick primer (L1)
 - kserve-002: snippet(python) — Install KServe and deploy my first InferenceService (L1)
 - evid-003: notes — What I learned comparing Report and TestSuite APIs in Evidently (L1)
+- mfl-028: script(python) — End-to-end experiment with Metaflow tracking, model logging, and run comparison (L2)
 
 ## 2026-07-01
 

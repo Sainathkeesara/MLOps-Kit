@@ -1,3 +1,5 @@
+# last_verified: 2026-07-04 · MLflow 2.17.x
+
 """Minimal model training with MLflow autologging.
 
 L2 — I tried enabling sklearn autolog and training a single classifier

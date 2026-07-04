@@ -1,3 +1,8 @@
+---
+last_verified: 2026-07-04
+tool_version: 2.17.x
+---
+
 # mflow-026 — Following the official MLflow quickstart (July 2026): what tripped me up
 
 I revisited the MLflow quickstart today — the one at `mlflow.org/docs/latest/getting-started/intro-quickstart/index.html`. I'd gone through this before in May but wanted to rerun it fresh to see what changed and what still catches me.

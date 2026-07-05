@@ -15,6 +15,7 @@
 - [KServe primer](../kserve/notes/0000-primer-kserve.md)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
+- [Kubeflow first KFP pipeline snippet](../kubeflow/snippets/2026-07-05-install-kubeflow-and-run-first-pipeline.py) — Install KFP and compile/run my first hello-world pipeline (L1)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
 - [Kubeflow Pipelines quickstart second pass trip-ups](../kubeflow/notes/2026-06-08-kubeflow-pipelines-quickstart-trip-ups.md)
@@ -57,6 +58,7 @@
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
 - [Kubeflow component factory](../kubeflow/scripts/component_factory.py) — Reusable KFP component factory with resource config and caching
 - [Kubeflow Central Dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First walk through the Kubeflow Central Dashboard
+- [Kubeflow Central Dashboard exploration (today)](../kubeflow/notes/2026-07-05-explore-kubeflow-central-dashboard.md) — Re-exploring the Kubeflow Central Dashboard layout (L1)
 - [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — KFP v2 SDK surprises during component writing and pipeline compilation
 - [KFP component factory](../kubeflow/scripts/kfp_component_factory.py) — Reusable component factory with resource configuration and caching policy (L4)
 - [Kubeflow pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md) — Diagnose infrastructure failures and pod log issues in KFP pipelines

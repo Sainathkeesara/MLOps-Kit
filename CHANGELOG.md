@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-05
+
+- kub-025: snippet(python) — Install Kubeflow and run my first KFP pipeline (L1)
+- kub-026: notes — Explore the Kubeflow Central Dashboard — what's there (L1)
+
 ## 2026-07-04
 
 - wnb-032: snippet(python) — Log my first experiment with W&B Python SDK (L1)

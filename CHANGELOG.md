@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-05
+
+- mfl-028: script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)
+- wnb-033: notes — Explore the W&B dashboard: projects, runs, and artifacts (L1)
+
 ## 2026-07-04
 
 - wnb-032: snippet(python) — Log my first experiment with W&B Python SDK (L1)

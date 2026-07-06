@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-06
+
+- mflow-029: config(yaml) — Configure MLflow tracking server with PostgreSQL backend and S3 artifact store (L2)
+- kub-026: notes — Explore the Kubeflow Central Dashboard: app tiles, subprojects, and what tripped me up (L1)
+
 ## 2026-07-05
 
 - mfl-028: script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)

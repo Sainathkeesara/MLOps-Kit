@@ -3,6 +3,7 @@
 ## 2026-07-06
 
 - kub-025 (rework): snippet(python) — Verify kfp install and compile my first KFP pipeline (L1) — fixed duplicate content and version claim
+- mflow-028: script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)
 
 ## 2026-07-04
 

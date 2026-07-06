@@ -4,181 +4,107 @@
 
 ### Set up a tool for the first time
 - [ClearML Orchestration primer](../clearml/notes/0000-primer-clearml-orchestration.md)
-- [ClearML install and first task](../clearml/snippets/tried_install_and_first_task.py) — Install ClearML and run my first task from a Python script
-- [ClearML Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md) — First walk through the ClearML web UI: projects, experiments, and dashboards
+- [ClearML install and first task](../clearml/snippets/tried_install_and_first_task.py)
+- [ClearML Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md)
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md)
-- [ZenML dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md) — Exploring the ZenML dashboard and configuring an S3 artifact store stack
+- [ZenML dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md)
 - [DVC primer](../dvc/notes/0000-primer-dvc.md)
 - [DVC get started trip-ups](../dvc/notes/2026-06-05-get-started.md)
 - [Feast primer](../feast/notes/0000-primer-feast.md)
 - [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
 - [KServe primer](../kserve/notes/0000-primer-kserve.md)
-- [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — What is Seldon Core? (L1)
-- [Seldon Core install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py) — Install Seldon Core and deploy my first model via Python (L1)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
-- [Kubeflow install and run first pipeline](../kubeflow/snippets/2026-07-06-verify-kfp-install.py) — Verify kfp install and compile my first KFP pipeline
-- [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
+- [Kubeflow install verification](../kubeflow/snippets/2026-07-06-verify-kfp-install.py) — Verify kfp install and compile my first KFP pipeline
+- [Kubeflow install and explore UI](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
-- [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
-- [Kubeflow Pipelines quickstart second pass trip-ups](../kubeflow/notes/2026-06-08-kubeflow-pipelines-quickstart-trip-ups.md)
-- [Kubeflow Pipelines quickstart third pass trip-ups](../kubeflow/notes/2026-06-09-kubeflow-pipelines-quickstart-trip-ups.md)
 - [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
 - [Kubeflow minikube and CLI setup](../kubeflow/notes/2026-06-06-install-minikube-and-kubeflow-cli.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow install and dev environment setup](../metaflow/notes/2026-05-30-install-metaflow-and-setup-dev-env.md)
-- [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
-- [Metaflow first end-to-end flow](../metaflow/notes/2026-06-05-first-flow-end-to-end.md)
-- [Metaflow second pass through quickstart](../metaflow/notes/2026-06-06-revisiting-quickstart.md)
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md)
 - [MLflow server setup](../mlflow/notes/2026-05-24-first-mlflow-server.md)
-- [MLflow tracking server with Nginx auth proxy](../mlflow/docs/production-tracking-server-nginx-auth.md) — Deploy a production MLflow Tracking Server behind an Nginx reverse proxy with HTTP basic auth
-- [MLflow quickstart trip-ups](../mlflow/notes/2026-05-27-mlflow-quickstart-trip-ups.md)
-- [MLflow Tracking quickstart trip-ups](../mlflow/notes/2026-05-28-mlflow-tracking-quickstart-trip-ups.md)
+- [MLflow tracking server with Nginx auth proxy](../mlflow/docs/production-tracking-server-nginx-auth.md)
 - [Evidently AI primer](../evidently/notes/0000-primer-evidently.md)
-- [Evidently Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md) — What I learned comparing Report and TestSuite APIs in Evidently
+- [Evidently Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
-- [W&B first run](../wnb/notes/2026-05-25-install-wandb-and-first-run.md)
-- [W&B first experiment tracking](../wnb/notes/2026-05-27-install-wandb-first-experiment.md)
-- [W&B experiment tracking session](../wnb/notes/2026-05-31-first-wandb-experiment-tracking.md)
-- [W&B first tracking session](../wnb/notes/2026-06-01-my-first-wandb-session.md)
-- [W&B first team experiment](../wnb/notes/2026-06-05-configure-wandb-first-team-experiment.md)
-- [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md) — W&B quickstart trip-ups
-- [W&B dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
-- [W&B dashboard — what's there](../wnb/notes/2026-07-02-whats-on-the-wandb-dashboard.md) — Workspace tabs, run detail view, compare mode, and custom charts
-- [W&B dashboard: projects, runs, and artifacts](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md) — Exploring how projects, runs, and artifact lineage connect in the W&B UI (L1)
-- [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
-- [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for hyperparameter sweeps
+- [W&B first experiment (SDK)](../wnb/snippets/2026-07-04-first-experiment-wb-sdk.py) — Log my first experiment with W&B Python SDK
+- [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md)
 
 ### Run an experiment
-- [ZenML first training pipeline](../zenml/snippets/tried_first_training_pipeline.py) — First ZenML pipeline with data loading and model training
-- [Evidently first drift report](../evidently/snippets/first_drift_report.py) — Install Evidently and generate a first data drift report
-- [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md) — Wire KFP pipeline components to an in-cluster MLflow tracking server
-- [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch
-- [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training
-- [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
-- [KServe first InferenceService](../kserve/snippets/first_inferenceservice.py) — Install KServe and deploy my first InferenceService (L1)
-- [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
-- [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
-- [Kubeflow component factory](../kubeflow/scripts/component_factory.py) — Reusable KFP component factory with resource config and caching
-- [Kubeflow Central Dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First walk through the Kubeflow Central Dashboard
-- [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — KFP v2 SDK surprises during component writing and pipeline compilation
-- [KFP component factory](../kubeflow/scripts/kfp_component_factory.py) — Reusable component factory with resource configuration and caching policy (L4)
-- [Kubeflow pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md) — Diagnose infrastructure failures and pod log issues in KFP pipelines
-- [KFP v1 vs v2 DSL migration guide](../kubeflow/docs/choosing-between-kfp-v1-and-v2-dsl.md) — Compare KFP v1 and v2 DSLs, document breaking changes, and migration patterns for upgrading pipelines
-- [Metaflow end-to-end flow](../metaflow/notes/2026-05-27-first-end-to-end-flow.md)
-- [Metaflow UI exploration](../metaflow/notes/2026-06-06-explore-ui-and-inspect-run.md)
-- [Metaflow data + decision flow](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb)
-- [Metaflow full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb) — Compare a fresh run against a resumed run during iterative model development
-- [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
-- [Metaflow 5-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py) — End-to-end pipeline: load → clean → feature engineering → train → evaluate
-- [Metaflow end-to-end experiment](../metaflow/scripts/2026-07-03-end-to-end-experiment.py) — Experiment with Metaflow tracking, model logging, and run comparison via Client API (L2)
-- [Metaflow batch inference splits](../metaflow/scripts/batch_inference_splits.py) — Reusable Metaflow flow for sharded batch inference with `--splits` and `@batch`
-- [MLflow model serving](../mlflow/snippets/tried_serving_a_model.py) — Train, log, load, and serve predictions via the Python API
-- [MLflow install and first experiment](../mlflow/snippets/tried_installing_mlflow_first_experiment.py) — Install MLflow and log my first experiment with the Python SDK
-- [MLflow install and first run snippet](../mlflow/snippets/tried_install_and_log_first_run.py) — Install MLflow and log first run with params and metrics
-- [MLflow autologging pipeline](../mlflow/snippets/2026-06-10-autologging-pipeline.py) — Training pipeline with autologging enabled
-- [MLflow autolog and register](../mlflow/snippets/2026-05-26-autolog_and_register.py)
-- [MLflow install and first run](../mlflow/notes/2026-05-27-install-mlflow-first-run.md)
-- [MLflow UI exploration notes](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md) — First walk through the MLflow UI: runs, parameters, metrics, and compare mode
-- [MLflow quickstart trip-ups (July 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md) — Following the official MLflow quickstart and what tripped me up
-- [MLflow autolog training snippet](../mlflow/snippets/tried_autolog_training.py) — Minimal model training with MLflow autologging (L2)
-- [MLflow end-to-end experiment](../mlflow/scripts/2026-07-06-end-to-end-experiment.py) — Full experiment cycle: tracking, model logging, registry registration, and stage promotion (L2)
-- [MLflow first run](../mlflow/snippets/log_first_run.py)
-- [MLflow metrics demo](../mlflow/snippets/tried_logging_metrics.py)
-- [MLflow minimal model serving](../mlflow/snippets/2026-06-10-minimal-model-serving.py) — Load a saved model and serve predictions with MLflow Python API
-- [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb) — Side-by-side comparison of two tracking approaches
-- [MLflow end-to-end training with autologging](../mlflow/snippets/tried_end_to_end_training.py) — Build an end-to-end training pipeline with MLflow autologging
-- [MLflow autologging pipeline (wine)](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
-- [MLflow end-to-end experiment with tracking, logging, and registry](../mlflow/scripts/2026-07-05-end-to-end-experiment.py) — Run an experiment end-to-end: track params/metrics, log the model, and register it in the Model Registry (L2)
-- [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
-- [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
-- [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)
-- [W&B minimal tracking snippet](../wnb/snippets/2026-06-06-minimal-tracking.py) — Minimal experiment tracking with W&B
-- [W&B first experiment with SDK](../wnb/snippets/2026-07-04-first-experiment-wb-sdk.py) — Log my first experiment with W&B Python SDK (L1)
-- [W&B first run snippet](../wnb/snippets/tried_logging_first_run.py)
-- [W&B first run with config snippet](../wnb/snippets/tried_first_wandb_run_with_config.py) — Log my first W&B run with metrics and config dict
-- [W&B artifact logging snippet](../wnb/snippets/tried_artifact_logging.py) — Save and log model and dataset artifacts with wandb.Artifact
-- [W&B artifact tracking in a data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md) — Link raw data, processed data, and model artifacts to a pipeline run
-- [W&B metrics and artifacts snippet](../wnb/snippets/log_metrics_and_artifacts.py)
+- [MLflow end-to-end experiment (Jul 6)](../mlflow/scripts/2026-07-06-end-to-end-experiment.py) — Full experiment cycle: tracking, model logging, registry registration, and stage promotion
+- [MLflow experiment with tracking (Jul 5)](../mlflow/scripts/2026-07-05-end-to-end-experiment.py) — MLflow tracking with model logging and run comparison
+- [MLflow end-to-end training with autologging](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py)
+- [MLflow autologging pipeline](../mlflow/snippets/2026-06-10-autologging-pipeline.py)
+- [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb)
+- [MLflow UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md)
+- [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py)
+- [W&B dashboard exploration](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md) — Exploring W&B dashboard after first experiments
+- [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py)
+- [W&B sweep and eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py)
+- [W&B sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb)
+- [ZenML first training pipeline](../zenml/snippets/tried_first_training_pipeline.py)
+- [Evidently first drift report](../evidently/snippets/first_drift_report.py)
+- [KServe first InferenceService](../kserve/snippets/first_inferenceservice.py)
+- [Seldon Core install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py)
+- [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md)
+- [Kubeflow Central Dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md)
+- [Kubeflow component factory](../kubeflow/scripts/component_factory.py)
+- [KFP component factory](../kubeflow/scripts/kfp_component_factory.py)
+- [Kubeflow pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md)
+- [KFP v1 vs v2 DSL migration guide](../kubeflow/docs/choosing-between-kfp-v1-and-v2-dsl.md)
+- [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md)
+- [Katib vs ParallelFor for HP tuning](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb)
+- [Metaflow end-to-end experiment](../metaflow/scripts/2026-07-03-end-to-end-experiment.py)
+- [Metaflow five-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py)
+- [Metaflow batch inference splits](../metaflow/scripts/batch_inference_splits.py)
+- [Metaflow full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb)
+- [Metaflow CI/CD with GitHub Actions](../metaflow/notes/2026-06-12-ci-cd-with-github-actions.md)
 - [DVC pipeline](../dvc/snippets/tried_dvc_pipeline.sh)
 - [DVC minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py)
 
 ### Define features
 - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
-- [Feast feature store config](../feast/configs/feature_store.yaml) — Feature store configuration with SQLite online store
+- [Feast feature store config](../feast/configs/feature_store.yaml)
 
 ### Register and promote models
-- [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md) — Integrate W&B Artifacts with the Model Registry for versioned model governance and promotion through staging aliases
+- [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md)
+- [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md)
 
 ### Manage compute and environments
-- [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — Pin dependencies with @conda, request CPU/memory/GPU with @resources, and set step timeouts
-- [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Compare in-process fan-out with infrastructure-level parallelism via AWS Batch
-- [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md) — Track parameters, metrics, and artifacts from Metaflow flows in W&B across single-step, shared-run, and foreach patterns
+- [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md)
+- [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md)
+- [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md)
+- [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
+- [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml)
 
 ### Configure a project
-- [Metaflow + CI/CD project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Template project wiring Metaflow ML pipelines with CI/CD, testing, and environment management (L4)
-- [W&B + CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template project wiring W&B experiment tracking with GitHub Actions CI/CD pipeline (L4)
-- [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template project wiring KFP pipelines with MLflow experiment tracking (L4)
-- [Kubeflow Pipeline Project Scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md) — Template project with CI/CD integration and unit testing patterns (L5)
+- [Kubeflow pipeline project scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md) — Template project with CI/CD, unit testing, and modular components
+- [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — Template wiring KFP with MLflow experiment tracking
+- [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Template wiring Metaflow with CI/CD, testing, and environment management
+- [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — Template wiring W&B tracking with GitHub Actions CI/CD pipeline
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml)
 - [MLflow MLproject + conda env](../mlflow/configs/MLproject)
-- [MLflow conda environment](../mlflow/configs/conda.yaml)
-- [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
-- [Metaflow linear DAG with parameters](../metaflow/snippets/tried_first_linear_dag.py)
-- [Metaflow parameterized DAG with branching and merging](../metaflow/snippets/tried_parameterized_dag.py)
-- [Metaflow parameterized flow](../metaflow/snippets/tried_parameterizing_a_flow.py) — Pass runtime config via @parameters decorator
-- [Metaflow minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
-- [Metaflow model serving flow](../metaflow/snippets/tried_serving_model.py)
-- [Metaflow @step decorator DAG ordering](../metaflow/notes/2026-06-08-step-decorator-dag-ordering.md) — How Metaflow builds and enforces the DAG through `self.next()` calls
-- [Metaflow CI/CD with GitHub Actions](../metaflow/notes/2026-06-12-ci-cd-with-github-actions.md) — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
-- [Katib HPO random search + PyTorch](../kubeflow/manifests/katib-hpo-random-search-pytorch.yaml) — Hyperparameter tuning experiment with random search algorithm and PyTorch training
-- [Kubeflow pipeline manifest](../kubeflow/manifests/minimal-hello-pipeline.yaml)
-- [Kubeflow pipeline with K8s Job set](../kubeflow/manifests/2026-06-08-pipeline-job-set.yaml) — multi-component pipeline (prep → train → evaluate) as a Kubernetes Job set
-- [Kubeflow V2 pipeline snippet](../kubeflow/snippets/tried_pipeline_v2_sdk.py)
-- [Kubeflow deploy pipeline snippet](../kubeflow/snippets/tried_deploy_first_pipeline.py) — Deploy and run a Kubeflow pipeline via SDK
-- [KFP v2 end-to-end snippet](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py) — Minimal KFP v2 pipeline with data prep, train, and evaluate steps
-- [KFP v2 conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py) — Pipeline with conditional deploy/retrain branching and per-component resource constraints
-- [Katib vs ParallelFor for HP tuning](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb) — Compare Katib managed tuning vs custom ParallelFor grid search for KFP hyperparameter optimization
-- [KFP v2 minimal pipeline](../kubeflow/snippets/2026-06-14-tried_kfp_v2_minimal.py) — Minimal KFP v2 pipeline with add + multiply arithmetic steps
-- [KFP minimal component](../kubeflow/snippets/tried_my_first_component.py) — My first Kubeflow Pipelines component — just adds two numbers
-- [KFP SDK install + hello-world pipeline](../kubeflow/snippets/tried_install_kfp_and_first_pipeline.py) — Install kfp SDK and compile my first hello-world pipeline
-- [KFP custom sklearn component Dockerfile](../kubeflow/dockerfiles/sklearn-train-component.Dockerfile) — Build a custom container component with RandomForest training
+- [KServe minimal InferenceService YAML](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml)
 - [Kubeflow pipeline resources config](../kubeflow/configs/pipeline-resources.yaml)
-- [W&B sweep config (first)](../wnb/configs/2026-06-08-first-sweep-config.yaml) — First hyperparameter sweep config with Bayesian optimization
-- [W&B sweep config (reference)](../wnb/configs/sweep_config.yaml)
-- [W&B declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml) — YAML-based hyperparameter sweep for team collaboration
-- [W&B project settings config](../wnb/configs/project-settings.yaml)
-- [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Deploy a W&B Launch agent locally with Docker Compose
-- [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml) — Terraform-like manifest for AWS Batch compute resources, job queues, and IAM roles
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
-- [MLflow tracking server config (SQLite)](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
-- [MLflow tracking server config (SQLite + S3)](../mlflow/configs/2026-07-01-tracking-server-s3.yaml) — MLflow tracking server with SQLite backend and S3 artifact store — first attempt
-- [ZenML stack config](../zenml/configs/zenml-stack.yaml) — ZenML stack with MLflow tracking and S3 artifact store
-
-### Compare model versions
-- [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — Register, compare, and promote MLflow models in the Model Registry
+- [MLflow tracking server config (SQLite)](../mlflow/configs/mlflow_tracking.yaml)
+- [MLflow tracking server config (SQLite + S3)](../mlflow/configs/2026-07-01-tracking-server-s3.yaml)
+- [ZenML stack config](../zenml/configs/zenml-stack.yaml)
+- [Metaflow project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml)
 
 ### Version data
 - [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
 
 ### Learn foundational concepts
-- [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — What experiment tracking is and why it matters for MLOps (L1)
-- [Model Registry primer](../docs/concepts/model-registry/0000-primer-model-registry.md) — What a model registry is and why it matters for ML pipelines (L1)
-- [Data Versioning primer](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — What data versioning is and why it matters for reproducible ML (L1)
-- [Pipeline Orchestration primer](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — What pipeline orchestration is and why it matters for ML workflows (L1)
-- [Feature Store primer](../docs/concepts/feature-store/0000-primer-feature-store.md) — What a feature store is and why it matters in production ML (L1)
-- [Model Serving primer](../docs/concepts/model-serving/0000-primer-model-serving.md) — What model serving is and why it matters for ML deployment (L1)
-- [Containerization primer](../docs/concepts/containerization/0000-primer-containerization.md) — What containerization is and why it matters in MLOps (L1)
-- [Monitoring & Drift primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — What monitoring and drift detection is and why it matters for model reliability (L1)
-- [Experiment Tracking exercise (snippet)](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py) — Practice logging params, metrics, and artifacts with experiment tracking (L2)
-- [Experiment Tracking run comparison (script)](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py) — Compare training runs with different hyperparameters side by side (L2)
-- [Model Registry exercise (snippet)](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) — Practice registering, versioning, and aliasing models (L2)
-
-### Configure a deployment
-- [KServe minimal InferenceService YAML](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml) — Minimal InferenceService for a sklearn model (L1)
-- [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — What is Seldon Core? (L1)
-- [Seldon Core install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py) — Install Seldon Core and deploy my first model via Python (L1)
+- [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)
+- [Model Registry primer](../docs/concepts/model-registry/0000-primer-model-registry.md)
+- [Data Versioning primer](../docs/concepts/data-versioning/0000-primer-data-versioning.md)
+- [Pipeline Orchestration primer](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md)
+- [Feature Store primer](../docs/concepts/feature-store/0000-primer-feature-store.md)
+- [Model Serving primer](../docs/concepts/model-serving/0000-primer-model-serving.md)
+- [Containerization primer](../docs/concepts/containerization/0000-primer-containerization.md)
+- [Monitoring & Drift primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md)
 
 ## Project
 - [README](../README.md) — Project overview and repository structure

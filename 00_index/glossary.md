@@ -94,6 +94,21 @@
 - **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.
 - **@step** — A ZenML decorator that marks a function as a single pipeline step.
 - **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.
+
+## KServe
+- **InferenceService** — The core CRD in KServe that defines a model serving deployment, including the model container, predictor, transformer, and explainer configurations.
+- **Predictor** — The component in an InferenceService that hosts the trained model and serves prediction requests.
+- **Transformer** — An optional pre-processing or post-processing step in an InferenceService that transforms request data before or after prediction.
+- **Explainer** — An optional component that provides model explanation and interpretability for prediction requests.
+- **KNative** — The underlying serverless platform that KServe uses for auto-scaling, revision management, and traffic splitting.
+
+## Seldon Core
+- **SeldonDeployment** — The CRD that defines a model deployment in Seldon Core, supporting multi-model graphs, canary rollouts, and A/B testing.
+- **Predictive Unit** — A single component in a SeldonDeployment graph (e.g. model, transformer, router, combiner, or output transformer).
+- **Seldon Graph** — A directed acyclic graph of Predictive Units that defines the model serving pipeline, with routing, combining, and transformation steps.
+- **Router** — A Predictive Unit that distributes requests across multiple child models based on traffic policies (canary, A/B, multi-armed bandit).
+- **Combiner** — A Predictive Unit that merges responses from multiple child models into a single output.
+- **Seldon Core Analytics** — Prometheus-based monitoring and alerting for model performance, request latency, and prediction distributions.
 - **Artifact store** — Where ZenML step outputs are saved (local filesystem, S3, GCS, MinIO).
 - **Metadata store** — A database (SQLite, MySQL, PostgreSQL) that logs pipeline runs, step status, parameters, and artifact URIs.
 - **Orchestrator** — The backend that actually runs the pipeline steps (local, Kubeflow, Airflow, Vertex AI, etc.).

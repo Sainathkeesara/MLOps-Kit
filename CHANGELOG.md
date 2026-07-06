@@ -115,13 +115,13 @@
 - gen-020: docs — Root layout audit for README (L1)
 - gen-019: docs — Empty root item pass for README Layout (L1)
 - gen-018: docs — README.md layout pass and root item check (L1)
-- gen-016: docs — Document dvc/configs/ folder in README Layout and Coverage sections (Repo Auditor discovered UF anomaly)
+- gen-016: docs — Document dvc/configs/ folder in README Layout and Coverage sections
 - kub-009: snippet(python) — Minimal KFP v2 pipeline with the Python SDK (L2)
 - mflow-012: snippet(python) — Install MLflow and log my first run with metrics and parameters (L1)
 
 ## 2026-06-13
 
-- gen-015: docs — Document 00_index/ folder in README Layout section (Repo Auditor discovered UF anomaly)
+- gen-015: docs — Document 00_index/ folder in README Layout section
 - kub-008: snippet(python) — Minimal Kubeflow Pipelines component with Python SDK — just adds two numbers (L1)
 - gen-014: docs — Actually added CHANGELOG.md to README Layout section (second pass after auditor UF flag)
 
@@ -305,9 +305,9 @@
 - gen-006: docs — Document 00_index/topics.md file in README Layout section
 - gen-007: docs — Document mlflow/notebooks/ folder in README Layout section
 - gen-011: docs — Restructure MLOps-Kit: document feast/ folder in README Layout and Coverage sections
-- gen-012: docs — Add feast/ root folder to README Layout section and Coverage table (Repo Auditor discovered UF anomaly)
-- gen-013: docs — Document General/ folder in README Layout section (Repo Auditor discovered UF anomaly)
-- gen-014: docs — Document CHANGELOG.md in README Layout section (Repo Auditor discovered UF anomaly)
+- gen-012: docs — Add feast/ root folder to README Layout section and Coverage table
+- gen-013: docs — Document General/ folder in README Layout section
+- gen-014: docs — Document CHANGELOG.md in README Layout section
 - kub-006: notes — Install minikube and Kubeflow CLI, verify local setup
 - kub-007: notes — Explore the Kubeflow Central Dashboard — what's there
 - mfl-002: notes — Explore Metaflow UI and inspect a completed flow run

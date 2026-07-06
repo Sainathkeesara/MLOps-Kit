@@ -19,7 +19,10 @@
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
 - [Kubeflow minikube and CLI setup](../kubeflow/notes/2026-06-06-install-minikube-and-kubeflow-cli.md)
+- [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md) — Following the official KFP v2 quickstart and what tripped me up
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
+- [Metaflow install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
+- [Metaflow CLI and local dev UI](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
 - [Metaflow install and dev environment setup](../metaflow/notes/2026-05-30-install-metaflow-and-setup-dev-env.md)
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md)
 - [MLflow server setup](../mlflow/notes/2026-05-24-first-mlflow-server.md)
@@ -48,6 +51,7 @@
 - [Seldon Core install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py)
 - [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md)
 - [Kubeflow Central Dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md)
+- [Kubeflow Central Dashboard re-exploration](../kubeflow/notes/2026-07-06-explore-central-dashboard-again.md) — Second pass: app tiles, subprojects, and what tripped me up
 - [Kubeflow component factory](../kubeflow/scripts/component_factory.py)
 - [KFP component factory](../kubeflow/scripts/kfp_component_factory.py)
 - [Kubeflow pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md)
@@ -89,6 +93,7 @@
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
 - [MLflow tracking server config (SQLite)](../mlflow/configs/mlflow_tracking.yaml)
 - [MLflow tracking server config (SQLite + S3)](../mlflow/configs/2026-07-01-tracking-server-s3.yaml)
+- [MLflow tracking server config (Postgres + S3)](../mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml) — Tracking server config with Postgres backend and S3 artifacts
 - [ZenML stack config](../zenml/configs/zenml-stack.yaml)
 - [Metaflow project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml)
 

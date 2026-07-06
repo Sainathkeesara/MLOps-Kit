@@ -21,6 +21,7 @@
 - [Kubeflow minikube and CLI setup](../kubeflow/notes/2026-06-06-install-minikube-and-kubeflow-cli.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow install and dev environment setup](../metaflow/notes/2026-05-30-install-metaflow-and-setup-dev-env.md)
+- [Metaflow install and first flow snippet](../metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md)
 - [MLflow server setup](../mlflow/notes/2026-05-24-first-mlflow-server.md)
 - [MLflow tracking server with Nginx auth proxy](../mlflow/docs/production-tracking-server-nginx-auth.md)

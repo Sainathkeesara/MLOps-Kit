@@ -1,14 +1,12 @@
 # Changelog
 
-## 2026-07-06
+## 2026-07-05
 
-- kub-025 (rework): snippet(python) — Verify kfp install and compile my first KFP pipeline (L1) — fixed duplicate content and version claim
-- mflow-028: script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)
+- mfl-028: script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)
+- wnb-033: notes — Explore the W&B dashboard: projects, runs, and artifacts (L1)
 
 ## 2026-07-04
 
-- mflow-026: notes — Add YAML front-matter to existing quickstart trip-ups notes (L2)
-- mflow-027: snippet(python) — Add last_verified header to existing autolog training snippet (L2)
 - wnb-032: snippet(python) — Log my first experiment with W&B Python SDK (L1)
 - kserve-003: config(yaml) — Minimal InferenceService YAML for a sklearn model (L1)
 - seldon-001: notes(primer) — What is Seldon Core? — quick primer (L1)

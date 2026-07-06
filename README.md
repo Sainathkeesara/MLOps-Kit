@@ -34,6 +34,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`evidently/`** — Evidently AI drift monitoring notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, and configs
+- **`kserve/`** — KServe model serving notes, configs, and snippets
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
 - **`kserve/`** — KServe model serving notes, configs, and snippets
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, and templates

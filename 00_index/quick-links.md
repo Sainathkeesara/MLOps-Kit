@@ -45,6 +45,7 @@
 - [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md) — W&B quickstart trip-ups
 - [W&B dashboard exploration](../wnb/notes/2026-06-17-first-dashboard-exploration.md) — First walk through the W&B web UI: runs, projects, and experiment comparison
 - [W&B dashboard — what's there](../wnb/notes/2026-07-02-whats-on-the-wandb-dashboard.md) — Workspace tabs, run detail view, compare mode, and custom charts
+- [W&B dashboard: projects, runs, and artifacts](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md) — Exploring how projects, runs, and artifact lineage connect in the W&B UI (L1)
 - [W&B model training + dashboard review](../wnb/notes/2026-06-06-train-model-and-review-dashboard.md)
 - [W&B sweep config vs Python API notebook](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb) — Side-by-side comparison of declarative YAML vs programmatic Python API for hyperparameter sweeps
 
@@ -88,6 +89,7 @@
 - [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb) — Side-by-side comparison of two tracking approaches
 - [MLflow end-to-end training with autologging](../mlflow/snippets/tried_end_to_end_training.py) — Build an end-to-end training pipeline with MLflow autologging
 - [MLflow autologging pipeline (wine)](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
+- [MLflow end-to-end experiment with tracking, logging, and registry](../mlflow/scripts/2026-07-05-end-to-end-experiment.py) — Run an experiment end-to-end: track params/metrics, log the model, and register it in the Model Registry (L2)
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)

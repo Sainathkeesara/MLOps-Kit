@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-07-06
+
+- mflow-029: config(yaml) — Configure MLflow tracking server with PostgreSQL backend and S3 artifact store (L2)
+- kub-026: notes — Explore the Kubeflow Central Dashboard: app tiles, subprojects, and what tripped me up (L1)
+- mfl-025: snippet(python) — Install Metaflow and run my first flow locally (L1)
+- mfl-026: notes — Explore Metaflow's CLI and local development UI (L1)
+- kub-025: notes — Follow the official KFP v2 quickstart and write up what tripped me up (L2)
+
 ## 2026-07-05
 
 - mfl-028: script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)

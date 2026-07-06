@@ -28,6 +28,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 ## Layout
 
 - **`00_index/`** — Topic index, quick links, glossary, and learning path
+- **`.github/`** — GitHub Actions CI (lint workflow)
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`clearml/`** — ClearML Orchestration notes and snippets
 - **`docs/`** — Cross-cutting concept primers (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
@@ -35,7 +36,6 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI drift monitoring notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
-- **`kserve/`** — KServe model serving notes, configs, and snippets
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, and templates
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets

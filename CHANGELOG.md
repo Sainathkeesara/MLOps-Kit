@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-06
+
+- kub-025 (rework): snippet(python) — Verify kfp install and compile my first KFP pipeline (L1) — fixed duplicate content and version claim
+
 ## 2026-07-04
 
 - wnb-032: snippet(python) — Log my first experiment with W&B Python SDK (L1)

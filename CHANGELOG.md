@@ -6,6 +6,8 @@
 
 ## 2026-07-04
 
+- mflow-026: notes — Add YAML front-matter to existing quickstart trip-ups notes (L2)
+- mflow-027: snippet(python) — Add last_verified header to existing autolog training snippet (L2)
 - wnb-032: snippet(python) — Log my first experiment with W&B Python SDK (L1)
 - kserve-003: config(yaml) — Minimal InferenceService YAML for a sklearn model (L1)
 - seldon-001: notes(primer) — What is Seldon Core? — quick primer (L1)

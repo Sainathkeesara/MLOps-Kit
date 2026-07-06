@@ -17,6 +17,7 @@
 - [Seldon Core install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py) — Install Seldon Core and deploy my first model via Python (L1)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install and run first pipeline](../kubeflow/snippets/2026-07-06-verify-kfp-install.py) — Verify kfp install and compile my first KFP pipeline
+- [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md) — Follow the official KFP v2 quickstart and write up what tripped me up (L2)
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)
@@ -25,6 +26,8 @@
 - [Kubeflow install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
 - [Kubeflow minikube and CLI setup](../kubeflow/notes/2026-06-06-install-minikube-and-kubeflow-cli.md)
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
+- [Metaflow install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally (L1)
+- [Metaflow CLI and local dev UI](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI (L1)
 - [Metaflow install and dev environment setup](../metaflow/notes/2026-05-30-install-metaflow-and-setup-dev-env.md)
 - [Metaflow quickstart trip-ups](../metaflow/notes/2026-05-27-metaflow-quickstart-trip-ups.md)
 - [Metaflow first end-to-end flow](../metaflow/notes/2026-06-05-first-flow-end-to-end.md)

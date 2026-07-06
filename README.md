@@ -50,6 +50,8 @@ Plus 11 files across 8 concept directories covering experiment tracking, model r
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, and templates
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
+- **`kserve/`** — KServe model serving notes, configs, and snippets
+- **`seldon/`** — Seldon Core model serving notes and snippets
 - **`zenml/`** — ZenML notes, snippets, and configs
 
 ## Status

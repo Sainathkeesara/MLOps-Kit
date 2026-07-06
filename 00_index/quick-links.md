@@ -14,6 +14,7 @@
 - [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
 - [KServe primer](../kserve/notes/0000-primer-kserve.md)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
+- [Kubeflow install and run first pipeline](../kubeflow/snippets/2026-07-06-verify-kfp-install.py) — Verify kfp install and compile my first KFP pipeline
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)
 - [Kubeflow Kind cluster setup](../kubeflow/notes/2026-05-27-kind-cluster-for-kubeflow.md)
 - [Kubeflow Pipelines quickstart trip-ups](../kubeflow/notes/2026-05-27-pipelines-quickstart-trip-ups.md)

@@ -153,6 +153,7 @@
 - [DVC pipeline config](../dvc/configs/pipeline.yaml)
 - [MLflow tracking server config (SQLite)](../mlflow/configs/mlflow_tracking.yaml) — Local backend store configuration for MLflow Tracking server
 - [MLflow tracking server config (SQLite + S3)](../mlflow/configs/2026-07-01-tracking-server-s3.yaml) — MLflow tracking server with SQLite backend and S3 artifact store — first attempt
+- [MLflow tracking server config (PostgreSQL + S3)](../mlflow/configs/2026-07-06-tracking-server-pg-s3.yaml) — MLflow tracking server with PostgreSQL backend and S3 artifact store (L2)
 - [ZenML stack config](../zenml/configs/zenml-stack.yaml) — ZenML stack with MLflow tracking and S3 artifact store
 
 ### Compare model versions

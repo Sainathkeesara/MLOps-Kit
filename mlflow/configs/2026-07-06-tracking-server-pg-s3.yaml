@@ -1,0 +1,29 @@
+# last_verified: 2026-07-06 · MLflow n/a
+# trying to set up an MLflow tracking server with PostgreSQL + S3
+# i followed the mlflow docs but tripped on a couple things:
+#   1. postgresql uri needs the database created beforehand
+#   2. s3 bucket has to exist before mlflow server starts
+# start with: mlflow server --config 2026-07-06-tracking-server-pg-s3.yaml
+
+# PostgreSQL as the backend store — tracks runs, params, metrics, registry
+# create the database first: createdb mlflow_db
+backend_store_uri: postgresql://mlflow_user:mlflow_pass@localhost:5432/mlflow_db
+
+# S3 bucket for artifacts — model binaries, plots, data files
+# create the bucket first: aws s3 mb s3://mlflow-artifacts-bucket
+default_artifact_root: s3://mlflow-artifacts-bucket
+
+host: 0.0.0.0
+port: 5000
+
+# MLflow picks up AWS creds from env vars at startup:
+#   AWS_ACCESS_KEY_ID
+#   AWS_SECRET_ACCESS_KEY
+#   AWS_DEFAULT_REGION (e.g. us-east-1)
+# or use an IAM role if running on EC2/EKS
+
+# for S3-compatible stores (MinIO, DigitalOcean Spaces),
+# set MLFLOW_S3_ENDPOINT_URL before starting the server
+#   export MLFLOW_S3_ENDPOINT_URL=https://play.min.io
+
+workers: 4

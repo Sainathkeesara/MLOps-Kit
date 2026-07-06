@@ -61,6 +61,7 @@
 - [Kubeflow component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh)
 - [Kubeflow component factory](../kubeflow/scripts/component_factory.py) — Reusable KFP component factory with resource config and caching
 - [Kubeflow Central Dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md) — First walk through the Kubeflow Central Dashboard
+- [Kubeflow Central Dashboard — what's there](../kubeflow/notes/2026-07-06-explore-central-dashboard-again.md) — Second pass: the app tiles, subprojects, and what tripped me up (L1)
 - [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — KFP v2 SDK surprises during component writing and pipeline compilation
 - [KFP component factory](../kubeflow/scripts/kfp_component_factory.py) — Reusable component factory with resource configuration and caching policy (L4)
 - [Kubeflow pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md) — Diagnose infrastructure failures and pod log issues in KFP pipelines
@@ -90,6 +91,7 @@
 - [MLflow end-to-end training with autologging](../mlflow/snippets/tried_end_to_end_training.py) — Build an end-to-end training pipeline with MLflow autologging
 - [MLflow autologging pipeline (wine)](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
 - [MLflow end-to-end experiment with tracking, logging, and registry](../mlflow/scripts/2026-07-05-end-to-end-experiment.py) — Run an experiment end-to-end: track params/metrics, log the model, and register it in the Model Registry (L2)
+- [MLflow tracking server with PostgreSQL + S3](../mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml) — Tracking server config: Postgres backend store and S3 artifact root (L2)
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
 - [W&B metrics and params snippet](../wnb/snippets/tried_logging_metrics_and_params.py)
 - [W&B first metrics and config snippet](../wnb/snippets/tried_first_metrics_and_config.py)

@@ -13,6 +13,8 @@
 - [Feast primer](../feast/notes/0000-primer-feast.md)
 - [Feast install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
 - [KServe primer](../kserve/notes/0000-primer-kserve.md)
+- [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — What is Seldon Core? (L1)
+- [Seldon Core install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py) — Install Seldon Core and deploy my first model via Python (L1)
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md)
 - [Kubeflow install and run first pipeline](../kubeflow/snippets/2026-07-06-verify-kfp-install.py) — Verify kfp install and compile my first KFP pipeline
 - [Kubeflow install guide](../kubeflow/notes/2026-05-25-install-kubeflow-and-explore-ui.md)

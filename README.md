@@ -1,41 +1,29 @@
 # MLOps-Kit
 
-> A working engineer's MLOps reference — notes, snippets, configs, and templates for Kubeflow, Metaflow, MLflow, W&B, DVC, Feast, ZenML, ClearML, and Evidently AI.
+> A working engineer's MLOps reference — notes, snippets, configs, and templates for Kubeflow, Metaflow, MLflow, W&B, DVC, Feast, ZenML, KServe, Seldon Core, ClearML, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![Python](https://img.shields.io/badge/Python-71-3776AB?logo=python&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-87-000000?logo=markdown&logoColor=white)
-![YAML](https://img.shields.io/badge/YAML-23-CB171E?logo=yaml&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-5-F37626?logo=jupyter&logoColor=white)
-![Files](https://img.shields.io/badge/files-197-blue)
+![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/MLOps-Kit)
+![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
+![Language count](https://img.shields.io/github/languages/count/Sainathkeesara/MLOps-Kit)
+
+> **New here?** Start at [the learning path](00_index/learning-path.md). It walks you from first-contact to confident in a sensible order.
+
+## Who this is for
+
+A working MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for experiment tracking, pipeline orchestration, data versioning, feature stores, model serving, drift monitoring, and project templating. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
-Hands-on notes, runnable snippets, and ready-to-use configs covering the full MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, and drift monitoring with Evidently. Eight cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project templates for Kubeflow, Metaflow, and W&B provide CI/CD-ready scaffolding for production pipelines.
-
-## Coverage
-
-| Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
-|------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
-| Kubeflow | 11 | 7 | 5 | 2 | 4 | 4 | 2 | 21 | 4 |
-| Metaflow | 10 | 5 | 3 | 2 | 3 | 2 | 2 | 12 | — |
-| MLflow | 6 | 10 | 1 | 5 | 2 | — | 1 | — | — |
-| W&B | 9 | 6 | 3 | 4 | 3 | 1 | 1 | 8 | — |
-| DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
-| Feast | 2 | 1 | — | 2 | — | — | — | — | — |
-| Evidently AI | 1 | 1 | — | — | — | — | — | — | — |
-| ClearML | 2 | 1 | — | — | — | — | — | — | — |
-| ZenML | 2 | 1 | — | 1 | — | — | — | — | — |
-
-Plus 11 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
+Hands-on notes, runnable snippets, and ready-to-use configs covering the full MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, model serving with KServe and Seldon Core, and drift monitoring with Evidently. Eight cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project templates for Kubeflow, Metaflow, and W&B provide CI/CD-ready scaffolding for production pipelines.
 
 ## Quick links
 
-- [MLflow UI exploration](mlflow/notes/2026-06-30-exploring-mlflow-ui.md) — First walk through the MLflow UI: runs, parameters, metrics, and compare mode
-- [MLflow install + first experiment](mlflow/snippets/tried_installing_mlflow_first_experiment.py) — Install MLflow and log my first experiment with the Python SDK
-- [Kubeflow pipeline scaffold](kubeflow/templates/kubeflow-pipeline-scaffold/README.md) — Template project with KFP pipeline, unit tests, CI/CD, and modular components (L5)
-- [Kubeflow + MLflow project scaffold](kubeflow/templates/kubeflow-mlflow-project/README.md) — Template wiring KFP pipelines with MLflow experiment tracking
-- [Metaflow CI/CD with GitHub Actions](metaflow/notes/2026-06-12-ci-cd-with-github-actions.md) — Wiring Metaflow flows into a GitHub Actions CI/CD pipeline
+- [W&B first experiment with Python SDK](wnb/snippets/2026-07-04-first-experiment-wb-sdk.py) — Log my first experiment with W&B Python SDK (L1)
+- [Metaflow end-to-end experiment](metaflow/scripts/2026-07-03-end-to-end-experiment.py) — Experiment with Metaflow tracking, model logging, and run comparison via Client API (L2)
+- [KServe minimal InferenceService config](kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml) — Minimal InferenceService for a sklearn model (L1)
+- [Seldon Core primer](seldon/notes/0000-primer-seldon-core.md) — What is Seldon Core? (L1)
+- [Seldon Core install and first deploy](seldon/snippets/2026-07-04-install-and-first-deploy.py) — Install Seldon Core and deploy my first model via Python (L1)
 
 ## Layout
 
@@ -47,14 +35,34 @@ Plus 11 files across 8 concept directories covering experiment tracking, model r
 - **`evidently/`** — Evidently AI drift monitoring notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
+- **`kserve/`** — KServe model serving notes, configs, and snippets
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, and templates
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
+- **`seldon/`** — Seldon Core model serving notes and snippets
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
 - **`zenml/`** — ZenML notes, snippets, and configs
 
+## Coverage
+
+| Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
+|------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
+| Kubeflow | 11 | 8 | 5 | 2 | 4 | 4 | 2 | 21 | 4 |
+| Metaflow | 10 | 5 | 4 | 2 | 3 | 2 | 2 | 12 | — |
+| MLflow | 7 | 12 | 1 | 6 | 2 | — | 1 | — | — |
+| W&B | 11 | 8 | 3 | 4 | 3 | 1 | 1 | 8 | — |
+| DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
+| Feast | 2 | 1 | — | 2 | — | — | — | — | — |
+| Evidently AI | 2 | 1 | — | — | — | — | — | — | — |
+| ClearML | 2 | 1 | — | — | — | — | — | — | — |
+| KServe | 1 | 1 | — | 1 | — | — | — | — | — |
+| Seldon | 1 | 1 | — | — | — | — | — | — | — |
+| ZenML | 2 | 1 | — | 1 | — | — | — | — | — |
+
+Plus 11 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
+
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added MLflow UI notes and install-first-experiment snippet; Kubeflow pipeline scaffold template with CI/CD and unit testing (L5).
+Working through first-contact notes and runnable experiments for each tool. Recently added Seldon Core primer and first deploy, KServe minimal InferenceService, Metaflow end-to-end experiment, and W&B first experiment with Python SDK.
 
 ---
-_Last updated: 2026-07-01_
+_Last updated: 2026-07-04_

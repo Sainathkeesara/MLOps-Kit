@@ -24,6 +24,7 @@
 - [Metaflow install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
 - [Metaflow CLI and local dev UI](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
 - [Metaflow install and dev environment setup](../metaflow/notes/2026-05-30-install-metaflow-and-setup-dev-env.md)
+- [Metaflow install and first flow snippet](../metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md)
 - [MLflow server setup](../mlflow/notes/2026-05-24-first-mlflow-server.md)
 - [MLflow tracking server with Nginx auth proxy](../mlflow/docs/production-tracking-server-nginx-auth.md)

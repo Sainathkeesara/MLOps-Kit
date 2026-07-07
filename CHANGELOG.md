@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-07
+
+- mflow-028 (rework): script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)
+
 ## 2026-07-06
 
 - mflow-029: config(yaml) — Configure MLflow tracking server with PostgreSQL backend and S3 artifact store (L2)

@@ -1,4 +1,4 @@
-# last_verified: 2026-07-06 · MLflow 2.19
+# last_verified: 2026-07-07 · MLflow n/a
 
 """End-to-end experiment with MLflow tracking, model logging, and registry registration.
 

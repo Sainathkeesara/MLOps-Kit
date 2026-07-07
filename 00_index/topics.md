@@ -17,7 +17,7 @@
 
 - **primer:** [ClearML orchestration](../clearml/notes/0000-primer-clearml-orchestration.md)
 - **notes** (2): [Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md)
-- **scripts** (1): [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
+- **snippets** (1): [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
 
 ## DVC · 7 files
 
@@ -49,7 +49,7 @@
 ## Kubeflow · 62 files
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
-- **notes** (11): most recent → [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md), [Central dashboard exploration](../kubeflow/notes/2026-06-06-explore-central-dashboard.md), [Install on Kind](../kubeflow/notes/2026-05-30-install-kubeflow-on-kind.md)
+- **notes** (13): most recent → [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md), [Central dashboard re-exploration](../kubeflow/notes/2026-07-06-explore-central-dashboard-again.md), [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md)
 - **snippets** (9): [KFP install verification](../kubeflow/snippets/2026-07-06-verify-kfp-install.py), [Conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py), [Minimal KFP v2](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py)
 - **scripts** (5): [Component factory](../kubeflow/scripts/component_factory.py), [KFP component factory](../kubeflow/scripts/kfp_component_factory.py), [Kubeflow health diagnosis](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - **configs** (2): [Pipeline resources](../kubeflow/configs/pipeline-resources.yaml)
@@ -60,11 +60,11 @@
 - **templates** (21): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
 - _…and 21 more under `kubeflow/templates/` — browse the folder._
 
-## Metaflow · 40 files
+## Metaflow · 42 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
-- **notes** (10): [CI/CD with GitHub Actions](../metaflow/notes/2026-06-12-ci-cd-with-github-actions.md), [Step decorator DAG ordering](../metaflow/notes/2026-06-08-step-decorator-dag-ordering.md), [UI and inspect run](../metaflow/notes/2026-06-06-explore-ui-and-inspect-run.md)
-- **snippets** (5): [Minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py), [Parameterized DAG](../metaflow/snippets/tried_parameterized_dag.py), [Model serving](../metaflow/snippets/tried_serving_model.py)
+- **notes** (11): [CLI and local dev UI](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md), [CI/CD with GitHub Actions](../metaflow/notes/2026-06-12-ci-cd-with-github-actions.md), [Step decorator DAG ordering](../metaflow/notes/2026-06-08-step-decorator-dag-ordering.md)
+- **snippets** (6): [Install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py), [Minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py), [Parameterized DAG](../metaflow/snippets/tried_parameterized_dag.py)
 - **scripts** (4): [End-to-end experiment](../metaflow/scripts/2026-07-03-end-to-end-experiment.py), [Five-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py), [Batch inference splits](../metaflow/scripts/batch_inference_splits.py)
 - **configs** (2): [Project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml)
 - **docs** (3): [Resource management](../metaflow/docs/metaflow-resource-management.md), [Foreach vs @batch](../metaflow/docs/foreach-vs-batch.md), [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md)
@@ -73,13 +73,13 @@
 - **templates** (12): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
 - _…and 8 more under `metaflow/templates/` — browse the folder._
 
-## MLflow · 31 files
+## MLflow · 32 files
 
 - **primer:** [MLflow concepts and setup](../mlflow/notes/0000-primer-mlflow.md)
 - **notes** (7): [UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md), [Quickstart trip-ups (Jul 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md), [First MLflow server](../mlflow/notes/2026-05-24-first-mlflow-server.md)
 - **snippets** (12): [End-to-end autologging pipeline](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py), [Minimal autologging](../mlflow/snippets/2026-07-02-minimal-autologging.py), [Model serving](../mlflow/snippets/2026-06-10-minimal-model-serving.py)
 - **scripts** (3): [End-to-end experiment (Jul 6)](../mlflow/scripts/2026-07-06-end-to-end-experiment.py), [End-to-end experiment (Jul 5)](../mlflow/scripts/2026-07-05-end-to-end-experiment.py), [Custom model flavor](../mlflow/scripts/custom_model_flavor.py)
-- **configs** (6): [Tracking server S3](../mlflow/configs/2026-07-01-tracking-server-s3.yaml), [MLproject](../mlflow/configs/MLproject), [Conda env](../mlflow/configs/conda.yaml)
+- **configs** (7): [Tracking server Postgres+S3](../mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml), [Tracking server S3](../mlflow/configs/2026-07-01-tracking-server-s3.yaml), [MLproject](../mlflow/configs/MLproject)
 - **docs** (2): [Comparing model versions](../mlflow/docs/comparing-model-versions.md), [Production tracking server with Nginx auth](../mlflow/docs/production-tracking-server-nginx-auth.md)
 - **notebooks** (1): [Autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb)
 

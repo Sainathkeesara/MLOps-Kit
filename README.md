@@ -19,11 +19,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [MLflow end-to-end experiment](mlflow/scripts/2026-07-06-end-to-end-experiment.py) — Full experiment cycle: tracking, model logging, registry registration, and stage promotion
-- [Kubeflow install verification](kubeflow/snippets/2026-07-06-verify-kfp-install.py) — Verify kfp install and compile my first KFP pipeline
-- [W&B dashboard exploration](wnb/notes/2026-07-05-exploring-wandb-dashboard.md) — Exploring W&B dashboard after first experiments
-- [MLflow experiment with tracking](mlflow/scripts/2026-07-05-end-to-end-experiment.py) — MLflow tracking with model logging and run comparison
-- [W&B first experiment (SDK)](wnb/snippets/2026-07-04-first-experiment-wb-sdk.py) — Log my first experiment with W&B Python SDK
+- [KFP v2 quickstart trip-ups](kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md) — Following the KFP v2 quickstart and what tripped me up
+- [Metaflow CLI and local dev UI](metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
+- [Metaflow install and first flow](metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
+- [Kubeflow Central Dashboard re-exploration](kubeflow/notes/2026-07-06-explore-central-dashboard-again.md) — Second pass at the Kubeflow Central Dashboard
+- [MLflow tracking server with PostgreSQL + S3](mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml) — Tracking server config with Postgres backend and S3 artifacts
 
 ## Layout
 
@@ -48,9 +48,9 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
-| Kubeflow | 11 | 9 | 5 | 2 | 4 | 4 | 2 | 21 | 4 |
-| Metaflow | 10 | 5 | 4 | 2 | 3 | 2 | 2 | 12 | — |
-| MLflow | 7 | 12 | 3 | 6 | 2 | — | 1 | — | — |
+| Kubeflow | 13 | 9 | 5 | 2 | 4 | 4 | 2 | 21 | 4 |
+| Metaflow | 11 | 6 | 4 | 2 | 3 | 2 | 2 | 12 | — |
+| MLflow | 7 | 12 | 3 | 7 | 2 | — | 1 | — | — |
 | W&B | 12 | 8 | 3 | 4 | 3 | 1 | 1 | 8 | — |
 | DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — |
@@ -66,7 +66,7 @@ Plus 11 files across 8 concept directories covering experiment tracking, model r
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added MLflow end-to-end experiment scripts, Kubeflow install verification snippet, and W&B dashboard exploration notes.
+Working through first-contact notes and runnable experiments for each tool. Recently added KFP v2 quickstart trip-ups, Metaflow CLI/local dev UI notes, Metaflow install and first flow snippet, Kubeflow Central Dashboard re-exploration, and MLflow PostgreSQL+S3 tracking server config.
 
 ---
-*Last updated: 2026-07-06*
+*Last updated: 2026-07-07*

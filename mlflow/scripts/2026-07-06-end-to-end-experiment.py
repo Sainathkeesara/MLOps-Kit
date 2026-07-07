@@ -1,4 +1,5 @@
-# last_verified: 2026-07-06 · MLflow 2.19
+#!/usr/bin/env python
+# last_verified: 2026-07-06 · MLflow ≥2.10.0
 
 """End-to-end experiment with MLflow tracking, model logging, and registry registration.
 

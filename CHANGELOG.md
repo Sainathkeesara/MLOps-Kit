@@ -2,6 +2,7 @@
 
 ## 2026-07-09
 
+- mflow-030: notebook — Exploring MLflow runs, experiments, and model registry interactively (L2)
 - mfl-028: snippet(python) — Build my first Metaflow flow with branching, retry, and foreach (L2)
 - mfl-026: notes — Explore Metaflow's CLI and local development UI (L1)
 - mfl-027 (rework): dockerfile — Custom Metaflow runtime Docker image with GPU and distributed dependencies (L4) — pinned CUDA base image tag, kubectl version, and kustomize download URL; added version sources to research.md

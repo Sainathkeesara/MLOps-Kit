@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-09
+
+- mfl-028: snippet(python) — Build my first Metaflow flow with branching, retry, and foreach (L2)
+
 ## 2026-07-03
 
 - kserve-001: notes(primer) — What is KServe? — quick primer (L1)

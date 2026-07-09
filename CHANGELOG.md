@@ -3,6 +3,29 @@
 ## 2026-07-09
 
 - mfl-028: snippet(python) — Build my first Metaflow flow with branching, retry, and foreach (L2)
+- mfl-026: notes — Explore Metaflow's CLI and local development UI (L1)
+- mfl-027 (rework): dockerfile — Custom Metaflow runtime Docker image with GPU and distributed dependencies (L4) — pinned CUDA base image tag, kubectl version, and kustomize download URL; added version sources to research.md
+- wnb-033: notes — Explore the W&B dashboard: projects, runs, and artifacts (L1)
+
+## 2026-07-06
+
+- mflow-029: config(yaml) — Configure MLflow tracking server with PostgreSQL backend and S3 artifact store (L2)
+- kub-026: notes — Explore the Kubeflow Central Dashboard: app tiles, subprojects, and what tripped me up (L1)
+- mfl-025: snippet(python) — Install Metaflow and run my first flow locally (L1)
+- mfl-026: notes — Explore Metaflow's CLI and local development UI (L1)
+- kub-025: notes — Follow the official KFP v2 quickstart and write up what tripped me up (L2)
+
+## 2026-07-05
+
+- mfl-028: script(python) — End-to-end experiment with MLflow tracking, model logging, and registry registration (L2)
+- wnb-033: notes — Explore the W&B dashboard: projects, runs, and artifacts (L1)
+
+## 2026-07-04
+
+- wnb-032: snippet(python) — Log my first experiment with W&B Python SDK (L1)
+- kserve-003: config(yaml) — Minimal InferenceService YAML for a sklearn model (L1)
+- seldon-001: notes(primer) — What is Seldon Core? — quick primer (L1)
+- seldon-002: snippet(python) — Install Seldon Core and deploy my first model with the Python SDK (L1)
 
 ## 2026-07-03
 
@@ -107,13 +130,13 @@
 - gen-020: docs — Root layout audit for README (L1)
 - gen-019: docs — Empty root item pass for README Layout (L1)
 - gen-018: docs — README.md layout pass and root item check (L1)
-- gen-016: docs — Document dvc/configs/ folder in README Layout and Coverage sections (Repo Auditor discovered UF anomaly)
+- gen-016: docs — Document dvc/configs/ folder in README Layout and Coverage sections
 - kub-009: snippet(python) — Minimal KFP v2 pipeline with the Python SDK (L2)
 - mflow-012: snippet(python) — Install MLflow and log my first run with metrics and parameters (L1)
 
 ## 2026-06-13
 
-- gen-015: docs — Document 00_index/ folder in README Layout section (Repo Auditor discovered UF anomaly)
+- gen-015: docs — Document 00_index/ folder in README Layout section
 - kub-008: snippet(python) — Minimal Kubeflow Pipelines component with Python SDK — just adds two numbers (L1)
 - gen-014: docs — Actually added CHANGELOG.md to README Layout section (second pass after auditor UF flag)
 
@@ -297,9 +320,9 @@
 - gen-006: docs — Document 00_index/topics.md file in README Layout section
 - gen-007: docs — Document mlflow/notebooks/ folder in README Layout section
 - gen-011: docs — Restructure MLOps-Kit: document feast/ folder in README Layout and Coverage sections
-- gen-012: docs — Add feast/ root folder to README Layout section and Coverage table (Repo Auditor discovered UF anomaly)
-- gen-013: docs — Document General/ folder in README Layout section (Repo Auditor discovered UF anomaly)
-- gen-014: docs — Document CHANGELOG.md in README Layout section (Repo Auditor discovered UF anomaly)
+- gen-012: docs — Add feast/ root folder to README Layout section and Coverage table
+- gen-013: docs — Document General/ folder in README Layout section
+- gen-014: docs — Document CHANGELOG.md in README Layout section
 - kub-006: notes — Install minikube and Kubeflow CLI, verify local setup
 - kub-007: notes — Explore the Kubeflow Central Dashboard — what's there
 - mfl-002: notes — Explore Metaflow UI and inspect a completed flow run

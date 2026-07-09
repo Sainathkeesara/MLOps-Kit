@@ -1,0 +1,20 @@
+# DVC pipeline stages
+# TODO: fill in DVC pipeline stages
+
+stages:
+  prepare:
+    cmd: python scripts/prepare.py
+    deps:
+      - data/raw
+    outs:
+      - data/prepared
+  train:
+    cmd: python scripts/train.py
+    deps:
+      - data/prepared
+    params:
+      - params.yaml:
+          - model.n_estimators
+          - model.max_depth
+    metrics:
+      - metrics/accuracy.json

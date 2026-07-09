@@ -1,0 +1,28 @@
+# last_verified: 2026-07-06 · mlflow n/a
+# Setting up a real tracking server backend — PostgreSQL for the run metadata
+# and S3 for the model/metric artifacts. Moving off sqlite so multiple
+# people can log to the same server.
+# Run with: mlflow server --config 2026-07-06-tracking-server-postgres-s3.yaml
+
+# Postgres as the backend store instead of sqlite so runs survive restarts
+# and are shared across a team. Format: postgresql+psycopg2://<user>:<pass>@<host>:<port>/<db>
+backend_store_uri: postgresql+psycopg2://mlflow:mlflow@localhost:5432/mlflow
+
+# Artifacts land in S3. MLflow reads AWS creds from the environment
+# (AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY), so I'm not hardcoding them here.
+default_artifact_root: s3://my-mlflow-artifacts
+
+# S3 upload options — turning on server-side encryption because the bucket
+# policy wants it. Comment out if your bucket doesn't require it.
+s3_upload_extra_args:
+  ServerSideEncryption: AES256
+
+# Bind to all interfaces so the container/cluster can reach it.
+host: 0.0.0.0
+port: 5000
+
+# A few workers so concurrent runs don't queue behind one another.
+workers: 4
+
+# server_id helps when you run more than one server behind a proxy.
+# server_id: mlflow-prod-1

@@ -19,16 +19,15 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [Metaflow CLI and local dev UI](metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
+- [W&B dashboard exploration](wnb/notes/2026-07-09-explore-wandb-dashboard.md) — Exploring W&B dashboard after first experiments
+- [Metaflow development container](metaflow/dockerfiles/metaflow-dev.Dockerfile) — Dockerfile for a Metaflow development environment
 - [KFP v2 quickstart trip-ups](kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md) — Following the KFP v2 quickstart and what tripped me up
- - [Metaflow CLI and local dev UI](metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
-- [Metaflow install and first flow](metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
-- [Kubeflow Central Dashboard re-exploration](kubeflow/notes/2026-07-06-explore-central-dashboard-again.md) — Second pass at the Kubeflow Central Dashboard
 - [MLflow tracking server with PostgreSQL + S3](mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml) — Tracking server config with Postgres backend and S3 artifacts
 
 ## Layout
 
 - **`00_index/`** — Topic index, quick links, glossary, and learning path
-- **`.github/`** — GitHub Actions CI (lint workflow)
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`clearml/`** — ClearML Orchestration notes and snippets
 - **`docs/`** — Cross-cutting concept primers (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
@@ -36,7 +35,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI drift monitoring notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
-- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, dockerfiles, and notebooks
+- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
@@ -49,10 +48,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
-| Kubeflow | 13 | 9 | 5 | 2 | 4 | 4 | 2 | 21 | 4 |
-| Metaflow | 11 | 6 | 4 | 2 | 3 | 2 | 2 | 12 | 1 |
+| Kubeflow | 13 | 9 | 7 | 3 | 4 | 4 | 2 | 20 | 4 |
+| Metaflow | 12 | 6 | 4 | 3 | 3 | 2 | 2 | 11 | 1 |
 | MLflow | 7 | 12 | 3 | 7 | 2 | — | 1 | — | — |
-| W&B | 12 | 8 | 3 | 4 | 3 | 1 | 1 | 8 | — |
+| W&B | 13 | 8 | 3 | 5 | 3 | 1 | 1 | 7 | — |
 | DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — |
@@ -67,7 +66,7 @@ Plus 11 files across 8 concept directories covering experiment tracking, model r
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added KFP v2 quickstart trip-ups, Metaflow CLI/local dev UI notes, Metaflow install and first flow snippet, Kubeflow Central Dashboard re-exploration, and MLflow PostgreSQL+S3 tracking server config.
+Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow CLI/local dev UI notes, W&B dashboard exploration, Metaflow development container, and KFP v2 quickstart trip-ups.
 
 ---
 *Last updated: 2026-07-09*

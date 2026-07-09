@@ -22,9 +22,8 @@
 - [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md) — Following the official KFP v2 quickstart and what tripped me up
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - [Metaflow install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
-- [Metaflow CLI and local dev UI](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
+- [Metaflow CLI and local dev UI](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
 - [Metaflow install and dev environment setup](../metaflow/notes/2026-05-30-install-metaflow-and-setup-dev-env.md)
-- [Metaflow install and first flow snippet](../metaflow/snippets/2026-07-06-install-first-flow.py) — Install Metaflow and run my first flow locally
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md)
 - [MLflow server setup](../mlflow/notes/2026-05-24-first-mlflow-server.md)
 - [MLflow tracking server with Nginx auth proxy](../mlflow/docs/production-tracking-server-nginx-auth.md)
@@ -42,7 +41,7 @@
 - [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb)
 - [MLflow UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md)
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py)
-- [W&B dashboard exploration](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md) — Exploring W&B dashboard after first experiments
+- [W&B dashboard exploration](../wnb/notes/2026-07-09-explore-wandb-dashboard.md) — Exploring W&B dashboard after first experiments
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py)
 - [W&B sweep and eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py)
 - [W&B sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb)
@@ -81,6 +80,7 @@
 - [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md)
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml)
+- [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
 
 ### Configure a project
 - [Kubeflow pipeline project scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md) — Template project with CI/CD, unit testing, and modular components

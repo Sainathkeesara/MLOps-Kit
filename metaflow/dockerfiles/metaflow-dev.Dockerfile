@@ -1,6 +1,6 @@
 # last_verified: 2026-07-09 · Metaflow 2.19.35
 
-FROM nvidia/cuda:latest-cudnn-devel-ubuntu22.04
+FROM nvidia/cuda:12.9.2-cudnn-devel-ubuntu22.04
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -18,14 +18,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
 
-ARG KUBECTL_VERSION=latest
+ARG KUBECTL_VERSION=v1.36.2
 RUN curl -fsSLo /usr/local/bin/kubectl \
       "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl" \
   && chmod +x /usr/local/bin/kubectl
 
-RUN curl -fsSLo /usr/local/bin/kustomize \
-      https://github.com/kubernetes-sigs/kustomize/releases/latest/download/kustomize_v*_linux_amd64 \
-  && chmod +x /usr/local/bin/kustomize
+RUN curl -fsSLo /tmp/kustomize.tar.gz \
+      https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.8.1/kustomize_v5.8.1_linux_amd64.tar.gz \
+  && tar -xzf /tmp/kustomize.tar.gz -C /usr/local/bin/ \
+  && rm /tmp/kustomize.tar.gz
 
 RUN curl -fsSLo /usr/local/bin/minikube \
       https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \

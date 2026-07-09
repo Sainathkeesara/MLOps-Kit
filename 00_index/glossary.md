@@ -56,6 +56,9 @@
 - **Katib** — Kubeflow's native hyperparameter tuning service that provides search algorithms (grid, random, Bayesian) and early stopping.
 - **ParallelFor** — A KFP DSL construct (`dsl.ParallelFor`) that iterates over a list of parameters in parallel, creating a fan-out pattern in the pipeline graph.
 - **Argo Workflow** — The underlying Kubernetes-native workflow engine that executes each KFP pipeline step as a separate pod.
+- **kustomize** — A Kubernetes configuration management tool used to customize and apply KFP manifests during installation.
+- **cert-manager** — A Kubernetes add-on that manages TLS certificates; required by KFP for admission webhooks.
+- **KUBEFLOW_NAMESPACE** — Environment variable that sets the namespace where Kubeflow Pipelines components are deployed.
 
 ## Metaflow
 - **Flow** — A directed acyclic graph of steps that defines an ML workflow in Metaflow.
@@ -70,6 +73,7 @@
 - **`@resources`** — A step-level decorator that declares CPU, memory, and GPU requirements for scheduling on remote backends.
 - **`@timeout`** — A step-level decorator that caps the maximum execution time for a step, causing the flow to fail fast if exceeded.
 - **Resume** — A Metaflow CLI feature (`--resume`) that re-runs a flow from a specified step using cached results for all prior steps, accelerating iterative development.
+- **`metaflow-dev`** — Metaflow's local development environment command that spins up Minikube, Tilt, Postgres, and the Metaflow UI for testing flows locally.
 
 ## MLflow
 - **MLflow Project** — A reusable, packaging-format for ML code with a `MLproject` file specifying entry points and environments.
@@ -89,6 +93,7 @@
 - **HyperBand** — An early-termination algorithm that allocates resources to promising runs and stops poorly performing ones early, saving compute time.
 - **Artifact** — A versioned file or directory (dataset, model, output) stored and tracked in W&B.
 - **Alias** — A mutable label (e.g. `staging`, `production`) pinned to a specific artifact version in the Model Registry for consumption and promotion workflows.
+- **Lineage graph** — The artifact view in W&B that shows which runs produced or consumed each artifact version, enabling dataset-to-model traceability.
 
 ## ZenML
 - **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.

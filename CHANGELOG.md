@@ -3,7 +3,7 @@
 ## 2026-07-09
 
 - mfl-026: notes — Explore Metaflow's CLI and local development UI (L1)
-- mfl-027: dockerfile — Custom Metaflow runtime Docker image with GPU and distributed dependencies (L4)
+- mfl-027 (rework): dockerfile — Custom Metaflow runtime Docker image with GPU and distributed dependencies (L4) — pinned CUDA base image tag, kubectl version, and kustomize download URL; added version sources to research.md
 - wnb-033: notes — Explore the W&B dashboard: projects, runs, and artifacts (L1)
 
 ## 2026-07-06

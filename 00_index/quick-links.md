@@ -78,6 +78,7 @@
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md)
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md)
 - [Metaflow + W&B integration](../metaflow/docs/metaflow-wandb-integration.md)
+- [Metaflow custom runtime Docker image](../metaflow/dockerfiles/metaflow-dev.Dockerfile) — CUDA + distributed deps for Metaflow dev environment
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml)
 - [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)

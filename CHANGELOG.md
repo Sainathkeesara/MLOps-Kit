@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-09
+
+- mfl-027: dockerfile — Custom Metaflow runtime Docker image with GPU and distributed dependencies (L4)
+
 ## 2026-07-06
 
 - mflow-029: config(yaml) — Configure MLflow tracking server with PostgreSQL backend and S3 artifact store (L2)

@@ -39,6 +39,7 @@
 - [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md) — Wire KFP pipeline components to an in-cluster MLflow tracking server
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a hyperparameter sweep with W&B from scratch
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Reusable sweep and evaluation pipeline with sklearn support, CLI subcommands, and multi-task (classification/regression) training
+- [W&B Bayesian sweep tutorial](../wnb/notebooks/2026-07-10-following-wandb-sweeps-tutorial-bayesian.ipynb) — Following the W&B hyperparameter sweeps tutorial with Bayesian optimization
 - [Custom MLflow model flavor](../mlflow/scripts/custom_model_flavor.py) — Build a custom pyfunc model flavor from scratch
 - [KServe first InferenceService](../kserve/snippets/first_inferenceservice.py) — Install KServe and deploy my first InferenceService (L1)
 - [Kubeflow backend health check](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
@@ -130,6 +131,7 @@
 - [Metaflow custom runtime Docker image](../metaflow/dockerfiles/metaflow-dev.Dockerfile) — CUDA + distributed deps for Metaflow dev environment
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml)
+- [Metaflow CI workflow (metaflow-ci.yml)](../metaflow/manifests/2026-07-10-metaflow-ci.yml) — GitHub Actions CI workflow for Metaflow flow validation
 - [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
 
 ### Configure a project

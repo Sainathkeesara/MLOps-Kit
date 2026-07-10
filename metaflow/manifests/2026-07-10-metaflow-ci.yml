@@ -1,0 +1,44 @@
+# last_verified: 2026-07-10 · Metaflow 2.19.35
+
+name: metaflow-ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        n_estimators: [50, 100]
+        max_depth: [3, 5]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache conda
+        uses: actions/cache@v4
+        with:
+          path: ~/.conda/envs
+          key: conda-${{ runner.os }}-${{ hashFiles('**/conda.yaml') }}
+
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: "3.11"
+          auto-update-conda: true
+
+      - run: pip install metaflow scikit-learn pandas
+
+      - run: python iris_flow.py run
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results-${{ matrix.n_estimators }}-${{ matrix.max_depth }}
+          path: results.csv

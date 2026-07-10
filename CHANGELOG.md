@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-10
+
+- wnb-031: notebook — Following the W&B hyperparameter sweeps tutorial with Bayesian optimization (L2)
+- mfl-025: manifest(yaml) — GitHub Actions CI workflow for Metaflow flow validation (L2)
+
 ## 2026-07-09
 
 - mflow-030: notebook — Exploring MLflow runs, experiments, and model registry interactively (L2)

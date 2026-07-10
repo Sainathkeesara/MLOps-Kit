@@ -119,6 +119,7 @@
 ### Define features
 - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
 - [Feast feature store config](../feast/configs/feature_store.yaml)
+- [Feature store practice: feature definitions, online/offline, point-in-time join](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) — Feature store fundamentals exercises (L2)
 
 ### Register and promote models
 - [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md)
@@ -165,6 +166,8 @@
 - [Model Serving primer](../docs/concepts/model-serving/0000-primer-model-serving.md)
 - [Containerization primer](../docs/concepts/containerization/0000-primer-containerization.md)
 - [Monitoring & Drift primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md)
+- [Pipeline orchestration practice: DAG and run order exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) — Pipeline orchestration fundamentals exercises (L2)
+- [Applying pipeline orchestration with a DAG-based ML workflow](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline (L2)
 
 ## Project
 - [README](../README.md) — Project overview and repository structure

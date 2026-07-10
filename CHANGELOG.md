@@ -5,6 +5,9 @@
 - con-015: script(python) — Apply model registry to version and promote ML models (L2)
 - con-016: snippet(python) — Data versioning fundamentals exercises (L2)
 - con-017: script(python) — Track dataset snapshots for reproducible training with data versioning (L2)
+- con-018: snippet(python) — Pipeline orchestration fundamentals exercises (L2)
+- con-019: script(python) — Build and run a DAG-based ML pipeline with orchestration (L2)
+- con-020: snippet(python) — Feature store fundamentals exercises (L2)
 
 ## 2026-07-09
 

@@ -5,6 +5,8 @@
 - con-015: script(python) — Apply model registry to version and promote ML models (L2)
 - con-016: snippet(python) — Data versioning fundamentals exercises (L2)
 - con-017: script(python) — Track dataset snapshots for reproducible training with data versioning (L2)
+- wnb-028: notes — Follow the official W&B quickstart and write up what tripped me up (L2)
+- wnb-029: snippet(python) — Minimal hyperparameter sweep with W&B Python SDK (L2)
 
 ## 2026-07-09
 

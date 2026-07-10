@@ -31,6 +31,8 @@
 - [Evidently Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md)
 - [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - [W&B first experiment (SDK)](../wnb/snippets/2026-07-04-first-experiment-wb-sdk.py) — Log my first experiment with W&B Python SDK
+- [W&B quickstart trip-ups (July 2026)](../wnb/notes/2026-07-10-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up
+- [W&B minimal hyperparameter sweep](../wnb/snippets/2026-07-10-minimal-hyperparameter-sweep.py) — Minimal hyperparameter sweep with W&B Python SDK
 - [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md)
 
 ### Run an experiment

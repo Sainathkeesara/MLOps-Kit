@@ -48,11 +48,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
-| Kubeflow | 13 | 9 | 7 | 3 | 4 | 4 | 2 | 20 | 4 |
-| Metaflow | 12 | 6 | 4 | 3 | 3 | 2 | 2 | 11 | 1 |
-| MLflow | 7 | 12 | 3 | 7 | 2 | — | 1 | — | — |
-| W&B | 13 | 8 | 3 | 5 | 3 | 1 | 1 | 7 | — |
-| DVC | 3 | 2 | 1 | 1 | — | — | — | — | — |
+| Kubeflow | 13 | 9 | 5 | 2 | 4 | 4 | 2 | 20 | 4 |
+| Metaflow | 12 | 7 | 4 | 2 | 3 | 2 | 2 | 11 | 1 |
+| MLflow | 7 | 12 | 3 | 7 | 2 | — | 2 | — | — |
+| W&B | 13 | 8 | 3 | 4 | 3 | 1 | 1 | 7 | — |
+| DVC | 3 | 2 | 1 | 2 | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — |
 | ClearML | 2 | 1 | — | — | — | — | — | — | — |
@@ -69,4 +69,4 @@ Plus 11 files across 8 concept directories covering experiment tracking, model r
 Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow CLI/local dev UI notes, W&B dashboard exploration, Metaflow development container, and KFP v2 quickstart trip-ups.
 
 ---
-*Last updated: 2026-07-09*
+*Last updated: 2026-07-10*

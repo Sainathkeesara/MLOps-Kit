@@ -72,6 +72,7 @@
 - [MLflow minimal model serving](../mlflow/snippets/2026-06-10-minimal-model-serving.py) — Load a saved model and serve predictions with MLflow Python API
 - [MLflow exploring runs, experiments, and model registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb) — Interactive exploration of runs, experiments, and Model Registry stages
 - [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb) — Side-by-side comparison of two tracking approaches
+- [MLflow runs, experiments, and registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb) — Exploring runs, experiments, and the model registry in the MLflow UI
 - [MLflow end-to-end training with autologging](../mlflow/snippets/tried_end_to_end_training.py) — Build an end-to-end training pipeline with MLflow autologging
 - [MLflow autologging pipeline (wine)](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)

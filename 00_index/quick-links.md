@@ -123,6 +123,7 @@
 ### Register and promote models
 - [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md)
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md)
+- [Apply model registry: version and promote ML models](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py) — Version and promote models with MLflow registry (L2)
 
 ### Manage compute and environments
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md)
@@ -152,6 +153,8 @@
 ### Version data
 - [DVC init and first dataset track](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - [DVC first dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
+- [Data versioning practice: pointer files and snapshots](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Data versioning fundamentals exercises (L2)
+- [Track dataset snapshots for reproducible training](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py) — Snapshot datasets and pin versions to training runs (L2)
 
 ### Learn foundational concepts
 - [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)

@@ -2,13 +2,13 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 11 files
+## Concepts · 14 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
-- **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md)
+- **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — with [exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) and [snapshot script](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py)
 - **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — with [exercises](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py) and [run comparison script](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py)
 - **primer:** [Feature Store](../docs/concepts/feature-store/0000-primer-feature-store.md)
-- **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md) — with [exercises](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py)
+- **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md) — with [exercises](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) and [apply script](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py)
 - **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md)
 - **primer:** [Monitoring & Drift](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md)
 - **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md)

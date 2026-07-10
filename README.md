@@ -28,6 +28,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 ## Layout
 
 - **`00_index/`** — Topic index, quick links, glossary, and learning path
+- **`.github/`** — CI workflows (GitHub Actions)
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`clearml/`** — ClearML Orchestration notes and snippets
 - **`docs/`** — Cross-cutting concept primers (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)

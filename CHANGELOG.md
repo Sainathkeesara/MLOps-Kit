@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-10
+
+- con-015: script(python) — Apply model registry to version and promote ML models (L2)
+- con-016: snippet(python) — Data versioning fundamentals exercises (L2)
+- con-017: script(python) — Track dataset snapshots for reproducible training with data versioning (L2)
+
 ## 2026-07-09
 
 - mflow-030: notebook — Exploring MLflow runs, experiments, and model registry interactively (L2)

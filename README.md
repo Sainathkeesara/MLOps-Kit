@@ -35,7 +35,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI drift monitoring notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
-- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, and dockerfiles
+- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets

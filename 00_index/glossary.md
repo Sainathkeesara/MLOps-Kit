@@ -10,6 +10,8 @@
 - **Dashboard** — The web UI where you browse runs, compare metrics, and search experiments by parameter or metric value.
 - **Pointer file** — A small text file tracked in git that maps to the actual dataset artifact in remote storage (e.g. `data.csv.dvc`).
 - **Promotion** — Moving a model version from one stage to another (e.g. staging → production) after validation passes.
+- **Snapshot** — A point-in-time copy of a dataset or model artifact, tracked so you can reproduce any past training run exactly.
+- **Version** — A specific iteration of a registered model, identified by a version number or alias for promotion and rollback.
 
 ## ClearML
 - **Task** — The atomic unit of work in ClearML; a single script execution logged as an experiment with parameters, metrics, and artifacts.
@@ -103,3 +105,7 @@
 - **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.
 - **@step** — A ZenML decorator that marks a function as a single pipeline step.
 - **@pipeline** — A ZenML decorator that groups multiple steps into a DAG-based pipeline definition.
+- **Artifact store** — Where ZenML step outputs are saved (local filesystem, S3, GCS, MinIO).
+- **Metadata store** — A database (SQLite, MySQL, PostgreSQL) that logs pipeline runs, step status, parameters, and artifact URIs.
+- **Orchestrator** — The backend that actually runs the pipeline steps (local, Kubeflow, Airflow, Vertex AI, etc.).
+- **Materializer** — A component that knows how to serialize and deserialize a Python type to and from the artifact store.

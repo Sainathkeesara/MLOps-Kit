@@ -47,9 +47,9 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
-| Kubeflow | 14 | 9 | 7 | 3 | 4 | 5 | 2 | 21 | 4 |
-| Metaflow | 13 | 7 | 4 | 3 | 3 | 2 | 2 | 11 | 1 |
-| W&B | 14 | 8 | 3 | 5 | 3 | 1 | 1 | 7 | — |
+| Kubeflow | 14 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 |
+| Metaflow | 13 | 7 | 4 | 2 | 3 | 2 | 2 | 11 | 1 |
+| W&B | 14 | 8 | 3 | 4 | 3 | 1 | 1 | 7 | — |
 | MLflow | 7 | 12 | 3 | 7 | 2 | — | 2 | — | — |
 | DVC | 3 | 2 | 1 | 2 | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — |
@@ -59,7 +59,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | KServe | 1 | 1 | — | 1 | — | — | — | — | — |
 | Seldon | 1 | 1 | — | — | — | — | — | — | — |
 
-Plus 14 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
+Plus 17 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
 
 </details>
 
@@ -68,4 +68,4 @@ Plus 14 files across 8 concept directories covering experiment tracking, model r
 Working through first-contact notes and runnable experiments for each tool. Recently added KFP v2 and Metaflow quickstart trip-ups (July 2026), feature store and pipeline orchestration practice exercises, and W&B dashboard exploration notes.
 
 ---
-_Last updated: 2026-07-11_
+_Last updated: 2026-07-12_

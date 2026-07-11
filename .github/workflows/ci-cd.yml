@@ -1,0 +1,13 @@
+# Placeholder CI workflow
+# TODO: fill in lint, test, and build steps for the MLOps-Kit repository
+name: CI
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CI placeholder — replace with actual lint, test, and build steps."

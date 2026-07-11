@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-11
+
+- mfl-029: notes — Follow the official Metaflow quickstart and write up what tripped me up (L2)
+- wnb-035: notes — Follow the official W&B quickstart and write up what tripped me up (L2)
+- kub-030: notes — KFP v2 quickstart: two-pod-per-step, artifact passing, and cache-deployer pitfalls (L2)
+
 ## 2026-07-10
 
 - con-015: script(python) — Apply model registry to version and promote ML models (L2)

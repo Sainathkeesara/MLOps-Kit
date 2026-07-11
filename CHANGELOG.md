@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-11
+
+- wnb-033: manifest(yaml) — Add the missing `.github/workflows/ci-cd.yml` to the wandb-cicd-project template so the README's CI/CD reference resolves (L2)
+
 ## 2026-07-10
 
 - con-015: script(python) — Apply model registry to version and promote ML models (L2)

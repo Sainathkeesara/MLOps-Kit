@@ -6,6 +6,7 @@
 - wnb-035: notes — Follow the official W&B quickstart and write up what tripped me up (L2)
 - kub-030: notes — KFP v2 quickstart: two-pod-per-step, artifact passing, and cache-deployer pitfalls (L2)
 - wnb-033: manifest(yaml) — Add the missing `.github/workflows/ci-cd.yml` to the wandb-cicd-project template so the README's CI/CD reference resolves (L2)
+- kub-029: manifest(yaml) — Add `.github/workflows/ci-cd.yml` to the kubeflow-pipeline-scaffold template plus a reference manifest describing the CI/CD workflow steps and secrets (L2)
 
 ## 2026-07-10
 

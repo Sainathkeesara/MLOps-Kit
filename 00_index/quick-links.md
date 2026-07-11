@@ -74,7 +74,6 @@
 - [MLflow minimal model serving](../mlflow/snippets/2026-06-10-minimal-model-serving.py) — Load a saved model and serve predictions with MLflow Python API
 - [MLflow exploring runs, experiments, and model registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb) — Interactive exploration of runs, experiments, and Model Registry stages
 - [MLflow autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb) — Side-by-side comparison of two tracking approaches
-- [MLflow runs, experiments, and registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb) — Exploring runs, experiments, and the model registry in the MLflow UI
 - [MLflow end-to-end training with autologging](../mlflow/snippets/tried_end_to_end_training.py) — Build an end-to-end training pipeline with MLflow autologging
 - [MLflow autologging pipeline (wine)](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — End-to-end training pipeline with sklearn autolog, model comparison, and Model Registry registration
 - [W&B training script](../wnb/scripts/train_small_model_with_wandb.py)
@@ -121,6 +120,7 @@
 ### Define features
 - [My first feature view with Feast](../feast/snippets/tried_first_feature_view.py)
 - [Feast feature store config](../feast/configs/feature_store.yaml)
+- [Feature store practice: feature definitions, online/offline, point-in-time join](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) — Feature store fundamentals exercises (L2)
 
 ### Register and promote models
 - [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md)
@@ -134,7 +134,6 @@
 - [Metaflow custom runtime Docker image](../metaflow/dockerfiles/metaflow-dev.Dockerfile) — CUDA + distributed deps for Metaflow dev environment
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - [Metaflow AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml)
-- [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
 
 ### Configure a project
 - [Kubeflow pipeline project scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md) — Template project with CI/CD, unit testing, and modular components
@@ -167,6 +166,8 @@
 - [Model Serving primer](../docs/concepts/model-serving/0000-primer-model-serving.md)
 - [Containerization primer](../docs/concepts/containerization/0000-primer-containerization.md)
 - [Monitoring & Drift primer](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md)
+- [Pipeline orchestration practice: DAG and run order exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) — Pipeline orchestration fundamentals exercises (L2)
+- [Applying pipeline orchestration with a DAG-based ML workflow](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline (L2)
 
 ## Project
 - [README](../README.md) — Project overview and repository structure

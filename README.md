@@ -19,16 +19,15 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [Track dataset snapshots for reproducible training](docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py) — Snapshot datasets and pin versions to training runs (L2)
+- [Apply model registry: version and promote ML models](docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py) — Version and promote models with MLflow registry (L2)
+- [Data versioning fundamentals exercises](docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Data versioning fundamentals exercises (L2)
 - [Metaflow CLI and local dev UI](metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md) — Explore Metaflow's CLI and local development UI
 - [W&B dashboard exploration](wnb/notes/2026-07-09-explore-wandb-dashboard.md) — Exploring W&B dashboard after first experiments
-- [Metaflow development container](metaflow/dockerfiles/metaflow-dev.Dockerfile) — Dockerfile for a Metaflow development environment
-- [KFP v2 quickstart trip-ups](kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md) — Following the KFP v2 quickstart and what tripped me up
-- [MLflow tracking server with PostgreSQL + S3](mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml) — Tracking server config with Postgres backend and S3 artifacts
 
 ## Layout
 
 - **`00_index/`** — Topic index, quick links, glossary, and learning path
-- **`.github/`** — CI workflows (GitHub Actions)
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`clearml/`** — ClearML Orchestration notes and snippets
 - **`docs/`** — Cross-cutting concept primers (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
@@ -36,7 +35,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI drift monitoring notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
-- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, scripts, snippets, templates, and dockerfiles
+- **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
@@ -61,13 +60,13 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | KServe | 1 | 1 | — | 1 | — | — | — | — | — |
 | Seldon | 1 | 1 | — | — | — | — | — | — | — |
 
-Plus 11 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
+Plus 14 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
 
 </details>
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow CLI/local dev UI notes, W&B dashboard exploration, Metaflow development container, and KFP v2 quickstart trip-ups.
+Working through first-contact notes and runnable experiments for each tool. Recently added data versioning and model registry practice scripts, MLflow notebook on runs and registry, and Metaflow branching/retry/foreach snippet.
 
 ---
-*Last updated: 2026-07-10*
+_Last updated: 2026-07-10_

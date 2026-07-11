@@ -1,0 +1,36 @@
+# kub-029 — CI/CD workflow manifest for kubeflow-pipeline-scaffold
+#
+# References the GitHub Actions workflow bundled in:
+#   .github/workflows/ci-cd.yml
+#
+# Purpose:
+#   Automated gate for every push and PR: lint, test, compile, and
+#   conditionally deploy the KFP pipeline to a cluster endpoint.
+#
+# Trigger:
+#   • push to main
+#   • pull_request targeting main
+#
+# Workflow steps:
+#   1. Checkout code
+#   2. Python 3.11 via setup-python
+#   3. pip install -r requirements.txt
+#   4. flake8 on components/ and scripts/ (will skip if flake8 not installed)
+#   5. pytest tests/ -v
+#   6. python pipeline.py → produces pipeline.yaml
+#   7. Upload pipeline.yaml as a 14-day artifact
+#   8. On main-branch push only: upload pipeline.yaml to KFP endpoint
+#      (uses secrets.KFP_HOST in the kubeflow environment)
+#
+# Required GitHub secrets:
+#   KFP_HOST — URL of the Kubeflow Pipelines UI endpoint
+#              (e.g. https://kubeflow.example.com/pipeline)
+#
+# Required GitHub environment:
+#   kubeflow — protects the deploy job with branch/approval rules
+#
+# Outputs:
+#   pipeline_yaml — path to the compiled pipeline artifact
+#
+# References:
+#   https://www.kubeflow.org/docs/components/pipelines/v2/compile-a-pipeline/

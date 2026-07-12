@@ -2,9 +2,13 @@
 
 ## 2026-07-12
 
+- seldon-007: notes — Seldon Core vs KServe for sklearn model serving: choosing the right platform (L2)
+- con-070: script(python) — Writing and reading features from an online store with a point-in-time join backend (L2)
+- con-071: script(python) — Deploy a FastAPI inference endpoint with batching, caching, and health checks (L2)
 - mfl-030: script(python) — Metaflow flow with @step, custom logging, and artifact persistence (L2)
 - clml-007: notes — ClearML pitfalls: queues, task dependencies, and artifact uploads (L2)
 - kub-029 (rework): manifest(yaml) — Rewrote the kubeflow-pipeline-scaffold CI/CD workflow with no unverified action version pins (git-based checkout, runner Python, run.py submit); cleaned the reference manifest of unbacked version numbers (L2)
+- Passed ([x]) kub-029 — Kubeflow: manifest — Create `.github/workflows/ci-cd.yml` for kubeflow-pipeline-scaffold template · Level: L2 · 2026-07-12
 
 ## 2026-07-11
 

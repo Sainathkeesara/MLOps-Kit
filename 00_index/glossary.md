@@ -59,8 +59,9 @@
 - **Katib** — Kubeflow's native hyperparameter tuning service that provides search algorithms (grid, random, Bayesian) and early stopping.
 - **ParallelFor** — A KFP DSL construct (`dsl.ParallelFor`) that iterates over a list of parameters in parallel, creating a fan-out pattern in the pipeline graph.
 - **Argo Workflow** — The underlying Kubernetes-native workflow engine that executes each KFP pipeline step as a separate pod.
-- **kustomize** — A Kubernetes configuration management tool used to customize and apply KFP manifests during installation.
-- **cert-manager** — A Kubernetes add-on that manages TLS certificates; required by KFP for admission webhooks.
+- **kustomize** — A Kubernetes configuration management tool used to apply layered customizations to KFP manifests during installation.
+- **cache-deployer** — An optional KFP pod that caches pipeline step outputs to speed up re-runs; can cause TLS/CSR issues during first install.
+- **cert-manager** — A Kubernetes add-on that manages TLS certificates; required by KFP for admission webhooks and cache-deployer TLS.
 - **KUBEFLOW_NAMESPACE** — Environment variable that sets the namespace where Kubeflow Pipelines components are deployed.
 
 ## Metaflow
@@ -79,7 +80,7 @@
 - **`metaflow-dev`** — Metaflow's local development environment command that spins up Minikube, Tilt, Postgres, and the Metaflow UI for testing flows locally.
 
 ## MLflow
-- **MLflow Project** — A reusable, packaging-format for ML code with a `MLproject` file specifying entry points and environments.
+- **MLproject** — A reusable packaging format for ML code with a `MLproject` file specifying entry points and environments.
 - **Autologging** — Automatic logging of metrics, parameters, and model artifacts by MLflow's `autolog()` integration with common ML frameworks.
 - **Model Registry** — A centralized model store in MLflow for versioning, annotating, and managing model lifecycle stages.
 

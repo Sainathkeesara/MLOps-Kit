@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-12
+
+- mfl-030: script(python) — Metaflow flow with @step, custom logging, and artifact persistence (L2)
+- clml-007: notes — ClearML pitfalls: queues, task dependencies, and artifact uploads (L2)
+
 ## 2026-07-11
 
 - mfl-029: notes — Follow the official Metaflow quickstart and write up what tripped me up (L2)

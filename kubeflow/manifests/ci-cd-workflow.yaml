@@ -1,7 +1,7 @@
 # kub-029 — CI/CD workflow manifest for kubeflow-pipeline-scaffold
 #
 # References the GitHub Actions workflow bundled in:
-#   .github/workflows/ci-cd.yml
+#   kubeflow/templates/kubeflow-pipeline-scaffold/.github/workflows/ci-cd.yml
 #
 # Purpose:
 #   Automated gate for every push and PR: lint, test, compile, and
@@ -11,26 +11,26 @@
 #   • push to main
 #   • pull_request targeting main
 #
+# Notes:
+#   The workflow pins no third-party action versions. It checks out the repo
+#   with git, uses the runner's system Python (python3) and pip, and submits
+#   the compiled pipeline with run.py.
+#
 # Workflow steps:
-#   1. Checkout code
-#   2. Python 3.11 via setup-python
-#   3. pip install -r requirements.txt
-#   4. flake8 on components/ and scripts/ (will skip if flake8 not installed)
-#   5. pytest tests/ -v
-#   6. python pipeline.py → produces pipeline.yaml
-#   7. Upload pipeline.yaml as a 14-day artifact
-#   8. On main-branch push only: upload pipeline.yaml to KFP endpoint
-#      (uses secrets.KFP_HOST in the kubeflow environment)
+#   1. Checkout code (git fetch of the triggering SHA)
+#   2. pip install -r requirements.txt
+#   3. flake8 on components/ and scripts/ (skipped if not installed)
+#   4. pytest tests/ -v
+#   5. python3 pipeline.py → produces pipeline.yaml
+#   6. On main-branch push only: run.py submits pipeline.yaml to the KFP
+#      endpoint (uses secrets.KFP_HOST in the kubeflow environment)
 #
 # Required GitHub secrets:
-#   KFP_HOST — URL of the Kubeflow Pipelines UI endpoint
-#              (e.g. https://kubeflow.example.com/pipeline)
+#   KFP_HOST — URL of the Kubeflow Pipelines API host
+#              (e.g. https://kubeflow.example.com)
 #
 # Required GitHub environment:
 #   kubeflow — protects the deploy job with branch/approval rules
-#
-# Outputs:
-#   pipeline_yaml — path to the compiled pipeline artifact
 #
 # References:
 #   https://www.kubeflow.org/docs/components/pipelines/v2/compile-a-pipeline/

@@ -4,6 +4,7 @@
 
 - mfl-030: script(python) — Metaflow flow with @step, custom logging, and artifact persistence (L2)
 - clml-007: notes — ClearML pitfalls: queues, task dependencies, and artifact uploads (L2)
+- kub-029 (rework): manifest(yaml) — Rewrote the kubeflow-pipeline-scaffold CI/CD workflow with no unverified action version pins (git-based checkout, runner Python, run.py submit); cleaned the reference manifest of unbacked version numbers (L2)
 
 ## 2026-07-11
 

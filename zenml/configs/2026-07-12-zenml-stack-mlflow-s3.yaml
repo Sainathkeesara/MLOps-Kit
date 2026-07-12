@@ -1,0 +1,60 @@
+# last_verified: 2026-07-12 · ZenML n/a
+#
+# Trying to set up a ZenML stack with MLflow experiment tracking and S3 artifact store.
+# I followed the primer and the dashboard notes, but wanted something I could actually
+# use for a team project — so MySQL instead of SQLite, and a named MLflow experiment.
+#
+# To register from this YAML (once components exist):
+#   zenml stack register mlflow-s3-stack -f 2026-07-12-zenml-stack-mlflow-s3.yaml
+#
+# But ZenML expects components registered separately first, so I registered them
+# one by one before creating the stack. Leaving the YAML here as a reference for
+# the final stack shape.
+
+stack:
+  name: mlflow-s3-stack
+
+  # --- Orchestrator ---
+  # Local for now. Once I get access to a K8s cluster I'll switch to the
+  # kubeflow orchestrator — the rest of the stack stays the same.
+  orchestrator:
+    type: local
+    name: default-orch
+
+  # --- Artifact Store ---
+  # Switched from the default local filesystem to S3 so teammates can access
+  # intermediate artifacts without copying files around.
+  # Make sure AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY are exported.
+  artifact_store:
+    type: s3
+    name: s3-store
+    config:
+      path: s3://zenml-mlflow-artifacts
+      client_kwargs:
+        region_name: us-west-2
+        # endpoint_url: http://localhost:9000  # uncomment for MinIO testing
+
+  # --- Metadata Store ---
+  # SQLite was fine for the primer but MySQL makes it shareable.
+  # I created the database manually:
+  #   CREATE DATABASE IF NOT EXISTS zenml_metadata;
+  metadata_store:
+    type: mysql
+    name: mysql-store
+    config:
+      host: 127.0.0.1
+      port: 3306
+      database: zenml_metadata
+      username: zenml_user
+      password: '${ZENML_MYSQL_PASSWORD}'  # set via env var, not hardcoded
+
+  # --- Experiment Tracker ---
+  # MLflow is what the team already uses for ad-hoc experiments. Wiring it into
+  # the stack means every ZenML run auto-logs params and metrics there.
+  experiment_tracker:
+    type: mlflow
+    name: mlflow-tracker
+    config:
+      tracking_uri: http://127.0.0.1:5000
+      experiment_name: zenml-mlflow-stack
+      # nested: true  # uncomment if running nested MLflow runs inside steps

@@ -9,6 +9,7 @@
 - clml-007: notes — ClearML pitfalls: queues, task dependencies, and artifact uploads (L2)
 - kub-029 (rework): manifest(yaml) — Rewrote the kubeflow-pipeline-scaffold CI/CD workflow with no unverified action version pins (git-based checkout, runner Python, run.py submit); cleaned the reference manifest of unbacked version numbers (L2)
 - Passed ([x]) kub-029 — Kubeflow: manifest — Create `.github/workflows/ci-cd.yml` for kubeflow-pipeline-scaffold template · Level: L2 · 2026-07-12
+- zenml-009: config(yaml) — ZenML stack config with MLflow experiment tracker and S3 artifact store (L2)
 
 ## 2026-07-11
 

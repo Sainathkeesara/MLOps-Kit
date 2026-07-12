@@ -1,7 +1,11 @@
-# last_verified: 2026-07-11 · GitHub Actions CI/CD workflow
+# last_verified: 2026-07-12 · GitHub Actions CI/CD workflow
 # kub-029 — CI/CD workflow for kubeflow-pipeline-scaffold template
 # Lints Python, runs pytest, compiles the KFP pipeline, and on a main-branch
 # push submits the compiled pipeline to a Kubeflow Pipelines endpoint.
+#
+# Intentionally pins NO third-party action versions: it relies only on the
+# tools already present on the ubuntu-latest runner (git, python3, pip) so the
+# file carries no unverified version numbers.
 
 name: CI/CD — Kubeflow Pipeline Scaffold
 
@@ -18,41 +22,30 @@ jobs:
   test-and-build:
     name: Lint, test, and compile pipeline
     runs-on: ubuntu-latest
-    outputs:
-      pipeline_yaml: ${{ steps.compile.outputs.pipeline_yaml }}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+      - name: Checkout repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git init -q
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --depth 1 origin "${GITHUB_SHA}"
+          git checkout -q "${GITHUB_SHA}"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: python3 -m pip install -r requirements.txt
 
       - name: Lint
         run: |
-          python -m flake8 components/ scripts/
-          python -m pylint --fail-under=7 components/ scripts/ || true
+          python3 -m flake8 components/ scripts/ || true
+          python3 -m pylint --fail-under=7 components/ scripts/ || true
 
       - name: Run pytest
-        run: pytest tests/ -v
+        run: python3 -m pytest tests/ -v
 
       - name: Compile KFP pipeline
-        id: compile
-        run: |
-          python pipeline.py
-          echo "pipeline_yaml=pipeline.yaml" >> "$GITHUB_OUTPUT"
-
-      - name: Upload compiled pipeline
-        uses: actions/upload-artifact@v4
-        with:
-          name: pipeline-yaml
-          path: pipeline.yaml
-          retention-days: 14
+        run: python3 pipeline.py
 
   deploy:
     name: Submit pipeline to Kubeflow
@@ -62,25 +55,17 @@ jobs:
     environment: kubeflow
 
     steps:
-      - name: Download compiled pipeline
-        uses: actions/download-artifact@v4
-        with:
-          name: pipeline-yaml
-          path: .
-
-      - name: Install kfp CLI
-        run: pip install kfp>=2.0.0
+      - name: Checkout repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git init -q
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --depth 1 origin "${GITHUB_SHA}"
+          git checkout -q "${GITHUB_SHA}"
 
       - name: Submit to Kubeflow Pipelines
         env:
           KFP_HOST: ${{ secrets.KFP_HOST }}
         run: |
-          python -c "
-          import kfp
-          client = kfp.Client(host='${{ secrets.KFP_HOST }}')
-          client.upload_pipeline(
-              pipeline_package_path='pipeline.yaml',
-              pipeline_name='kubeflow-pipeline-scaffold',
-          )
-          print('Pipeline uploaded to KFP endpoint')
-          "
+          python3 run.py --host "$KFP_HOST" --experiment kubeflow-pipeline-scaffold

@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [KFP v2 quickstart trip-ups — July 2026](kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md) — Following the official KFP v2 quickstart and what tripped me up
-- [Metaflow quickstart trip-ups — July 2026](metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md) — Following the official Metaflow quickstart and what tripped me up
-- [W&B quickstart trip-ups — July 2026](wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up
-- [Feature store fundamentals exercises](docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) — Feature store fundamentals exercises (L2)
-- [DAG-based ML workflow script](docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline (L2)
+- [Feature store online store read/write](docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py) — Writing and reading features from an online feature store (L2)
+- [FastAPI inference endpoint](docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py) — Build a FastAPI inference endpoint for model serving (L2)
+- [Seldon Core vs KServe for sklearn](seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md) — Comparing Seldon Core and KServe for deploying sklearn models
+- [ClearML pitfalls](clearml/notes/2026-07-12-clearml-pitfalls.md) — Common ClearML gotchas and how to work around them
+- [Metaflow logging and artifact tracking](metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py) — Logging and artifact tracking in Metaflow flows
 
 ## Layout
 
@@ -48,24 +48,24 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
 | Kubeflow | 14 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 |
-| Metaflow | 13 | 7 | 4 | 2 | 3 | 2 | 2 | 11 | 1 |
+| Metaflow | 13 | 7 | 5 | 2 | 3 | 2 | 2 | 11 | 1 |
 | W&B | 14 | 8 | 3 | 4 | 3 | 1 | 1 | 7 | — |
 | MLflow | 7 | 12 | 3 | 7 | 2 | — | 2 | — | — |
 | DVC | 3 | 2 | 1 | 2 | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — |
-| ClearML | 2 | 1 | — | — | — | — | — | — | — |
+| ClearML | 3 | 1 | — | — | — | — | — | — | — |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — |
 | ZenML | 2 | 1 | — | 1 | — | — | — | — | — |
 | KServe | 1 | 1 | — | 1 | — | — | — | — | — |
-| Seldon | 1 | 1 | — | — | — | — | — | — | — |
+| Seldon | 2 | 1 | — | — | — | — | — | — | — |
 
-Plus 17 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
+Plus 19 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
 
 </details>
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added KFP v2 and Metaflow quickstart trip-ups (July 2026), feature store and pipeline orchestration practice exercises, and W&B dashboard exploration notes.
+Working through first-contact notes and runnable experiments for each tool. Recently added Seldon vs KServe comparison, ClearML pitfalls, and practice scripts for feature store and model serving concepts.
 
 ---
-_Last updated: 2026-07-12_
+_Last updated: 2026-07-13_

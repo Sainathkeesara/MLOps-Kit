@@ -11,6 +11,9 @@
 - [Feast primer](../feast/notes/0000-primer-feast.md) — Feature store setup and first retrieval
 - [KServe primer](../kserve/notes/0000-primer-kserve.md) — Model serving setup and first InferenceService
 - [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — Model serving setup and first deploy
+- [ClearML primer](../clearml/notes/0000-primer-clearml-orchestration.md) — ClearML orchestration setup and first task
+- [ClearML common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md) — Gotchas and workarounds for ClearML
+- [Seldon Core vs KServe for sklearn](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md) — Comparing two model-serving frameworks
 
 ### Run an experiment
 - [MLflow end-to-end training with autologging](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — sklearn autolog, model comparison, and registry registration
@@ -24,6 +27,7 @@
 - [Kubeflow pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md) — Diagnose pod failures and Artifact store issues
 - [Kubeflow Pipelines + MLflow tracking integration](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md) — Wire KFP to an in-cluster MLflow server
 - [Metaflow end-to-end experiment](../metaflow/scripts/2026-07-03-end-to-end-experiment.py) — Tracking, model logging, and run comparison via Client API
+- [Metaflow logging and artifact tracking](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py) — Logging and artifact tracking in Metaflow flows
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — CPU, memory, and GPU scheduling
 
 ### Version and register models
@@ -37,6 +41,8 @@
 - [Pipeline orchestration practice exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) — DAG, dependencies, and run order (L2)
 - [Applying DAG-based ML workflow](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline (L2)
 - [Feature store fundamentals exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) — Feature definitions, online/offline, point-in-time joins (L2)
+- [Feature store online store read/write](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py) — Write and read features from an online store (L2)
+- [FastAPI inference endpoint for model serving](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py) — Build a FastAPI inference API (L2)
 
 ### Manage compute and environments
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Parallelism patterns and execution backends

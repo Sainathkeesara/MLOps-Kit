@@ -2,22 +2,22 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 17 files
+## Concepts · 19 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
 - **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — with [exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) and [snapshot script](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py)
 - **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — with [exercises](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py) and [run comparison script](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py)
-- **primer:** [Feature Store](../docs/concepts/feature-store/0000-primer-feature-store.md) — with [exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py)
+- **primer:** [Feature Store](../docs/concepts/feature-store/0000-primer-feature-store.md) — with [exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) and [online store script](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py)
 - **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md) — with [exercises](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py) and [apply script](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py)
-- **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md)
+- **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md) — with [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py)
 - **primer:** [Monitoring & Drift](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md)
 - **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) and [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py)
 
-## ClearML · 3 files
+## ClearML · 4 files
 
 - **primer:** [ClearML orchestration](../clearml/notes/0000-primer-clearml-orchestration.md)
-- **notes:** [Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md)
-- **snippets:** [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
+- **notes** (3): most recent → [Common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md), [Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md)
+- **snippets** (1): [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
 
 ## DVC · 8 files
 
@@ -60,12 +60,12 @@
 - **templates** (20): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
 - _…and 18 more under `kubeflow/templates/` — browse the folder._
 
-## Metaflow · 45 files
+## Metaflow · 46 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - **notes** (13): most recent → [Metaflow quickstart trip-ups (Jul 11)](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI (Jul 9)](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md), [CLI and local dev UI (Jul 6)](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md)
 - **snippets** (7): [First flow with branching, retry, and foreach](../metaflow/snippets/2026-07-09-first-flow-branching-retry-foreach.py), [Install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py), [Minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
-- **scripts** (4): [End-to-end experiment (Jul 3)](../metaflow/scripts/2026-07-03-end-to-end-experiment.py), [Five-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py), [Batch inference splits](../metaflow/scripts/batch_inference_splits.py)
+- **scripts** (5): [Logging and artifact tracking](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py), [End-to-end experiment (Jul 3)](../metaflow/scripts/2026-07-03-end-to-end-experiment.py), [Five-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py)
 - **configs** (2): [Project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml), [Config README](../metaflow/configs/README.md)
 - **docs** (3): [W&B integration](../metaflow/docs/metaflow-wandb-integration.md), [Resource management](../metaflow/docs/metaflow-resource-management.md), [Foreach vs @batch](../metaflow/docs/foreach-vs-batch.md)
 - **manifests** (2): [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml), [Manifest README](../metaflow/manifests/README.md)
@@ -84,9 +84,10 @@
 - **docs** (2): [Comparing model versions](../mlflow/docs/comparing-model-versions.md), [Production tracking server with Nginx auth](../mlflow/docs/production-tracking-server-nginx-auth.md)
 - **notebooks** (2): [Exploring runs, experiments, and model registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb), [Autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb)
 
-## Seldon Core · 2 files
+## Seldon Core · 3 files
 
 - **primer:** [Seldon Core overview](../seldon/notes/0000-primer-seldon-core.md)
+- **notes** (2): [Seldon Core vs KServe for sklearn](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md)
 - **snippets** (1): [Install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py)
 
 ## Weights & Biases · 41 files

@@ -7,6 +7,7 @@
 - con-072: script — Generate and smoke-test a multi-stage Dockerfile (training stage → onnxruntime serving stage) via the Docker CLI (L2)
 - Passed ([x]) con-072 — Containerization: script — Multi-stage Dockerfile for ML training with onnxruntime serving stage · Level: L2 · 2026-07-13
 - zenml-010: script(python) — Multi-step ZenML pipeline with custom materializers and MLflow logging (L2)
+- Passed ([x]) zenml-010 — ZenML: script — Multi-step ZenML pipeline with custom materializers and MLflow logging · Level: L2 · 2026-07-13
 
 ## 2026-07-12
 

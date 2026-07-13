@@ -1,0 +1,72 @@
+# last_verified: 2026-07-13 · metaflow n/a
+#
+# metaflow-028 — Metaflow DevStack Docker Compose manifest
+#
+# After running through the Metaflow quickstart (pip install metaflow,
+# python hello.py run), I wanted a local environment with the metadata
+# service + UI so I could see run history without setting up AWS Batch.
+# The official Helm-based DevStack needs a Kubernetes cluster, but this
+# Docker Compose gives a lightweight metadata store for local development.
+#
+# Prerequisites:
+#   - Docker Engine 20.10+ with Compose Plugin v2
+#   - psycopg2-binary installed (the metadata service needs it:
+#     pip install psycopg2-binary)
+#
+# Quick start:
+#   docker compose -f metaflow-dev.yaml up -d
+#   export METAFLOW_SERVICE_URL=http://localhost:8080
+#   python myflow.py run
+#
+# Stop:
+#   docker compose -f metaflow-dev.yaml down -v
+
+version: "3.8"
+
+services:
+  # PostgreSQL — Metaflow metadata backend
+  # The quickstart uses local mode, but the service needs Postgres
+  # to persist run metadata across sessions
+  postgres:
+    image: postgres:15-alpine
+    container_name: metaflow-pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: metaflow
+      POSTGRES_PASSWORD: metaflow
+      POSTGRES_DB: metaflow_metadata
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U metaflow -d metaflow_metadata"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Metaflow Metadata Service — REST API that tracks runs and artifacts
+  # Uses the same Metaflow Python package; exposed on port 8080
+  metadata-service:
+    image: python:3.11-slim
+    container_name: metaflow-service
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      METAFLOW_DATABASE_URL: postgresql://metaflow:metaflow@postgres:5432/metaflow_metadata
+      METAFLOW_SERVICE_PORT: "8080"
+    working_dir: /app
+    command: >
+      sh -c "
+        pip install --quiet metaflow psycopg2-binary &&
+        python -m metaflow.service.server
+      "
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./flows:/app/flows
+
+volumes:
+  pgdata:

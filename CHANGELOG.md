@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-13
+
+- metaflow-028: manifest(yaml) — Metaflow DevStack Docker Compose manifest for local metadata service and UI (L2)
+- wnb-034: manifest(yaml) — W&B CI/CD GitHub Actions workflow for the wandb-cicd-project template (L2)
+
 ## 2026-07-12
 
 - seldon-007: notes — Seldon Core vs KServe for sklearn model serving: choosing the right platform (L2)

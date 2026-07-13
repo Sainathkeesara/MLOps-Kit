@@ -16,8 +16,8 @@
 ## ClearML · 4 files
 
 - **primer:** [ClearML orchestration](../clearml/notes/0000-primer-clearml-orchestration.md)
-- **notes** (3): most recent → [Common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md), [Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md)
-- **snippets** (1): [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
+- **notes** (2): [Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md), [Pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md)
+- **snippets:** [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
 
 ## DVC · 8 files
 
@@ -60,15 +60,15 @@
 - **templates** (20): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
 - _…and 18 more under `kubeflow/templates/` — browse the folder._
 
-## Metaflow · 46 files
+## Metaflow · 48 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - **notes** (13): most recent → [Metaflow quickstart trip-ups (Jul 11)](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI (Jul 9)](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md), [CLI and local dev UI (Jul 6)](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md)
 - **snippets** (7): [First flow with branching, retry, and foreach](../metaflow/snippets/2026-07-09-first-flow-branching-retry-foreach.py), [Install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py), [Minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
-- **scripts** (5): [Logging and artifact tracking](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py), [End-to-end experiment (Jul 3)](../metaflow/scripts/2026-07-03-end-to-end-experiment.py), [Five-step ML pipeline](../metaflow/scripts/2026-06-12-five-step-ml-pipeline.py)
+- **scripts** (6): [Kubernetes flow metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py), [Logging artifact flow](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py), [End-to-end experiment (Jul 3)](../metaflow/scripts/2026-07-03-end-to-end-experiment.py)
 - **configs** (2): [Project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml), [Config README](../metaflow/configs/README.md)
 - **docs** (3): [W&B integration](../metaflow/docs/metaflow-wandb-integration.md), [Resource management](../metaflow/docs/metaflow-resource-management.md), [Foreach vs @batch](../metaflow/docs/foreach-vs-batch.md)
-- **manifests** (2): [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml), [Manifest README](../metaflow/manifests/README.md)
+- **manifests** (3): [DevStack compose](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml), [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml), [Manifest README](../metaflow/manifests/README.md)
 - **notebooks** (2): [Full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb), [End-to-end flow with data](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb)
 - **dockerfiles** (1): [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
 - **templates** (11): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
@@ -87,10 +87,10 @@
 ## Seldon Core · 3 files
 
 - **primer:** [Seldon Core overview](../seldon/notes/0000-primer-seldon-core.md)
-- **notes** (2): [Seldon Core vs KServe for sklearn](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md)
+- **notes:** [Seldon vs KServe comparison](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md)
 - **snippets** (1): [Install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py)
 
-## Weights & Biases · 41 files
+## Weights & Biases · 42 files
 
 - **primer:** [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - **notes** (14): most recent → [W&B quickstart trip-ups (Jul 11)](../wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md), [Dashboard exploration (Jul 9)](../wnb/notes/2026-07-09-explore-wandb-dashboard.md), [Dashboard exploration (Jul 5)](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md)
@@ -98,13 +98,13 @@
 - **scripts** (3): [Sweep and eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py), [Hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py)
 - **configs** (4): [Declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml), [First sweep config](../wnb/configs/2026-06-08-first-sweep-config.yaml)
 - **docs** (3): [Artifact + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md), [Artifact tracking in data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md)
-- **manifests** (1): [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
+- **manifests** (2): [CI/CD workflow](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - **notebooks** (1): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb)
 - **templates** (7): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md)
 
-## ZenML · 4 files
+## ZenML · 5 files
 
 - **primer:** [ZenML overview](../zenml/notes/0000-primer-zenml.md)
 - **notes** (2): [Dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md)
 - **snippets** (1): [First training pipeline](../zenml/snippets/tried_first_training_pipeline.py)
-- **configs** (1): [ZenML stack config](../zenml/configs/zenml-stack.yaml)
+- **configs** (2): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml)

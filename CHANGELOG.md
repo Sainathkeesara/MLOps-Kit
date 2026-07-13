@@ -4,6 +4,7 @@
 
 - metaflow-028: manifest(yaml) — Metaflow DevStack Docker Compose manifest for local metadata service and UI (L2)
 - wnb-034: manifest(yaml) — W&B CI/CD GitHub Actions workflow for the wandb-cicd-project template (L2)
+- con-072: script — Generate and smoke-test a multi-stage Dockerfile (training stage → onnxruntime serving stage) via the Docker CLI (L2)
 
 ## 2026-07-12
 

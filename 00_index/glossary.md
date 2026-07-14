@@ -80,6 +80,7 @@
 - **`@timeout`** — A step-level decorator that caps the maximum execution time for a step, causing the flow to fail fast if exceeded.
 - **Resume** — A Metaflow CLI feature (`--resume`) that re-runs a flow from a specified step using cached results for all prior steps, accelerating iterative development.
 - **`metaflow-dev`** — Metaflow's local development environment command that spins up Minikube, Tilt, Postgres, and the Metaflow UI for testing flows locally.
+- **DevStack** — A bundled local Metaflow environment (metadata service + UI) for inspecting run history without provisioning AWS Batch or a Kubernetes cluster.
 
 ## MLflow
 - **MLproject** — A reusable packaging format for ML code with a `MLproject` file specifying entry points and environments.

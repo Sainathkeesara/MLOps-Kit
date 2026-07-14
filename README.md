@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [KFP v2 quickstart trip-ups — July 2026](kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md) — Following the official KFP v2 quickstart and what tripped me up
-- [Metaflow quickstart trip-ups — July 2026](metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md) — Following the official Metaflow quickstart and what tripped me up
-- [W&B quickstart trip-ups — July 2026](wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up
-- [Metaflow DevStack compose manifest](metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml) — Local Metaflow dev environment with Minikube, Tilt, and Postgres
-- [W&B CI/CD workflow manifest](wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml) — GitHub Actions workflow for W&B sweep orchestration
+- [ZenML parent-child pipelines & lineage](zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Hierarchical ZenML pipelines with artifact lineage
+- [Multi-step ZenML + MLflow pipeline](zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py) — Ingest → preprocess → train → evaluate with a custom materializer and MLflow logging
+- [Multi-stage ONNX Runtime serving](docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py) — Slim serving image built from a fat training stage
+- [Metaflow DevStack compose manifest](metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml) — Local Metaflow dev environment with metadata service and UI
+- [W&B CI/CD workflow manifest](wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml) — GitHub Actions workflow that trains, logs to W&B, and promotes the best model
 
 ## Layout
 
@@ -59,7 +59,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | KServe | 1 | 1 | — | 1 | — | — | — | — | — |
 | Seldon | 2 | 1 | — | — | — | — | — | — | — |
 
-Plus 19 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
+Plus 20 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
 
 </details>
 
@@ -68,4 +68,4 @@ Plus 19 files across 8 concept directories covering experiment tracking, model r
 Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow DevStack compose manifest, W&B CI/CD workflow, Metaflow Kubernetes flow with metadata tracking, ZenML stack config with MLflow+S3, and feature store online store writing/reading script.
 
 ---
-_Last updated: 2026-07-13_
+_Last updated: 2026-07-14_

@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [ZenML parent-child pipelines & lineage](zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Hierarchical ZenML pipelines with artifact lineage
-- [Multi-step ZenML + MLflow pipeline](zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py) — Ingest → preprocess → train → evaluate with a custom materializer and MLflow logging
-- [Multi-stage ONNX Runtime serving](docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py) — Slim serving image built from a fat training stage
-- [Metaflow DevStack compose manifest](metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml) — Local Metaflow dev environment with metadata service and UI
-- [W&B CI/CD workflow manifest](wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml) — GitHub Actions workflow that trains, logs to W&B, and promotes the best model
+- [KFP v2 quickstart trip-ups — July 2026](kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md) — Following the official KFP v2 quickstart and what tripped me up
+- [W&B quickstart trip-ups — July 2026](wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up
+- [MLflow tracking server config with PostgreSQL backend and S3 artifact store](mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml) — Production-ready MLflow tracking server stack
+- [KServe custom predictor with explainer](kserve/snippets/2026-07-14-custom-predictor-explainer.py) — Custom model predictor and explainer for KServe
+- [ZenML parent-child pipelines and artifact lineage notebook](zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Multi-pipeline DAGs and artifact tracking with ZenML
 
 ## Layout
 
@@ -39,7 +39,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
-- **`zenml/`** — ZenML notes, snippets, and configs
+- **`zenml/`** — ZenML notes, snippets, configs, notebooks, and scripts
 
 ## Coverage
 
@@ -47,16 +47,16 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
-| Kubeflow | 14 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 |
+| Kubeflow | 15 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 |
 | Metaflow | 13 | 7 | 6 | 2 | 3 | 3 | 2 | 11 | 1 |
 | W&B | 14 | 8 | 3 | 4 | 3 | 2 | 1 | 7 | — |
-| MLflow | 7 | 12 | 3 | 7 | 2 | — | 2 | — | — |
+| MLflow | 7 | 13 | 3 | 8 | 2 | — | 2 | — | — |
 | DVC | 3 | 2 | 1 | 2 | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — |
 | ClearML | 3 | 1 | — | — | — | — | — | — | — |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — |
-| ZenML | 2 | 1 | — | 2 | — | — | — | — | — |
-| KServe | 1 | 1 | — | 1 | — | — | — | — | — |
+| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — |
 | Seldon | 2 | 1 | — | — | — | — | — | — | — |
 
 Plus 20 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
@@ -65,7 +65,7 @@ Plus 20 files across 8 concept directories covering experiment tracking, model r
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow DevStack compose manifest, W&B CI/CD workflow, Metaflow Kubernetes flow with metadata tracking, ZenML stack config with MLflow+S3, and feature store online store writing/reading script.
+Working through first-contact notes and runnable experiments for each tool. Recently added MLflow tracking server config with PostgreSQL and S3, KServe custom predictor with explainer, ZenML artifact lineage notebook, and KFP install on Kind.
 
 ---
 _Last updated: 2026-07-14_

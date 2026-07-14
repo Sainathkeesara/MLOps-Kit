@@ -1,0 +1,44 @@
+# last_verified: 2026-07-14 · databricks n/a
+
+catalog:
+  name: mlops_catalog
+  comment: Central catalog for MLOps model artifacts and experiment outputs
+  storage_root: dbfs:/mlops_catalog
+
+schemas:
+  - name: model_registry
+    comment: Registered ML models tracked via MLflow in Unity Catalog
+    tables:
+      - name: sentiment_classifier
+        model_type: classification
+        description: Text sentiment model trained on customer reviews
+      - name: demand_forecaster
+        model_type: regression
+        description: Weekly product demand forecast trained on sales history
+
+access_controls:
+  - group: ml-engineers
+    permissions:
+      - USE_CATALOG
+      - USE_SCHEMA
+      - CREATE_MODEL
+      - READ_MODEL
+  - group: data-scientists
+    permissions:
+      - USE_CATALOG
+      - USE_SCHEMA
+      - CREATE_MODEL
+  - group: serving-team
+    permissions:
+      - USE_CATALOG
+      - USE_SCHEMA
+      - READ_MODEL
+
+model_staging:
+  stages:
+    - name: Staging
+      description: Models promoted from dev runs; validated before production
+    - name: Production
+      description: Models serving live traffic; requires approval to promote
+    - name: Archived
+      description: Retired models kept for lineage and reproducibility

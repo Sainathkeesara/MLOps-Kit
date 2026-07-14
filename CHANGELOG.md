@@ -10,6 +10,10 @@
 - mlf-012: config(yaml) — Configure MLflow tracking server with PostgreSQL backend and S3 artifact store (L2)
 - Passed ([x]) mlf-011 — MLflow: snippet — Follow the official MLflow tracking quickstart — log params, metrics, and a model artifact · Level: L2 · 2026-07-14
 - Passed ([x]) kub-033 — Kubeflow: notes — Install Kubeflow Pipelines standalone on kind and explore the UI · Level: L1 · 2026-07-14
+- Passed ([x]) clml-006 — ClearML: config — ClearML task and pipeline configuration for remote GPU execution · Level: L2 · 2026-07-14
+- Passed ([x]) mfl-032 — Metaflow: notes — Install Metaflow, run the hello-world flow, and explore the CLI · Level: L1 · 2026-07-14
+- databricks-003: config(yaml) — Unity Catalog model registration config with catalog, schema, access controls, and staging lifecycle (L2)
+- databricks-004: script(python) — Model registration and staging promotion with Unity Catalog and MLflow (L2)
 
 ## 2026-07-13
 

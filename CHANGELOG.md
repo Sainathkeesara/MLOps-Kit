@@ -8,6 +8,7 @@
 - Passed ([x]) con-072 — Containerization: script — Multi-stage Dockerfile for ML training with onnxruntime serving stage · Level: L2 · 2026-07-13
 - zenml-010: script(python) — Multi-step ZenML pipeline with custom materializers and MLflow logging (L2)
 - Passed ([x]) zenml-010 — ZenML: script — Multi-step ZenML pipeline with custom materializers and MLflow logging · Level: L2 · 2026-07-13
+- zenml-011: notebook — Hierarchical ZenML pipelines: parent-child orchestration and artifact lineage (L2)
 
 ## 2026-07-12
 

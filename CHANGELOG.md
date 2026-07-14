@@ -4,6 +4,9 @@
 
 - mlf-011: snippet(python) — MLflow tracking quickstart: log params, metrics, and a model artifact (L2)
 - kub-033: notes — Install Kubeflow Pipelines standalone on kind and explore the UI (L1)
+- kserve-007: snippet(python) — Custom predictor with Alibi explainer for InferenceService via the Python SDK (L2)
+- Passed ([x]) mlf-011 — MLflow: snippet — Follow the official MLflow tracking quickstart — log params, metrics, and a model artifact · Level: L2 · 2026-07-14
+- Passed ([x]) kub-033 — Kubeflow: notes — Install Kubeflow Pipelines standalone on kind and explore the UI · Level: L1 · 2026-07-14
 
 ## 2026-07-13
 

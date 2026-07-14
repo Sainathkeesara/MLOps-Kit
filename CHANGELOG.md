@@ -2,6 +2,8 @@
 
 ## 2026-07-14
 
+- clml-006: config(yaml) — ClearML task and pipeline configuration for remote GPU execution (L2)
+- mfl-032: notes — Install Metaflow, run the hello-world flow, and explore the CLI (L1)
 - mlf-011: snippet(python) — MLflow tracking quickstart: log params, metrics, and a model artifact (L2)
 - kub-033: notes — Install Kubeflow Pipelines standalone on kind and explore the UI (L1)
 - kserve-007: snippet(python) — Custom predictor with Alibi explainer for InferenceService via the Python SDK (L2)

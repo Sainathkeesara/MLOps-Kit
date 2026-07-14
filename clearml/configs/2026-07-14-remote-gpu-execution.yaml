@@ -1,0 +1,67 @@
+# last_verified: 2026-07-14 · ClearML n/a
+
+api:
+  host: https://app.clear.ml
+  web_server: https://app.clear.ml
+  api_server: https://api.clear.ml
+  files_server: https://files.clear.ml
+
+sdk:
+  storage:
+    default_output_uri: s3://my-clearml-artifacts
+    credentials:
+      key: ${AWS_ACCESS_KEY_ID}
+      secret: ${AWS_SECRET_ACCESS_KEY}
+      region: us-east-1
+  development:
+    use_gpu_only: true
+
+agent:
+  queue_name: gpu_queue
+  docker:
+    image: nvidia/cuda:12.1.0-runtime-ubuntu22.04
+    arguments: --gpus all --shm-size 8g
+  resource_selection:
+    gpu_type: any
+    min_gpu_memory_mb: 8192
+    min_num_cpus: 8
+    min_memory_mb: 32768
+
+task:
+  project: mlops-pipelines
+  name: remote-gpu-training
+  type: training
+  script:
+    repository: https://github.com/myorg/ml-training
+    branch: main
+    entry_point: train.py
+  container:
+    image: nvidia/cuda:12.1.0-runtime-ubuntu22.04
+    arguments: --gpus all --shm-size 8g
+  requirements:
+    cuda: "12.1"
+    cudnn: "8"
+  output_uri: s3://my-clearml-artifacts/models
+
+pipeline:
+  project: mlops-pipelines
+  name: gpu-training-pipeline
+  version: "1.0"
+  steps:
+    - name: data_prep
+      task: data-pipeline:preprocess-v1
+      execution_queue: default
+    - name: gpu_training
+      task: mlops-pipelines:remote-gpu-training:latest
+      execution_queue: gpu_queue
+      parents:
+        - data_prep
+      parameters:
+        epochs: 50
+        batch_size: 64
+        learning_rate: 0.001
+    - name: evaluate
+      task: mlops-pipelines:model-evaluation:latest
+      execution_queue: default
+      parents:
+        - gpu_training

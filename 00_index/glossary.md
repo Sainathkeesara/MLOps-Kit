@@ -42,6 +42,7 @@
 - **Feature Service** — A deployed server that serves the latest feature values for real-time inference.
 - **Offline Store** — A data store (e.g. BigQuery, Snowflake, Parquet) that holds historical feature data for training.
 - **Online Store** — A low-latency data store (e.g. Redis, DynamoDB) that holds the latest feature values for serving.
+- **Point-in-time join** — A query that retrieves the correct feature values as they existed at a specific training timestamp, preventing data leakage from future feature values.
 
 ## KServe
 - **InferenceService** — The core CRD in KServe that defines a deployed model endpoint, specifying the model storage URI, framework, resource requests, and scaling config.
@@ -67,6 +68,7 @@
 ## Metaflow
 - **Flow** — A directed acyclic graph of steps that defines an ML workflow in Metaflow.
 - **Step** — A single unit of work in a Metaflow flow, decorated with `@step`.
+- **`@kubernetes`** — A step-level decorator that runs the step inside a Kubernetes pod instead of locally, enabling remote compute for training or data processing.
 - **Self.next()** — The mechanism by which Metaflow builds the DAG; each step calls `self.next()` to specify which step(s) run next, supporting linear, fan-out, and join patterns.
 - **DAG ordering** — The implicit graph structure derived from `self.next()` calls in each step; no separate YAML or configuration file is needed.
 - **Namespace** — A Metaflow concept for isolating runs and data across users or environments.

@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 19 files
+## Concepts · 20 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
 - **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — with [exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) and [snapshot script](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py)
@@ -102,9 +102,11 @@
 - **notebooks** (1): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb)
 - **templates** (7): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md)
 
-## ZenML · 5 files
+## ZenML · 7 files
 
 - **primer:** [ZenML overview](../zenml/notes/0000-primer-zenml.md)
 - **notes** (2): [Dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md)
 - **snippets** (1): [First training pipeline](../zenml/snippets/tried_first_training_pipeline.py)
+- **scripts** (1): [Multi-step ZenML + MLflow pipeline](../zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py)
 - **configs** (2): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml)
+- **notebooks** (1): [Parent-child pipelines & lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb)

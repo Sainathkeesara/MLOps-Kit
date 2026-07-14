@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-14
+
+- mlf-011: snippet(python) — MLflow tracking quickstart: log params, metrics, and a model artifact (L2)
+- kub-033: notes — Install Kubeflow Pipelines standalone on kind and explore the UI (L1)
+
 ## 2026-07-13
 
 - metaflow-028: manifest(yaml) — Metaflow DevStack Docker Compose manifest for local metadata service and UI (L2)

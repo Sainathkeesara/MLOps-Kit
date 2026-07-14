@@ -1,0 +1,52 @@
+# last_verified: 2026-07-14 · mlflow n/a
+# MLflow tracking server config — PostgreSQL backend + S3 artifact store
+#
+# Moving off the sqlite:/// default so the whole team can log runs to the
+# same server without stepping on each other. PostgreSQL handles concurrent
+# writes, and S3 keeps the actual model artifacts / plots accessible from
+# anywhere.
+#
+# Start the server with:
+#   mlflow server --config 2026-07-14-tracking-server-postgres-s3.yaml
+
+# ---------------------------------------------------------------------------
+# Backend store — where run metadata (params, metrics, tags) lives
+# ---------------------------------------------------------------------------
+# Format: postgresql+psycopg2://<user>:<pass>@<host>:<port>/<database>
+# I created a dedicated postgres user and database first:
+#   CREATE USER mlflow WITH PASSWORD 'mlflow';
+#   CREATE DATABASE mlflow OWNER mlflow;
+backend_store_uri: postgresql+psycopg2://mlflow:mlflow@localhost:5432/mlflow
+
+# ---------------------------------------------------------------------------
+# Artifact store — where model files, plots, and other binary artifacts go
+# ---------------------------------------------------------------------------
+# MLflow reads AWS credentials from env vars (AWS_ACCESS_KEY_ID,
+# AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION), so no keys in this file.
+# The bucket must already exist — MLflow won't create it.
+default_artifact_root: s3://my-mlflow-artifacts
+
+# ---------------------------------------------------------------------------
+# S3 upload options
+# ---------------------------------------------------------------------------
+# Turned on server-side encryption because my org's bucket policy requires it.
+# If you're using a MinIO or other S3-compatible store, set the endpoint
+# via the MLFLOW_S3_ENDPOINT_URL env var instead of here.
+s3_upload_extra_args:
+  ServerSideEncryption: AES256
+
+# ---------------------------------------------------------------------------
+# Server network config
+# ---------------------------------------------------------------------------
+# Bind to 0.0.0.0 so the server is reachable from other containers or
+# remote machines. I had it set to 127.0.0.1 at first and kept getting
+# connection refused from the training script — took me a while to realize.
+host: 0.0.0.0
+port: 5000
+
+# ---------------------------------------------------------------------------
+# Gunicorn workers
+# ---------------------------------------------------------------------------
+# More workers = handles concurrent run logging without bottlenecking.
+# Don't go over 2 * CPU cores + 1 as a rule of thumb.
+workers: 4

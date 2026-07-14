@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-14
+
+- kserve-007: snippet(python) — Custom predictor with Alibi explainer for InferenceService via the Python SDK (L2)
+
 ## 2026-07-13
 
 - metaflow-028: manifest(yaml) — Metaflow DevStack Docker Compose manifest for local metadata service and UI (L2)

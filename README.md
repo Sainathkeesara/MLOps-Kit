@@ -18,20 +18,20 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [KFP v2 quickstart trip-ups — July 2026](kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md) — Following the official KFP v2 quickstart and what tripped me up
-- [W&B quickstart trip-ups — July 2026](wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md) — Following the official W&B quickstart and what tripped me up
+- [Databricks Unity Catalog setup](databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
+- [Databricks model promotion to Unity Catalog](databricks/scripts/2026-07-14-model-promotion-unity-catalog.py) — Promote MLflow models to Unity Catalog
+- [ClearML remote GPU execution config](clearml/configs/2026-07-14-remote-gpu-execution.yaml) — Remote GPU execution configuration for ClearML
+- [Metaflow install and hello world](metaflow/notes/2026-07-14-install-and-hello-world.md) — First Metaflow install and hello world walkthrough
 - [MLflow tracking server config with PostgreSQL backend and S3 artifact store](mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml) — Production-ready MLflow tracking server stack
-- [KServe custom predictor with explainer](kserve/snippets/2026-07-14-custom-predictor-explainer.py) — Custom model predictor and explainer for KServe
-- [ZenML parent-child pipelines and artifact lineage notebook](zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Multi-pipeline DAGs and artifact tracking with ZenML
 
 ## Layout
 
 - **`00_index/`** — Topic index, quick links, glossary, and learning path
 - **`CHANGELOG.md`** — Chronological record of project changes
-- **`clearml/`** — ClearML Orchestration notes and snippets
+- **`clearml/`** — ClearML Orchestration notes, snippets, and configs
+- **`databricks/`** — Databricks ML configs and scripts
 - **`docs/`** — Cross-cutting concept primers (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
-- **`evidently/`** — Evidently AI drift monitoring notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
@@ -45,19 +45,20 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 <details><summary>Coverage table</summary>
 
-| Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles |
-|------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|
-| Kubeflow | 15 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 |
-| Metaflow | 13 | 7 | 6 | 2 | 3 | 3 | 2 | 11 | 1 |
-| W&B | 14 | 8 | 3 | 4 | 3 | 2 | 1 | 7 | — |
-| MLflow | 7 | 13 | 3 | 8 | 2 | — | 2 | — | — |
-| DVC | 3 | 2 | 1 | 2 | — | — | — | — | — |
-| Feast | 2 | 1 | — | 2 | — | — | — | — | — |
-| ClearML | 3 | 1 | — | — | — | — | — | — | — |
-| Evidently AI | 2 | 1 | — | — | — | — | — | — | — |
-| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — |
-| Seldon | 2 | 1 | — | — | — | — | — | — | — |
+| Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
+|------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
+| Kubeflow | 15 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 | 2026-07-14 |
+| Metaflow | 14 | 7 | 6 | 2 | 3 | 3 | 2 | 11 | 1 | 2026-07-14 |
+| W&B | 14 | 8 | 3 | 4 | 3 | 2 | 1 | 7 | — | 2026-07-11 |
+| MLflow | 7 | 13 | 3 | 8 | 2 | — | 2 | — | — | 2026-07-04 |
+| DVC | 3 | 2 | 1 | 2 | — | — | — | — | — | — |
+| Feast | 2 | 1 | — | 2 | — | — | — | — | — | — |
+| ClearML | 3 | 1 | — | 1 | — | — | — | — | — | 2026-07-12 |
+| Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
+| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | — |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | — |
+| Seldon | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | — |
 
 Plus 20 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
 
@@ -65,7 +66,7 @@ Plus 20 files across 8 concept directories covering experiment tracking, model r
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added MLflow tracking server config with PostgreSQL and S3, KServe custom predictor with explainer, ZenML artifact lineage notebook, and KFP install on Kind.
+Working through first-contact notes and runnable experiments for each tool. Recently added Databricks Unity Catalog config and model promotion script, ClearML remote GPU execution config, Metaflow install and hello world, and MLflow tracking server config with PostgreSQL and S3.
 
 ---
-_Last updated: 2026-07-14_
+_Last updated: 2026-07-16_

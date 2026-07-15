@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-15
+
+- databricks-003: config(yaml) — Unity Catalog model registration config with catalog, schema, access controls, and staging lifecycle (L2)
+- databricks-004: script(python) — Model registration and staging promotion with Unity Catalog and MLflow (L2)
+- Passed ([x]) databricks-003 — Databricks ML: config — Unity Catalog model registration config with catalog and schema setup · Level: L2 · 2026-07-15
+- Passed ([x]) databricks-004 — Databricks ML: script — Model registration and staging promotion with Unity Catalog and MLflow · Level: L2 · 2026-07-15
+
 ## 2026-07-14
 
 - clml-006: config(yaml) — ClearML task and pipeline configuration for remote GPU execution (L2)

@@ -17,6 +17,11 @@
 - [ClearML common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md) — Gotchas and workarounds for ClearML
 - [Seldon Core vs KServe for sklearn](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md) — Comparing two model-serving frameworks
 - [KServe custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py) — Custom model predictor and explainer for KServe
+- [ClearML remote GPU execution config](../clearml/configs/2026-07-14-remote-gpu-execution.yaml) — Remote GPU execution configuration for ClearML
+
+### Set up Databricks
+- [Databricks Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
+- [Databricks model promotion to Unity Catalog](../databricks/scripts/2026-07-14-model-promotion-unity-catalog.py) — Promote MLflow models to Unity Catalog
 
 ### Run an experiment
 - [MLflow tracking quickstart](../mlflow/snippets/2026-07-14-mlflow-tracking-quickstart.py) — First experiment with MLflow tracking

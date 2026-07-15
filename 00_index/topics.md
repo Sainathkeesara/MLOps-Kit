@@ -14,11 +14,17 @@
 - **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) and [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py)
 - **scripts:** [Multistage ONNX Runtime serving container](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py)
 
-## ClearML · 4 files
+## ClearML · 5 files
 
 - **primer:** [ClearML orchestration](../clearml/notes/0000-primer-clearml-orchestration.md)
 - **notes** (2): [Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md), [Pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md)
 - **snippets:** [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
+- **configs:** [Remote GPU execution](../clearml/configs/2026-07-14-remote-gpu-execution.yaml)
+
+## Databricks · 2 files
+
+- **configs:** [Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml)
+- **scripts:** [Model promotion to Unity Catalog](../databricks/scripts/2026-07-14-model-promotion-unity-catalog.py)
 
 ## DVC · 8 files
 
@@ -61,10 +67,10 @@
 - **templates** (20): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
 - _…and 18 more under `kubeflow/templates/` — browse the folder._
 
-## Metaflow · 48 files
+## Metaflow · 49 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
-- **notes** (12): most recent → [Metaflow quickstart trip-ups (Jul 11)](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI (Jul 9)](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md), [CLI and local dev UI (Jul 6)](../metaflow/notes/2026-07-06-explore-cli-local-dev-ui.md)
+- **notes** (13): most recent → [Install and hello world (Jul 14)](../metaflow/notes/2026-07-14-install-and-hello-world.md), [Metaflow quickstart trip-ups (Jul 11)](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI (Jul 9)](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md)
 - **snippets** (7): [First flow with branching, retry, and foreach](../metaflow/snippets/2026-07-09-first-flow-branching-retry-foreach.py), [Install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py), [Minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
 - **scripts** (6): [Kubernetes flow metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py), [Logging artifact flow](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py), [End-to-end experiment (Jul 3)](../metaflow/scripts/2026-07-03-end-to-end-experiment.py)
 - **configs** (2): [Project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml)

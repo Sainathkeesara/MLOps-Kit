@@ -13,6 +13,10 @@
 - **Snapshot** — A point-in-time copy of a dataset or model artifact, tracked so you can reproduce any past training run exactly.
 - **Version** — A specific iteration of a registered model, identified by a version number or alias for promotion and rollback.
 
+## Databricks
+- **Unity Catalog** — A unified governance solution for data and AI assets on Databricks, providing fine-grained access control, data lineage, and a central catalog for tables, models, and notebooks.
+- **Unity Catalog model registry** — MLflow Model Registry backed by Unity Catalog, enabling model versioning, stage transitions (Staging → Production → Archived), and RBAC for model access.
+
 ## ClearML
 - **Task** — The atomic unit of work in ClearML; a single script execution logged as an experiment with parameters, metrics, and artifacts.
 - **Project** — A logical grouping of ClearML tasks for organizing experiments and comparing results across runs.

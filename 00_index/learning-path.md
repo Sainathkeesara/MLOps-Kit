@@ -47,7 +47,7 @@ Platform-specific deployment, advanced HPO, and cross-tool integration patterns.
 
 - ⏳ **SageMaker** — AWS-native managed MLOps. Requires Model Serving + Pipeline Orchestration. Prerequisite: Metaflow L5.
 - ⏳ **Vertex AI** — GCP-native managed MLOps. Requires Model Serving + Containerization. Prerequisite: Kubeflow L5.
-- ⏳ **Databricks ML** — Unified analytics and ML platform. Requires Model Registry + Experiment Tracking. Prerequisite: MLflow L5.
+- **Databricks ML** — Unified analytics and ML platform with Unity Catalog integration. Requires Model Registry + Experiment Tracking. Prerequisite: MLflow L5. [Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) and [model promotion script](../databricks/scripts/2026-07-14-model-promotion-unity-catalog.py).
 - ⏳ **BentoML** — Model serving and packaging. Requires DVC L1 and MLflow L3.
 
 ## Progression Map

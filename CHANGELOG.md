@@ -2,7 +2,7 @@
 
 ## 2026-07-17
 
-- mlf-013: script(python) — Custom MLflow experiment tracking workflow with artifact logging (L3)
+- mlf-014: docs — Comparing MLflow autologging vs manual logging and when each approach fits (L3)
 
 ## 2026-07-15
 

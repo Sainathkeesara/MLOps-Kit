@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-17
+
+- mlf-013: script(python) — Custom MLflow experiment tracking workflow with artifact logging (L3)
+
 ## 2026-07-15
 
 - databricks-003: config(yaml) — Unity Catalog model registration config with catalog, schema, access controls, and staging lifecycle (L2)

@@ -1,3 +1,4 @@
+# last_verified: 2026-07-19 · Kubeflow n/a
 name: CI/CD — Kubeflow Pipeline Scaffold
 
 # Triggered on every push to main and on every pull request that targets main.
@@ -30,7 +31,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install lint tooling
-        run: pip install flake8==7.0.0
+        run: pip install flake8
       - name: Run flake8
         run: flake8 components/ scripts/ tests/ run.py pipeline.py
 

@@ -32,6 +32,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`databricks/`** — Databricks ML configs and scripts
 - **`docs/`** — Cross-cutting concept primers (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
+- **`evidently/`** — Evidently AI monitoring and drift detection notes, snippets, configs
 - **`feast/`** — Feast feature store notes, snippets, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles

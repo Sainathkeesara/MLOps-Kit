@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-19
+
+- wnb-036: script(python) — Build a W&B hyperparameter sweep from scratch with custom search space and early termination (L3)
+
 ## 2026-07-17
 
 - mlf-014: docs — Comparing MLflow autologging vs manual logging and when each approach fits (L3)

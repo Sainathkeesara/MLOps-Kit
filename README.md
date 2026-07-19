@@ -1,5 +1,5 @@
 # MLOps-Kit
-> A working engineer's MLOps reference — notes, snippets, configs, and templates for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
+> A working engineer's MLOps reference — notes, snippets, configs, and templates for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Databricks.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -10,7 +10,7 @@
 
 ## Who this is for
 
-A working MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
+A working MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Databricks. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [MLflow autologging vs manual logging](mlflow/docs/autologging-vs-manual-logging.md) — When each approach fits and how to combine them
+- [MLflow custom experiment tracking workflow](mlflow/scripts/custom-experiment-tracking-workflow.py) — End-to-end tracking with custom metrics and artifacts
 - [Databricks Unity Catalog setup](databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
 - [Databricks model promotion to Unity Catalog](databricks/scripts/2026-07-14-model-promotion-unity-catalog.py) — Promote MLflow models to Unity Catalog
 - [ClearML remote GPU execution config](clearml/configs/2026-07-14-remote-gpu-execution.yaml) — Remote GPU execution configuration for ClearML
-- [Metaflow install and hello world](metaflow/notes/2026-07-14-install-and-hello-world.md) — First Metaflow install and hello world walkthrough
-- [MLflow tracking server config with PostgreSQL backend and S3 artifact store](mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml) — Production-ready MLflow tracking server stack
 
 ## Layout
 
@@ -49,16 +49,16 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
 | Kubeflow | 15 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 | 2026-07-14 |
 | Metaflow | 14 | 7 | 6 | 2 | 3 | 3 | 2 | 11 | 1 | 2026-07-14 |
-| W&B | 14 | 8 | 3 | 4 | 3 | 2 | 1 | 7 | — | 2026-07-11 |
-| MLflow | 7 | 13 | 3 | 8 | 2 | — | 2 | — | — | 2026-07-04 |
+| W&B | 14 | 8 | 3 | 4 | 3 | 2 | 1 | 7 | — | 2026-07-13 |
+| MLflow | 7 | 13 | 4 | 8 | 2 | — | 2 | — | — | 2026-07-17 |
 | DVC | 3 | 2 | 1 | 2 | — | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — | — |
-| ClearML | 3 | 1 | — | 1 | — | — | — | — | — | 2026-07-12 |
+| ClearML | 3 | 1 | — | 1 | — | — | — | — | — | 2026-07-14 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
-| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | — |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | — |
+| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
 | Seldon | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | — |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
 
 Plus 20 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
 
@@ -66,7 +66,7 @@ Plus 20 files across 8 concept directories covering experiment tracking, model r
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added Databricks Unity Catalog config and model promotion script, ClearML remote GPU execution config, Metaflow install and hello world, and MLflow tracking server config with PostgreSQL and S3.
+Working through first-contact notes and runnable experiments for each tool. Recently added MLflow autologging vs manual logging doc, custom experiment tracking workflow, Databricks Unity Catalog config and model promotion script, ClearML remote GPU execution config, Metaflow install and hello world, and MLflow tracking server config with PostgreSQL and S3.
 
 ---
-_Last updated: 2026-07-16_
+_Last updated: 2026-07-18_

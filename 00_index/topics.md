@@ -81,14 +81,14 @@
 - **templates** (11): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
 - _…and 10 more under `metaflow/templates/` — browse the folder._
 
-## MLflow · 35 files
+## MLflow · 36 files
 
 - **primer:** [MLflow concepts and setup](../mlflow/notes/0000-primer-mlflow.md)
 - **notes** (6): [UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md), [Quickstart trip-ups (Jul 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md), [First MLflow server](../mlflow/notes/2026-05-24-first-mlflow-server.md)
 - **snippets** (13): [MLflow tracking quickstart](../mlflow/snippets/2026-07-14-mlflow-tracking-quickstart.py), [Minimal autologging](../mlflow/snippets/2026-07-02-minimal-autologging.py), [End-to-end autologging pipeline](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py)
-- **scripts** (3): [End-to-end experiment (Jul 6)](../mlflow/scripts/2026-07-06-end-to-end-experiment.py), [End-to-end experiment (Jul 5)](../mlflow/scripts/2026-07-05-end-to-end-experiment.py), [Custom model flavor](../mlflow/scripts/custom_model_flavor.py)
+- **scripts** (4): [End-to-end experiment (Jul 6)](../mlflow/scripts/2026-07-06-end-to-end-experiment.py), [End-to-end experiment (Jul 5)](../mlflow/scripts/2026-07-05-end-to-end-experiment.py), [Custom model flavor](../mlflow/scripts/custom_model_flavor.py), [Custom experiment tracking workflow](../mlflow/scripts/custom-experiment-tracking-workflow.py)
 - **configs** (8): [Tracking server Postgres+S3](../mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml), [Tracking server Postgres+S3 (Jul 6)](../mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml), [Tracking server S3](../mlflow/configs/2026-07-01-tracking-server-s3.yaml)
-- **docs** (2): [Comparing model versions](../mlflow/docs/comparing-model-versions.md), [Production tracking server with Nginx auth](../mlflow/docs/production-tracking-server-nginx-auth.md)
+- **docs** (3): [Comparing model versions](../mlflow/docs/comparing-model-versions.md), [Production tracking server with Nginx auth](../mlflow/docs/production-tracking-server-nginx-auth.md), [Autologging vs manual logging](../mlflow/docs/autologging-vs-manual-logging.md)
 - **notebooks** (2): [Exploring runs, experiments, and model registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb), [Autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb)
 
 ## Seldon Core · 3 files

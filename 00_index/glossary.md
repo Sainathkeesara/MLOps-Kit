@@ -91,6 +91,12 @@
 - **Autologging** — Automatic logging of metrics, parameters, and model artifacts by MLflow's `autolog()` integration with common ML frameworks.
 - **Model Registry** — A centralized model store in MLflow for versioning, annotating, and managing model lifecycle stages.
 
+## Weights & Biases
+- **Run** — A single tracked execution that records metrics, parameters, and outputs to a W&B project.
+- **Sweep** — An automated hyperparameter search that runs many configurations and reports results to a shared project.
+- **Artifact** — A versioned, typed file or directory (dataset, model, or result) logged to W&B and tracked with lineage across runs.
+- **Project** — A named container in W&B that groups related runs, sweeps, and artifacts for comparison.
+
 ## Seldon Core
 - **SeldonDeployment** — The custom resource definition (CRD) that defines a deployed ML model in Seldon Core, including the model image, resource requirements, and replicas.
 - **Graph** — A Seldon Core configuration that defines the request routing graph, which can chain together multiple models, transformers, routers, and combiners.

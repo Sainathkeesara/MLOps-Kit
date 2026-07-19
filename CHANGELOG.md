@@ -1,8 +1,8 @@
 # Changelog
 
-## 2026-07-18
+## 2026-07-19
 
-- mlf-015: notebook — Experiment comparison notebook: MLflow search API, parameter plots, and run comparison (L3)
+- wnb-036: script(python) — Build a W&B hyperparameter sweep from scratch with custom search space and early termination (L3)
 
 ## 2026-07-17
 

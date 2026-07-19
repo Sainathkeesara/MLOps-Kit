@@ -1,0 +1,114 @@
+name: CI/CD — Kubeflow Pipeline Scaffold
+
+# Triggered on every push to main and on every pull request that targets main.
+# The deploy job only runs on pushes to main so that PRs validate code without
+# submitting pipelines to the Kubeflow cluster.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Default permissions: read contents, no write access outside the workflow.
+permissions:
+  contents: read
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # 1. Lint — catch style and syntax issues before they reach tests.
+  # ---------------------------------------------------------------------------
+  lint:
+    name: Lint (flake8)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: kubeflow/templates/kubeflow-pipeline-scaffold
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install lint tooling
+        run: pip install flake8==7.0.0
+      - name: Run flake8
+        run: flake8 components/ scripts/ tests/ run.py pipeline.py
+
+  # ---------------------------------------------------------------------------
+  # 2. Test — run the extracted component logic unit tests.
+  # ---------------------------------------------------------------------------
+  test:
+    name: Unit tests (pytest)
+    runs-on: ubuntu-latest
+    needs: lint
+    defaults:
+      run:
+        working-directory: kubeflow/templates/kubeflow-pipeline-scaffold
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run pytest with coverage
+        run: pytest tests/ -v --cov=scripts --cov=components
+
+  # ---------------------------------------------------------------------------
+  # 3. Compile — verify the KFP v2 pipeline compiles to a valid YAML package.
+  # ---------------------------------------------------------------------------
+  compile:
+    name: Compile pipeline
+    runs-on: ubuntu-latest
+    needs: test
+    defaults:
+      run:
+        working-directory: kubeflow/templates/kubeflow-pipeline-scaffold
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile pipeline
+        run: python pipeline.py
+      - name: Upload compiled pipeline
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-yaml
+          path: kubeflow/templates/kubeflow-pipeline-scaffold/pipeline.yaml
+
+  # ---------------------------------------------------------------------------
+  # 4. Deploy — submit the compiled pipeline to the Kubeflow cluster.
+  #    Only on pushes to main, gated by the "kubeflow" environment.
+  # ---------------------------------------------------------------------------
+  deploy:
+    name: Deploy to Kubeflow
+    runs-on: ubuntu-latest
+    needs: compile
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment:
+      name: kubeflow
+    env:
+      KFP_HOST: ${{ secrets.KFP_HOST }}
+    defaults:
+      run:
+        working-directory: kubeflow/templates/kubeflow-pipeline-scaffold
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Download compiled pipeline
+        uses: actions/download-artifact@v4
+        with:
+          name: pipeline-yaml
+          path: kubeflow/templates/kubeflow-pipeline-scaffold
+      - name: Submit pipeline to Kubeflow
+        run: python run.py --host "$KFP_HOST" --experiment kubeflow-pipeline-scaffold

@@ -2,6 +2,9 @@
 
 ## 2026-07-19
 
+- wnb-037: notebook — Comparing W&B runs: parallel coordinates, correlation plots, and run diff analysis (L3)
+- wnb-038: docs — W&B Artifacts deep-dive: versioning datasets, models, and pipeline outputs (L3)
+- kub-030: template — Fill in `.github/workflows/ci-cd.yml` for the kubeflow-pipeline-scaffold with real lint/test/compile/deploy steps
 - wnb-036: script(python) — Build a W&B hyperparameter sweep from scratch with custom search space and early termination (L3)
 
 ## 2026-07-17

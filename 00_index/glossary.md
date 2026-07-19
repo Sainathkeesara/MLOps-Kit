@@ -100,14 +100,12 @@
 - **Seldon Graph** — A directed acyclic graph of Predictive Units that defines the model serving pipeline, with routing, combining, and transformation steps.
 - **Seldon Core Analytics** — Prometheus-based monitoring and alerting for model performance, request latency, and prediction distributions.
 
-## Weights & Biases
-- **Run** — A single execution of an experiment tracked in W&B, with logged metrics, hyperparameters, and outputs.
-- **Sweep** — A hyperparameter optimisation job in W&B that orchestrates multiple runs with a search strategy (grid, random, Bayesian).
-- **Bayesian optimization** — A sweep search strategy that uses past run results to choose the next set of hyperparameters, converging to good values in fewer runs than grid or random search.
-- **HyperBand** — An early-termination algorithm that allocates resources to promising runs and stops poorly performing ones early, saving compute time.
-- **Artifact** — A versioned file or directory (dataset, model, output) stored and tracked in W&B.
-- **Alias** — A mutable label (e.g. `staging`, `production`) pinned to a specific artifact version in the Model Registry for consumption and promotion workflows.
-- **Lineage graph** — The artifact view in W&B that shows which runs produced or consumed each artifact version, enabling dataset-to-model traceability.
+## MLflow
+- **MLproject** — A reusable packaging format for ML code with a `MLproject` file specifying entry points and environments.
+- **Autologging** — Automatic logging of metrics, parameters, and model artifacts by MLflow's `autolog()` integration with common ML frameworks.
+- **Model Registry** — A centralized model store in MLflow for versioning, annotating, and managing model lifecycle stages.
+- **MLflow Client** — The Python API (`MlflowClient`) used to programmatically search experiments, compare runs, register models, and transition model stages.
+- **Search API** — MLflow's run and experiment search interface supporting filter strings over metrics, params, tags, and dataset fields for programmatic comparison.
 
 ## ZenML
 - **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.

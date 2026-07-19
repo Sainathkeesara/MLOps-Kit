@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-18
+
+- mlf-015: notebook — Experiment comparison notebook: MLflow search API, parameter plots, and run comparison (L3)
+
 ## 2026-07-17
 
 - mlf-014: docs — Comparing MLflow autologging vs manual logging and when each approach fits (L3)

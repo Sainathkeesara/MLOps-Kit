@@ -9,7 +9,7 @@
 - wnb-036: script(python) — Build a W&B hyperparameter sweep from scratch with custom search space and early termination (L3)
 - mfl-033: script(python) — Metaflow flow with foreach fan-out, custom @resources, and @conda isolation (L3)
 - mfl-035: notebook — Comparing @batch vs @kubernetes vs local execution in Metaflow for cost-performance tradeoffs (L3)
-- mfl-034: docs — How I wired Metaflow with W&B for real-time metric tracking across parallel steps (L3)
+- mfl-034 (rework): docs — Metaflow + W&B real-time metric tracking across parallel steps; rewritten in L3 reference voice, sources now backed by research.md [source:] tags (L3)
 
 ## 2026-07-17
 

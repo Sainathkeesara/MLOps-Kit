@@ -6,19 +6,35 @@ sources:
   - https://docs.metaflow.org/metaflow/basics
 ---
 
-# How I wired Metaflow with Weights & Biases for real-time metric tracking across parallel steps
+# Metaflow + W&B real-time metric tracking across parallel steps
 
-> This is one way to wire Metaflow foreach branches to W&B so that metrics from each parallel step appear in the dashboard during flow execution — not just after all branches finish.
+> How to wire Metaflow `foreach` branches to Weights & Biases so that metrics from each parallel step appear in the dashboard during flow execution, not only after all branches finish.
 
 ## Purpose
 
-Metaflow's `foreach` fans out a step across multiple values, and each branch runs in its own process. If you init W&B once before the fan-out, only the parent process can log — the branches have no access. If each branch shares a single W&B run ID, they fight over the same network socket and metrics get interleaved or dropped.
+Metaflow's `foreach` decorator fans a step out across a list of values, and each branch runs as its own process with an independent `current.step_task_id`. A W&B run initialized once in the parent step is not visible to the branches, so sharing a single run ID across all branches causes the SDK to write to the same network endpoint from multiple processes, interleaving or dropping metrics.
 
-The pattern here gives each branch its own W&B run. Metrics appear in the dashboard in real time as each branch executes, and the join step collects the run IDs so you can trace back from the parent flow to each child.
+The pattern below gives each branch its own W&B run. Metrics stream to the dashboard in real time as each branch executes, and the `join` step collects the per-branch run IDs so a reader can trace from the parent flow to each child run. This is one way to do it; the Metaflow basics docs also describe the single-run-per-step approach for non-parallel flows.
+
+## When to use
+
+| Scenario | Approach |
+|---|---|
+| Single step logs metrics | Initialize W&B inside the step and call `run.finish()` at the end |
+| `foreach` fan-out, per-branch metrics | Initialize a fresh W&B run inside the branch step; collect run IDs in `join` |
+| Shared run across sequential steps | Pass a run ID through `self` and re-init with `resume` |
+| Branch metrics need flow context | Embed `current.run_id` in the run `name` |
+
+## Prerequisites
+
+- Metaflow installed (`pip install metaflow`)
+- `wandb` Python SDK installed (`pip install wandb`)
+- W&B account with an API key (`wandb login` or `WANDB_API_KEY` set)
+- If using `@conda`/`@pypi`, ensure `wandb` is declared in the branch step's environment
 
 ## Steps
 
-### 1. Define a flow with foreach
+### 1. Define a flow with a foreach fan-out
 
 The outer flow fans out over a list of hyperparameter values. Each branch trains with its own value.
 
@@ -42,7 +58,7 @@ class ParallelWandbFlow(FlowSpec):
 
 ### 2. Initialize a per-branch W&B run
 
-Inside the branch step, each process calls `wandb.init` with a unique run name so the dashboard shows one run per branch.
+Inside the branch step, each process calls `wandb.init` with a unique run name so the dashboard shows one run per branch. Embedding `current.run_id` ties each run back to the originating Metaflow run.
 
 ```python
 import wandb
@@ -84,29 +100,29 @@ if __name__ == "__main__":
 
 Key details:
 - `wandb.init` is called fresh inside each branch — no shared run ID.
-- The run `name` includes the learning rate and the Metaflow run ID so you can identify which flow + branch produced it.
-- `run.finish()` ensures the run is closed cleanly when the branch completes.
-- The join step collects all child run IDs into `self.wandb_run_ids`.
+- The run `name` includes the learning rate and the Metaflow run ID so the reader can identify which flow and branch produced it.
+- `run.finish()` closes the run cleanly when the branch completes.
+- The `join` step collects all child run IDs into `self.wandb_run_ids`.
 
-### 3. Run it
+### 3. Run the flow
 
 ```bash
 python parallel_wandb_flow.py run
 ```
 
-The flow fans out to three branches. Each branch starts a W&B run and logs per-epoch loss. Open the W&B project page while the flow is still running — metrics appear branch by branch as they finish.
+The flow fans out to three branches. Each branch starts a W&B run and logs per-epoch loss. With the W&B project page open during the run, metrics appear branch by branch as the branches finish.
 
 ## Verify
 
 1. Run the flow and open the W&B project `metaflow-foreach-demo`.
 2. Confirm three runs appear, named `train-lr-0.001-<run_id>`, `train-lr-0.01-<run_id>`, and `train-lr-0.1-<run_id>`.
 3. Click into each run and confirm the `loss` metric has 10 data points (epochs 0–9).
-4. After the flow completes, check that the join step's `wandb_run_ids` artifact contains the three run IDs. You can inspect it with `python parallel_wandb_flow.py dump` or via the Metaflow UI.
+4. After the flow completes, confirm the `join` step's `wandb_run_ids` artifact contains the three run IDs, inspectable with `python parallel_wandb_flow.py dump` or via the Metaflow UI.
 
-## What tripped me up
+## Common errors
 
-- **Shared run ID across branches** — My first attempt passed the same `wandb.run.id` from the start step to all branches using `resume="must"`. This caused `UsageError` because the SDK tried to sync from multiple processes to the same run endpoint. Giving each branch its own run solved it.
-- **W&B not available under `@conda`** — If your flow uses `@conda`, you need to add `wandb` to the `libraries` dict explicitly. I switched to `@pypi` which uses pip and installs wandb without the conda overhead:
+- **Shared run ID across branches (`UsageError`):** Passing the same `wandb.run.id` from `start` to all branches with `resume="must"` makes the SDK sync from multiple processes to one run endpoint. Each branch should initialize its own run, as shown above.
+- **`wandb` missing under `@conda`:** A flow using `@conda` must declare `wandb` in the `libraries` dict, or the branch process cannot import it. The `@pypi(packages=["wandb"])` decorator installs via pip without conda overhead:
 
   ```python
   from metaflow import pypi
@@ -117,10 +133,9 @@ The flow fans out to three branches. Each branch starts a W&B run and logs per-e
       ...
   ```
 
-- **Run names not showing in dashboard** — If you forget `run.finish()`, the run stays in a "running" state in W&B. Metrics still log, but the run won't appear in the project's default view until it finishes or times out.
+- **Runs stuck in "running" state:** Forgetting `run.finish()` leaves the run open in W&B. Metrics still log, but the run does not resolve in the project's default view until it finishes or times out.
 
-## What I'd try next
+## References
 
-- Add a join-step artifact that logs all child run names and final metrics as a single W&B table so the parent run becomes a summary dashboard.
-- Wire the `@environment` decorator with `WANDB_API_KEY` instead of hardcoding the login, so the flow works in CI without interactive auth.
-- Try the Metaflow `spin` command for faster iteration on the branch logic without re-running from start each time.
+- Metaflow `foreach` and per-branch process model: https://docs.metaflow.org/metaflow/introduction
+- Metaflow steps, `self.next`, and fan-out/fan-in basics: https://docs.metaflow.org/metaflow/basics

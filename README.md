@@ -18,10 +18,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [Metaflow + W&B real-time metric tracking across parallel steps](metaflow/docs/wandb-metric-tracking-parallel-steps.md) — Wire Metaflow foreach branches to W&B so metrics stream per-branch during execution
 - [Metaflow @batch vs @kubernetes vs local](metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same flow in one notebook
 - [W&B artifacts deep dive](wnb/docs/wandb-artifacts-deep-dive.md) — Versioning, lineage, and reuse of artifacts across runs
 - [W&B run comparison: parallel coords & correlation](wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb) — Visual comparison of runs side by side
-- [MLflow experiment comparison via Search API](mlflow/notebooks/mlflow-experiment-comparison-search-api.ipynb) — Compare experiments programmatically with MLflow's Search API
 - [Metaflow foreach with per-branch resources](metaflow/scripts/foreach-resources-conda-flow.py) — Parallel fan-out with Conda environments and resource hints
 
 ## Layout
@@ -48,18 +48,18 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 9 | 7 | 3 | 4 | 5 | 2 | 21 | 4 | 2026-07-14 |
-| Metaflow | 14 | 7 | 7 | 3 | 3 | 3 | 3 | 11 | 1 | 2026-07-14 |
-| W&B | 14 | 8 | 4 | 5 | 4 | 2 | 2 | 7 | — | 2026-07-11 |
+| Kubeflow | 15 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 | 2026-07-14 |
+| Metaflow | 14 | 7 | 7 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-19 |
+| W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 7 | — | 2026-07-19 |
 | MLflow | 7 | 13 | 4 | 8 | 3 | — | 3 | — | — | 2026-07-04 |
 | DVC | 3 | 2 | 1 | 2 | — | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — | — |
-| ClearML | 3 | 1 | — | 1 | — | — | — | — | — | 2026-07-12 |
+| ClearML | 3 | 1 | — | 1 | — | — | — | — | — | 2026-07-14 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
-| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | — |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | — |
+| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
 | Seldon | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | — |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
 
 Plus 20 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
 
@@ -67,7 +67,7 @@ Plus 20 files across 8 concept directories covering experiment tracking, model r
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added a Metaflow notebook comparing `@batch` vs `@kubernetes` vs local execution, a Weights & Biases artifacts deep dive, and a W&B run-comparison notebook.
+Working through first-contact notes and runnable experiments for each tool. Recently added Metaflow + W&B real-time metric tracking across parallel steps, a Metaflow execution-backend comparison notebook, and a W&B artifacts deep dive.
 
 ---
-_Last updated: 2026-07-19_
+_Last updated: 2026-07-20_

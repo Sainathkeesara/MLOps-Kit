@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-20
+
+- mlf-016: config(yaml) — MLflow model serving configuration with custom conda env, training, prediction, serving, and deployment pipeline entry points (L3)
+
 ## 2026-07-19
 
 - wnb-037: notebook — Comparing W&B runs: parallel coordinates, correlation plots, and run diff analysis (L3)

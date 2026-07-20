@@ -1,0 +1,67 @@
+# last_verified: 2026-07-20 · MLflow
+
+name: sklearn-model-serving
+
+conda_env:
+  channels:
+    - conda-forge
+  dependencies:
+    - python=3.9
+    - pip
+    - pip:
+      - mlflow
+      - scikit-learn
+      - pandas
+      - numpy
+      - flask
+      - cloudpickle
+
+entry_points:
+  train:
+    parameters:
+      alpha:
+        type: float
+        default: 1.0
+      l1_ratio:
+        type: float
+        default: 0.5
+    command: |
+      python train.py \
+        --alpha {alpha} \
+        --l1-ratio {l1_ratio}
+
+  predict:
+    parameters:
+      model_uri:
+        type: string
+      input_csv:
+        type: string
+    command: |
+      python predict.py \
+        --model-uri {model_uri} \
+        --input-csv {input_csv}
+
+  serve:
+    parameters:
+      model_uri:
+        type: string
+      port:
+        type: int
+        default: 5001
+    command: |
+      mlflow models serve \
+        --model-uri {model_uri} \
+        --port {port} \
+        --no-conda
+
+  deploy:
+    parameters:
+      model_uri:
+        type: string
+      stage:
+        type: string
+        default: Staging
+    command: |
+      python deploy.py \
+        --model-uri {model_uri} \
+        --stage {stage}

@@ -31,7 +31,7 @@
 - **primer:** [DVC concepts and setup](../dvc/notes/0000-primer-dvc.md)
 - **notes** (2): most recent → [Get started trip-ups](../dvc/notes/2026-06-05-get-started.md), [First dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
 - **snippets** (2): [Minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py), [DVC pipeline shell](../dvc/snippets/tried_dvc_pipeline.sh)
-- **scripts** (1): [Init DVC and track dataset](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
+- **scripts** (2): [End-to-end DVC CLI walkthrough](../dvc/scripts/2026-07-22-dvc-end-to-end.sh), [Init DVC and track dataset](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - **configs** (2): [dvc.yaml](../dvc/configs/dvc.yaml), [Pipeline YAML](../dvc/configs/pipeline.yaml)
 
 ## Evidently AI · 3 files

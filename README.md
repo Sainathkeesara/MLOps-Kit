@@ -1,5 +1,5 @@
 # MLOps-Kit
-> A working engineer's mlops reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
+> A working engineer's MLOps reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -21,7 +21,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - [MLflow sklearn model serving project](mlflow/configs/sklearn-model-serving-project.yaml) — Packaged MLflow project with Conda env and model serving entry point
 - [Metaflow + W&B real-time metric tracking across parallel steps](metaflow/docs/wandb-metric-tracking-parallel-steps.md) — Wire Metaflow foreach branches to W&B so metrics stream per-branch during execution
 - [Metaflow @batch vs @kubernetes vs local](metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same flow in one notebook
-- [Kubeflow pipeline scaffold CI/CD workflow](kubeflow/templates/kubeflow-pipeline-scaffold/.github/workflows/ci-cd.yml) — GitHub Actions workflow for lint, test, compile, and deploy steps in the scaffold
+- [DVC end-to-end CLI walkthrough](dvc/scripts/2026-07-22-dvc-end-to-end.sh) — Init, track a dataset, set a local remote, push, and inspect the cache
 - [Metaflow foreach with per-branch resources](metaflow/scripts/foreach-resources-conda-flow.py) — Parallel fan-out with Conda environments and resource hints
 
 ## Layout
@@ -52,7 +52,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Metaflow | 14 | 7 | 7 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-19 |
 | W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 7 | — | 2026-07-19 |
 | MLflow | 7 | 13 | 4 | 9 | 3 | — | 3 | — | — | 2026-07-17 |
-| DVC | 3 | 2 | 1 | 2 | — | — | — | — | — | — |
+| DVC | 3 | 2 | 2 | 2 | — | — | — | — | — | — |
 | Feast | 2 | 1 | — | 2 | — | — | — | — | — | — |
 | ClearML | 3 | 1 | — | 1 | — | — | — | — | — | 2026-07-12 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
@@ -67,7 +67,7 @@ Plus 20 files across 8 concept directories covering experiment tracking, model r
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added a packaged MLflow sklearn serving project, a Metaflow + W&B metric tracking integration, and comparison notebooks for Metaflow execution backends and W&B run analysis.
+Working through first-contact notes and runnable experiments for each tool. Recently added a packaged MLflow sklearn serving project, a Metaflow + W&B metric tracking integration, comparison notebooks for Metaflow execution backends and W&B run analysis, and an end-to-end DVC CLI walkthrough.
 
 ---
 _Last updated: 2026-07-22_

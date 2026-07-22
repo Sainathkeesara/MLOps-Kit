@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-22
+
+- dvc-003: script(bash) — End-to-end DVC CLI walkthrough: init repo, track dataset with `dvc add`, set local remote, push, and verify cache contents (L1)
+
 ## 2026-07-20
 
 - mlf-016: config(yaml) — MLflow model serving configuration with custom conda env, training, prediction, serving, and deployment pipeline entry points (L3)

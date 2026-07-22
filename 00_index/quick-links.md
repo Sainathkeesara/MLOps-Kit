@@ -26,10 +26,13 @@
 ### Run an experiment
 - [MLflow tracking quickstart](../mlflow/snippets/2026-07-14-mlflow-tracking-quickstart.py) — First experiment with MLflow tracking
 - [MLflow end-to-end training with autologging](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — sklearn autolog, model comparison, and registry registration
+- [MLflow custom experiment tracking workflow](../mlflow/scripts/custom-experiment-tracking-workflow.py) — Custom workflow with MlflowClient for search, compare, and register
 - [MLflow experiment comparison via Search API](../mlflow/notebooks/mlflow-experiment-comparison-search-api.ipynb) — Programmatic experiment comparison with MLflow Search API
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a sweep from scratch with the Python SDK
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Multi-task sweep and evaluation with CLI subcommands
 - [W&B custom sweep with early termination](../wnb/scripts/custom-sweep-early-termination.py) — Custom search space and early-stopping strategy
+- [W&B artifacts deep dive](../wnb/docs/wandb-artifacts-deep-dive.md) — Versioning, lineage, and reuse of artifacts across runs
+- [W&B run comparison: parallel coords and correlation diff](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb) — Compare runs with parallel coordinates and correlation plots
 - [ZenML first training pipeline](../zenml/snippets/tried_first_training_pipeline.py) — Data loading, training, and artifact logging
 - [ZenML parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Multi-pipeline DAGs and artifact tracking with ZenML
 - [Evidently first drift report](../evidently/snippets/first_drift_report.py) — Generate and view a data drift report
@@ -43,6 +46,7 @@
 - [Metaflow end-to-end experiment](../metaflow/scripts/2026-07-03-end-to-end-experiment.py) — Tracking, model logging, and run comparison via Client API
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — CPU, memory, and GPU scheduling
 - [Metaflow logging artifact flow](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py) — Log artifacts and metadata in Metaflow flows
+- [Metaflow @batch vs @kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same flow
 - [ZenML parent-child pipelines & lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Hierarchical pipelines and artifact lineage
 
 ### Version and register models

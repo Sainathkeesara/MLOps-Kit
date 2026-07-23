@@ -2,7 +2,9 @@
 
 ## 2026-07-23
 
-- feast-002: notes — Install Feast and set up a feature store with a Parquet offline store and query a feature vector (L1)
+- con-001: docs — Multi-stage Dockerfile for MLOps: one build stage for training, one runtime stage for model serving (L2)
+- clearml-001: notes — First tasks with the `clearml-agent` CLI: queue, clone, and run a task remotely (L1)
+- feast-004: snippet(python) — Register a Feast data source and inspect its schema with the Python SDK (L1)
 
 ## 2026-07-22
 

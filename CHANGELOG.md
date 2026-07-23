@@ -3,6 +3,7 @@
 ## 2026-07-23
 
 - con-001: docs — Multi-stage Dockerfile for MLOps: one build stage for training, one runtime stage for model serving (L2)
+- con-001 (rework): docs — Removed unbacked external citations from sources front-matter (L2)
 - clearml-001: notes — First tasks with the `clearml-agent` CLI: queue, clone, and run a task remotely (L1)
 - feast-004: snippet(python) — Register a Feast data source and inspect its schema with the Python SDK (L1)
 

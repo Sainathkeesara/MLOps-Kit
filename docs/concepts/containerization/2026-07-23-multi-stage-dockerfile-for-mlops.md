@@ -1,10 +1,6 @@
 ---
 last_verified: 2026-07-23
 tool_version: n/a
-sources:
-  - https://docs.docker.com/reference/glossary
-  - https://www.freecodecamp.org/news/containerize-mlops-pipeline-from-training-to-serving/
-  - https://superml.org/tutorials/containerizing-ml-models-docker
 ---
 
 # Containerization — Multi-stage Dockerfile for MLOps
@@ -13,7 +9,7 @@ sources:
 
 ## What I was trying to do
 
-I wanted a single Dockerfile that could train a model and then serve it, but without dragging gcc, CUDA toolkit, and pip cache into the production image. Multi-stage builds let me define separate `FROM` lines — each stage can use a different base image, and I copy only the artifacts I need between them.
+I wanted a single Dockerfile that could train a model and then serve it, but without dragging gcc, CUDA toolkit, and pip cache into the serving image. Multi-stage builds let me define separate `FROM` lines — each stage can use a different base image, and I copy only the artifacts I need between them.
 
 ## The Dockerfile
 

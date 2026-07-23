@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-23
+
+- feast-002: notes — Install Feast and set up a feature store with a Parquet offline store and query a feature vector (L1)
+
 ## 2026-07-22
 
 - dvc-003: script(bash) — End-to-end DVC CLI walkthrough: init repo, track dataset with `dvc add`, set local remote, push, and verify cache contents (L1)

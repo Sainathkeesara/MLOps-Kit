@@ -6,6 +6,7 @@
 - con-001 (rework): docs — Removed unbacked external citations from sources front-matter (L2)
 - clearml-001: notes — First tasks with the `clearml-agent` CLI: queue, clone, and run a task remotely (L1)
 - feast-004: snippet(python) — Register a Feast data source and inspect its schema with the Python SDK (L1)
+- kubeflow-001 (rework): script(bash) — CI/CD lint, test, compile, and deploy steps for the kubeflow-pipeline-scaffold template (L2)
 
 ## 2026-07-22
 

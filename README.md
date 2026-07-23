@@ -1,5 +1,5 @@
 # MLOps-Kit
-> A working engineer's MLOps reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
+> A working engineer's mlops reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [MLflow sklearn model serving project](mlflow/configs/sklearn-model-serving-project.yaml) — Packaged MLflow project with Conda env and model serving entry point
-- [Metaflow + W&B real-time metric tracking across parallel steps](metaflow/docs/wandb-metric-tracking-parallel-steps.md) — Wire Metaflow foreach branches to W&B so metrics stream per-branch during execution
-- [Metaflow @batch vs @kubernetes vs local](metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same flow in one notebook
-- [DVC end-to-end CLI walkthrough](dvc/scripts/2026-07-22-dvc-end-to-end.sh) — Init, track a dataset, set a local remote, push, and inspect the cache
-- [Metaflow foreach with per-branch resources](metaflow/scripts/foreach-resources-conda-flow.py) — Parallel fan-out with Conda environments and resource hints
+- [ClearML agent first tasks](clearml/notes/2026-07-23-clearml-agent-first-tasks.md) — Queue, clone, and run a task remotely via clearml-agent CLI
+- [Multi-stage Dockerfile for MLOps](docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
+- [Feast data source registration](feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py) — Register a data source and inspect its schema with the Feast Python SDK
+- [Feast Parquet offline store setup](feast/notes/2026-07-22-install-feast-parquet-offline-store.md) — Configure a Parquet-backed offline store for feature retrieval
+- [DVC end-to-end CLI walkthrough](dvc/scripts/2026-07-22-dvc-end-to-end.sh) — Init, track, push, and verify data cache with DVC
 
 ## Layout
 
@@ -32,8 +32,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`databricks/`** — Databricks ML configs and scripts
 - **`docs/`** — Cross-cutting concept primers (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
-- **`evidently/`** — Evidently AI monitoring and drift detection notes, snippets, configs
-- **`feast/`** — Feast feature store notes, snippets, and configs
+- **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
+- **`feast/`** — Feast feature store notes, snippets, scripts, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
@@ -48,26 +48,26 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 9 | 5 | 2 | 4 | 5 | 2 | 20 | 4 | 2026-07-14 |
+| Kubeflow | 15 | 9 | 5 | 2 | 4 | 5 | 2 | 21 | 4 | 2026-07-14 |
 | Metaflow | 14 | 7 | 7 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-19 |
 | W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 7 | — | 2026-07-19 |
-| MLflow | 7 | 13 | 4 | 9 | 3 | — | 3 | — | — | 2026-07-17 |
+| MLflow | 7 | 13 | 4 | 9 | 3 | — | 3 | — | — | 2026-07-20 |
+| ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
+| Feast | 4 | 2 | 1 | 2 | — | — | — | — | — | 2026-07-23 |
 | DVC | 3 | 2 | 2 | 2 | — | — | — | — | — | — |
-| Feast | 2 | 1 | — | 2 | — | — | — | — | — | — |
-| ClearML | 3 | 1 | — | 1 | — | — | — | — | — | 2026-07-12 |
+| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-13 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
-| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | — |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | — |
-| Seldon | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | — |
+| Seldon Core | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
 
-Plus 20 files across 8 concept directories covering experiment tracking, model registry, data versioning, pipeline orchestration, feature stores, model serving, containerization, and monitoring & drift.
+Plus 21 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
 </details>
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added a packaged MLflow sklearn serving project, a Metaflow + W&B metric tracking integration, comparison notebooks for Metaflow execution backends and W&B run analysis, and an end-to-end DVC CLI walkthrough.
+Working through first-contact notes and runnable experiments for each tool. Recently added ClearML agent CLI notes, a multi-stage Dockerfile for MLOps, Feast data source registration snippet, Feast Parquet offline store setup notes, and a DVC end-to-end CLI walkthrough.
 
 ---
-_Last updated: 2026-07-22_
+_Last updated: 2026-07-23_

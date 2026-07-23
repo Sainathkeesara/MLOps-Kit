@@ -14,10 +14,12 @@
 - [ClearML primer](../clearml/notes/0000-primer-clearml-orchestration.md) — Orchestration setup and first task
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md) — Stack setup and first pipeline
 - [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md) — Kubeflow Pipelines on a local Kind cluster
+- [ClearML agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md) — Queue, clone, and run a task remotely via clearml-agent CLI
 - [ClearML common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md) — Gotchas and workarounds for ClearML
 - [Seldon Core vs KServe for sklearn](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md) — Comparing two model-serving frameworks
 - [KServe custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py) — Custom model predictor and explainer for KServe
 - [ClearML remote GPU execution config](../clearml/configs/2026-07-14-remote-gpu-execution.yaml) — Remote GPU execution configuration for ClearML
+- [Feast Parquet offline store setup](../feast/notes/2026-07-22-install-feast-parquet-offline-store.md) — Configure a Parquet-backed offline store for feature retrieval
 
 ### Set up Databricks
 - [Databricks Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
@@ -37,6 +39,7 @@
 - [ZenML parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Multi-pipeline DAGs and artifact tracking with ZenML
 - [Evidently first drift report](../evidently/snippets/first_drift_report.py) — Generate and view a data drift report
 - [Metaflow Kubernetes flow with metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py) — Run Metaflow on Kubernetes with cloud metadata
+- [Feast data source registration and schema inspection](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py) — Register a data source and inspect its schema with the Feast Python SDK
 
 ### Orchestrate a pipeline
 - [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — Component writing and compilation pitfalls
@@ -74,6 +77,7 @@
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Local compute for W&B sweeps
 - [W&B CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml) — GitHub Actions workflow for W&B sweep orchestration
 - [Multi-stage ONNX Runtime serving](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py) — Slim serving image from a fat training stage
+- [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
 
 ### Configure a project
 - [Kubeflow pipeline project scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md) — CI/CD, unit testing, modular components

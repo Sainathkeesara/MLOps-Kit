@@ -27,6 +27,9 @@
 - **ClearML Server** — The backend that stores task metadata, logs, artifacts, and serves the web UI.
 - **Configuration** — A set of hyperparameters or settings tied to a Task, stored as key-value pairs or nested dicts.
 
+## Containerization
+- **Multi-stage build** — A Dockerfile pattern with multiple `FROM` statements, each starting from a different base image. Artifacts built in earlier stages (e.g. a trained model) can be copied into later stages, keeping the final runtime image slim by excluding build tooling.
+
 ## DVC
 - **DVC** — Data Version Control; an open-source tool for versioning datasets and ML pipeline stages alongside code.
 - **Pipeline stage** — A step in a DVC pipeline (e.g. prepare, train, evaluate) defined in `dvc.yaml` with inputs, outputs, and commands.
@@ -47,6 +50,8 @@
 - **Offline Store** — A data store (e.g. BigQuery, Snowflake, Parquet) that holds historical feature data for training.
 - **Online Store** — A low-latency data store (e.g. Redis, DynamoDB) that holds the latest feature values for serving.
 - **Point-in-time join** — A query that retrieves the correct feature values as they existed at a specific training timestamp, preventing data leakage from future feature values.
+- **FileSource** — A Feast data source class that reads features from files such as Parquet or CSV, used in local development before migrating to production stores.
+- **`feast materialize-incremental`** — A CLI command that incrementally pushes the latest features from the offline store to the online store, typically called on a schedule to keep online serving up to date.
 
 ## KServe
 - **InferenceService** — The core CRD in KServe that defines a deployed model endpoint, specifying the model storage URI, framework, resource requests, and scaling config.

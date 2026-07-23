@@ -90,6 +90,8 @@
 - **MLproject** — A reusable packaging format for ML code with a `MLproject` file specifying entry points and environments.
 - **Autologging** — Automatic logging of metrics, parameters, and model artifacts by MLflow's `autolog()` integration with common ML frameworks.
 - **Model Registry** — A centralized model store in MLflow for versioning, annotating, and managing model lifecycle stages.
+- **MLflow Client** — The Python API (`MlflowClient`) used to programmatically search experiments, compare runs, register models, and transition model stages.
+- **Search API** — MLflow's run and experiment search interface supporting filter strings over metrics, params, tags, and dataset fields for programmatic comparison.
 
 ## Weights & Biases
 - **Run** — A single tracked execution that records metrics, parameters, and outputs to a W&B project.
@@ -105,13 +107,6 @@
 - **Predictive Unit** — A single component in a SeldonDeployment graph (e.g. model, transformer, router, combiner, or output transformer).
 - **Seldon Graph** — A directed acyclic graph of Predictive Units that defines the model serving pipeline, with routing, combining, and transformation steps.
 - **Seldon Core Analytics** — Prometheus-based monitoring and alerting for model performance, request latency, and prediction distributions.
-
-## MLflow
-- **MLproject** — A reusable packaging format for ML code with a `MLproject` file specifying entry points and environments.
-- **Autologging** — Automatic logging of metrics, parameters, and model artifacts by MLflow's `autolog()` integration with common ML frameworks.
-- **Model Registry** — A centralized model store in MLflow for versioning, annotating, and managing model lifecycle stages.
-- **MLflow Client** — The Python API (`MlflowClient`) used to programmatically search experiments, compare runs, register models, and transition model stages.
-- **Search API** — MLflow's run and experiment search interface supporting filter strings over metrics, params, tags, and dataset fields for programmatic comparison.
 
 ## ZenML
 - **Stack** — A ZenML configuration bundling an orchestrator, artifact store, metadata store, and other components into a deployable target.

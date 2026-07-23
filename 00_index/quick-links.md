@@ -48,6 +48,8 @@
 - [Metaflow logging artifact flow](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py) — Log artifacts and metadata in Metaflow flows
 - [Metaflow @batch vs @kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same flow
 - [ZenML parent-child pipelines & lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Hierarchical pipelines and artifact lineage
+- [Pipeline orchestration practice exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) — DAG, dependencies, and run order
+- [Applying DAG-based ML workflow](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline
 
 ### Version and register models
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — MLflow Model Registry version comparison
@@ -57,8 +59,9 @@
 ### Version data
 - [Data versioning fundamentals exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Pointer files, snapshots, and restore logic
 - [Track dataset snapshots for reproducible training](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py) — Snapshot datasets and pin to training runs
-- [Pipeline orchestration practice exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) — DAG, dependencies, and run order
-- [Applying DAG-based ML workflow](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline
+- [DVC end-to-end CLI walkthrough](../dvc/scripts/2026-07-22-dvc-end-to-end.sh) — Init repo, track dataset, set remote, push, and verify cache
+- [Minimal DVC versioning](../dvc/snippets/minimal_dvc_versioning.py) — Read a DVC-tracked CSV back into pandas
+- [DVC pipeline shell](../dvc/snippets/tried_dvc_pipeline.sh) — Reproduce a tracked pipeline with `dvc repro`
 - [Feature store fundamentals exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) — Feature definitions, online/offline, point-in-time joins
 - [Writing and reading features from online store](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py) — Populate and query an online feature store
 - [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py) — Serve a model with FastAPI for real-time inference

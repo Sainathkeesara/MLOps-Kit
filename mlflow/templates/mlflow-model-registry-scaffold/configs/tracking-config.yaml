@@ -1,0 +1,11 @@
+# last_verified: 2026-07-24 · MLflow n/a
+# MLflow tracking server configuration for the model-registry scaffold.
+# Update these values to match your deployment.
+
+mlflow_tracking_uri: "http://localhost:5000"
+experiment_name: "model-registry-demo"
+registered_model_name: "IrisClassifier"
+
+# Default stage to assign after registration.
+# Options: None, Staging, Production, Archived
+default_stage: "Staging"

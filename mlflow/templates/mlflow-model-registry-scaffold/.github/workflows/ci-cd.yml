@@ -1,0 +1,43 @@
+name: MLflow Model Registry CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  train-register:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m pytest tests/ -v --tb=short
+
+      - name: Train and register model
+        if: github.ref == 'refs/heads/main'
+        env:
+          MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+        run: |
+          RUN_ID=$(python train.py \
+            --tracking-uri "$MLFLOW_TRACKING_URI" \
+            --experiment-name "model-registry-cicd" \
+            --n-estimators 100 \
+            --max-depth 5 \
+            | grep -oP 'Run ID: \K.+')
+          python register.py register \
+            --tracking-uri "$MLFLOW_TRACKING_URI" \
+            --run-id "$RUN_ID" \
+            --model-name "IrisClassifier" \
+            --stage "Staging"

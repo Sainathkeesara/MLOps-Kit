@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-25
+
+- mlf-019: docs — Integrating MLflow with Weights & Biases: hybrid experiment tracking patterns (L4)
+
 ## 2026-07-24
 
 - mlf-017: template — MLflow + Model Registry project scaffold: training, registration, and serving pipeline (L4)

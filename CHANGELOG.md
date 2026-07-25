@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-25
+
+- con-073: concept — Experiment Tracking: L1 primer rewriting in first-person scratch-note voice for MLOps domain
+- con-074: concept — Model Registry: L1 primer rewriting in first-person scratch-note voice for MLOps domain
+- con-075: concept — Data Versioning: L1 primer rewriting in first-person scratch-note voice for MLOps domain
+
 ## 2026-07-24
 
 - mlf-017: template — MLflow + Model Registry project scaffold: training, registration, and serving pipeline (L4)

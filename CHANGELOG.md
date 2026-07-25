@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-25
+
+- mlf-020: script(python) — Reusable MLflow helper for automated experiment comparison and model promotion (L4)
+
 ## 2026-07-24
 
 - mlf-017: template — MLflow + Model Registry project scaffold: training, registration, and serving pipeline (L4)

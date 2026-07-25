@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-24
+
+- mlf-017: template — MLflow + Model Registry project scaffold: training, registration, and serving pipeline (L4)
+
 ## 2026-07-23
 
 - mlf-018: dockerfile — MLflow tracking server with PostgreSQL + MinIO in Docker Compose for local team use (L4)

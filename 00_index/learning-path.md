@@ -31,7 +31,7 @@ Tools that expand your toolkit with specialised capabilities, or deeper tooling 
 
 - **ClearML Orchestration** — Managed MLOps platform with built-in experiment tracking. Requires Pipeline Orchestration foundation. [Primer](../clearml/notes/0000-primer-clearml-orchestration.md), [web UI walkthrough](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md), [common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md), and [agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md).
 - **DVC** — Data versioning for ML pipelines. Unlocked after MLflow L1 complete; requires Experiment Tracking + Data Versioning. [Primer](../dvc/notes/0000-primer-dvc.md) and [end-to-end CLI walkthrough](../dvc/scripts/2026-07-22-dvc-end-to-end.sh).
-- **Feast** — Centralized feature management. Unlocked after MLflow L2 complete; requires Data Versioning + Model Registry. [Primer](../feast/notes/0000-primer-feast.md), [Parquet offline store setup](../feast/notes/2026-07-22-install-feast-parquet-offline-store.md), [data source registration](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py), and [entity/FeatureView historical retrieval](../feast/scripts/2026-07-22-entity-and-featureview-historical-retrieval.py).
+- **Feast** — Centralized feature management. Unlocked after MLflow L2 complete; requires Data Versioning + Model Registry. [Primer](../feast/notes/0000-primer-feast.md), [Parquet offline store setup](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md), [data source registration](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py), and [entity/FeatureView historical retrieval](../feast/scripts/2026-07-22-entity-and-featureview-historical-retrieval.py).
 
 ## Stage 4: Advanced Tools
 

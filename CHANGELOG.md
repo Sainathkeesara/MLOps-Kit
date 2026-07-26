@@ -2,6 +2,7 @@
 
 ## 2026-07-25
 
+- mlf-020: script(python) — Reusable MLflow helper for automated experiment comparison and model promotion (L4)
 - con-073: concept — Experiment Tracking: L1 primer rewriting in first-person scratch-note voice for MLOps domain
 - con-074: concept — Model Registry: L1 primer rewriting in first-person scratch-note voice for MLOps domain
 - con-075: concept — Data Versioning: L1 primer rewriting in first-person scratch-note voice for MLOps domain

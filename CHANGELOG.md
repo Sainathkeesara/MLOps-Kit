@@ -5,6 +5,7 @@
 - con-073: concept — Experiment Tracking: L1 primer rewriting in first-person scratch-note voice for MLOps domain
 - con-074: concept — Model Registry: L1 primer rewriting in first-person scratch-note voice for MLOps domain
 - con-075: concept — Data Versioning: L1 primer rewriting in first-person scratch-note voice for MLOps domain
+- mlf-019: docs — Integrating MLflow with Weights & Biases: hybrid experiment tracking patterns (L4)
 
 ## 2026-07-24
 

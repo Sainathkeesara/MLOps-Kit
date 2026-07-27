@@ -28,6 +28,7 @@
 ### Run an experiment
 - [MLflow tracking quickstart](../mlflow/snippets/2026-07-14-mlflow-tracking-quickstart.py) — First experiment with MLflow tracking
 - [MLflow end-to-end training with autologging](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — sklearn autolog, model comparison, and registry registration
+- [MLflow + W&B hybrid tracking](../mlflow/docs/integrating-mlflow-with-weights-and-biases.md) — Run MLflow and W&B in parallel and synchronize metadata
 - [MLflow custom experiment tracking workflow](../mlflow/scripts/custom-experiment-tracking-workflow.py) — Custom workflow with MlflowClient for search, compare, and register
 - [MLflow experiment comparison via Search API](../mlflow/notebooks/mlflow-experiment-comparison-search-api.ipynb) — Programmatic experiment comparison with MLflow Search API
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a sweep from scratch with the Python SDK

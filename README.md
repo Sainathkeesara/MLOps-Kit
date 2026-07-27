@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [Kubeflow CI/CD script](kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh) — Lint, test, compile, and deploy a pipeline scaffold template
+- [MLflow + W&B hybrid tracking](mlflow/docs/integrating-mlflow-with-weights-and-biases.md) — Run MLflow and W&B in parallel and synchronize metadata
+- [Kubeflow CI/CD pipeline](kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh) — Lint, test, compile, and deploy a pipeline scaffold template
 - [ClearML agent first tasks](clearml/notes/2026-07-23-clearml-agent-first-tasks.md) — Queue, clone, and run a task remotely via clearml-agent CLI
 - [Multi-stage Dockerfile for MLOps](docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
 - [Feast data source registration](feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py) — Register a data source and inspect its schema with the Feast Python SDK
-- [Feast Parquet offline store setup](feast/notes/2026-07-22-install-feast-parquet-offline-store.md) — Configure a Parquet-backed offline store for feature retrieval
 
 ## Layout
 
@@ -48,12 +48,12 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 14 | 8 | 5 | 1 | 3 | 4 | 1 | 18 | 3 | 2026-07-14 |
-| Metaflow | 13 | 7 | 6 | 1 | 4 | 2 | 3 | 10 | 1 | 2026-07-19 |
-| W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 6 | — | 2026-07-19 |
-| MLflow | 7 | 13 | 4 | 8 | 3 | — | 3 | — | — | 2026-07-17 |
+| Kubeflow | 15 | 9 | 6 | 2 | 4 | 5 | 2 | 21 | 4 | 2026-07-14 |
+| Metaflow | 14 | 7 | 7 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-19 |
+| W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 7 | — | 2026-07-19 |
+| MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 9 | 4 | 2026-07-25 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
-| Feast | 4 | 2 | 1 | 1 | — | — | — | — | — | 2026-07-23 |
+| Feast | 4 | 2 | 1 | 2 | — | — | — | — | — | 2026-07-23 |
 | DVC | 3 | 2 | 2 | 2 | — | — | — | — | — | — |
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | — |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
@@ -67,7 +67,7 @@ Plus 21 files across 8 concept directories covering containerization, data versi
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added ClearML agent CLI notes, a multi-stage Dockerfile for MLOps, Feast data source registration snippet, Feast Parquet offline store setup notes, and a DVC end-to-end CLI walkthrough.
+Working through first-contact notes and runnable experiments for each tool. Recently added MLflow + W&B hybrid tracking integration doc, ClearML agent CLI notes, a multi-stage Dockerfile for MLOps, Feast data source registration snippet, Feast Parquet offline store setup notes, and a DVC end-to-end CLI walkthrough.
 
 ---
-_Last updated: 2026-07-24_
+_Last updated: 2026-07-26_

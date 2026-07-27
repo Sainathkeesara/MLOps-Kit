@@ -1,0 +1,40 @@
+# last_verified: 2026-07-27 · GitHub Actions n/a
+#
+# kub-039 — CI/CD workflow for kubeflow-pipeline-scaffold
+#
+# Place this file at .github/workflows/ci-cd.yml in your template repo.
+# It runs lint, tests, and pipeline compile on every push and pull request.
+
+name: ci-cd
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-test-compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      - name: Lint
+        run: |
+          pip install --quiet ruff
+          ruff check components/ scripts/
+
+      - name: Test
+        run: pytest tests/ -v
+
+      - name: Compile pipeline
+        run: python pipeline.py

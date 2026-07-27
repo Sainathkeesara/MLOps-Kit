@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-27
+
+- kub-039: manifest(yaml) — CI/CD GitHub Actions workflow manifest for the kubeflow-pipeline-scaffold template (L2)
+
 ## 2026-07-25
 
 - mlf-020: script(python) — Reusable MLflow helper for automated experiment comparison and model promotion (L4)

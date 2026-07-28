@@ -3,6 +3,8 @@
 ## 2026-07-28
 
 - dvc-004: config(yaml) — DVC stage pipeline YAML with a single repro stage (L1)
+- mfl-040: template — Add missing `.github/workflows/ci-cd.yml` to metaflow-project-scaffold template (L1)
+- wnb-043: template — Add missing `.github/workflows/ci-cd.yml` to wandb-cicd-project template (L1)
 
 ## 2026-07-27
 

@@ -1,0 +1,10 @@
+# last_verified: 2026-07-28 · DVC n/a
+
+stages:
+  prepare:
+    cmd: python prepare.py data/raw data/prepared
+    deps:
+      - data/raw
+      - prepare.py
+    outs:
+      - data/prepared

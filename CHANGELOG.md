@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-28
+
+- dvc-004: config(yaml) — DVC stage pipeline YAML with a single repro stage (L1)
+
 ## 2026-07-27
 
 - feast-001: notes(primer) — What is Feast? — feature-store quick primer (L1)

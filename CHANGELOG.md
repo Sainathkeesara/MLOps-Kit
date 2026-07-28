@@ -2,6 +2,7 @@
 
 ## 2026-07-27
 
+- feast-001: notes(primer) — What is Feast? — feature-store quick primer (L1)
 - kub-039: manifest(yaml) — CI/CD GitHub Actions workflow manifest for the kubeflow-pipeline-scaffold template (L2)
 
 ## 2026-07-25

@@ -30,6 +30,7 @@
 - [MLflow end-to-end training with autologging](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py) — sklearn autolog, model comparison, and registry registration
 - [MLflow + W&B hybrid tracking](../mlflow/docs/integrating-mlflow-with-weights-and-biases.md) — Run MLflow and W&B in parallel and synchronize metadata
 - [MLflow custom experiment tracking workflow](../mlflow/scripts/custom-experiment-tracking-workflow.py) — Custom workflow with MlflowClient for search, compare, and register
+- [MLflow experiment comparison + promotion](../mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
 - [MLflow experiment comparison via Search API](../mlflow/notebooks/mlflow-experiment-comparison-search-api.ipynb) — Programmatic experiment comparison with MLflow Search API
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a sweep from scratch with the Python SDK
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Multi-task sweep and evaluation with CLI subcommands
@@ -50,6 +51,7 @@
 - [Metaflow end-to-end experiment](../metaflow/scripts/2026-07-03-end-to-end-experiment.py) — Tracking, model logging, and run comparison via Client API
 - [Metaflow resource management](../metaflow/docs/metaflow-resource-management.md) — CPU, memory, and GPU scheduling
 - [Metaflow logging artifact flow](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py) — Log artifacts and metadata in Metaflow flows
+- [Metaflow trigger hooks](../metaflow/scripts/2026-07-28-metaflow-trigger-hooks.py) — Wire @trigger, @trigger_on_finish, and @exit_hook across flows
 - [Metaflow @batch vs @kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same flow
 - [ZenML parent-child pipelines & lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Hierarchical pipelines and artifact lineage
 - [Pipeline orchestration practice exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) — DAG, dependencies, and run order
@@ -60,16 +62,19 @@
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — MLflow Model Registry version comparison
 - [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md) — Version, register, and promote artifacts
 - [Apply model registry: version and promote ML models](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py) — End-to-end registry promotion script (L2)
+- [MLflow experiment comparison + promotion script](../mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
 
 ### Version data
 - [Data versioning fundamentals exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Pointer files, snapshots, and restore logic
 - [Track dataset snapshots for reproducible training](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py) — Snapshot datasets and pin to training runs
 - [DVC end-to-end CLI walkthrough](../dvc/scripts/2026-07-22-dvc-end-to-end.sh) — Init repo, track dataset, set remote, push, and verify cache
+- [DVC repro + metrics diff end-to-end](../dvc/scripts/2026-07-28-dvc-repro-metrics-diff.sh) — Run `dvc repro` and compare metrics across commits
 - [Minimal DVC versioning](../dvc/snippets/minimal_dvc_versioning.py) — Read a DVC-tracked CSV back into pandas
 - [DVC pipeline shell](../dvc/snippets/tried_dvc_pipeline.sh) — Reproduce a tracked pipeline with `dvc repro`
 - [Feature store fundamentals exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) — Feature definitions, online/offline, point-in-time joins
 - [Writing and reading features from online store](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py) — Populate and query an online feature store
 - [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py) — Serve a model with FastAPI for real-time inference
+- [DVC stage pipeline config](../dvc/configs/2026-07-28-dvc-stage-pipeline.yaml) — Minimal DVC stage pipeline with metrics-file layout
 
 ### Manage compute and environments
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Parallelism patterns and execution backends
@@ -77,7 +82,6 @@
 - [Metaflow DevStack compose manifest](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml) — Local Metaflow dev environment with Minikube, Tilt, and Postgres
 - [Metaflow custom runtime Docker image](../metaflow/dockerfiles/metaflow-dev.Dockerfile) — CUDA + distributed deps for dev
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Local compute for W&B sweeps
-- [W&B CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml) — GitHub Actions workflow for W&B sweep orchestration
 - [Multi-stage ONNX Runtime serving](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py) — Slim serving image from a fat training stage
 - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
 
@@ -89,6 +93,7 @@
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml) — Project packaging and entry points
 - [MLflow sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml) — Packaged serving project with Conda env and entry points
 - [DVC pipeline config](../dvc/configs/pipeline.yaml) — Data and model pipeline stages
+- [DVC stage pipeline config](../dvc/configs/2026-07-28-dvc-stage-pipeline.yaml) — Minimal DVC stage pipeline with metrics-file layout
 - [MLflow tracking server Postgres+S3](../mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml) — Production-ready MLflow tracking server with PostgreSQL and S3
 - [ZenML stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml) — ZenML stack config with MLflow tracking and S3 artifact store
 

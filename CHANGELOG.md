@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-30
+
+- mlf-022: notes(primer) — Fixed MLflow primer: added YAML frontmatter (last_verified, tool_version, sources), trimmed body to ≤300 words per L1 limit
+
 ## 2026-07-28
 
 - dvc-004: config(yaml) — DVC stage pipeline YAML with a single repro stage (L1)

@@ -34,6 +34,8 @@
 - **DVC** — Data Version Control; an open-source tool for versioning datasets and ML pipeline stages alongside code.
 - **Pipeline stage** — A step in a DVC pipeline (e.g. prepare, train, evaluate) defined in `dvc.yaml` with inputs, outputs, and commands.
 - **`.dvc` file** — A lightweight metafile that tracks a dataset or model file, storing its hash and cache location instead of the file itself.
+- **`dvc repro`** — The command that re-runs only pipeline stages whose dependencies have changed, similar to `make` for data pipelines.
+- **Metrics diff** — A DVC feature that compares metrics files between commits, showing how model performance changed across pipeline runs.
 
 ## Evidently AI
 - **Data Drift** — A statistical shift in input feature distributions between a reference dataset and the current production dataset, detected by Evidently.
@@ -90,6 +92,9 @@
 - **Resume** — A Metaflow CLI feature (`--resume`) that re-runs a flow from a specified step using cached results for all prior steps, accelerating iterative development.
 - **`metaflow-dev`** — Metaflow's local development environment command that spins up Minikube, Tilt, Postgres, and the Metaflow UI for testing flows locally.
 - **DevStack** — A bundled local Metaflow environment (metadata service + UI) for inspecting run history without provisioning AWS Batch or a Kubernetes cluster.
+- **`@trigger`** — A Metaflow step decorator that marks the step as a flow entry point, allowing the flow to be started externally or via CLI trigger.
+- **`@trigger_on_finish`** — A Metaflow step decorator that automatically triggers the step when a specified flow finishes, enabling chaining between flows.
+- **`@exit_hook`** — A Metaflow step decorator that runs when the flow exits, useful for cleanup, final logging, or notifications regardless of success or failure.
 
 ## MLflow
 - **MLproject** — A reusable packaging format for ML code with a `MLproject` file specifying entry points and environments.

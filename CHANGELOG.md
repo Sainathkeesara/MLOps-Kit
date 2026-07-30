@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-30
+
+- mlf-019: docs — Update Integrating MLflow with Weights & Biases hybrid experiment tracking patterns (L4) front-matter and content
+
 ## 2026-07-28
 
 - dvc-004: config(yaml) — DVC stage pipeline YAML with a single repro stage (L1)

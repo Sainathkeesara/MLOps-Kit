@@ -42,6 +42,8 @@
 - [Evidently first drift report](../evidently/snippets/first_drift_report.py) — Generate and view a data drift report
 - [Metaflow Kubernetes flow with metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py) — Run Metaflow on Kubernetes with cloud metadata
 - [Feast data source registration and schema inspection](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py) — Register a data source and inspect its schema with the Feast Python SDK
+- [W&B PyTorch sweep config](../wnb/templates/wandb-pytorch-scaffold/configs/sweep-config.yaml) — Declarative sweep configuration for W&B hyperparameter optimization
+- [W&B PyTorch training script](../wnb/templates/wandb-pytorch-scaffold/train.py) — Training script with W&B metric and artifact logging
 
 ### Orchestrate a pipeline
 - [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — Component writing and compilation pitfalls
@@ -90,6 +92,7 @@
 - [Kubeflow + MLflow project scaffold](../kubeflow/templates/kubeflow-mlflow-project/README.md) — KFP wired with MLflow tracking
 - [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Metaflow with CI/CD, testing, and env management
 - [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — W&B tracking with GitHub Actions
+- [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md) — PyTorch training with W&B sweep, artifact logging, and CI/CD
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml) — Project packaging and entry points
 - [MLflow sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml) — Packaged serving project with Conda env and entry points
 - [DVC pipeline config](../dvc/configs/pipeline.yaml) — Data and model pipeline stages

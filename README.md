@@ -1,5 +1,5 @@
 # MLOps-Kit
-> A working engineer's mlops reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
+> A working engineer's MLOps reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [W&B + PyTorch project scaffold](wnb/templates/wandb-pytorch-scaffold/README.md) — Project template with sweep config, artifact logging, and CI/CD integration
 - [DVC repro + metrics diff end-to-end](dvc/scripts/2026-07-28-dvc-repro-metrics-diff.sh) — Run `dvc repro` and compare metrics across commits
 - [DVC stage pipeline config](dvc/configs/2026-07-28-dvc-stage-pipeline.yaml) — Minimal DVC stage pipeline with metrics-file layout
 - [MLflow experiment comparison + promotion](mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
 - [MLflow + W&B hybrid tracking](mlflow/docs/integrating-mlflow-with-weights-and-biases.md) — Run MLflow and W&B in parallel and synchronize metadata
-- [Multi-stage Dockerfile for MLOps](docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
 
 ## Layout
 
@@ -48,18 +48,18 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 9 | 6 | 2 | 4 | 5 | 2 | 21 | 4 | 2026-07-27 |
-| Metaflow | 14 | 7 | 7 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-28 |
-| W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 7 | — | 2026-07-19 |
-| MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 9 | 4 | 2026-07-25 |
+| Kubeflow | 15 | 9 | 6 | 2 | 4 | 6 | 2 | 20 | 4 | 2026-07-14 |
+| Metaflow | 14 | 7 | 8 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-19 |
+| W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 14 | — | 2026-07-30 |
+| MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
 | Feast | 4 | 2 | 1 | 2 | — | — | — | — | — | 2026-07-27 |
 | DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
 | Seldon Core | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | — |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | — |
 
 Plus 21 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
@@ -67,7 +67,7 @@ Plus 21 files across 8 concept directories covering containerization, data versi
 
 ## Status
 
-Working through first-contact notes and runnable experiments for each tool. Recently added DVC stage pipeline configs and a repro + metrics diff workflow, a Metaflow trigger hooks script, an MLflow experiment comparison and model promotion helper, and an MLflow + W&B hybrid tracking integration doc.
+Recently added a W&B + PyTorch project scaffold template, DVC stage pipeline configs, a Metaflow trigger hooks script, an MLflow experiment comparison and model promotion helper, and an MLflow + W&B hybrid tracking integration doc.
 
 ---
-_Last updated: 2026-07-28_
+_Last updated: 2026-07-31_

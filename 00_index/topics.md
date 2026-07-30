@@ -101,7 +101,7 @@
 - **notes:** [Seldon vs KServe comparison](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md)
 - **snippets:** [Install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py)
 
-## Weights & Biases · 45 files
+## Weights & Biases · 52 files
 
 - **primer:** [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - **notes** (14): most recent → [W&B quickstart trip-ups (Jul 11)](../wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md), [Dashboard exploration (Jul 9)](../wnb/notes/2026-07-09-explore-wandb-dashboard.md), [Dashboard exploration (Jul 5)](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md)
@@ -111,7 +111,7 @@
 - **docs** (4): [Artifact + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md), [Artifact tracking in data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md), [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md)
 - **manifests** (2): [CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - **notebooks** (2): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb), [Run comparison with parallel coords](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb)
-- **templates** (7): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md)
+- **templates** (14): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md)
 
 ## ZenML · 7 files
 

@@ -2,6 +2,7 @@
 
 ## 2026-07-30
 
+- wnb-039: template — W&B + PyTorch project scaffold with sweep config, artifact logging, and CI (L4)
 - mlf-019: docs — Update Integrating MLflow with Weights & Biases hybrid experiment tracking patterns (L4) front-matter and content
 
 ## 2026-07-28

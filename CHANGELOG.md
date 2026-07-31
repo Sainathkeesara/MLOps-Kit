@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-31
+
+- wnb-040: docs — Integrating W&B with MLflow for hybrid experiment tracking (L4)
+
 ## 2026-07-30
 
 - wnb-039: template — W&B + PyTorch project scaffold with sweep config, artifact logging, and CI (L4)

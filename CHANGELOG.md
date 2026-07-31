@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-31
+
+- wnb-041: script(python) — Reusable W&B report generator for automated experiment dashboards (L4)
+
 ## 2026-07-30
 
 - wnb-039: template — W&B + PyTorch project scaffold with sweep config, artifact logging, and CI (L4)

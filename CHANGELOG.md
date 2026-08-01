@@ -2,7 +2,7 @@
 
 ## 2026-08-01
 
-- wnb-042: notebook — Comparing W&B Artifacts vs MLflow Model Registry for model lineage (L4)
+- mlf-023: snippet(python) — Install MLflow and log my first experiment with the Python SDK (L1)
 
 ## 2026-07-31
 

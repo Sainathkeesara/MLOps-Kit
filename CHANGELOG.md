@@ -3,6 +3,7 @@
 ## 2026-07-31
 
 - wnb-041: script(python) — Reusable W&B report generator for automated experiment dashboards (L4)
+- wnb-040: docs — Integrating W&B with MLflow for hybrid experiment tracking (L4)
 
 ## 2026-07-30
 

@@ -108,6 +108,7 @@
 - **Sweep** — An automated hyperparameter search that runs many configurations and reports results to a shared project.
 - **Artifact** — A versioned, typed file or directory (dataset, model, or result) logged to W&B and tracked with lineage across runs.
 - **Project** — A named container in W&B that groups related runs, sweeps, and artifacts for comparison.
+- **Model lineage** — The tracking of a model's full history: which data, code, and parameters produced it, and how it has been versioned and deployed over time.
 
 ## Seldon Core
 - **SeldonDeployment** — The custom resource definition (CRD) that defines a deployed ML model in Seldon Core, including the model image, resource requirements, and replicas.
@@ -126,3 +127,6 @@
 - **Metadata store** — A database (SQLite, MySQL, PostgreSQL) that logs pipeline runs, step status, parameters, and artifact URIs.
 - **Orchestrator** — The backend that actually runs the pipeline steps (local, Kubeflow, Airflow, Vertex AI, etc.).
 - **Materializer** — A component that knows how to serialize and deserialize a Python type to and from the artifact store.
+
+## Hybrid tracking
+- **Hybrid tracking** — Running two experiment tracking systems in parallel (e.g., W&B and MLflow) and synchronizing metadata so a single training run appears in both systems, enabling comparison of features and metrics across platforms.

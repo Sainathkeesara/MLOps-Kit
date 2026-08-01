@@ -35,8 +35,10 @@
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a sweep from scratch with the Python SDK
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Multi-task sweep and evaluation with CLI subcommands
 - [W&B custom sweep with early termination](../wnb/scripts/custom-sweep-early-termination.py) — Custom search space and early-stopping strategy
+- [W&B report generator](../wnb/scripts/wandb-report-generator.py) — Generate correlation and parallel-coords reports from W&B sweep runs
 - [W&B artifacts deep dive](../wnb/docs/wandb-artifacts-deep-dive.md) — Versioning, lineage, and reuse of artifacts across runs
 - [W&B run comparison: parallel coords and correlation diff](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb) — Compare runs with parallel coordinates and correlation plots
+- [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb) — Compare artifact lineage and model registry entries across W&B and MLflow
 - [ZenML first training pipeline](../zenml/snippets/tried_first_training_pipeline.py) — Data loading, training, and artifact logging
 - [ZenML parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Multi-pipeline DAGs and artifact tracking with ZenML
 - [Evidently first drift report](../evidently/snippets/first_drift_report.py) — Generate and view a data drift report
@@ -93,6 +95,8 @@
 - [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Metaflow with CI/CD, testing, and env management
 - [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — W&B tracking with GitHub Actions
 - [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md) — PyTorch training with W&B sweep, artifact logging, and CI/CD
+- [W&B PyTorch scaffold CI/CD workflow](../wnb/templates/wandb-pytorch-scaffold/.github/workflows/ci-cd.yml) — GitHub Actions CI/CD for the W&B + PyTorch project template
+- [W&B PyTorch scaffold gitignore](../wnb/templates/wandb-pytorch-scaffold/.gitignore) — Gitignore for the W&B + PyTorch project template
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml) — Project packaging and entry points
 - [MLflow sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml) — Packaged serving project with Conda env and entry points
 - [DVC pipeline config](../dvc/configs/pipeline.yaml) — Data and model pipeline stages
@@ -112,4 +116,3 @@
 
 ## Project
 - [README](../README.md) — Project overview and repository structure
-- [CHANGELOG](../CHANGELOG.md) — Record of completed tasks

@@ -95,6 +95,10 @@
 - **templates** (8): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
 - _…and 7 more under `mlflow/templates/` — browse the folder._
 
+## MLflow snippets · 1 file
+
+- **snippets:** [Install MLflow and log first experiment](../mlf/snippets/2026-08-01-install-mlflow-first-experiment.py)
+
 ## Seldon Core · 3 files
 
 - **primer:** [Seldon Core overview](../seldon/notes/0000-primer-seldon-core.md)

@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [W&B + PyTorch project scaffold](wnb/templates/wandb-pytorch-scaffold/README.md) — Project template with sweep config, artifact logging, and CI/CD integration
-- [DVC repro + metrics diff end-to-end](dvc/scripts/2026-07-28-dvc-repro-metrics-diff.sh) — Run `dvc repro` and compare metrics across commits
-- [DVC stage pipeline config](dvc/configs/2026-07-28-dvc-stage-pipeline.yaml) — Minimal DVC stage pipeline with metrics-file layout
-- [MLflow experiment comparison + promotion](mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
-- [MLflow + W&B hybrid tracking](mlflow/docs/integrating-mlflow-with-weights-and-biases.md) — Run MLflow and W&B in parallel and synchronize metadata
+- [Comparing W&B Artifacts vs MLflow Model Registry](wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb) — Compare artifact lineage and model registry entries across W&B and MLflow
+- [W&B report generator](wnb/scripts/wandb-report-generator.py) — Generate correlation and parallel-coords reports from W&B sweep runs
+- [MLflow + W&B hybrid tracking](wnb/docs/integrating-wandb-mlflow-hybrid-tracking.md) — Run MLflow and W&B in parallel and synchronize metadata
+- [W&B PyTorch scaffold CI/CD workflow](wnb/templates/wandb-pytorch-scaffold/.github/workflows/ci-cd.yml) — GitHub Actions CI/CD for the W&B + PyTorch project template
+- [W&B PyTorch scaffold gitignore](wnb/templates/wandb-pytorch-scaffold/.gitignore) — Gitignore for the W&B + PyTorch project template
 
 ## Layout
 
@@ -48,18 +48,18 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 9 | 6 | 2 | 4 | 6 | 2 | 20 | 4 | 2026-07-14 |
-| Metaflow | 14 | 7 | 8 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-19 |
-| W&B | 14 | 8 | 4 | 4 | 4 | 2 | 2 | 14 | — | 2026-07-30 |
-| MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
+| Kubeflow | 15 | 9 | 8 | 3 | 4 | 6 | 2 | 20 | 4 | 2026-07-27 |
+| Metaflow | 14 | 7 | 8 | 3 | 4 | 3 | 3 | 11 | 1 | 2026-07-28 |
+| W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 15 | — | 2026-07-31 |
+| MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
 | Feast | 4 | 2 | 1 | 2 | — | — | — | — | — | 2026-07-27 |
 | DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
 | Seldon Core | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | — |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | — |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
 
 Plus 21 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
@@ -67,7 +67,7 @@ Plus 21 files across 8 concept directories covering containerization, data versi
 
 ## Status
 
-Recently added a W&B + PyTorch project scaffold template, DVC stage pipeline configs, a Metaflow trigger hooks script, an MLflow experiment comparison and model promotion helper, and an MLflow + W&B hybrid tracking integration doc.
+Recently added a W&B notebook comparing artifacts vs MLflow model registry, a W&B report generator script, an MLflow + W&B hybrid tracking integration doc, and a W&B PyTorch scaffold template with CI/CD workflow and gitignore.
 
 ---
-_Last updated: 2026-07-31_
+_Last updated: 2026-08-01_

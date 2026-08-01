@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-01
+
+- wnb-042: notebook — Comparing W&B Artifacts vs MLflow Model Registry for model lineage (L4)
+
 ## 2026-07-31
 
 - wnb-041: script(python) — Reusable W&B report generator for automated experiment dashboards (L4)

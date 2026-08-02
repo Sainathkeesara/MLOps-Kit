@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-02
+
+- feast-005: notes — Follow the official Feast quickstart and write up what tripped me up (L2)
+- feast-006: snippet(python) — Minimal feature retrieval with Feast (L2)
+- feast-007: config(yaml) — Feast feature store YAML configuration for Redis and Parquet (L2)
+
 ## 2026-08-01
 
 - mlf-023: snippet(python) — Install MLflow and log my first experiment with the Python SDK (L1)

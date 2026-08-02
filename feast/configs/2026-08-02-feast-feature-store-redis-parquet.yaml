@@ -1,0 +1,12 @@
+# last_verified: 2026-08-02 · feast n/a
+
+project: feast_repo
+registry: data/registry.db
+provider: local
+offline_store:
+  type: file
+online_store:
+  type: redis
+  connection_string: localhost:6379
+entity_key_serialization_version: 2
+auth_config: null

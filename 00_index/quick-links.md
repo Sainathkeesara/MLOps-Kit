@@ -32,6 +32,7 @@
 - [MLflow custom experiment tracking workflow](../mlflow/scripts/custom-experiment-tracking-workflow.py) — Custom workflow with MlflowClient for search, compare, and register
 - [MLflow experiment comparison + promotion](../mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
 - [MLflow experiment comparison via Search API](../mlflow/notebooks/mlflow-experiment-comparison-search-api.ipynb) — Programmatic experiment comparison with MLflow Search API
+- [Install MLflow and log first experiment](../mlf/snippets/2026-08-01-install-mlflow-first-experiment.py) — Install MLflow and log your first experiment with the Python SDK
 - [W&B hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py) — Build a sweep from scratch with the Python SDK
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Multi-task sweep and evaluation with CLI subcommands
 - [W&B custom sweep with early termination](../wnb/scripts/custom-sweep-early-termination.py) — Custom search space and early-stopping strategy
@@ -95,8 +96,6 @@
 - [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Metaflow with CI/CD, testing, and env management
 - [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — W&B tracking with GitHub Actions
 - [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md) — PyTorch training with W&B sweep, artifact logging, and CI/CD
-- [W&B PyTorch scaffold CI/CD workflow](../wnb/templates/wandb-pytorch-scaffold/.github/workflows/ci-cd.yml) — GitHub Actions CI/CD for the W&B + PyTorch project template
-- [W&B PyTorch scaffold gitignore](../wnb/templates/wandb-pytorch-scaffold/.gitignore) — Gitignore for the W&B + PyTorch project template
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml) — Project packaging and entry points
 - [MLflow sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml) — Packaged serving project with Conda env and entry points
 - [DVC pipeline config](../dvc/configs/pipeline.yaml) — Data and model pipeline stages

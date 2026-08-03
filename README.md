@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [Install MLflow and log first experiment](mlf/snippets/2026-08-01-install-mlflow-first-experiment.py) — Install MLflow and log your first experiment with the Python SDK
 - [Comparing W&B Artifacts vs MLflow Model Registry](wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb) — Compare artifact lineage and model registry entries across W&B and MLflow
 - [W&B report generator](wnb/scripts/wandb-report-generator.py) — Generate correlation and parallel-coords reports from W&B sweep runs
 - [MLflow + W&B hybrid tracking](wnb/docs/integrating-wandb-mlflow-hybrid-tracking.md) — Run MLflow and W&B in parallel and synchronize metadata
-- [W&B PyTorch scaffold CI/CD workflow](wnb/templates/wandb-pytorch-scaffold/.github/workflows/ci-cd.yml) — GitHub Actions CI/CD for the W&B + PyTorch project template
-- [W&B PyTorch scaffold gitignore](wnb/templates/wandb-pytorch-scaffold/.gitignore) — Gitignore for the W&B + PyTorch project template
+- [W&B + PyTorch scaffold](wnb/templates/wandb-pytorch-scaffold/README.md) — Project template with sweep config, artifact logging, and CI/CD integration
 
 ## Layout
 
@@ -67,7 +67,7 @@ Plus 21 files across 8 concept directories covering containerization, data versi
 
 ## Status
 
-Recently added a W&B notebook comparing artifacts vs MLflow model registry, a W&B report generator script, an MLflow + W&B hybrid tracking integration doc, and a W&B PyTorch scaffold template with CI/CD workflow and gitignore.
+Recently added an MLflow first-experiment snippet, a W&B notebook comparing artifacts vs MLflow model registry, a W&B report generator script, an MLflow + W&B hybrid tracking integration doc, and a W&B + PyTorch project scaffold template.
 
 ---
 _Last updated: 2026-08-01_

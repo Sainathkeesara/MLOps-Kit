@@ -2,6 +2,9 @@
 
 ## 2026-08-04
 
+- kub-038: snippet(python) — Install Kubeflow Pipelines SDK and compile a simple pipeline (L1)
+- con-082: docs — Experiment tracking workflow: logging params, metrics, and artifacts end-to-end (L2)
+- con-084: script(python) — Model versioning and promotion workflow in Python (L2)
 - kub-031: yaml — CI/CD workflow for kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps (L2)
 - mlf-025: script(python) — Run my first MLflow experiment and log a model artifact (L1)
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-04
+
+- kub-031: yaml — CI/CD workflow for kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps (L2)
+- mlf-025: script(python) — Run my first MLflow experiment and log a model artifact (L1)
+
 ## 2026-08-02
 
 - feast-005: notes — Follow the official Feast quickstart and write up what tripped me up (L2)

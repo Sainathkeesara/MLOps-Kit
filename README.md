@@ -1,7 +1,8 @@
 # MLOps-Kit
-> A working engineer's MLOps reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
+> A working MLOps engineer's quick-reference for Kubeflow, Metaflow, MLflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
+![License](https://img.shields.io/github/license/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
 ![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/MLOps-Kit)
 ![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/MLOps-Kit)
@@ -10,7 +11,7 @@
 
 ## Who this is for
 
-A working MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
+A working MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for Kubeflow, Metaflow, MLflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI. Use it as a shelf you grab from, not a tutorial site. It deliberately does not try to replace each tool's official docs.
 
 ## What's in here
 
@@ -37,6 +38,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`kserve/`** — KServe model serving notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
+- **`mlf/`** — MLflow first-experiment snippet
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
@@ -48,12 +50,12 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 9 | 8 | 3 | 4 | 6 | 2 | 20 | 4 | 2026-07-27 |
-| Metaflow | 14 | 7 | 8 | 3 | 4 | 3 | 3 | 11 | 1 | 2026-07-28 |
-| W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 15 | — | 2026-07-31 |
-| MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
+| Kubeflow | 15 | 9 | 8 | 3 | 4 | 6 | 2 | 21 | 4 | 2026-07-27 |
+| Metaflow | 14 | 7 | 8 | 3 | 4 | 3 | 3 | 12 | 1 | 2026-07-28 |
+| W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 16 | — | 2026-07-31 |
+| MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 9 | 4 | 2026-07-30 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
-| Feast | 4 | 2 | 1 | 2 | — | — | — | — | — | 2026-07-27 |
+| Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-07-27 |
 | DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
@@ -70,4 +72,4 @@ Plus 21 files across 8 concept directories covering containerization, data versi
 Recently added an MLflow first-experiment snippet, a W&B notebook comparing artifacts vs MLflow model registry, a W&B report generator script, an MLflow + W&B hybrid tracking integration doc, and a W&B + PyTorch project scaffold template.
 
 ---
-_Last updated: 2026-08-01_
+_Last updated: 2026-08-03_

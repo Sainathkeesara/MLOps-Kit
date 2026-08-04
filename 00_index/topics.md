@@ -41,13 +41,13 @@
 - **notes:** [Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md)
 - **snippets:** [First drift report](../evidently/snippets/first_drift_report.py)
 
-## Feast · 9 files
+## Feast · 12 files
 
 - **primer:** [Feast overview](../feast/notes/0000-primer-feast.md)
-- **notes** (4): most recent → [Parquet offline store (Jul 23)](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md), [Parquet offline store (Jul 22)](../feast/notes/2026-07-22-install-feast-parquet-offline-store.md), [Install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
+- **notes** (5): most recent → [Follow Feast quickstart (Aug 2)](../feast/notes/2026-08-02-follow-feast-quickstart.md), [Parquet offline store (Jul 23)](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md), [Parquet offline store (Jul 22)](../feast/notes/2026-07-22-install-feast-parquet-offline-store.md)
 - **scripts:** [Entity/FeatureView historical retrieval](../feast/scripts/2026-07-22-entity-and-featureview-historical-retrieval.py)
-- **configs** (2): [feature_store.yaml](../feast/configs/feature_store.yaml), [Config README](../feast/configs/README.md)
-- **snippets** (2): [Register data source and inspect schema](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py), [First feature view](../feast/snippets/tried_first_feature_view.py)
+- **configs** (3): [Redis-Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml), [feature_store.yaml](../feast/configs/feature_store.yaml), [Config README](../feast/configs/README.md)
+- **snippets** (3): [Minimal feature retrieval](../feast/snippets/2026-08-02-minimal-feature-retrieval.py), [Register data source and inspect schema](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py), [First feature view](../feast/snippets/tried_first_feature_view.py)
 
 ## KServe · 4 files
 
@@ -55,7 +55,7 @@
 - **snippets** (2): [Custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py), [First InferenceService](../kserve/snippets/first_inferenceservice.py)
 - **configs:** [Minimal sklearn InferenceService](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml)
 
-## Kubeflow · 68 files
+## Kubeflow · 69 files
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
 - **notes** (15): most recent → [Install KFP on Kind (Jul 14)](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md), [KFP v2 quickstart trip-ups (Jul 11)](../kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md), [KFP v2 quickstart trip-ups (Jul 6)](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md)
@@ -66,10 +66,10 @@
 - **manifests** (6): [Pipeline CI/CD workflow](../kubeflow/manifests/2026-07-27-kubeflow-pipeline-scaffold-ci-cd.yaml), [Minimal hello pipeline](../kubeflow/manifests/minimal-hello-pipeline.yaml), [Katib HPO random search](../kubeflow/manifests/katib-hpo-random-search-pytorch.yaml)
 - **notebooks** (2): [Katib vs ParallelFor HPO](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb)
 - **dockerfiles** (4): [Sklearn component Dockerfile](../kubeflow/dockerfiles/sklearn-train-component.Dockerfile), [Requirements](../kubeflow/dockerfiles/requirements.txt), [Train script](../kubeflow/dockerfiles/train.py)
-- **templates** (20): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
-- _…and 16 more under `kubeflow/templates/` — browse the folder._
+- **templates** (21): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
+- _…and 19 more under `kubeflow/templates/` — browse the folder._
 
-## Metaflow · 53 files
+## Metaflow · 54 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - **notes** (14): most recent → [Install and hello world (Jul 14)](../metaflow/notes/2026-07-14-install-and-hello-world.md), [Metaflow quickstart trip-ups (Jul 11)](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI (Jul 9)](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md)
@@ -80,10 +80,10 @@
 - **manifests** (3): [DevStack compose](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml), [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml)
 - **notebooks** (3): [Full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb), [End-to-end flow with data](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb), [@batch vs @kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb)
 - **dockerfiles** (1): [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
-- **templates** (11): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
-- _…and 10 more under `metaflow/templates/` — browse the folder._
+- **templates** (12): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
+- _…and 11 more under `metaflow/templates/` — browse the folder._
 
-## MLflow · 53 files
+## MLflow · 54 files
 
 - **primer:** [MLflow concepts and setup](../mlflow/notes/0000-primer-mlflow.md)
 - **notes** (7): [UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md), [Quickstart trip-ups (Jul 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md), [First MLflow server](../mlflow/notes/2026-05-24-first-mlflow-server.md)
@@ -92,8 +92,8 @@
 - **configs** (10): [Sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml), [Tracking server Postgres+S3](../mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml), [Tracking server Postgres+S3 (Jul 6)](../mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml)
 - **docs** (4): [Comparing model versions](../mlflow/docs/comparing-model-versions.md), [Production tracking server with Nginx auth](../mlflow/docs/production-tracking-server-nginx-auth.md), [MLflow + W&B hybrid tracking](../mlflow/docs/integrating-mlflow-with-weights-and-biases.md)
 - **notebooks** (3): [Experiment comparison via Search API](../mlflow/notebooks/mlflow-experiment-comparison-search-api.ipynb), [Exploring runs, experiments, and model registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb), [Autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb)
-- **templates** (8): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
-- _…and 7 more under `mlflow/templates/` — browse the folder._
+- **templates** (9): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
+- _…and 8 more under `mlflow/templates/` — browse the folder._
 
 ## MLflow snippets · 1 file
 
@@ -105,7 +105,7 @@
 - **notes:** [Seldon vs KServe comparison](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md)
 - **snippets:** [Install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py)
 
-## Weights & Biases · 56 files
+## Weights & Biases · 57 files
 
 - **primer:** [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - **notes** (14): most recent → [W&B quickstart trip-ups (Jul 11)](../wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md), [Dashboard exploration (Jul 9)](../wnb/notes/2026-07-09-explore-wandb-dashboard.md), [Dashboard exploration (Jul 5)](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md)
@@ -115,8 +115,8 @@
 - **docs** (5): [Artifact + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md), [Artifact tracking in data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md), [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md), [Integrating W&B + MLflow hybrid tracking](../wnb/docs/integrating-wandb-mlflow-hybrid-tracking.md)
 - **manifests** (2): [CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - **notebooks** (3): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb), [Run comparison with parallel coords](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb), [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb)
-- **templates** (15): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md)
-- _…and 14 more under `wnb/templates/` — browse the folder._
+- **templates** (16): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md)
+- _…and 15 more under `wnb/templates/` — browse the folder._
 
 ## ZenML · 7 files
 

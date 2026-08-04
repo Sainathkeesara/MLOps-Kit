@@ -1,0 +1,52 @@
+# last_verified: 2026-08-04 · GitHub Actions n/a
+#
+# kub-031 — CI/CD workflow for kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps.
+# I filled in the missing deploy step that kub-039 didn't have — this one pushes the compiled
+# pipeline to a Kubeflow cluster so it actually runs.
+
+name: ci-cd
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-test-compile-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      - name: Lint
+        run: |
+          pip install --quiet ruff
+          ruff check components/ scripts/
+
+      - name: Test
+        run: pytest tests/ -v
+
+      - name: Compile pipeline
+        run: python pipeline.py
+
+      - name: Deploy pipeline
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          pip install --quiet kfp
+          python -c "
+          import kfp
+          client = kfp.Client(host='$KFP_HOST', credentials=kfp.auth.TokenCredential(token='$KFP_TOKEN'))
+          client.upload_pipeline(pipeline_path='pipeline.yaml', pipeline_name='kubeflow-pipeline-scaffold')
+          "
+        env:
+          KFP_HOST: ${{ secrets.KFP_HOST }}
+          KFP_TOKEN: ${{ secrets.KFP_TOKEN }}

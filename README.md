@@ -1,8 +1,7 @@
 # MLOps-Kit
-> A working MLOps engineer's quick-reference for Kubeflow, Metaflow, MLflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
+> A working engineer's MLOps reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
-![License](https://img.shields.io/github/license/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
 ![Languages](https://img.shields.io/github/languages/count/Sainathkeesara/MLOps-Kit)
 ![Repo size](https://img.shields.io/github/repo-size/Sainathkeesara/MLOps-Kit)
@@ -19,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [Install MLflow and log first experiment](mlf/snippets/2026-08-01-install-mlflow-first-experiment.py) — Install MLflow and log your first experiment with the Python SDK
-- [Comparing W&B Artifacts vs MLflow Model Registry](wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb) — Compare artifact lineage and model registry entries across W&B and MLflow
-- [W&B report generator](wnb/scripts/wandb-report-generator.py) — Generate correlation and parallel-coords reports from W&B sweep runs
-- [MLflow + W&B hybrid tracking](wnb/docs/integrating-wandb-mlflow-hybrid-tracking.md) — Run MLflow and W&B in parallel and synchronize metadata
-- [W&B + PyTorch scaffold](wnb/templates/wandb-pytorch-scaffold/README.md) — Project template with sweep config, artifact logging, and CI/CD integration
+- [Kubeflow pipeline scaffold CI/CD workflow](kub/manifests/2026-08-02-kubeflow-pipeline-scaffold-ci-cd.yml) — CI/CD workflow for the kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps
+- [Install MLflow and log first experiment](mlf/scripts/2026-08-02-run-first-mlflow-experiment.py) — Install MLflow and log your first experiment with the Python SDK
+- [Feast feature store Redis Parquet config](feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml) — Feast config with Redis online store and Parquet offline store
+- [Follow Feast quickstart](feast/notes/2026-08-02-follow-feast-quickstart.md) — Follow the Feast quickstart with feature retrieval and online store setup
+- [Minimal Feast feature retrieval](feast/snippets/2026-08-02-minimal-feature-retrieval.py) — Minimal Feast feature retrieval from the online store
 
 ## Layout
 
@@ -36,9 +35,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, scripts, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
+- **`kub/`** — Kubeflow pipeline manifests
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
-- **`mlf/`** — MLflow first-experiment snippet
+- **`mlf/`** — MLflow first-experiment snippets and scripts
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
@@ -50,18 +50,19 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 9 | 8 | 3 | 4 | 6 | 2 | 21 | 4 | 2026-07-27 |
-| Metaflow | 14 | 7 | 8 | 3 | 4 | 3 | 3 | 12 | 1 | 2026-07-28 |
-| W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 16 | — | 2026-07-31 |
-| MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 9 | 4 | 2026-07-30 |
+| Kubeflow | 15 | 9 | 6 | 2 | 4 | 6 | 2 | 20 | 4 | 2026-07-27 |
+| Metaflow | 14 | 7 | 8 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-28 |
+| W&B | 14 | 8 | 5 | 4 | 5 | 2 | 3 | 14 | — | 2026-07-31 |
+| MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 8 | — | 2026-07-30 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
-| Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-07-27 |
+| Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-08-02 |
 | DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
 | Seldon Core | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
 | KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
 | Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
+| kub | — | — | — | — | — | 1 | — | — | — | — |
 
 Plus 21 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
@@ -69,7 +70,7 @@ Plus 21 files across 8 concept directories covering containerization, data versi
 
 ## Status
 
-Recently added an MLflow first-experiment snippet, a W&B notebook comparing artifacts vs MLflow model registry, a W&B report generator script, an MLflow + W&B hybrid tracking integration doc, and a W&B + PyTorch project scaffold template.
+Recently added a Kubeflow pipeline scaffold CI/CD workflow, an MLflow first-experiment script, a Feast feature store Redis Parquet config, a Feast quickstart note, and a minimal Feast feature retrieval snippet.
 
 ---
-_Last updated: 2026-08-03_
+_Last updated: 2026-08-04_

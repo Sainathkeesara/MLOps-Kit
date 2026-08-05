@@ -1,0 +1,102 @@
+# last_verified: 2026-08-05 · mlf n/a
+# mlf-021 — Kubernetes manifest for MLflow UI deployment with Service and Ingress
+#
+# Purpose:
+#   Deploys the MLflow tracking server on Kubernetes so the UI is
+#   reachable through an Ingress. The manifest covers three resources:
+#   a Deployment, a ClusterIP Service, and an Ingress.
+#
+# When to use:
+#   When a team needs to run MLflow's UI as a cluster-local service
+#   and expose it through an ingress controller. The manifest assumes
+#   an nginx ingress controller is already installed in the cluster.
+#
+# Notes:
+#   The backend store and artifact store both default to the local
+#   filesystem inside the pod. For a production setup, configure a
+#   shared backend store (e.g. PostgreSQL) and an S3-compatible
+#   artifact store via the MLFLOW_BACKEND_STORE_URI and
+#   MLFLOW_ARTIFACT_ROOT environment variables. The image tag is
+#   not pinned; pin a specific version before deploying to a
+#   production cluster.
+#
+# Verify:
+#   1. kubectl apply -f mlf/manifests/mlflow-ui-kubernetes.yaml
+#   2. kubectl get pods -l app=mlflow
+#   3. kubectl get svc mlflow-ui
+#   4. kubectl get ingress mlflow-ui
+#   5. Curl the Ingress host to confirm the UI responds.
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow-ui
+  labels:
+    app: mlflow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlflow
+  template:
+    metadata:
+      labels:
+        app: mlflow
+    spec:
+      containers:
+        - name: mlflow
+          image: mlflow/mlflow:latest
+          ports:
+            - containerPort: 5000
+          env:
+            - name: MLFLOW_SERVER_HOST
+              value: "0.0.0.0"
+            - name: MLFLOW_SERVER_PORT
+              value: "5000"
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mlflow-ui
+  labels:
+    app: mlflow
+spec:
+  type: ClusterIP
+  ports:
+    - port: 5000
+      targetPort: 5000
+      protocol: TCP
+  selector:
+    app: mlflow
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mlflow-ui
+  labels:
+    app: mlflow
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "10m"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: mlflow.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: mlflow-ui
+                port:
+                  number: 5000

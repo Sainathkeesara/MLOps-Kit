@@ -1,30 +1,48 @@
-"""CLI helper to run the Metaflow pipeline with configurable parameters."""
+# last_verified: 2026-08-04 · metaflow 2.10.0
+"""CLI entrypoint for the Metaflow project scaffold with @project, @schedule, and event-triggered flows."""
 
 import argparse
 import subprocess
 import sys
 
 
+def run_flow(flow_name, **kwargs):
+    """Run a named Metaflow flow with the given parameters."""
+    cmd = [sys.executable, "flow.py", flow_name, "--with", "metadata=local"]
+    for key, val in kwargs.items():
+        cmd.extend([f"--{key.replace('_', '-')}", str(val)])
+    result = subprocess.run(cmd, check=False)
+    return result.returncode
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Run the Metaflow ML pipeline")
-    parser.add_argument("--test-size", type=float, default=0.2, help="Test split fraction")
-    parser.add_argument("--n-estimators", type=int, default=100, help="RandomForest tree count")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed")
+    parser = argparse.ArgumentParser(
+        description="Run Metaflow flows from the scaffold"
+    )
+    parser.add_argument(
+        "flow",
+        choices=[
+            "project",
+            "scheduled",
+            "event",
+        ],
+        help="Which flow variant to run",
+    )
+    parser.add_argument("--dataset", default="iris", help="Dataset name for project flow")
+    parser.add_argument("--threshold", type=float, default=0.5, help="Decision threshold")
+    parser.add_argument("--commit-sha", default="", help="Commit SHA for event-triggered flow")
     parser.add_argument("--with-batch", action="store_true", help="Run with AWS Batch")
     args = parser.parse_args()
 
-    cmd = [
-        sys.executable, "flow.py", "run",
-        "--test_size", str(args.test_size),
-        "--n_estimators", str(args.n_estimators),
-        "--seed", str(args.seed),
-    ]
-    if args.with_batch:
-        cmd.extend(["--with", "batch"])
+    flow_map = {
+        "project": ("ProjectMetadataFlow", {"dataset": args.dataset}),
+        "scheduled": ("ScheduledDailyFlow", {"threshold": args.threshold}),
+        "event": ("EventTriggeredFlow", {"commit_sha": args.commit_sha}),
+    }
 
-    result = subprocess.run(cmd, check=False)
-    sys.exit(result.returncode)
+    flow_name, params = flow_map[args.flow]
+    return run_flow(flow_name, **params)
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

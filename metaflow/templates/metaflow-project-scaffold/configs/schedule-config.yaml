@@ -1,0 +1,15 @@
+# last_verified: 2026-08-04 · metaflow 2.10.0
+# Schedule configuration for Metaflow scheduled and event-triggered flows.
+
+schedules:
+  - flow: ScheduledDailyFlow
+    cron: "0 8 * * *"
+    timezone: UTC
+    enabled: true
+
+triggers:
+  - flow: EventTriggeredFlow
+    source: github
+    event: push
+    branch: main
+    enabled: true

@@ -2,6 +2,7 @@
 
 ## 2026-08-04
 
+- mfl-037: template — Metaflow project scaffold with @project, @schedule, and event-triggered flows (L5)
 - kub-034: script(python) — KFP v2 pipeline with conditional branching, parallel execution, and artifact passing (L2)
 - con-082: docs — Experiment tracking workflow: logging params, metrics, and artifacts end-to-end (L2)
 - con-084: script(python) — Model versioning and promotion workflow in Python (L2)

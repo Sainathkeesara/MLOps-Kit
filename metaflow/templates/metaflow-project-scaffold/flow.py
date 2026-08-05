@@ -1,56 +1,91 @@
-"""Four-step Metaflow ML pipeline — load -> preprocess -> train -> evaluate."""
+# last_verified: 2026-08-04 · metaflow 2.10.0
+"""Metaflow project scaffold with @project, @schedule, and event-triggered flows.
 
-from metaflow import FlowSpec, Parameter, pypi, step
+This scaffold demonstrates three Metaflow patterns:
+1. @project — project metadata and namespace isolation
+2. @schedule — cron-based scheduled execution
+3. Event-triggered flows — starting flows from external events
 
-from components.data import load_and_split_data, scale_features
-from components.train import train_random_forest
-from components.evaluate import evaluate_classifier
+Each pattern is a self-contained flow class in this file.
+"""
+
+from metaflow import FlowSpec, Parameter, pypi, step, project, schedule, trigger
 
 
-class MetaflowMLPipeline(FlowSpec):
-    """A template Metaflow pipeline with testing and CI/CD support."""
+@project(name="metaflow-ml-pipeline", author="mlops-team")
+class ProjectMetadataFlow(FlowSpec):
+    """A flow that demonstrates the @project decorator for namespace isolation."""
 
-    test_size = Parameter("test_size", default=0.2, help="Fraction of data for testing")
-    seed = Parameter("seed", default=42, help="Random seed")
-    n_estimators = Parameter("n_estimators", default=100, help="RandomForest tree count")
-
-    @pypi(libraries={"pandas": ">=1.3.0", "scikit-learn": ">=1.0.0", "numpy": ">=1.21.0"})
-    @step
-    def start(self):
-        self.X_train, self.X_test, self.y_train, self.y_test, self.feature_names = (
-            load_and_split_data(test_size=self.test_size, random_state=self.seed)
-        )
-        self.next(self.preprocess)
-
-    @pypi(libraries={"scikit-learn": ">=1.0.0", "numpy": ">=1.21.0"})
-    @step
-    def preprocess(self):
-        self.X_train_scaled, self.X_test_scaled = scale_features(
-            self.X_train, self.X_test
-        )
-        self.next(self.train)
-
-    @pypi(libraries={"scikit-learn": ">=1.0.0", "numpy": ">=1.21.0"})
-    @step
-    def train(self):
-        self.model, self.train_accuracy = train_random_forest(
-            self.X_train_scaled,
-            self.y_train,
-            n_estimators=self.n_estimators,
-            random_state=self.seed,
-        )
-        print(f"Train accuracy: {self.train_accuracy:.4f}")
-        self.next(self.evaluate)
+    dataset = Parameter("dataset", default="iris", help="Dataset to use")
 
     @pypi(libraries={"scikit-learn": ">=1.0.0", "pandas": ">=1.3.0"})
     @step
-    def evaluate(self):
-        self.test_accuracy, self.classification_report_str = evaluate_classifier(
-            self.model, self.X_test_scaled, self.y_test, self.feature_names
-        )
-        print(f"Test accuracy: {self.test_accuracy:.4f}")
-        print(self.classification_report_str)
+    def start(self):
+        print(f"Running under project: {self.project_name}")
+        self.next(self.process)
+
+    @pypi(libraries={"scikit-learn": ">=1.0.0"})
+    @step
+    def process(self):
+        print(f"Processing dataset: {self.dataset}")
+        self.next(self.end)
+
+    @step
+    def end(self):
+        print("Project-scoped flow complete.")
+
+
+@schedule(cron="0 8 * * *")
+class ScheduledDailyFlow(FlowSpec):
+    """A flow that runs daily at 08:00 via the @schedule decorator."""
+
+    threshold = Parameter("threshold", default=0.5, help="Decision threshold")
+
+    @pypi(libraries={"pandas": ">=1.3.0", "numpy": ">=1.21.0"})
+    @step
+    def start(self):
+        print("Scheduled daily flow starting.")
+        self.next(self.analyze)
+
+    @pypi(libraries={"numpy": ">=1.21.0"})
+    @step
+    def analyze(self):
+        print(f"Threshold: {self.threshold}")
+        self.next(self.end)
+
+    @step
+    def end(self):
+        print("Scheduled flow complete.")
+
+
+@trigger(source="github", event="push", branch="main")
+class EventTriggeredFlow(FlowSpec):
+    """A flow triggered by external events via the @trigger decorator."""
+
+    commit_sha = Parameter("commit_sha", help="SHA of the triggering commit")
+
+    @pypi(libraries={"pandas": ">=1.3.0"})
+    @step
+    def start(self):
+        print(f"Event-triggered flow starting for commit {self.commit_sha}")
+        self.next(self.ingest)
+
+    @pypi(libraries={"pandas": ">=1.3.0"})
+    @step
+    def ingest(self):
+        print("Ingesting data from event payload.")
+        self.next(self.transform)
+
+    @pypi(libraries={"pandas": ">=1.3.0"})
+    @step
+    def transform(self):
+        print("Transforming event data.")
+        self.next(self.end)
+
+    @step
+    def end(self):
+        print("Event-triggered flow complete.")
 
 
 if __name__ == "__main__":
-    MetaflowMLPipeline().run()
+    ProjectMetadataFlow()

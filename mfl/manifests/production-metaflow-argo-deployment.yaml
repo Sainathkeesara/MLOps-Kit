@@ -1,0 +1,264 @@
+# last_verified: 2026-08-05 · metaflow n/a
+# Purpose: Production Metaflow deployment on Kubernetes with Argo Workflows backend.
+# When to use: Deploying Metaflow flows in a production Kubernetes cluster where
+#   Argo Workflows handles orchestration, scaling, and lifecycle management of
+#   individual flow steps as Kubernetes Jobs.
+# Prerequisites:
+#   - Kubernetes cluster (v1.27+) with Argo Workflows installed (v3.5+)
+#   - kubectl configured with cluster admin or namespace-scoped permissions
+#   - Metaflow Python package installed in the target environment
+#   - Container registry with access for pulling Metaflow base images
+#   - Namespace created for Metaflow workloads
+
+# Metaflow ServiceAccount for running flows
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: metaflow-sa
+  namespace: metaflow
+
+# ClusterRole granting Metaflow permissions to create Argo Workflows and Jobs
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: metaflow-argo-role
+rules:
+  - apiGroups: ["argoproj.io"]
+    resources: ["workflows"]
+    verbs: ["create", "get", "list", "watch", "delete"]
+  - apiGroups: ["batch"]
+    resources: ["jobs"]
+    verbs: ["create", "get", "list", "watch", "delete"]
+  - apiGroups: [""]
+    resources: ["pods", "pods/log", "configmaps", "secrets"]
+    verbs: ["create", "get", "list", "watch", "update"]
+
+# ClusterRoleBinding linking the ServiceAccount to the ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: metaflow-argo-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: metaflow-argo-role
+subjects:
+  - kind: ServiceAccount
+    name: metaflow-sa
+    namespace: metaflow
+
+# ConfigMap for Metaflow runtime configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: metaflow-config
+  namespace: metaflow
+data:
+  metaflow-config.json: |
+    {
+      "METAFLOW_DEFAULT_DATASTORE": "s3",
+      "METAFLOW_DEFAULT_METADATA": "local",
+      "METAFLOW_DEFAULT_ENVIRONMENT": "kubernetes",
+      "METAFLOW_KUBERNETES_NAMESPACE": "metaflow",
+      "METAFLOW_KUBERNETES_SERVICE_ACCOUNT": "metaflow-sa",
+      "METAFLOW_KUBERNETES_EXECUTOR": "argo",
+      "METAFLOW_ARGO_WORKFLOW_PRIORITY": "100",
+      "METAFLOW_ARGO_WORKFLOW_BACKOFF_LIMIT": "3"
+    }
+
+# Secret for cloud provider credentials (S3, etc.)
+apiVersion: v1
+kind: Secret
+metadata:
+  name: metaflow-cloud-credentials
+  namespace: metaflow
+type: Opaque
+data:
+  aws-access-key-id: ""
+  aws-secret-access-key: ""
+
+# Metaflow Deployment exposing the Metaflow UI and API
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metaflow-api
+  namespace: metaflow
+  labels:
+    app: metaflow
+    component: api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: metaflow
+      component: api
+  template:
+    metadata:
+      labels:
+        app: metaflow
+        component: api
+    spec:
+      serviceAccountName: metaflow-sa
+      containers:
+        - name: metaflow-api
+          image: metaflow/metaflow:latest
+          ports:
+            - containerPort: 5000
+              name: api
+          env:
+            - name: METAFLOW_CONFIG
+              valueFrom:
+                configMapKeyRef:
+                  name: metaflow-config
+                  key: metaflow-config.json
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: metaflow-cloud-credentials
+                  key: aws-access-key-id
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: metaflow-cloud-credentials
+                  key: aws-secret-access-key
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+            limits:
+              cpu: "2"
+              memory: "4Gi"
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+
+# Service exposing the Metaflow API internally
+apiVersion: v1
+kind: Service
+metadata:
+  name: metaflow-api
+  namespace: metaflow
+spec:
+  selector:
+    app: metaflow
+    component: api
+  ports:
+    - port: 5000
+      targetPort: 5000
+      name: api
+  type: ClusterIP
+
+# Ingress for external access to the Metaflow UI
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: metaflow-ingress
+  namespace: metaflow
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - metaflow.example.com
+      secretName: metaflow-tls-secret
+  rules:
+    - host: metaflow.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: metaflow-api
+                port:
+                  number: 5000
+
+# Argo Workflows Template for running Metaflow flows
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  name: metaflow-flow-template
+  namespace: metaflow
+  labels:
+    app: metaflow
+    component: workflow-template
+spec:
+  entrypoint: metaflow-run
+  serviceAccountName: metaflow-sa
+  arguments:
+    parameters:
+      - name: flow-name
+        value: "default-flow"
+      - name: run-id
+        value: ""
+  templates:
+    - name: metaflow-run
+      inputs:
+        parameters:
+          - name: flow-name
+          - name: run-id
+      container:
+        image: metaflow/metaflow:latest
+        command: [python, -m, "metaflow", "run"]
+        args:
+          - "--with"
+          - "kubernetes"
+          - "--kubernetes-namespace"
+          - "metaflow"
+          - "--kubernetes-service-account"
+          - "metaflow-sa"
+          - "{{inputs.parameters.flow-name}}"
+        env:
+          - name: METAFLOW_CONFIG
+            valueFrom:
+              configMapKeyRef:
+                name: metaflow-config
+                key: metaflow-config.json
+          - name: AWS_ACCESS_KEY_ID
+            valueFrom:
+              secretKeyRef:
+                name: metaflow-cloud-credentials
+                key: aws-access-key-id
+          - name: AWS_SECRET_ACCESS_KEY
+            valueFrom:
+              secretKeyRef:
+                name: metaflow-cloud-credentials
+                key: aws-secret-access-key
+        resources:
+          requests:
+            cpu: "1"
+            memory: "2Gi"
+          limits:
+            cpu: "4"
+            memory: "8Gi"
+      retryStrategy:
+        limit: 3
+        backoff:
+          duration: "30s"
+          factor: "2"
+          maxDuration: "300s"
+
+# Verify
+# 1. Apply the manifest: kubectl apply -f production-metaflow-argo-deployment.yaml
+# 2. Check deployment status: kubectl get pods -n metaflow -l app=metaflow
+# 3. Verify Argo Workflows template: argo list -n metaflow
+# 4. Submit a test flow: python -m metaflow run --with kubernetes --kubernetes-namespace metaflow <flow-name>
+# 5. Check flow execution in the Metaflow UI
+
+# Common errors
+# - "ServiceAccount metaflow-sa not found" — Ensure the namespace `metaflow` exists before applying (kubectl create namespace metaflow).
+# - "Argo Workflow CRD not found" — Install Argo Workflows in the cluster first.
+# - "ImagePullBackOff" — Verify the Metaflow base image tag exists in the container registry and credentials are correct.
+# - "403 Forbidden on S3" — Ensure the AWS credentials in the Secret are valid and the IAM policy grants S3 access.
+# - "Ingress not routing" — Confirm the Ingress controller (e.g., nginx-ingress) is installed and the TLS secret exists.

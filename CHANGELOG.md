@@ -2,6 +2,7 @@
 
 ## 2026-08-05
 
+- mlf-021: manifest — MLflow UI + deployment on Kubernetes with a Service and Ingress (L4)
 - mfl-039: notebook — Comparing Metaflow @batch vs @kubernetes vs local execution for cost-performance tradeoffs (L5)
 - mfl-038: manifest(yaml) — Production Metaflow deployment on Kubernetes with Argo Workflows backend (L5)
 

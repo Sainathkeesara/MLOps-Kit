@@ -2,6 +2,7 @@
 
 ## 2026-08-05
 
+- mfl-039: notebook — Comparing Metaflow @batch vs @kubernetes vs local execution for cost-performance tradeoffs (L5)
 - mfl-038: manifest(yaml) — Production Metaflow deployment on Kubernetes with Argo Workflows backend (L5)
 
 ## 2026-08-04

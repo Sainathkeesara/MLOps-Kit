@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [Kubeflow pipeline scaffold CI/CD workflow](kub/manifests/2026-08-02-kubeflow-pipeline-scaffold-ci-cd.yml) — CI/CD workflow for the kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps
-- [Install MLflow and log first experiment](mlf/scripts/2026-08-02-run-first-mlflow-experiment.py) — Install MLflow and log your first experiment with the Python SDK
-- [Feast feature store Redis Parquet config](feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml) — Feast config with Redis online store and Parquet offline store
-- [Follow Feast quickstart](feast/notes/2026-08-02-follow-feast-quickstart.md) — Follow the Feast quickstart with feature retrieval and online store setup
-- [Minimal Feast feature retrieval](feast/snippets/2026-08-02-minimal-feature-retrieval.py) — Minimal Feast feature retrieval from the online store
+- [Metaflow event trigger component](metaflow/templates/metaflow-project-scaffold/components/event_trigger.py) — Event trigger component for Metaflow project scaffold
+- [Metaflow schedule config](metaflow/templates/metaflow-project-scaffold/configs/schedule-config.yaml) — Declarative schedule configuration for Metaflow flows
+- [Metaflow event trigger tests](metaflow/templates/metaflow-project-scaffold/tests/test_event_trigger.py) — Unit tests for Metaflow event trigger component
+- [KFP v2 pipeline conditionals](kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
+- [Experiment tracking workflow](docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md) — End-to-end experiment tracking workflow with MLflow and W&B
 
 ## Layout
 
@@ -35,7 +35,6 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, scripts, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
-- **`kub/`** — Kubeflow pipeline manifests
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
 - **`mlf/`** — MLflow first-experiment snippets and scripts
@@ -50,27 +49,27 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 9 | 6 | 2 | 4 | 6 | 2 | 20 | 4 | 2026-07-27 |
-| Metaflow | 14 | 7 | 8 | 2 | 4 | 3 | 3 | 11 | 1 | 2026-07-28 |
-| W&B | 14 | 8 | 5 | 4 | 5 | 2 | 3 | 14 | — | 2026-07-31 |
-| MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 8 | — | 2026-07-30 |
+| Kubeflow | 15 | 10 | 9 | 3 | 4 | 7 | 2 | 20 | 4 | 2026-08-04 |
+| Metaflow | 14 | 7 | 8 | 4 | 4 | 3 | 3 | 14 | 1 | 2026-08-05 |
+| W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 14 | — | 2026-08-03 |
+| MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
 | Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-08-02 |
 | DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
-| Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
+| Evidently AI | 2 | 1 | — | — | — | — | — | — | — | 2026-07-03 |
 | Seldon Core | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
-| kub | — | — | — | — | — | 1 | — | — | — | — |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-15 |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-16 |
+| MLflow snippets | 1 | 1 | 1 | — | — | — | — | — | — | 2026-08-04 |
 
-Plus 21 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
+Plus 23 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
 </details>
 
 ## Status
 
-Recently added a Kubeflow pipeline scaffold CI/CD workflow, an MLflow first-experiment script, a Feast feature store Redis Parquet config, a Feast quickstart note, and a minimal Feast feature retrieval snippet.
+Recently added Metaflow event trigger component with tests and schedule config, a KFP v2 pipeline conditionals script, and an experiment tracking workflow doc.
 
 ---
-_Last updated: 2026-08-04_
+_Last updated: 2026-08-05_

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-05
+
+- mfl-038: manifest(yaml) — Production Metaflow deployment on Kubernetes with Argo Workflows backend (L5)
+
 ## 2026-08-04
 
 - mfl-037: template — Metaflow project scaffold with @project, @schedule, and event-triggered flows (L5)

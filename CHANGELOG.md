@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-06
+
+- kub-036: manifest — KFP pipeline deployment manifest with RecurringRun schedule, IAM secrets, and MinIO artifact store (L2)
+
 ## 2026-08-05
 
 - mlf-021: manifest — MLflow UI + deployment on Kubernetes with a Service and Ingress (L4)

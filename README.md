@@ -35,8 +35,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, scripts, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
+- **`kub/`** — Kubeflow SDK snippets and scripts (KFP v2)
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
+- **`mfl/`** — Metaflow manifests and notebooks
 - **`mlf/`** — MLflow first-experiment snippets, scripts, and manifests
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
@@ -51,7 +53,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
 | Kubeflow | 15 | 10 | 9 | 3 | 4 | 7 | 2 | 20 | 4 | 2026-08-04 |
 | Metaflow | 14 | 7 | 8 | 4 | 4 | 4 | 4 | 14 | 1 | 2026-08-05 |
-| W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 14 | — | 2026-08-03 |
+| W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 14 | — | 2026-07-31 |
 | MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
 | Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-08-02 |
@@ -59,9 +61,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | 2026-07-03 |
 | Seldon Core | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-15 |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-16 |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
 | MLflow snippets | 1 | 1 | 1 | — | — | 1 | — | — | — | 2026-08-05 |
+| kub (KFP SDK) | — | 1 | 1 | — | — | — | — | — | — | 2026-08-04 |
+| mfl (Metaflow extras) | — | — | — | — | — | 1 | 1 | — | — | 2026-08-05 |
 
 Plus 23 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
@@ -72,4 +76,4 @@ Plus 23 files across 8 concept directories covering containerization, data versi
 Recently added MLflow Kubernetes manifest with Service and Ingress, Metaflow event trigger component with tests and schedule config, a KFP v2 pipeline conditionals script, and an experiment tracking workflow doc.
 
 ---
-_Last updated: 2026-08-05_
+_Last updated: 2026-08-06_

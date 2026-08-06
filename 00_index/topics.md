@@ -69,7 +69,7 @@
 - **templates** (20): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
 - _…and 16 more under `kubeflow/templates/` — browse the folder._
 
-## Metaflow · 56 files
+## Metaflow · 58 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - **notes** (14): most recent → [Install and hello world (Jul 14)](../metaflow/notes/2026-07-14-install-and-hello-world.md), [Metaflow quickstart trip-ups (Jul 11)](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI (Jul 9)](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md)
@@ -128,3 +128,13 @@
 - **scripts:** [Multi-step ZenML+MLflow pipeline](../zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py)
 - **configs** (2): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml)
 - **notebooks:** [Parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb)
+
+## kub (KFP SDK) · 2 files
+
+- **snippets:** [Install KFP SDK](../kub/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
+- **scripts:** [KFP v2 pipeline conditionals](../kub/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
+
+## mfl (Metaflow extras) · 2 files
+
+- **manifests:** [Production Metaflow Argo deployment](../mfl/manifests/production-metaflow-argo-deployment.yaml) — Argo Workflows deployment manifest for production Metaflow
+- **notebooks:** [Batch vs Kubernetes vs local](../mfl/notebooks/batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same Metaflow flow

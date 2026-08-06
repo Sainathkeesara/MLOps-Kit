@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-06
+
+- mfl-043: notebook — Comparing Metaflow autotermination, checkpointing, and `spin` for debugging long flows (L5)
+
 ## 2026-08-05
 
 - mlf-021: manifest — MLflow UI + deployment on Kubernetes with a Service and Ingress (L4)

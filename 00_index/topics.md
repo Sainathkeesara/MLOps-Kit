@@ -59,8 +59,8 @@
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
 - **notes** (15): most recent → [Install KFP on Kind (Jul 14)](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md), [KFP v2 quickstart trip-ups (Jul 11)](../kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md), [KFP v2 quickstart trip-ups (Jul 6)](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md)
-- **snippets** (10): [Verify KFP install](../kubeflow/snippets/2026-07-06-verify-kfp-install.py), [Conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py), [Minimal KFP v2](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py)
-- **scripts** (9): [Kubeflow CI/CD pipeline](../kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh), [Kubeflow health diagnosis](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh), [Component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh), [KFP component factory](../kubeflow/scripts/kfp_component_factory.py)
+- **snippets** (10): [Verify KFP install](../kubeflow/snippets/2026-07-06-verify-kfp-install.py), [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py), [Conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py), [Minimal KFP v2](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py)
+- **scripts** (9): [Kubeflow CI/CD pipeline](../kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh), [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py), [Kubeflow health diagnosis](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh), [Component readiness check](../kubeflow/scripts/tried_check_kubeflow_readiness.sh), [KFP component factory](../kubeflow/scripts/kfp_component_factory.py)
 - **configs** (3): [Pipeline resources](../kubeflow/configs/pipeline-resources.yaml), [Config README](../kubeflow/configs/README.md)
 - **docs** (4): [KFP v1 vs v2 DSL](../kubeflow/docs/choosing-between-kfp-v1-and-v2-dsl.md), [Kubeflow + MLflow tracking](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md), [Pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md)
 - **manifests** (7): [Pipeline CI/CD workflow](../kubeflow/manifests/2026-07-27-kubeflow-pipeline-scaffold-ci-cd.yaml), [CI/CD workflow for scaffold](../kubeflow/manifests/2026-08-02-kubeflow-pipeline-scaffold-ci-cd.yml), [Minimal hello pipeline](../kubeflow/manifests/minimal-hello-pipeline.yaml), [Katib HPO random search](../kubeflow/manifests/katib-hpo-random-search-pytorch.yaml)
@@ -77,8 +77,8 @@
 - **scripts** (8): [Kubernetes flow metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py), [Logging artifact flow](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py), [Trigger hooks](../metaflow/scripts/2026-07-28-metaflow-trigger-hooks.py)
 - **configs** (4): [Project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml), [Schedule config](../metaflow/templates/metaflow-project-scaffold/configs/schedule-config.yaml), [Config README](../metaflow/configs/README.md)
 - **docs** (4): [W&B integration](../metaflow/docs/metaflow-wandb-integration.md), [Resource management](../metaflow/docs/metaflow-resource-management.md), [Foreach vs @batch](../metaflow/docs/foreach-vs-batch.md), [W&B real-time metric tracking](../metaflow/docs/wandb-metric-tracking-parallel-steps.md)
-- **manifests** (3): [DevStack compose](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml), [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml)
-- **notebooks** (3): [Full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb), [End-to-end flow with data](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb), [@batch vs @kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local.ipynb)
+- **manifests** (3): [DevStack compose](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml), [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml), [Production Argo deployment](../metaflow/manifests/production-metaflow-argo-deployment.yaml)
+- **notebooks** (3): [Full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb), [End-to-end flow with data](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb), [Batch vs Kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local-alt.ipynb)
 - **dockerfiles** (1): [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
 - **templates** (14): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
 - _…and 10 more under `metaflow/templates/` — browse the folder._
@@ -128,13 +128,3 @@
 - **scripts:** [Multi-step ZenML+MLflow pipeline](../zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py)
 - **configs** (2): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml)
 - **notebooks:** [Parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb)
-
-## kub (KFP SDK) · 2 files
-
-- **snippets:** [Install KFP SDK](../kub/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
-- **scripts:** [KFP v2 pipeline conditionals](../kub/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
-
-## mfl (Metaflow extras) · 2 files
-
-- **manifests:** [Production Metaflow Argo deployment](../mfl/manifests/production-metaflow-argo-deployment.yaml) — Argo Workflows deployment manifest for production Metaflow
-- **notebooks:** [Batch vs Kubernetes vs local](../mfl/notebooks/batch-vs-kubernetes-vs-local.ipynb) — Compare execution backends for the same Metaflow flow

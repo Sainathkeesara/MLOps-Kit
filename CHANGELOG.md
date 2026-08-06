@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-06
+
+- mfl-042: docs — Integrating Metaflow with Argo Workflows vs Kubeflow Pipelines for production orchestration (L5)
+
 ## 2026-08-05
 
 - mlf-021: manifest — MLflow UI + deployment on Kubernetes with a Service and Ingress (L4)

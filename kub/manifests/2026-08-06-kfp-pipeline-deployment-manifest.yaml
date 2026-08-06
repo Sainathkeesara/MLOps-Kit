@@ -1,284 +1,63 @@
 # last_verified: 2026-08-06 · kub n/a
-# kub-036 — KFP pipeline deployment manifest with RecurringRun schedule, IAM secrets, and MinIO artifact store.
-#
-# This manifest combines three things I kept running into when deploying
-# KFP pipelines:
-# 1. A RecurringRun schedule so the pipeline runs on a cron without manual triggers.
-# 2. IAM secrets for cloud auth (GCP/AWS) so the pipeline can reach storage and APIs.
-# 3. A MinIO artifact store so pipeline artifacts persist outside the ephemeral
-#    KFP controller pod and are accessible to downstream consumers.
-#
-# Apply with: kubectl apply -f 2026-08-06-kfp-pipeline-deployment-manifest.yaml
-# Then submit a recurring run via the KFP API or CLI:
-#   kfp run = client.create_recurring_run(...)
-
-apiVersion: pipelines.kubeflow.org/v1beta1
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kfp-iam-credentials
+  namespace: kubeflow
+type: Opaque
+data:
+  aws-access-key-id: ""
+  aws-secret-access-key: ""
+---
+apiVersion: kubeflow.org/v1beta1
 kind: Pipeline
 metadata:
-  name: ml-pipeline-with-recurring-run
-  description: "Deployment manifest for a KFP pipeline with RecurringRun schedule, IAM secrets, and MinIO artifact store"
+  name: kfp-pipeline-deployment
+  namespace: kubeflow
+  labels:
+    app: kubeflow-pipeline
 spec:
+  description: KFP pipeline with IAM secrets and MinIO artifact store configuration
+  parameters:
+    - name: minio-endpoint
+      default: minio-service.kubeflow.svc.cluster.local:9000
+    - name: minio-bucket
+      default: pipeline-artifacts
+    - name: iam-secret-name
+      default: kfp-iam-credentials
   pipelineSpec:
-    deploymentSpec:
-      executors:
-        minio-artifact-store:
-          container:
-            image: minio/minio:latest
-            args:
-            - server
-            - /data
-            - --console-address
-            - ":9001"
-            env:
-            - name: MINIO_ROOT_USER
-              valueFrom:
-                secretKeyRef:
-                  name: minio-credentials
-                  key: access-key
-            - name: MINIO_ROOT_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: minio-credentials
-                  key: secret-key
-            volumeMounts:
-            - name: minio-data
-              mountPath: /data
-        iam-auth-sidecar:
-          container:
-            image: amazon/aws-cli:latest
-            command:
-            - sleep
-            - infinity
-            env:
-            - name: AWS_ACCESS_KEY_ID
-              valueFrom:
-                secretKeyRef:
-                  name: iam-credentials
-                  key: access-key-id
-            - name: AWS_SECRET_ACCESS_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: iam-credentials
-                  key: secret-access-key
-            - name: AWS_REGION
-              value: us-east-1
-    pipelineInfo:
-      name: ml-pipeline-with-recurring-run
     root:
       dag:
         tasks:
-          ingest:
-            cachingOptions:
-              enableCache: true
+          preprocess:
             componentRef:
-              name: comp-ingest
-            taskInfo:
-              name: ingest
+              name: preprocess-data
+            inputs:
+              parameters:
+                minio_endpoint:
+                  inputParameter: minio-endpoint
+                minio_bucket:
+                  inputParameter: minio-bucket
           train:
-            cachingOptions:
-              enableCache: true
             componentRef:
-              name: comp-train
-            dependsOn:
-            - ingest
-            taskInfo:
-              name: train
-          evaluate:
-            cachingOptions:
-              enableCache: true
-            componentRef:
-              name: comp-evaluate
-            dependsOn:
-            - train
-            taskInfo:
-              name: evaluate
+              name: train-model
+            inputs:
+              parameters:
+                minio_endpoint:
+                  inputParameter: minio-endpoint
+                minio_bucket:
+                  inputParameter: minio-bucket
+            dependencies:
+              - preprocess
           deploy:
-            cachingOptions:
-              enableCache: true
             componentRef:
-              name: comp-deploy
-            dependsOn:
-            - evaluate
-            taskInfo:
-              name: deploy
-    components:
-      comp-ingest:
-        implementation:
-          container:
-            image: python:3.9-slim
-            command:
-            - python
-            - -c
-            - |
-              import json, os
-              data = {"source": "s3://my-bucket/raw", "records": 1000}
-              os.makedirs("/tmp/artifacts", exist_ok=True)
-              json.dump(data, open("/tmp/artifacts/ingest.json","w"))
-              print(f"Ingested from {data['source']}")
-        outputDefinitions:
-          artifacts:
-            dataset:
-              artifactType:
-                schemaTitle: system.Dataset
-      comp-train:
-        implementation:
-          container:
-            image: python:3.9-slim
-            command:
-            - python
-            - -c
-            - |
-              import json, os
-              artifact = {"model_type": "xgboost", "accuracy": 0.87, "epochs": 10}
-              os.makedirs("/tmp/artifacts", exist_ok=True)
-              json.dump(artifact, open("/tmp/artifacts/model.json","w"))
-              print(f"Trained {artifact['model_type']} — acc={artifact['accuracy']}")
-        inputDefinitions:
-          artifacts:
-            dataset:
-              artifactType:
-                schemaTitle: system.Dataset
-        outputDefinitions:
-          artifacts:
-            model:
-              artifactType:
-                schemaTitle: system.Model
-      comp-evaluate:
-        implementation:
-          container:
-            image: python:3.9-slim
-            command:
-            - python
-            - -c
-            - |
-              import json
-              m = json.load(open("/tmp/artifacts/model.json"))
-              passed = m["accuracy"] > 0.8
-              print(f"Evaluation: accuracy={m['accuracy']} — {'PASS' if passed else 'FAIL'}")
-        inputDefinitions:
-          artifacts:
-            model:
-              artifactType:
-                schemaTitle: system.Model
-      comp-deploy:
-        implementation:
-          container:
-            image: python:3.9-slim
-            command:
-            - python
-            - -c
-            - |
-              import json
-              print("Deploying model to serving endpoint")
-  recurringRun:
-    name: ml-pipeline-nightly
-    description: "Nightly scheduled run of the ML pipeline"
-    maxConcurrentRuns: 1
-    cronSchedule: "0 2 * * *"
-    timezone: UTC
-    enabled: true
-    params:
-      learning_rate: "0.05"
-      epochs: "20"
-      accuracy_threshold: "0.7"
-  artifactStore:
-    type: minio
-    endpoint: http://minio-artifact-store:9000
-    bucket: kfp-artifacts
-    accessKeySecret: minio-credentials
-    secretKeySecret: minio-credentials
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: minio-credentials
-  namespace: kubeflow
-type: Opaque
-stringData:
-  access-key: "minioadmin"
-  secret-key: "minioadmin"
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: iam-credentials
-  namespace: kubeflow
-type: Opaque
-stringData:
-  access-key-id: "AKIAIOSFODNN7EXAMPLE"
-  secret-access-key: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: minio-pvc
-  namespace: kubeflow
-spec:
-  accessModes:
-  - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: minio-artifact-store
-  namespace: kubeflow
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: minio-artifact-store
-  template:
-    metadata:
-      labels:
-        app: minio-artifact-store
-    spec:
-      containers:
-      - name: minio
-        image: minio/minio:latest
-        args:
-        - server
-        - /data
-        - --console-address
-        - ":9001"
-        env:
-        - name: MINIO_ROOT_USER
-          valueFrom:
-            secretKeyRef:
-              name: minio-credentials
-              key: access-key
-        - name: MINIO_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: minio-credentials
-              key: secret-key
-        volumeMounts:
-        - name: minio-data
-          mountPath: /data
-        ports:
-        - containerPort: 9000
-          name: api
-        - containerPort: 9001
-          name: console
-      volumes:
-      - name: minio-data
-        persistentVolumeClaim:
-          claimName: minio-pvc
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: minio-artifact-store
-  namespace: kubeflow
-spec:
-  selector:
-    app: minio-artifact-store
-  ports:
-  - name: api
-    port: 9000
-    targetPort: 9000
-  - name: console
-    port: 9001
-    targetPort: 9001
+              name: deploy-model
+            inputs:
+              parameters:
+                minio_endpoint:
+                  inputParameter: minio-endpoint
+                minio_bucket:
+                  inputParameter: minio-bucket
+            dependencies:
+              - train

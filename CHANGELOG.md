@@ -3,6 +3,7 @@
 ## 2026-08-06
 
 - kub-036: manifest — KFP pipeline deployment manifest with RecurringRun schedule, IAM secrets, and MinIO artifact store (L2)
+- kub-036: manifest(yaml) — KFP pipeline deployment manifest with valid KFP v1beta1 Pipeline CRD fields, IAM secrets via Kubernetes Secret, and MinIO artifact store referenced through pipeline parameters (L2)
 
 ## 2026-08-05
 

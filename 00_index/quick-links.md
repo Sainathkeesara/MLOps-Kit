@@ -51,6 +51,9 @@
 - [W&B PyTorch training script](../wnb/templates/wandb-pytorch-scaffold/train.py) — Training script with W&B metric and artifact logging
 - [Metaflow event trigger component](../metaflow/templates/metaflow-project-scaffold/components/event_trigger.py) — Event trigger component for Metaflow project scaffold
 - [Metaflow schedule config](../metaflow/templates/metaflow-project-scaffold/configs/schedule-config.yaml) — Declarative schedule configuration for Metaflow flows
+- [MLflow Kubernetes manifest with Service and Ingress](../mlf/manifests/mlflow-ui-kubernetes.yaml) — Kubernetes manifest for MLflow tracking server with Service and Ingress
+- [Metaflow event trigger tests](../metaflow/templates/metaflow-project-scaffold/tests/test_event_trigger.py) — Unit tests for Metaflow event trigger component
+- [Experiment tracking workflow](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md) — End-to-end experiment tracking workflow with MLflow and W&B
 
 ### Orchestrate a pipeline
 - [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — Component writing and compilation pitfalls

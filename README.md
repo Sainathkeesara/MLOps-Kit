@@ -1,5 +1,5 @@
 # MLOps-Kit
-> A working engineer's MLOps reference for Kubeflow, Metaflow, MLflow, Weights & Biases, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
+> A working MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for Kubeflow, Metaflow, MLflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -18,10 +18,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [MLflow Kubernetes manifest with Service and Ingress](mlf/manifests/mlflow-ui-kubernetes.yaml) — Kubernetes manifest for MLflow tracking server with Service and Ingress
 - [Metaflow event trigger component](metaflow/templates/metaflow-project-scaffold/components/event_trigger.py) — Event trigger component for Metaflow project scaffold
 - [Metaflow schedule config](metaflow/templates/metaflow-project-scaffold/configs/schedule-config.yaml) — Declarative schedule configuration for Metaflow flows
 - [Metaflow event trigger tests](metaflow/templates/metaflow-project-scaffold/tests/test_event_trigger.py) — Unit tests for Metaflow event trigger component
-- [KFP v2 pipeline conditionals](kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
 - [Experiment tracking workflow](docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md) — End-to-end experiment tracking workflow with MLflow and W&B
 
 ## Layout
@@ -37,7 +37,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`kserve/`** — KServe model serving notes, snippets, and configs
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
-- **`mlf/`** — MLflow first-experiment snippets and scripts
+- **`mlf/`** — MLflow first-experiment snippets, scripts, and manifests
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
@@ -50,7 +50,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
 | Kubeflow | 15 | 10 | 9 | 3 | 4 | 7 | 2 | 20 | 4 | 2026-08-04 |
-| Metaflow | 14 | 7 | 8 | 4 | 4 | 3 | 3 | 14 | 1 | 2026-08-05 |
+| Metaflow | 14 | 7 | 8 | 4 | 4 | 4 | 4 | 14 | 1 | 2026-08-05 |
 | W&B | 14 | 8 | 5 | 6 | 5 | 2 | 3 | 14 | — | 2026-08-03 |
 | MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
@@ -61,7 +61,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Seldon Core | 2 | 1 | — | — | — | — | — | — | — | 2026-07-12 |
 | KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-15 |
 | Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-16 |
-| MLflow snippets | 1 | 1 | 1 | — | — | — | — | — | — | 2026-08-04 |
+| MLflow snippets | 1 | 1 | 1 | — | — | 1 | — | — | — | 2026-08-05 |
 
 Plus 23 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 
@@ -69,7 +69,7 @@ Plus 23 files across 8 concept directories covering containerization, data versi
 
 ## Status
 
-Recently added Metaflow event trigger component with tests and schedule config, a KFP v2 pipeline conditionals script, and an experiment tracking workflow doc.
+Recently added MLflow Kubernetes manifest with Service and Ingress, Metaflow event trigger component with tests and schedule config, a KFP v2 pipeline conditionals script, and an experiment tracking workflow doc.
 
 ---
 _Last updated: 2026-08-05_

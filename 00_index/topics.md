@@ -95,10 +95,11 @@
 - **templates** (8): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
 - _…and 7 more under `mlflow/templates/` — browse the folder._
 
-## MLflow snippets · 2 files
+## MLflow snippets · 3 files
 
-- **scripts:** [Install MLflow and log first experiment](../mlf/scripts/2026-08-02-run-first-mlflow-experiment.py)
-- **snippets:** [Install MLflow and log first experiment](../mlf/snippets/2026-08-01-install-mlflow-first-experiment.py)
+- **scripts:** [Install MLflow and log first experiment](../mlf/scripts/2026-08-02-run-first-mlflow-experiment.py) — Install MLflow and log your first experiment with the Python SDK
+- **snippets:** [Install MLflow and log first experiment](../mlf/snippets/2026-08-01-install-mlflow-first-experiment.py) — Install MLflow and log your first experiment with the Python SDK
+- **manifests:** [MLflow UI Kubernetes manifest](../mlf/manifests/mlflow-ui-kubernetes.yaml) — Kubernetes manifest for MLflow tracking server with Service and Ingress
 
 ## Seldon Core · 3 files
 

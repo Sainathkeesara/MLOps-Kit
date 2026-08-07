@@ -2,6 +2,7 @@
 
 ## 2026-08-07
 
+- kub-035: script(python) — KFP v2 pipeline with branching, parallelism, and artifact passing end-to-end (L2)
 - con-087: script(python) — Track dataset versions with DVC and reproduce a training run (L2)
 - con-088: script(python) — Build a simple DAG-based pipeline with Python, including parallel execution and branching (L2)
 

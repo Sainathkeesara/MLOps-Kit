@@ -35,8 +35,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, scripts, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
+- **`kub/`** — Kubeflow SDK snippets and scripts (KFP v2)
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
+- **`mfl/`** — Metaflow manifests and notebooks
 - **`mlf/`** — MLflow first-experiment snippets, scripts, and manifests
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
 - **`seldon/`** — Seldon Core model serving notes and snippets
@@ -62,6 +64,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
 | Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
 | MLflow snippets | 1 | 1 | 1 | — | — | 1 | — | — | — | 2026-08-05 |
+| kub (KFP SDK) | — | 1 | 1 | — | — | — | — | — | — | 2026-08-04 |
+| mfl (Metaflow extras) | — | — | — | — | — | 1 | 1 | — | — | 2026-08-05 |
 
 Plus 23 files across 8 concept directories covering containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration.
 

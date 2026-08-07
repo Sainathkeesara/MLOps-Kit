@@ -1,0 +1,63 @@
+# last_verified: 2026-08-06 · kub n/a
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kfp-iam-credentials
+  namespace: kubeflow
+type: Opaque
+data:
+  aws-access-key-id: ""
+  aws-secret-access-key: ""
+---
+apiVersion: kubeflow.org/v1beta1
+kind: Pipeline
+metadata:
+  name: kfp-pipeline-deployment
+  namespace: kubeflow
+  labels:
+    app: kubeflow-pipeline
+spec:
+  description: KFP pipeline with IAM secrets and MinIO artifact store configuration
+  parameters:
+    - name: minio-endpoint
+      default: minio-service.kubeflow.svc.cluster.local:9000
+    - name: minio-bucket
+      default: pipeline-artifacts
+    - name: iam-secret-name
+      default: kfp-iam-credentials
+  pipelineSpec:
+    root:
+      dag:
+        tasks:
+          preprocess:
+            componentRef:
+              name: preprocess-data
+            inputs:
+              parameters:
+                minio_endpoint:
+                  inputParameter: minio-endpoint
+                minio_bucket:
+                  inputParameter: minio-bucket
+          train:
+            componentRef:
+              name: train-model
+            inputs:
+              parameters:
+                minio_endpoint:
+                  inputParameter: minio-endpoint
+                minio_bucket:
+                  inputParameter: minio-bucket
+            dependencies:
+              - preprocess
+          deploy:
+            componentRef:
+              name: deploy-model
+            inputs:
+              parameters:
+                minio_endpoint:
+                  inputParameter: minio-endpoint
+                minio_bucket:
+                  inputParameter: minio-bucket
+            dependencies:
+              - train

@@ -68,16 +68,20 @@
 - [ZenML parent-child pipelines & lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Hierarchical pipelines and artifact lineage
 - [Pipeline orchestration practice exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py) — DAG, dependencies, and run order
 - [Applying DAG-based ML workflow](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline
+- [Build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py) — Build and run a DAG-based ML pipeline with step dependencies
+- [Simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py) — Minimal DAG-based ML workflow with training, evaluation, and registration
 - [Kubeflow CI/CD pipeline](../kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh) — Lint, test, compile, and deploy a pipeline scaffold template
 - [Kubeflow pipeline scaffold CI/CD workflow](../kubeflow/manifests/2026-08-02-kubeflow-pipeline-scaffold-ci-cd.yml) — CI/CD workflow for kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps
 - [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
 - [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
+- [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py) — KFP v2 pipeline with conditional branching and parallel execution
 
 ### Version and register models
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — MLflow Model Registry version comparison
 - [W&B Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md) — Version, register, and promote artifacts
 - [Apply model registry: version and promote ML models](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py) — End-to-end registry promotion script (L2)
 - [MLflow experiment comparison + promotion script](../mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
+- [Model versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py) — Model versioning workflow with MLflow Model Registry
 
 ### Version data
 - [Data versioning fundamentals exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Pointer files, snapshots, and restore logic
@@ -90,6 +94,8 @@
 - [Writing and reading features from online store](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py) — Populate and query an online feature store
 - [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py) — Serve a model with FastAPI for real-time inference
 - [DVC stage pipeline config](../dvc/configs/2026-07-28-dvc-stage-pipeline.yaml) — Minimal DVC stage pipeline with metrics-file layout
+- [Track DVC dataset versions](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py) — Track and version datasets with DVC for reproducible training
+- [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py) — Version datasets and pin them to training runs with DVC
 
 ### Manage compute and environments
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Parallelism patterns and execution backends
@@ -115,6 +121,7 @@
 - [MLflow tracking server Postgres+S3](../mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml) — Production-ready MLflow tracking server with PostgreSQL and S3
 - [ZenML stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml) — ZenML stack config with MLflow tracking and S3 artifact store
 - [Feast feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml) — Feast config with Redis online store and Parquet offline store
+- [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml) — KFP pipeline deployment manifest for production
 
 ### Learn foundational concepts
 - [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)

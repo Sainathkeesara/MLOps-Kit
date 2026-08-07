@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-07
+
+- con-085: script(python) — Track dataset snapshots and reproduce training with DVC-style patterns (L2)
+- con-088: script(python) — Build a simple DAG-based pipeline with Python (L2)
+
 ## 2026-08-06
 
 - kub-036: manifest — KFP pipeline deployment manifest with RecurringRun schedule, IAM secrets, and MinIO artifact store (L2)

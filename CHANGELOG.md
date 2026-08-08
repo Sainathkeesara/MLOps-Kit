@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-08
+
+- con-087: script(python) — Track dataset versions with DVC and reproduce a training run (L2)
+
 ## 2026-08-07
 
 - kub-035: script(python) — KFP v2 pipeline with branching, parallelism, and artifact passing end-to-end (L2)

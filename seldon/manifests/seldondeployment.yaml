@@ -1,0 +1,14 @@
+apiVersion: machinelearning.seldon.io/v1
+kind: SeldonDeployment
+metadata:
+  name: sklearn-iris
+  namespace: default
+spec:
+  name: iris
+  predictors:
+  - graph:
+      implementation: SKLEARN_SERVER
+      modelUri: gs://your-bucket/models/iris-model.pkl
+      name: classifier
+    name: default
+    replicas: 1

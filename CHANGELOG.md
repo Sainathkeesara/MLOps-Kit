@@ -3,6 +3,7 @@
 ## 2026-08-08
 
 - wnb-044: template — W&B + PyTorch project scaffold with sweep config, artifact logging, and CI (L4)
+- con-087: script(python) — Track dataset versions with DVC and reproduce a training run (L2)
 
 ## 2026-08-07
 

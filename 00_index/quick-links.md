@@ -96,6 +96,7 @@
 - [DVC stage pipeline config](../dvc/configs/2026-07-28-dvc-stage-pipeline.yaml) — Minimal DVC stage pipeline with metrics-file layout
 - [Track DVC dataset versions](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py) — Track and version datasets with DVC for reproducible training
 - [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py) — Version datasets and pin them to training runs with DVC
+- [Track dataset versions with DVC and reproduce a training run](../docs/concepts/data-versioning/scripts/2026-08-08-track-dataset-versions-with-dvc-and-reproduce-a-training-run.py) — End-to-end demo tracking a dataset, mutating it, and restoring the original version
 
 ### Manage compute and environments
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Parallelism patterns and execution backends
@@ -114,6 +115,7 @@
 - [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md) — Metaflow with CI/CD, testing, and env management
 - [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — W&B tracking with GitHub Actions
 - [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md) — PyTorch training with W&B sweep, artifact logging, and CI/CD
+- [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md) — PyTorch training with W&B sweep and CI/CD
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml) — Project packaging and entry points
 - [MLflow sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml) — Packaged serving project with Conda env and entry points
 - [DVC pipeline config](../dvc/configs/pipeline.yaml) — Data and model pipeline stages
@@ -122,6 +124,7 @@
 - [ZenML stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml) — ZenML stack config with MLflow tracking and S3 artifact store
 - [Feast feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml) — Feast config with Redis online store and Parquet offline store
 - [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml) — KFP pipeline deployment manifest for production
+- [SeldonDeployment manifest](../seldon/manifests/seldondeployment.yaml) — Minimal sklearn SeldonDeployment manifest
 
 ### Learn foundational concepts
 - [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)

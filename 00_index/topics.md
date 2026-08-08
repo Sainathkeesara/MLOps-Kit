@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 27 files
+## Concepts · 28 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — build-stage training, slim runtime serving image
@@ -55,6 +55,11 @@
 - **snippets** (2): [Custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py), [First InferenceService](../kserve/snippets/first_inferenceservice.py)
 - **configs:** [Minimal sklearn InferenceService](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml)
 
+## kub (KFP SDK) · 2 files
+
+- **scripts:** [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py)
+- **manifests:** [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml)
+
 ## Kubeflow · 71 files
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
@@ -102,13 +107,14 @@
 - **snippets:** [Install MLflow and log first experiment](../mlf/snippets/2026-08-01-install-mlflow-first-experiment.py) — Install MLflow and log your first experiment with the Python SDK
 - **manifests:** [MLflow UI Kubernetes manifest](../mlf/manifests/mlflow-ui-kubernetes.yaml) — Kubernetes manifest for MLflow tracking server with Service and Ingress
 
-## Seldon Core · 3 files
+## Seldon Core · 4 files
 
 - **primer:** [Seldon Core overview](../seldon/notes/0000-primer-seldon-core.md)
 - **notes:** [Seldon vs KServe comparison](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md)
 - **snippets:** [Install and first deploy](../seldon/snippets/2026-07-04-install-and-first-deploy.py)
+- **manifests:** [SeldonDeployment manifest](../seldon/manifests/seldondeployment.yaml)
 
-## Weights & Biases · 55 files
+## Weights & Biases · 62 files
 
 - **primer:** [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - **notes** (14): most recent → [W&B quickstart trip-ups (Jul 11)](../wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md), [Dashboard exploration (Jul 9)](../wnb/notes/2026-07-09-explore-wandb-dashboard.md), [Dashboard exploration (Jul 5)](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md)
@@ -118,8 +124,8 @@
 - **docs** (5): [Artifact + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md), [Artifact tracking in data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md), [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md), [Integrating W&B + MLflow hybrid tracking](../wnb/docs/integrating-wandb-mlflow-hybrid-tracking.md)
 - **manifests** (2): [CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - **notebooks** (3): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb), [Run comparison with parallel coords](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb), [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb)
-- **templates** (14): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md)
-- _…and 13 more under `wnb/templates/` — browse the folder._
+- **templates** (18): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
+- _…and 15 more under `wnb/templates/` — browse the folder._
 
 ## ZenML · 7 files
 
@@ -129,8 +135,3 @@
 - **scripts:** [Multi-step ZenML+MLflow pipeline](../zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py)
 - **configs** (2): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml)
 - **notebooks:** [Parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb)
-
-## kub (KFP SDK) · 2 files
-
-- **scripts:** [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py)
-- **manifests:** [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml)

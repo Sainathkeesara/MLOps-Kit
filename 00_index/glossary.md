@@ -68,6 +68,7 @@
 - **KFP SDK** — The Kubeflow Pipelines SDK (v2) used to define, compile, and run pipelines in Python.
 - **Pipeline root** — The storage location (S3, MinIO, GCS) where KFP stores pipeline artifacts and outputs.
 - **`dsl.component`** — A decorator in the KFP SDK that marks a Python function as a reusable pipeline component.
+- **`dsl.Condition`** — A KFP v2 DSL context manager that conditionally executes a block of pipeline steps based on a boolean expression evaluated at compile time.
 - **Katib** — Kubeflow's native hyperparameter tuning service that provides search algorithms (grid, random, Bayesian) and early stopping.
 - **ParallelFor** — A KFP DSL construct (`dsl.ParallelFor`) that iterates over a list of parameters in parallel, creating a fan-out pattern in the pipeline graph.
 - **Argo Workflow** — The underlying Kubernetes-native workflow engine that executes each KFP pipeline step as a separate pod.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-08
+
+- wnb-044: template — W&B + PyTorch project scaffold with sweep config, artifact logging, and CI (L4)
+
 ## 2026-08-07
 
 - kub-035: script(python) — KFP v2 pipeline with branching, parallelism, and artifact passing end-to-end (L2)

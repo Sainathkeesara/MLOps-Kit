@@ -1,0 +1,6 @@
+# last_verified: 2026-08-08 · wnb n/a
+torch
+wandb
+scikit-learn
+pytest
+ruff

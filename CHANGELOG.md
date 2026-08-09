@@ -2,6 +2,7 @@
 
 ## 2026-08-09
 
+- mlf-024: yaml — CI/CD workflow for mlflow-model-registry-scaffold with lint, test, train, register, and deploy jobs (L2)
 - con-089: script(python) — Register and retrieve features using a local Feast feature store (L2)
 - con-090: docs — Offline vs online stores and point-in-time joins in a feature store (L2)
 - con-093: script(bash) — Create and validate a multi-stage Dockerfile for ML training and serving (L2)

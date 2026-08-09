@@ -21,6 +21,7 @@
 - [ClearML remote GPU execution config](../clearml/configs/2026-07-14-remote-gpu-execution.yaml) — Remote GPU execution configuration for ClearML
 - [Feast Parquet offline store setup](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md) — Configure a Parquet-backed offline store for feature retrieval
 - [Follow Feast quickstart](../feast/notes/2026-08-02-follow-feast-quickstart.md) — Follow the Feast quickstart with feature retrieval and online store setup
+- [Offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md) — Offline vs online stores and point-in-time joins in Feast
 
 ### Set up Databricks
 - [Databricks Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
@@ -47,6 +48,7 @@
 - [Metaflow Kubernetes flow with metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py) — Run Metaflow on Kubernetes with cloud metadata
 - [Feast data source registration and schema inspection](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py) — Register a data source and inspect its schema with the Feast Python SDK
 - [Feast minimal feature retrieval](../feast/snippets/2026-08-02-minimal-feature-retrieval.py) — Minimal Feast feature retrieval from the online store
+- [Register and retrieve features](../docs/concepts/feature-store/scripts/2026-08-09-register-and-retrieve-features.py) — Register features in a local Feast store and retrieve them
 - [W&B PyTorch sweep config](../wnb/templates/wandb-pytorch-scaffold/configs/sweep-config.yaml) — Declarative sweep configuration for W&B hyperparameter optimization
 - [W&B PyTorch training script](../wnb/templates/wandb-pytorch-scaffold/train.py) — Training script with W&B metric and artifact logging
 - [Metaflow event trigger component](../metaflow/templates/metaflow-project-scaffold/components/event_trigger.py) — Event trigger component for Metaflow project scaffold
@@ -106,6 +108,7 @@
 - [W&B Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml) — Local compute for W&B sweeps
 - [Multi-stage ONNX Runtime serving](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py) — Slim serving image from a fat training stage
 - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
+- [Multistage Dockerfile for ML](../docs/concepts/containerization/scripts/2026-08-09-multistage-dockerfile-for-ml.sh) — Multi-stage Dockerfile for ML training and serving
 - [Production Metaflow Argo deployment](../metaflow/manifests/production-metaflow-argo-deployment.yaml) — Argo Workflows deployment manifest for production Metaflow
 - [Batch vs Kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local-alt.ipynb) — Compare execution backends for the same Metaflow flow
 

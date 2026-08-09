@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [Offline vs online stores](docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md) — Offline vs online stores and point-in-time joins in Feast
+- [Register and retrieve features](docs/concepts/feature-store/scripts/2026-08-09-register-and-retrieve-features.py) — Register features in a local Feast store and retrieve them
+- [Multistage Dockerfile for ML](docs/concepts/containerization/scripts/2026-08-09-multistage-dockerfile-for-ml.sh) — Multi-stage Dockerfile for ML training and serving
 - [SeldonDeployment manifest](seldon/manifests/seldondeployment.yaml) — Minimal sklearn SeldonDeployment manifest
 - [W&B PyTorch CI/CD scaffold README](wnb/templates/wandb-pytorch-ci-scaffold/README.md) — W&B sweep + PyTorch training with CI/CD scaffold
-- [W&B PyTorch scaffold sweep config](wnb/templates/wandb-pytorch-ci-scaffold/configs/sweep-config.yaml) — Declarative sweep configuration for W&B + PyTorch
-- [W&B PyTorch CI/CD scaffold init](wnb/templates/wandb-pytorch-ci-scaffold/components/__init__.py) — Package init for W&B PyTorch CI/CD scaffold
-- [KFP v2 branching and parallel pipeline](kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py) — KFP v2 pipeline with conditional branching and parallel execution
 
 ## Layout
 
@@ -51,28 +51,28 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 10 | 9 | 3 | 4 | 7 | 2 | 17 | 4 | 2026-07-14 |
-| Weights & Biases | 14 | 8 | 5 | 7 | 5 | 2 | 3 | 18 | — | 2026-08-08 |
-| Metaflow | 14 | 7 | 8 | 4 | 4 | 4 | 5 | 12 | 1 | 2026-08-04 |
-| MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 7 | 4 | 2026-07-30 |
-| Concepts | — | 5 | 13 | — | 10 | — | — | — | — | 2026-08-04 |
+| Kubeflow | 15 | 10 | 9 | 3 | 4 | 7 | 2 | 20 | 4 | 2026-08-04 |
+| Weights & Biases | 14 | 8 | 5 | 7 | 5 | 2 | 3 | 20 | — | 2026-08-08 |
+| Metaflow | 14 | 7 | 8 | 4 | 4 | 4 | 5 | 14 | 1 | 2026-08-04 |
+| MLflow | 7 | 13 | 5 | 10 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
+| Concepts | — | 5 | 15 | — | — | — | — | — | — | 2026-08-09 |
 | Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-08-02 |
-| DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | — |
-| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | — |
+| DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
+| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-13 |
 | ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | — |
+| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
 | Seldon Core | 2 | 1 | — | — | — | 1 | — | — | — | 2026-07-12 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
 | MLflow first-experiments | — | 1 | 1 | — | — | 1 | — | — | — | — |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | — |
-| kub (KFP SDK) | — | — | 1 | — | — | 1 | — | — | — | — |
+| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
+| kub (KFP SDK) | — | — | 1 | — | — | 1 | — | — | — | 2026-08-07 |
 | MLflow extras | — | — | — | — | 1 | — | — | — | — | 2026-08-06 |
 
 </details>
 
 ## Status
 
-Recently added Seldon Core deployment manifest, W&B PyTorch CI/CD scaffold, DVC dataset versioning and tracking scripts, and KFP v2 branching and parallel pipeline.
+Recently added offline vs online stores and feature retrieval scripts for Feast, multistage Dockerfile for ML training and serving, Seldon Core deployment manifest, and W&B PyTorch CI/CD scaffold.
 
 ---
-_Last updated: 2026-08-08_
+_Last updated: 2026-08-09_

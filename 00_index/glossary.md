@@ -54,6 +54,7 @@
 - **Point-in-time join** — A query that retrieves the correct feature values as they existed at a specific training timestamp, preventing data leakage from future feature values.
 - **FileSource** — A Feast data source class that reads features from files such as Parquet or CSV, used in local development before migrating to production stores.
 - **`feast materialize-incremental`** — A CLI command that incrementally pushes the latest features from the offline store to the online store, typically called on a schedule to keep online serving up to date.
+- **Materialization** — The batch job that copies new feature rows from the offline store to the online store, keeping the low-latency serving store up to date with the latest feature values.
 
 ## KServe
 - **InferenceService** — The core CRD in KServe that defines a deployed model endpoint, specifying the model storage URI, framework, resource requests, and scaling config.

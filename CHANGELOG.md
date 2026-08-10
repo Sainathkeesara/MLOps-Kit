@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-10
+
+- con-101: script(python) — Automated model versioning and promotion workflow with threshold-based promotion (L3)
+- con-102: docs — Comparing automated vs manual model promotion strategies for ML pipelines (L3)
+
 ## 2026-08-09
 
 - mlf-024: yaml — CI/CD workflow for mlflow-model-registry-scaffold with lint, test, train, register, and deploy jobs (L2)

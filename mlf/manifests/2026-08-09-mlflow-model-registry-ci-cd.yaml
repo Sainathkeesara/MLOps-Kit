@@ -1,0 +1,115 @@
+# last_verified: 2026-08-09 · MLflow n/a
+# mlf-024 — CI/CD workflow for the mlflow-model-registry-scaffold template.
+#
+# Jobs: lint -> test -> train -> register -> deploy.
+#
+# I use a file:// tracking URI (file:///tmp/mlruns) so CI is self-contained —
+# no external MLflow server is needed. Each job installs requirements fresh
+# from requirements.txt; the train and register jobs share the run_id via
+# GitHub Actions step outputs (train.py prints "Training complete. Run ID: ...").
+# The deploy job only runs on main pushes because serving a model is an
+# environment-changing action — not every PR should spin up a server.
+
+name: MLflow Model Registry Scaffold CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  MLFLOW_TRACKING_URI: file:///tmp/mlruns
+  MODEL_NAME: IrisClassifier
+  EXPERIMENT_NAME: model-registry-demo
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      - run: ruff check .
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: pip install pytest
+      - run: pytest tests/ -v
+
+  train:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Train model and log to MLflow
+        id: train_step
+        run: |
+          # train.py prints "Training complete. Run ID: <id>" — capture it
+          # so register.py can attach to the exact run, not guess.
+          output=$(python train.py --tracking-uri "${{ env.MLFLOW_TRACKING_URI }}")
+          run_id=$(echo "$output" | grep "Run ID:" | awk '{print $NF}')
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+        env:
+          MLFLOW_TRACKING_URI: ${{ env.MLFLOW_TRACKING_URI }}
+
+  register:
+    runs-on: ubuntu-latest
+    needs: train
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Register and promote model version
+        run: |
+          # Promote to Staging so serve.py can load via models:/name/Staging.
+          # The run_id comes from the train job's step output.
+          python register.py register \
+            --tracking-uri "${{ env.MLFLOW_TRACKING_URI }}" \
+            --run-id "${{ needs.train.outputs.run_id }}" \
+            --model-name "${{ env.MODEL_NAME }}" \
+            --stage Staging
+        env:
+          MLFLOW_TRACKING_URI: ${{ env.MLFLOW_TRACKING_URI }}
+          MODEL_NAME: ${{ env.MODEL_NAME }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: register
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Smoke-test model server
+        run: |
+          # Start the MLflow model server, hit /invocations, then stop it.
+          python serve.py \
+            --tracking-uri "${{ env.MLFLOW_TRACKING_URI }}" \
+            --model-uri "models:/${{ env.MODEL_NAME }}/Staging" \
+            --port 5001 &
+          SERVER_PID=$!
+          sleep 10
+          curl -s -X POST http://localhost:5001/invocations \
+            -H "Content-Type: application/json" \
+            -d '{"data": [[5.1, 3.5, 1.4, 0.2]]}'
+          kill $SERVER_PID
+        env:
+          MLFLOW_TRACKING_URI: ${{ env.MLFLOW_TRACKING_URI }}
+          MODEL_NAME: ${{ env.MODEL_NAME }}

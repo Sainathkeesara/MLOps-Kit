@@ -5,6 +5,8 @@
 - con-089: script(python) — Register and retrieve features using a local Feast feature store (L2)
 - con-090: docs — Offline vs online stores and point-in-time joins in a feature store (L2)
 - con-093: script(bash) — Create and validate a multi-stage Dockerfile for ML training and serving (L2)
+- con-094: dockerfile — Multi-stage Dockerfile for ML training with serving stage (L2)
+- wnb-046: yaml — CI/CD workflow for wandb-cicd-project template (L2)
 
 ## 2026-08-08
 

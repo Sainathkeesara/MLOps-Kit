@@ -6,6 +6,8 @@
 - con-103: script(python) — DVC-style dataset versioning pipeline with content-addressed cache, pointer files, and experiment-tracking integration for reproducible training (L3)
 - con-104: docs — Comparing snapshot-based vs diff-based versioning for ML datasets (L3)
 - kub-041: config(yaml) — Minimal Kubeflow pipeline configuration with a single component (L1)
+- wnb-047: notes — Install W&B and log my first run (L1)
+- wnb-048: snippet(python) — Log my first W&B metric with the Python SDK (L1)
 
 ## 2026-08-10
 

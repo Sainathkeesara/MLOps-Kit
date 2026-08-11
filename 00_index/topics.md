@@ -2,16 +2,17 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 28 files
+## Concepts · 36 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — build-stage training, slim runtime serving image
   - [Multistage ONNX Runtime serving container](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py)
+  - [Multi-stage ML training-serving Dockerfile](../docs/concepts/containerization/dockerfiles/2026-08-09-multi-stage-ml-training-serving.Dockerfile)
   - [Multistage Dockerfile for ML](../docs/concepts/containerization/scripts/2026-08-09-multistage-dockerfile-for-ml.sh)
-- **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — with [exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py), [snapshot script](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py), [DVC versions script](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py), and [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py)
+- **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — with [exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py), [snapshot script](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py), [DVC versions script](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py), [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py), and [snapshot vs diff versioning](../docs/concepts/data-versioning/snapshot-vs-diff-versioning.md)
 - **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — with [exercises](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py), [workflow doc](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md), and [run comparison script](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py)
 - **primer:** [Feature Store](../docs/concepts/feature-store/0000-primer-feature-store.md) — with [exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py), [online store script](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py), [register and retrieve features](../docs/concepts/feature-store/scripts/2026-08-09-register-and-retrieve-features.py), and [offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md)
-- **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md) — with [exercises](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py), [apply script](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py), and [versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py)
+- **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md) — with [exercises](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py), [apply script](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py), [versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py), and [automated vs manual promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md)
 - **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md) — with [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py)
 - **primer:** [Monitoring & Drift](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md)
 - **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py), [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py), [build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py), and [simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py)
@@ -56,8 +57,9 @@
 - **snippets** (2): [Custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py), [First InferenceService](../kserve/snippets/first_inferenceservice.py)
 - **configs:** [Minimal sklearn InferenceService](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml)
 
-## kub (KFP SDK) · 2 files
+## kub (KFP SDK) · 3 files
 
+- **configs:** [Minimal Kubeflow pipeline](../kub/configs/2026-08-11-minimal-kubeflow-pipeline.yaml)
 - **scripts:** [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py)
 - **manifests:** [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml)
 
@@ -73,7 +75,7 @@
 - **notebooks** (2): [Katib vs ParallelFor HPO](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb)
 - **dockerfiles** (4): [Sklearn component Dockerfile](../kubeflow/dockerfiles/sklearn-train-component.Dockerfile), [Requirements](../kubeflow/dockerfiles/requirements.txt), [Train script](../kubeflow/dockerfiles/train.py)
 - **templates** (20): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
-- _…and 16 more under `kubeflow/templates/` — browse the folder._
+- _…and 18 more under `kubeflow/templates/` — browse the folder._
 
 ## Metaflow · 59 files
 
@@ -87,7 +89,7 @@
 - **notebooks** (5): [Full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb), [End-to-end flow with data](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb), [Batch vs Kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local-alt.ipynb)
 - **dockerfiles** (1): [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
 - **templates** (14): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
-- _…and 10 more under `metaflow/templates/` — browse the folder._
+- _…and 13 more under `metaflow/templates/` — browse the folder._
 
 ## MLflow · 53 files
 
@@ -101,12 +103,16 @@
 - **templates** (8): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
 - _…and 7 more under `mlflow/templates/` — browse the folder._
 
-## MLflow extras · 4 files
+## MLflow first-experiments · 4 files
 
-- **docs:** [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments
 - **scripts:** [Run first MLflow experiment](../mlf/scripts/2026-08-02-run-first-mlflow-experiment.py) — Install MLflow and log your first experiment with the Python SDK
 - **snippets:** [Install MLflow and log first experiment](../mlf/snippets/2026-08-01-install-mlflow-first-experiment.py) — Install MLflow and log your first experiment with the Python SDK
 - **manifests:** [MLflow UI Kubernetes manifest](../mlf/manifests/mlflow-ui-kubernetes.yaml) — Kubernetes manifest for MLflow tracking server with Service and Ingress
+- **manifests:** [MLflow Model Registry CI/CD manifest](../mlf/manifests/2026-08-09-mlflow-model-registry-ci-cd.yaml) — CI/CD workflow for MLflow Model Registry promotions
+
+## MLflow extras · 1 file
+
+- **docs:** [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments
 
 ## Seldon Core · 4 files
 
@@ -121,12 +127,12 @@
 - **notes** (14): most recent → [W&B quickstart trip-ups (Jul 11)](../wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md), [Dashboard exploration (Jul 9)](../wnb/notes/2026-07-09-explore-wandb-dashboard.md), [Dashboard exploration (Jul 5)](../wnb/notes/2026-07-05-exploring-wandb-dashboard.md)
 - **snippets** (8): [First experiment SDK](../wnb/snippets/2026-07-04-first-experiment-wb-sdk.py), [Minimal tracking](../wnb/snippets/2026-06-06-minimal-tracking.py), [Artifact logging](../wnb/snippets/tried_artifact_logging.py)
 - **scripts** (5): [Custom sweep with early termination](../wnb/scripts/custom-sweep-early-termination.py), [Sweep and eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py), [Hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py), [W&B report generator](../wnb/scripts/wandb-report-generator.py)
-- **configs** (6): [Declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml), [First sweep config](../wnb/configs/2026-06-08-first-sweep-config.yaml), [Sweep config](../wnb/configs/sweep_config.yaml), [Project settings](../wnb/configs/project-settings.yaml)
+- **configs** (7): [Declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml), [First sweep config](../wnb/configs/2026-06-08-first-sweep-config.yaml), [Sweep config](../wnb/configs/sweep_config.yaml), [Project settings](../wnb/configs/project-settings.yaml)
 - **docs** (5): [Artifact + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md), [Artifact tracking in data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md), [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md), [Integrating W&B + MLflow hybrid tracking](../wnb/docs/integrating-wandb-mlflow-hybrid-tracking.md)
 - **manifests** (2): [CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml)
 - **notebooks** (3): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb), [Run comparison with parallel coords](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb), [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb)
-- **templates** (18): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
-- _…and 15 more under `wnb/templates/` — browse the folder._
+- **templates** (21): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
+- _…and 18 more under `wnb/templates/` — browse the folder._
 
 ## ZenML · 7 files
 

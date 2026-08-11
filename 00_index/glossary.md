@@ -3,6 +3,8 @@
 ## Foundations
 - **Experiment tracking** — The practice of recording hyperparameters, metrics, dataset versions, and artifacts during ML training runs for reproducibility and comparison.
 - **Data versioning** — The practice of taking snapshots of datasets so you can recreate any past state, similar to git but for data files.
+- **Snapshot-based versioning** — A versioning strategy where each version is an independent, complete copy of a dataset, stored in a content-addressed cache and referenced by a small pointer file in Git.
+- **Diff-based versioning** — A versioning strategy that stores only the differences (deltas) between versions, reconstructing historical versions by replaying the delta chain from a base snapshot.
 - **Model registry** — A central store for versioning, annotating, and promoting trained ML models through staging to production.
 - **Metric** — A numeric value computed during or after training (accuracy, loss, F1 score) used to evaluate model performance.
 - **Parameter (hyperparameter)** — A configuration value set before training that controls the learning process (learning rate, batch size, epochs).
@@ -10,6 +12,8 @@
 - **Dashboard** — The web UI where you browse runs, compare metrics, and search experiments by parameter or metric value.
 - **Pointer file** — A small text file tracked in git that maps to the actual dataset artifact in remote storage (e.g. `data.csv.dvc`).
 - **Promotion** — Moving a model version from one stage to another (e.g. staging → production) after validation passes.
+- **Automated promotion** — Moving a model version from staging to production via a pipeline that evaluates metrics against predefined thresholds without human intervention.
+- **Manual promotion** — Moving a model version from staging to production after a human reviewer inspects run metrics, validation artifacts, and approves the transition.
 - **Snapshot** — A point-in-time copy of a dataset or model artifact, tracked so you can reproduce any past training run exactly.
 - **Version** — A specific iteration of a registered model, identified by a version number or alias for promotion and rollback.
 

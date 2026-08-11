@@ -1,0 +1,43 @@
+# last_verified: 2026-08-11 · Model Serving concept
+
+# I put together a minimal model serving config that covers the three things
+# I kept tripping over when I first tried to serve a model: batching, health
+# checks, and basic logging. This is meant to drop into a FastAPI or Flask
+# serving container — not a full Kubernetes deploy, just the app-level config.
+
+service:
+  name: model-serving
+  host: 0.0.0.0
+  port: 8080
+  workers: 2
+
+model:
+  path: ./model.pkl
+  framework: sklearn
+  input_schema:
+    - name: features
+      type: array
+      shape: [10]
+
+batching:
+  enabled: true
+  max_batch_size: 32
+  batch_timeout_ms: 50
+  max_wait_ms: 200
+
+health:
+  liveness:
+    path: /health
+    check: model_loaded
+  readiness:
+    path: /ready
+    check: model_loaded_and_warm
+  startup:
+    path: /startup
+    initial_delay_seconds: 10
+    period_seconds: 5
+
+logging:
+  level: info
+  format: json
+  request_logging: true

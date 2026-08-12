@@ -3,6 +3,7 @@
 ## 2026-08-12
 
 - mfl-044: yaml — CI/CD workflow (.github/workflows/ci-cd.yml) for the metaflow-project-scaffold template with lint, test, flow-run, and deploy jobs (L2)
+- mlf-027: manifest(yaml) — CI/CD workflow for mlflow-model-registry-scaffold with lint, test, train, register, and deploy jobs (L1)
 
 ## 2026-08-11
 

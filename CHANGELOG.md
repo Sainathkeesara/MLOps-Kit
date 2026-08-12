@@ -3,6 +3,9 @@
 ## 2026-08-11
 
 - con-091: snippet(python) — Minimal FastAPI inference endpoint with /health and /predict routes for model serving (L2)
+- con-092: config(yaml) — Minimal model serving config with batching, health checks, and logging (L2)
+- con-095: script(python) — Data drift detection script with z-score comparison against a reference baseline (L2)
+- con-096: docs — Monitoring and drift detection patterns for ML pipelines: baseline snapshots, scheduled checks, threshold alerting, and retraining triggers (L2)
 - con-103: script(python) — DVC-style dataset versioning pipeline with content-addressed cache, pointer files, and experiment-tracking integration for reproducible training (L3)
 - con-104: docs — Comparing snapshot-based vs diff-based versioning for ML datasets (L3)
 - kub-041: config(yaml) — Minimal Kubeflow pipeline configuration with a single component (L1)

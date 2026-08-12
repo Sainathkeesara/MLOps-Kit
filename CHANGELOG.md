@@ -3,6 +3,8 @@
 ## 2026-08-12
 
 - mfl-044: yaml — CI/CD workflow (.github/workflows/ci-cd.yml) for the metaflow-project-scaffold template with lint, test, flow-run, and deploy jobs (L2)
+- mfl-045: script(python) — my first Metaflow flow end-to-end with a simple data transform (L1)
+- mlf-026: notes — Installing MLflow and logging my first experiment (L1)
 
 ## 2026-08-11
 

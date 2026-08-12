@@ -84,6 +84,8 @@
 - [Apply model registry: version and promote ML models](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py) — End-to-end registry promotion script (L2)
 - [MLflow experiment comparison + promotion script](../mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
 - [Model versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py) — Model versioning workflow with MLflow Model Registry
+- [Automated vs manual model promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md) — Comparing automated and manual promotion strategies
+- [Automated model promotion workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py) — Automated promotion script with metric thresholds
 
 ### Version data
 - [Data versioning fundamentals exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Pointer files, snapshots, and restore logic

@@ -5,6 +5,7 @@
 ### Set up a tool for the first time
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md) — Install, run the UI, and log my first experiment
 - [W&B primer](../wnb/notes/0000-primer-wnb.md) — SDK setup, first run, and dashboard tour
+- [Install W&B and log my first run](../wnb/notes/2026-08-11-install-wandb-and-log-my-first-run.md) — First experiment, first metric, and a tour of the dashboard
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md) — Cluster setup, install, and first pipeline
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md) — Local install, first flow, and CLI/UI
 - [DVC primer](../dvc/notes/0000-primer-dvc.md) — Data versioning setup and first snapshot
@@ -39,6 +40,7 @@
 - [W&B sweep + eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py) — Multi-task sweep and evaluation with CLI subcommands
 - [W&B custom sweep with early termination](../wnb/scripts/custom-sweep-early-termination.py) — Custom search space and early-stopping strategy
 - [W&B report generator](../wnb/scripts/wandb-report-generator.py) — Generate correlation and parallel-coords reports from W&B sweep runs
+- [Log my first W&B metric](../wnb/snippets/2026-08-11-log-my-first-metric.py) — First metric logged with the W&B Python SDK
 - [W&B artifacts deep dive](../wnb/docs/wandb-artifacts-deep-dive.md) — Versioning, lineage, and reuse of artifacts across runs
 - [W&B run comparison: parallel coords and correlation diff](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb) — Compare runs with parallel coordinates and correlation plots
 - [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb) — Compare artifact lineage and model registry entries across W&B and MLflow
@@ -77,6 +79,7 @@
 - [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
 - [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
 - [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py) — KFP v2 pipeline with conditional branching and parallel execution
+- [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml) — CI/CD with lint, test, flow-run, and deploy jobs for the Metaflow template
 
 ### Version and register models
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — MLflow Model Registry version comparison
@@ -86,6 +89,7 @@
 - [Model versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py) — Model versioning workflow with MLflow Model Registry
 - [Automated vs manual model promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md) — Comparing automated and manual promotion strategies
 - [Automated model promotion workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py) — Automated promotion script with metric thresholds
+- [MLflow Model Registry CI/CD manifest](../mlf/manifests/2026-08-09-mlflow-model-registry-ci-cd.yaml) — CI/CD workflow for MLflow Model Registry promotions
 
 ### Version data
 - [Data versioning fundamentals exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Pointer files, snapshots, and restore logic
@@ -94,6 +98,7 @@
 - [DVC repro + metrics diff end-to-end](../dvc/scripts/2026-07-28-dvc-repro-metrics-diff.sh) — Run `dvc repro` and compare metrics across commits
 - [Minimal DVC versioning](../dvc/snippets/minimal_dvc_versioning.py) — Read a DVC-tracked CSV back into pandas
 - [DVC pipeline shell](../dvc/snippets/tried_dvc_pipeline.sh) — Reproduce a tracked pipeline with `dvc repro`
+- [DVC-style versioning pipeline](../docs/concepts/data-versioning/scripts/dvc-style-versioning-pipeline.py) — Content-addressed cache, pointer files, and repo stage definitions
 - [Feature store fundamentals exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py) — Feature definitions, online/offline, point-in-time joins
 - [Writing and reading features from online store](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py) — Populate and query an online feature store
 - [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py) — Serve a model with FastAPI for real-time inference
@@ -101,6 +106,12 @@
 - [Track DVC dataset versions](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py) — Track and version datasets with DVC for reproducible training
 - [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py) — Version datasets and pin them to training runs with DVC
 - [Track dataset versions with DVC and reproduce a training run](../docs/concepts/data-versioning/scripts/2026-08-08-track-dataset-versions-with-dvc-and-reproduce-a-training-run.py) — End-to-end demo tracking a dataset, mutating it, and restoring the original version
+- [Snapshot vs diff versioning](../docs/concepts/data-versioning/snapshot-vs-diff-versioning.md) — Comparing versioning strategies for ML datasets
+
+### Monitor models and drift
+- [Monitoring and drift detection patterns](../docs/concepts/monitoring-drift/2026-08-11-monitoring-drift-patterns.md) — Baseline snapshots, scheduled checks, threshold alerting, and retraining triggers
+- [Data drift detection script](../docs/concepts/monitoring-drift/scripts/2026-08-11-data-drift-detection.py) — Z-score comparison of features against a reference baseline
+- [Evidently report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md) — Choosing between Evidently's two check styles
 
 ### Manage compute and environments
 - [Metaflow foreach vs @batch](../metaflow/docs/foreach-vs-batch.md) — Parallelism patterns and execution backends
@@ -124,8 +135,8 @@
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml) — Project packaging and entry points
 - [MLflow sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml) — Packaged serving project with Conda env and entry points
 - [DVC pipeline config](../dvc/configs/pipeline.yaml) — Data and model pipeline stages
-- [DVC stage pipeline config](../dvc/configs/2026-07-28-dvc-stage-pipeline.yaml) — Minimal DVC stage pipeline with metrics-file layout
 - [MLflow tracking server Postgres+S3](../mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml) — Production-ready MLflow tracking server with PostgreSQL and S3
+- [MLflow tracking server Postgres+MinIO](../mlflow/dockerfiles/tracking-server-postgres-minio/README.md) — Self-hosted MLflow server via Docker Compose
 - [ZenML stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml) — ZenML stack config with MLflow tracking and S3 artifact store
 - [Feast feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml) — Feast config with Redis online store and Parquet offline store
 - [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml) — KFP pipeline deployment manifest for production

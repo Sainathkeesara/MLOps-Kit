@@ -103,16 +103,18 @@
 - **templates** (8): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
 - _…and 7 more under `mlflow/templates/` — browse the folder._
 
-## Metaflow crossover · 2 files
+## Metaflow crossover · 3 files
 
 - **configs:** [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml)
 - **docs:** [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments
+- **scripts:** [First flow data transform](../mfl/scripts/2026-08-12-first-flow-data-transform.py)
 
-## MLflow first-experiments · 4 files
+## MLflow first-experiments · 6 files
 
-- **scripts:** [Run first MLflow experiment](../mlf/scripts/2026-08-02-run-first-mlflow-experiment.py) — Install MLflow and log your first experiment with the Python SDK
+- **notes:** [Install MLflow and log first experiment](../mlf/notes/2026-08-12-install-mlflow-first-experiment.md) — First experiment with the MLflow Python SDK
 - **snippets:** [Install MLflow and log first experiment](../mlf/snippets/2026-08-01-install-mlflow-first-experiment.py) — Install MLflow and log your first experiment with the Python SDK
-- **manifests** (2): [MLflow UI Kubernetes manifest](../mlf/manifests/mlflow-ui-kubernetes.yaml), [MLflow Model Registry CI/CD manifest](../mlf/manifests/2026-08-09-mlflow-model-registry-ci-cd.yaml)
+- **scripts:** [Run first MLflow experiment](../mlf/scripts/2026-08-02-run-first-mlflow-experiment.py) — Install MLflow and log your first experiment with the Python SDK
+- **manifests** (3): [MLflow UI Kubernetes manifest](../mlf/manifests/mlflow-ui-kubernetes.yaml), [MLflow Model Registry CI/CD manifest](../mlf/manifests/2026-08-09-mlflow-model-registry-ci-cd.yaml), [MLflow model registry scaffold CI/CD](../mlf/manifests/mlflow-model-registry-scaffold-ci-cd.yaml)
 
 ## Seldon Core · 4 files
 

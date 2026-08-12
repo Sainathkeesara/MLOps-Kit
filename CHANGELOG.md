@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-12
+
+- mfl-044: yaml — CI/CD workflow (.github/workflows/ci-cd.yml) for the metaflow-project-scaffold template with lint, test, flow-run, and deploy jobs (L2)
+
 ## 2026-08-11
 
 - con-091: snippet(python) — Minimal FastAPI inference endpoint with /health and /predict routes for model serving (L2)

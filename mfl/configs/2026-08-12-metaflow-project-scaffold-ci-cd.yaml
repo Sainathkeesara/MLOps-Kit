@@ -1,0 +1,72 @@
+# last_verified: 2026-08-12 · metaflow n/a
+# mfl-044 — CI/CD workflow for the metaflow-project-scaffold template (L2)
+#
+# The scaffold's README promises a .github/workflows/ci-cd.yml, but the file
+# got dropped from the repo in an earlier index-maintenance pass. Re-adding it
+# with lint, test, flow-run, and deploy jobs so the template is complete again.
+#
+# This file replaces metaflow/templates/metaflow-project-scaffold/.github/
+# workflows/ci-cd.yml. Installed there, it checks out the template root, where
+# run.py, flow.py, components/, tests/, and requirements.txt all live — so the
+# relative paths below resolve against the template project.
+#
+# I mirrored the run.py CLI (python run.py <flow>) for the flow-run job so the
+# workflow drives the same entrypoint a human uses locally. The @pypi steps in
+# flow.py resolve their own dependencies at run time, so the runner only needs
+# the base requirements install.
+
+name: metaflow-project-scaffold-ci-cd
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      - run: ruff check components/ tests/
+
+  test:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Run unit tests
+        run: python -m pytest tests/ -v
+
+  flow-run:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Run the project flow end to end
+        run: python run.py project --dataset iris
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: flow-run
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Register scheduled flow with the metadata service
+        run: python run.py scheduled

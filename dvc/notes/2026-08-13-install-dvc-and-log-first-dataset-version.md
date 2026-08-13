@@ -4,6 +4,7 @@ tool_version: 3.67.1
 sources:
   - https://doc.dvc.org/command-reference/init
   - https://doc.dvc.org/install
+  - https://doc.dvc.org/user-guide/troubleshooting
 ---
 
 # DVC: install DVC and log my first dataset version

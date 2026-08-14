@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
+- [Install DVC and log first dataset version](dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md) — DVC install, track a dataset, and view the first versioned file
 - [Metaflow scaffold CI/CD workflow](mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml) — CI/CD with lint, test, flow-run, and deploy jobs for the Metaflow template
-- [Monitoring and drift detection patterns](docs/concepts/monitoring-drift/2026-08-11-monitoring-drift-patterns.md) — Baseline snapshots, scheduled checks, threshold alerting, and retraining triggers
-- [Data drift detection script](docs/concepts/monitoring-drift/scripts/2026-08-11-data-drift-detection.py) — Detect drift with z-score comparison against a reference baseline
-- [Model serving config](docs/concepts/model-serving/configs/2026-08-11-model-serving-config.yaml) — Minimal serving config with batching, health checks, and logging
-- [Install W&B and log your first run](wnb/notes/2026-08-11-install-wandb-and-log-my-first-run.md) — First experiment, first metric, and a tour of the dashboard
+- [MLflow model registry scaffold CI/CD](mlf/manifests/mlflow-model-registry-scaffold-ci-cd.yaml) — CI/CD workflow for the MLflow model registry scaffold
+- [First flow data transform](mfl/scripts/2026-08-12-first-flow-data-transform.py) — My first Metaflow flow end-to-end with a simple data transform
+- [Install MLflow and log first experiment](mlf/notes/2026-08-12-install-mlflow-first-experiment.md) — Installing MLflow and logging my first experiment
 
 ## Layout
 
@@ -75,4 +75,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 Currently working through monitoring and drift detection patterns, data versioning workflows, and CI/CD scaffold workflows for the project templates — with first-contact notes for W&B and Metaflow keeping pace.
 
 ---
-_Last updated: 2026-08-12_
+_Last updated: 2026-08-14_

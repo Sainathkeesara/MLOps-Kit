@@ -28,10 +28,10 @@
 - **configs:** [Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml)
 - **scripts:** [Model promotion to Unity Catalog](../databricks/scripts/2026-07-14-model-promotion-unity-catalog.py)
 
-## DVC · 11 files
+## DVC · 12 files
 
 - **primer:** [DVC concepts and setup](../dvc/notes/0000-primer-dvc.md)
-- **notes** (3): most recent → [Get started trip-ups](../dvc/notes/2026-06-05-get-started.md), [First dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
+- **notes** (4): most recent → [Install DVC and log first dataset version](../dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md), [Get started trip-ups](../dvc/notes/2026-06-05-get-started.md), [First dataset version](../dvc/notes/2026-05-26-first-dataset-version.md)
 - **snippets** (2): [Minimal data versioning](../dvc/snippets/minimal_dvc_versioning.py), [DVC pipeline shell](../dvc/snippets/tried_dvc_pipeline.sh)
 - **scripts** (3): [End-to-end DVC CLI walkthrough](../dvc/scripts/2026-07-22-dvc-end-to-end.sh), [Repro + metrics diff end-to-end](../dvc/scripts/2026-07-28-dvc-repro-metrics-diff.sh), [Init DVC and track dataset](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - **configs** (3): [dvc.yaml](../dvc/configs/dvc.yaml), [Pipeline YAML](../dvc/configs/pipeline.yaml), [Stage pipeline config](../dvc/configs/2026-07-28-dvc-stage-pipeline.yaml)
@@ -103,11 +103,12 @@
 - **templates** (8): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
 - _…and 7 more under `mlflow/templates/` — browse the folder._
 
-## Metaflow crossover · 3 files
+## Metaflow crossover · 4 files
 
 - **configs:** [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml)
 - **docs:** [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments
 - **scripts:** [First flow data transform](../mfl/scripts/2026-08-12-first-flow-data-transform.py)
+- **manifests:** [Metaflow scaffold CI/CD manifest](../mfl/manifests/2026-08-13-metaflow-project-scaffold-ci-cd.yaml)
 
 ## MLflow first-experiments · 6 files
 

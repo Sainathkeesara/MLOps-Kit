@@ -55,7 +55,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Weights & Biases | 15 | 9 | 5 | 4 | 5 | 2 | 3 | 21 | — | 2026-08-11 |
 | Metaflow | 14 | 7 | 8 | 2 | 4 | 4 | 5 | 14 | 1 | 2026-08-05 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
-| Concepts | 8 | 6 | 18 | 1 | 6 | — | — | — | 1 | 2026-08-11 |
+| Concepts | 14 | 6 | 18 | 1 | — | — | — | — | 1 | 2026-08-11 |
 | Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-08-02 |
 | DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
 | ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
@@ -64,8 +64,8 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Seldon Core | 2 | 1 | — | — | — | 1 | — | — | — | 2026-07-12 |
 | Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
 | kub (KFP SDK) | — | — | 1 | 1 | — | 1 | — | — | — | 2026-08-11 |
-| MLflow first-experiments | — | 1 | 1 | — | — | 2 | — | — | — | 2026-08-09 |
-| Metaflow crossover | — | — | — | 1 | 1 | — | — | — | — | 2026-08-12 |
+| MLflow first-experiments | 1 | 1 | 1 | — | — | 3 | — | — | — | 2026-08-12 |
+| Metaflow crossover | — | — | 1 | 1 | 1 | — | — | — | — | 2026-08-12 |
 | Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
 
 </details>

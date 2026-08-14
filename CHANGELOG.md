@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-13
+
+- mfl-046: manifest(yaml) — CI/CD workflow (.github/workflows/ci-cd.yml) for the metaflow-project-scaffold template with lint, test, and deploy jobs (L1)
+- dvc-006: notes — Installing DVC and versioning my first dataset, with init pitfalls (L1)
+
 ## 2026-08-12
 
 - mfl-044: yaml — CI/CD workflow (.github/workflows/ci-cd.yml) for the metaflow-project-scaffold template with lint, test, flow-run, and deploy jobs (L2)

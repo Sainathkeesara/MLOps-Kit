@@ -3,6 +3,8 @@
 ## 2026-08-14
 
 - con-107: docs — Containerization + Pipeline Orchestration pattern for reproducible ML workflows (L3)
+- wnb-050: manifest(yaml) — CI/CD workflow (.github/workflows/ci-cd.yml) for the wandb-pytorch-scaffold template with lint, test, sweep, and deploy jobs (L1)
+- con-106: script(python) — Containerization + model serving integration: train a model, build a Docker serving image, and smoke-test the container (L3)
 
 ## 2026-08-13
 

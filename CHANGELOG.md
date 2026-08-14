@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-14
+
+- con-107: docs — Containerization + Pipeline Orchestration pattern for reproducible ML workflows (L3)
+
 ## 2026-08-13
 
 - mfl-046: manifest(yaml) — CI/CD workflow (.github/workflows/ci-cd.yml) for the metaflow-project-scaffold template with lint, test, and deploy jobs (L1)

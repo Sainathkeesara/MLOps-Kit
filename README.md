@@ -26,8 +26,10 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Layout
 
-- **`00_index/`** — Topic index, quick links, glossary, and learning path
+- **`README.md`** — This file
 - **`CHANGELOG.md`** — Chronological record of project changes
+- **`.gitattributes`** — Git attributes for line endings and diff settings
+- **`00_index/`** — Topic index, quick links, glossary, and learning path
 - **`clearml/`** — ClearML Orchestration notes, snippets, and configs
 - **`databricks/`** — Databricks ML configs and scripts
 - **`docs/`** — Cross-cutting concept primers and scripts (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-15
+
+- feast-008: script(python) — Feature retrieval pipeline with Feast: register entities and feature views, then serve offline and online features (L3)
+- feast-009: docs — Comparing online vs offline feature serving with Feast (L3)
+- feast-010: config(yaml) — Feast feature store configuration for training and serving (L3)
+
 ## 2026-08-14
 
 - con-107: docs — Containerization + Pipeline Orchestration pattern for reproducible ML workflows (L3)

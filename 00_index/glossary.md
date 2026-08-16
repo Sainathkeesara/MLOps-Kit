@@ -33,6 +33,8 @@
 
 ## Containerization
 - **Multi-stage build** — A Dockerfile pattern with multiple `FROM` statements, each starting from a different base image. Artifacts built in earlier stages (e.g. a trained model) can be copied into later stages, keeping the final runtime image slim by excluding build tooling.
+- **ECR** — Amazon Elastic Container Registry; a managed container registry on AWS for storing and retrieving Docker images.
+- **GCR** — Google Container Registry; a managed container registry on GCP for storing and retrieving Docker images.
 
 ## DVC
 - **DVC** — Data Version Control; an open-source tool for versioning datasets and ML pipeline stages alongside code.
@@ -90,6 +92,8 @@
 - **cache-deployer** — An optional KFP pod that caches pipeline step outputs to speed up re-runs; can cause TLS/CSR issues during first install.
 - **cert-manager** — A Kubernetes add-on that manages TLS certificates; required by KFP for admission webhooks and cache-deployer TLS.
 - **KUBEFLOW_NAMESPACE** — Environment variable that sets the namespace where Kubeflow Pipelines components are deployed.
+- **DAG** — Directed Acyclic Graph; the graph structure underlying pipeline orchestration, where nodes are steps and edges are dependencies.
+- **MLMD** — ML Metadata; a library for recording and retrieving metadata associated with ML workflows, used by Kubeflow Pipelines to track artifacts and pipeline executions.
 
 ## Metaflow
 - **Flow** — A directed acyclic graph of steps that defines an ML workflow in Metaflow.

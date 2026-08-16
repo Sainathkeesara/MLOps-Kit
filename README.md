@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [Install DVC and log first dataset version](dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md) — DVC install, track a dataset, and view the first versioned file
-- [Metaflow scaffold CI/CD workflow](mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml) — CI/CD with lint, test, flow-run, and deploy jobs for the Metaflow template
-- [MLflow model registry scaffold CI/CD](mlf/manifests/mlflow-model-registry-scaffold-ci-cd.yaml) — CI/CD workflow for the MLflow model registry scaffold
-- [First flow data transform](mfl/scripts/2026-08-12-first-flow-data-transform.py) — My first Metaflow flow end-to-end with a simple data transform
-- [Install MLflow and log first experiment](mlf/notes/2026-08-12-install-mlflow-first-experiment.md) — Installing MLflow and logging my first experiment
+- [Containerization + pipeline orchestration pattern](docs/concepts/containerization/docs/containerization-pipeline-orchestration-pattern.md) — Combining containerization with pipeline orchestration for ML workloads
+- [Combining containerization with model serving](docs/concepts/containerization/scripts/combining-containerization-with-model-serving.py) — End-to-end script tying containerization to model serving
+- [W&B PyTorch scaffold CI/CD workflow](wnb/manifests/wandb-pytorch-scaffold-ci-cd.yaml) — CI/CD workflow for the W&B PyTorch scaffold
+- [W&B PyTorch CI/CD workflow template](wnb/templates/wandb-pytorch-scaffold/.github/workflows/ci-cd.yml) — GitHub Actions workflow for W&B PyTorch CI/CD
+- [Install DVC and log first dataset version](dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md) — First DVC dataset version and tracking walkthrough
 
 ## Layout
 
@@ -53,28 +53,28 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 10 | 7 | 2 | 4 | 7 | 2 | 20 | 4 | 2026-08-04 |
-| Weights & Biases | 15 | 9 | 5 | 4 | 5 | 2 | 3 | 21 | — | 2026-08-11 |
-| Metaflow | 14 | 7 | 8 | 2 | 4 | 4 | 5 | 14 | 1 | 2026-08-05 |
-| MLflow | 7 | 13 | 5 | 9 | 4 | — | 3 | 8 | 4 | 2026-07-30 |
-| Concepts | 14 | 6 | 18 | 1 | — | — | — | — | 1 | 2026-08-11 |
-| Feast | 5 | 3 | 1 | 3 | — | — | — | — | — | 2026-08-02 |
-| DVC | 3 | 2 | 3 | 3 | — | — | — | — | — | 2026-07-28 |
-| ZenML | 2 | 1 | 1 | 2 | — | — | 1 | — | — | 2026-07-14 |
-| ClearML | 4 | 1 | — | 1 | — | — | — | — | — | 2026-07-23 |
-| KServe | 1 | 2 | — | 1 | — | — | — | — | — | 2026-07-14 |
-| Seldon Core | 2 | 1 | — | — | — | 1 | — | — | — | 2026-07-12 |
-| Databricks | — | — | 1 | 1 | — | — | — | — | — | 2026-07-14 |
-| kub (KFP SDK) | — | — | 1 | 1 | — | 1 | — | — | — | 2026-08-11 |
-| MLflow first-experiments | 1 | 1 | 1 | — | — | 3 | — | — | — | 2026-08-12 |
-| Metaflow crossover | — | — | 1 | 1 | 1 | — | — | — | — | 2026-08-12 |
-| Evidently AI | 2 | 1 | — | — | — | — | — | — | — | — |
+| Kubeflow | 15 | 10 | 7 | 2 | 4 | 7 | 2 | 20 | 1 | 2026-07-14 |
+| Weights & Biases | 15 | 9 | 5 | 4 | 5 | 3 | 3 | 22 | 0 | 2026-08-11 |
+| Metaflow | 14 | 7 | 8 | 2 | 4 | 4 | 5 | 14 | 1 | 2026-08-04 |
+| MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 8 | 1 | 2026-07-30 |
+| Concepts | 14 | 6 | 19 | 1 | 1 | 0 | 0 | 0 | 2 | 2026-08-14 |
+| Feast | 5 | 3 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-02 |
+| DVC | 4 | 2 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
+| ZenML | 2 | 1 | 1 | 2 | 0 | 0 | 1 | 0 | 0 | 2026-07-14 |
+| ClearML | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-23 |
+| KServe | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-14 |
+| Seldon Core | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
+| Databricks | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-14 |
+| kub (KFP SDK) | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-08-11 |
+| MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
+| Metaflow crossover | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 2026-08-06 |
+| Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 
 </details>
 
 ## Status
 
-Currently working through monitoring and drift detection patterns, data versioning workflows, and CI/CD scaffold workflows for the project templates — with first-contact notes for W&B and Metaflow keeping pace.
+Currently adding containerization + pipeline orchestration patterns, W&B CI/CD scaffolds, and DVC first-contact notes.
 
 ---
 _Last updated: 2026-08-14_

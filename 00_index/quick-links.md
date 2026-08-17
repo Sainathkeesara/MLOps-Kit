@@ -15,6 +15,7 @@
 - [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — Model serving setup and first deploy
 - [ClearML primer](../clearml/notes/0000-primer-clearml-orchestration.md) — Orchestration setup and first task
 - [ClearML agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md) — Queue, clone, and run a task remotely via clearml-agent CLI
+- [ClearML remote GPUs notebook](../clearml/notes/Getting_Started_3_Remote_Execution.ipynb) — First-contact notes for running ClearML tasks on remote GPUs
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md) — Stack setup and first pipeline
 - [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md) — Kubeflow Pipelines on a local Kind cluster
 - [ClearML common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md) — Gotchas and workarounds for ClearML
@@ -23,6 +24,7 @@
 - [ClearML remote GPU execution config](../clearml/configs/2026-07-14-remote-gpu-execution.yaml) — Remote GPU execution configuration for ClearML
 - [Feast Parquet offline store setup](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md) — Configure a Parquet-backed offline store for feature retrieval
 - [Follow Feast quickstart](../feast/notes/2026-08-02-follow-feast-quickstart.md) — Follow the Feast quickstart with feature retrieval and online store setup
+- [Online vs offline feature serving](../feast/docs/comparing-online-vs-offline-serving.md) — When to use `get_historical_features()` vs `get_online_features()`
 - [Offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md) — Offline vs online stores and point-in-time joins in Feast
 
 ### Set up Databricks
@@ -129,6 +131,8 @@
 - [Multi-stage ONNX Runtime serving](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py) — Slim serving image from a fat training stage
 - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
 - [Multistage Dockerfile for ML](../docs/concepts/containerization/scripts/2026-08-09-multistage-dockerfile-for-ml.sh) — Multi-stage Dockerfile for ML training and serving
+- [Containerization serving entrypoint](../docs/concepts/containerization/serve.py) — Minimal serving entrypoint for multi-stage Docker workflows
+- [Containerization base config](../docs/concepts/containerization/config.yaml) — Base image and dependency config for ML container builds
 - [Production Metaflow Argo deployment](../metaflow/manifests/production-metaflow-argo-deployment.yaml) — Argo Workflows deployment manifest for production Metaflow
 - [Batch vs Kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local-alt.ipynb) — Compare execution backends for the same Metaflow flow
 

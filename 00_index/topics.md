@@ -46,9 +46,10 @@
 
 - **primer:** [Feast overview](../feast/notes/0000-primer-feast.md)
 - **notes** (5): most recent → [Follow Feast quickstart](../feast/notes/2026-08-02-follow-feast-quickstart.md), [Parquet offline store (Jul 23)](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md), [Parquet offline store (Jul 22)](../feast/notes/2026-07-22-install-feast-parquet-offline-store.md), [Install and first feature retrieval](../feast/notes/2026-06-03-install-feast-first-feature-retrieval.md)
+- **docs:** [Online vs offline feature serving](../feast/docs/comparing-online-vs-offline-serving.md) — when to use `get_historical_features()` vs `get_online_features()`
 - **snippets** (3): [Minimal feature retrieval](../feast/snippets/2026-08-02-minimal-feature-retrieval.py), [Register data source and inspect schema](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py), [First feature view](../feast/snippets/tried_first_feature_view.py)
-- **scripts:** [Entity/FeatureView historical retrieval](../feast/scripts/2026-07-22-entity-and-featureview-historical-retrieval.py)
-- **configs** (3): [Feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml), [feature_store.yaml](../feast/configs/feature_store.yaml), [Config README](../feast/configs/README.md)
+- **scripts** (2): [Entity/FeatureView historical retrieval](../feast/scripts/2026-07-22-entity-and-featureview-historical-retrieval.py), [Feature retrieval pipeline](../feast/scripts/feature-retrieval-pipeline.py)
+- **configs** (4): [Feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml), [Training/serving config](../feast/configs/feature-store-training-serving.yaml), [feature_store.yaml](../feast/configs/feature_store.yaml), [Config README](../feast/configs/README.md)
 
 ## KServe · 4 files
 
@@ -82,7 +83,7 @@
 - **notes** (22): most recent → [Install and hello world (Jul 14)](../metaflow/notes/2026-07-14-install-and-hello-world.md), [Metaflow quickstart trip-ups (Jul 11)](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI (Jul 9)](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md)
 - **snippets** (7): [First flow with branching, retry, and foreach](../metaflow/snippets/2026-07-09-first-flow-branching-retry-foreach.py), [Install and first flow](../metaflow/snippets/2026-07-06-install-first-flow.py), [Minimal first flow](../metaflow/snippets/2026-06-06-minimal-first-flow.py)
 - **scripts** (8): [Kubernetes flow metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py), [Logging artifact flow](../metaflow/scripts/2026-07-12-metaflow-logging-artifact-flow.py), [Trigger hooks](../metaflow/scripts/2026-07-28-metaflow-trigger-hooks.py)
-- **configs** (3): [Project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml), [Config README](../metaflow/configs/README.md)
+- **configs** (2): [Project scaffold config](../metaflow/configs/metaflow-project-scaffold.yaml), [Config README](../metaflow/configs/README.md)
 - **docs** (11): [W&B integration](../metaflow/docs/metaflow-wandb-integration.md), [Resource management](../metaflow/docs/metaflow-resource-management.md), [Foreach vs @batch](../metaflow/docs/foreach-vs-batch.md), [W&B real-time metric tracking](../metaflow/docs/wandb-metric-tracking-parallel-steps.md)
 - **manifests** (4): [DevStack compose](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml), [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml), [Production Argo deployment](../metaflow/manifests/production-metaflow-argo-deployment.yaml)
 - **notebooks** (5): [Full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb), [End-to-end flow with data](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb), [Batch vs Kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local-alt.ipynb)

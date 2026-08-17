@@ -14,7 +14,7 @@ A working MLOps engineer's shelf: first-contact notes, runnable snippets, and co
 
 ## What's in here
 
-Hands-on notes, runnable snippets, and ready-to-use configs covering the full MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, drift monitoring with Evidently AI, model serving with KServe and Seldon Core, and Databricks ML with Unity Catalog. Eight cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project templates for Kubeflow, Metaflow, MLflow, and W&B provide CI/CD-ready scaffolding for production pipelines.
+Hands-on notes, runnable snippets, and ready-to-use configs covering the full MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, drift monitoring with Evidently AI, model serving with KServe and Seldon Core, and Databricks ML with Unity Catalog. Eight cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project templates for Kubeflow, Metaflow, MLflow, and W&B provide production-ready scaffolding with tests and CI/CD.
 
 ## Quick links
 
@@ -35,15 +35,15 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`docs/`** — Cross-cutting concept primers and scripts (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
-- **`feast/`** — Feast feature store notes, snippets, scripts, and configs
+- **`feast/`** — Feast feature store notes, snippets, scripts, configs, and docs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
 - **`kub/`** — Kubeflow Pipelines SDK snippets, configs, and manifests (KFP v2)
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
 - **`mfl/`** — Metaflow crossover docs and configs
-- **`mlf/`** — MLflow first-experiment scripts, snippets, and manifests
+- **`mlf/`** — MLflow first-experiment scripts, snippets, notes, and manifests
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, and notebooks
-- **`seldon/`** — Seldon Core model serving notes, snippets, and manifests
+- **`seldon/`** — Seldon Core model serving notes, snippets, configs, and manifests
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
 - **`zenml/`** — ZenML notes, snippets, configs, notebooks, and scripts
 
@@ -53,12 +53,12 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 23 | 4 | 2026-07-14 |
-| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 3 | 3 | 26 | 0 | 2026-08-11 |
-| Metaflow | 22 | 7 | 8 | 3 | 11 | 4 | 5 | 24 | 1 | 2026-08-04 |
+| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 23 | 4 | 2026-08-04 |
+| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 3 | 3 | 26 | 0 | 2026-08-14 |
+| Metaflow | 22 | 7 | 8 | 2 | 11 | 4 | 5 | 24 | 1 | 2026-08-05 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 11 | 4 | 2026-07-30 |
 | Concepts | 17 | 6 | 21 | 2 | 1 | 0 | 0 | 0 | 1 | 2026-08-14 |
-| Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-02 |
+| Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
 | DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
 | ZenML | 2 | 1 | 2 | 2 | 0 | 0 | 1 | 0 | 0 | 2026-07-14 |
 | ClearML | 5 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-23 |
@@ -67,14 +67,14 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Databricks | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-14 |
 | kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 1 | 0 | 0 | 0 | 2026-08-11 |
 | MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
-| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-06 |
+| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-13 |
 | Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 
 </details>
 
 ## Status
 
-Currently expanding containerization and pipeline orchestration patterns, DVC first-contact notes, and first-contact content for ClearML.
+Currently expanding first-contact notes for ClearML, DVC, and containerization, alongside Feast feature-store configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-16_
+_Last updated: 2026-08-17_

@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 ## Quick links
 
-- [Containerization + pipeline orchestration pattern](docs/concepts/containerization/docs/containerization-pipeline-orchestration-pattern.md) — Combining containerization with pipeline orchestration for ML workloads
-- [Combining containerization with model serving](docs/concepts/containerization/scripts/combining-containerization-with-model-serving.py) — End-to-end script tying containerization to model serving
-- [W&B PyTorch scaffold CI/CD workflow](wnb/manifests/wandb-pytorch-scaffold-ci-cd.yaml) — CI/CD workflow for the W&B PyTorch scaffold
-- [W&B PyTorch CI/CD workflow template](wnb/templates/wandb-pytorch-scaffold/.github/workflows/ci-cd.yml) — GitHub Actions workflow for W&B PyTorch CI/CD
-- [Install DVC and log first dataset version](dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md) — First DVC dataset version and tracking walkthrough
+- [ClearML remote execution notebook](clearml/notes/Getting_Started_3_Remote_Execution.ipynb) — First-contact notes for running ClearML tasks on remote GPUs
+- [Containerization config](docs/concepts/containerization/config.yaml) — Base image and dependency config for ML container builds
+- [Containerization requirements](docs/concepts/containerization/requirements.txt) — Training and serving dependency lists for multi-stage builds
+- [Containerization serve script](docs/concepts/containerization/serve.py) — Minimal serving entrypoint for multi-stage Docker workflows
+- [Containerization serve notes](docs/concepts/containerization/serve.txt) — Quick reference for serving container setup
 
 ## Layout
 
@@ -37,7 +37,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, scripts, and configs
 - **`kserve/`** — KServe model serving notes, snippets, and configs
-- **`kub/`** — Kubeflow SDK snippets, configs, and manifests (KFP v2)
+- **`kub/`** — Kubeflow Pipelines SDK snippets, configs, and manifests (KFP v2)
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
 - **`mfl/`** — Metaflow crossover docs and configs
@@ -53,28 +53,28 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 15 | 10 | 7 | 2 | 4 | 7 | 2 | 20 | 1 | 2026-07-14 |
-| Weights & Biases | 15 | 9 | 5 | 4 | 5 | 3 | 3 | 22 | 0 | 2026-08-11 |
-| Metaflow | 14 | 7 | 8 | 2 | 4 | 4 | 5 | 14 | 1 | 2026-08-04 |
-| MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 8 | 1 | 2026-07-30 |
-| Concepts | 14 | 6 | 19 | 1 | 1 | 0 | 0 | 0 | 2 | 2026-08-14 |
-| Feast | 5 | 3 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-02 |
-| DVC | 4 | 2 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
-| ZenML | 2 | 1 | 1 | 2 | 0 | 0 | 1 | 0 | 0 | 2026-07-14 |
-| ClearML | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-23 |
+| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 23 | 4 | 2026-07-14 |
+| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 3 | 3 | 26 | 0 | 2026-08-11 |
+| Metaflow | 22 | 7 | 8 | 3 | 11 | 4 | 5 | 24 | 1 | 2026-08-04 |
+| MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 11 | 4 | 2026-07-30 |
+| Concepts | 17 | 6 | 21 | 2 | 1 | 0 | 0 | 0 | 1 | 2026-08-14 |
+| Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-02 |
+| DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
+| ZenML | 2 | 1 | 2 | 2 | 0 | 0 | 1 | 0 | 0 | 2026-07-14 |
+| ClearML | 5 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-23 |
 | KServe | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-14 |
-| Seldon Core | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
+| Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
 | Databricks | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-14 |
-| kub (KFP SDK) | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-08-11 |
+| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 1 | 0 | 0 | 0 | 2026-08-11 |
 | MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
-| Metaflow crossover | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 2026-08-06 |
+| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-06 |
 | Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 
 </details>
 
 ## Status
 
-Currently adding containerization + pipeline orchestration patterns, W&B CI/CD scaffolds, and DVC first-contact notes.
+Currently expanding containerization and pipeline orchestration patterns, DVC first-contact notes, and first-contact content for ClearML.
 
 ---
-_Last updated: 2026-08-14_
+_Last updated: 2026-08-16_

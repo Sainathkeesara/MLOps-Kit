@@ -9,13 +9,14 @@
 - [Kubeflow primer](../kubeflow/notes/0000-primer-kubeflow.md) — Cluster setup, install, and first pipeline
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md) — Local install, first flow, and CLI/UI
 - [DVC primer](../dvc/notes/0000-primer-dvc.md) — Data versioning setup and first snapshot
+- [Install DVC and log first dataset version](../dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md) — First DVC dataset version and tracking walkthrough
 - [Feast primer](../feast/notes/0000-primer-feast.md) — Feature store setup and first retrieval
 - [KServe primer](../kserve/notes/0000-primer-kserve.md) — Model serving setup and first InferenceService
 - [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — Model serving setup and first deploy
 - [ClearML primer](../clearml/notes/0000-primer-clearml-orchestration.md) — Orchestration setup and first task
+- [ClearML agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md) — Queue, clone, and run a task remotely via clearml-agent CLI
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md) — Stack setup and first pipeline
 - [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md) — Kubeflow Pipelines on a local Kind cluster
-- [ClearML agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md) — Queue, clone, and run a task remotely via clearml-agent CLI
 - [ClearML common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md) — Gotchas and workarounds for ClearML
 - [Seldon Core vs KServe for sklearn](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md) — Comparing two model-serving frameworks
 - [KServe custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py) — Custom model predictor and explainer for KServe
@@ -23,7 +24,6 @@
 - [Feast Parquet offline store setup](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md) — Configure a Parquet-backed offline store for feature retrieval
 - [Follow Feast quickstart](../feast/notes/2026-08-02-follow-feast-quickstart.md) — Follow the Feast quickstart with feature retrieval and online store setup
 - [Offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md) — Offline vs online stores and point-in-time joins in Feast
-- [Install DVC and log first dataset version](../dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md) — First DVC dataset version and tracking walkthrough
 
 ### Set up Databricks
 - [Databricks Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML

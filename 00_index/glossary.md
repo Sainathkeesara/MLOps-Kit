@@ -70,6 +70,8 @@
 - **FileSource** — A Feast data source class that reads features from files such as Parquet or CSV, used in local development before migrating to production stores.
 - **`feast materialize-incremental`** — A CLI command that incrementally pushes the latest features from the offline store to the online store, typically called on a schedule to keep online serving up to date.
 - **Materialization** — The batch job that copies new feature rows from the offline store to the online store, keeping the low-latency serving store up to date with the latest feature values.
+- **`get_historical_features()`** — The Feast API that returns a dataframe of historical feature values aligned to an entity dataframe, used for training datasets, feature importance, and backfills.
+- **`get_online_features()`** — The Feast API that returns the latest feature value for each entity key at request time, used to feed a model endpoint during inference.
 
 ## KServe
 - **InferenceService** — The core CRD in KServe that defines a deployed model endpoint, specifying the model storage URI, framework, resource requests, and scaling config.

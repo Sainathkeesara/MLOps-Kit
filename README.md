@@ -57,7 +57,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 | Weights & Biases | 15 | 9 | 5 | 6 | 5 | 3 | 3 | 26 | 0 | 2026-08-14 |
 | Metaflow | 22 | 7 | 8 | 2 | 11 | 4 | 5 | 24 | 1 | 2026-08-05 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 11 | 4 | 2026-07-30 |
-| Concepts | 17 | 6 | 21 | 2 | 1 | 0 | 0 | 0 | 1 | 2026-08-14 |
+| Concepts | 14 | 6 | 21 | 5 | 1 | 0 | 0 | 0 | 1 | 2026-08-14 |
 | Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
 | DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
 | ZenML | 2 | 1 | 2 | 2 | 0 | 0 | 1 | 0 | 0 | 2026-07-14 |
@@ -77,4 +77,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs covering the full ML
 Currently expanding first-contact notes for ClearML, DVC, and containerization, alongside Feast feature-store configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-17_
+_Last updated: 2026-08-18_

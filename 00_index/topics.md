@@ -8,6 +8,10 @@
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — build-stage training, slim runtime serving image
   - [Multi-stage ML training-serving Dockerfile](../docs/concepts/containerization/dockerfiles/2026-08-09-multi-stage-ml-training-serving.Dockerfile)
   - [Multistage Dockerfile for ML](../docs/concepts/containerization/scripts/2026-08-09-multistage-dockerfile-for-ml.sh)
+  - [Containerization + pipeline orchestration pattern](../docs/concepts/containerization/docs/containerization-pipeline-orchestration-pattern.md) — combining containers with pipeline orchestrators
+  - [Multi-stage ONNX Runtime serving](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py)
+  - [Containerization base config](../docs/concepts/containerization/config.yaml) — base image and dependency setup
+  - [Containerization requirements](../docs/concepts/containerization/requirements.txt) — training and serving dependency lists
 - **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — with [exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py), [snapshot script](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py), [DVC versions script](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py), [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py), [DVC-style versioning pipeline](../docs/concepts/data-versioning/scripts/dvc-style-versioning-pipeline.py), and [snapshot vs diff versioning](../docs/concepts/data-versioning/snapshot-vs-diff-versioning.md)
 - **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — with [exercises](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py), [workflow doc](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md), and [run comparison script](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py)
 - **primer:** [Feature Store](../docs/concepts/feature-store/0000-primer-feature-store.md) — with [exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py), [online store script](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py), [register and retrieve features](../docs/concepts/feature-store/scripts/2026-08-09-register-and-retrieve-features.py), and [offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md)
@@ -19,7 +23,7 @@
 ## ClearML · 7 files
 
 - **primer:** [ClearML orchestration](../clearml/notes/0000-primer-clearml-orchestration.md)
-- **notes** (5): most recent → [Agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md), [Pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md), [Web UI exploration](../clearml/notes/2026-06-22-clearml-web-ui-exploration.md)
+- **notes** (5): most recent → [Remote execution notebook](../clearml/notes/Getting_Started_3_Remote_Execution.ipynb), [Agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md), [Pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md)
 - **snippets:** [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
 - **configs:** [Remote GPU execution](../clearml/configs/2026-07-14-remote-gpu-execution.yaml)
 

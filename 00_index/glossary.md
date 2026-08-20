@@ -80,6 +80,12 @@
 - **Explainer** — An optional KServe component that provides model explanation and interpretability for prediction requests.
 - **KNative** — The underlying serverless platform that KServe uses for auto-scaling, revision management, and traffic splitting.
 
+## Model Serving
+- **Liveness check** — A health probe reporting whether the serving process is alive; orchestrators use it to decide whether a container needs restarting.
+- **Readiness check** — A health probe reporting whether the model is loaded and the endpoint is ready to accept traffic.
+- **Batching** — Grouping inference requests into a single scoring call to improve throughput on serving containers.
+- **Request logging** — Capturing each prediction request (payload, latency, response) for observability and debugging in a serving service.
+
 ## Kubeflow
 - **Pipeline** — A DAG-based definition of an ML workflow composed of components, defined as a YAML manifest or compiled from the Kubeflow Pipelines SDK.
 - **Manifest** — A YAML file describing a Kubeflow resource (pipeline, component, experiment, run).

@@ -132,6 +132,9 @@
 - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — Build-stage training, slim runtime serving image
 - [Multistage Dockerfile for ML](../docs/concepts/containerization/scripts/2026-08-09-multistage-dockerfile-for-ml.sh) — Multi-stage Dockerfile for ML training and serving
 - [Containerization serving entrypoint](../docs/concepts/containerization/serve.py) — Minimal serving entrypoint for multi-stage Docker workflows
+- [Containerization training entrypoint](../docs/concepts/containerization/train.py) — Minimal training entrypoint for multi-stage Docker workflows
+- [Containerization dependency list](../docs/concepts/containerization/requirements.txt) — Training and serving dependency lists for multi-stage builds
+- [Containerization serving notes](../docs/concepts/containerization/serve.txt) — Quick reference for serving container setup
 - [Containerization base config](../docs/concepts/containerization/config.yaml) — Base image and dependency config for ML container builds
 - [Production Metaflow Argo deployment](../metaflow/manifests/production-metaflow-argo-deployment.yaml) — Argo Workflows deployment manifest for production Metaflow
 - [Batch vs Kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local-alt.ipynb) — Compare execution backends for the same Metaflow flow

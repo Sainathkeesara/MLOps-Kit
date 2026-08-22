@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-22
+
+- bentoml-001: notes — Install BentoML and produce my first service (L1)
+- zenml-012: notes — Install ZenML and explore the CLI (L1)
+- kserve-008: notes — Follow the official KServe quickstart and write up what tripped me up (L2)
+
 ## 2026-08-15
 
 - feast-008: script(python) — Feature retrieval pipeline with Feast: register entities and feature views, then serve offline and online features (L3)

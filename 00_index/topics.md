@@ -20,10 +20,16 @@
 - **primer:** [Monitoring & Drift](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — with [monitoring and drift patterns](../docs/concepts/monitoring-drift/2026-08-11-monitoring-drift-patterns.md) and [data drift detection script](../docs/concepts/monitoring-drift/scripts/2026-08-11-data-drift-detection.py)
 - **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py), [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py), [build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py), and [simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py)
 
-## ClearML · 7 files
+## BentoML · 4 files
+
+- **primer:** [Install BentoML and first service](../bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
+- **snippets:** [First BentoML prediction](../bentoml/snippets/2026-08-22-first-bentoml-prediction.py) — Minimal prediction snippet for BentoML
+- **configs:** [Minimal BentoML service](../bentoml/configs/2026-08-22-minimal-bentoml-service.yaml) — Minimal BentoML service YAML
+
+## ClearML · 8 files
 
 - **primer:** [ClearML orchestration](../clearml/notes/0000-primer-clearml-orchestration.md)
-- **notes** (5): most recent → [Remote execution notebook](../clearml/notes/Getting_Started_3_Remote_Execution.ipynb), [Agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md), [Pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md)
+- **notes** (5): most recent → [Install ClearML and first experiment](../clearml/notes/2026-08-22-install-clearml-and-first-experiment.md), [Agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md), [Pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md)
 - **snippets:** [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
 - **configs:** [Remote GPU execution](../clearml/configs/2026-07-14-remote-gpu-execution.yaml)
 
@@ -55,9 +61,10 @@
 - **scripts** (2): [Entity/FeatureView historical retrieval](../feast/scripts/2026-07-22-entity-and-featureview-historical-retrieval.py), [Feature retrieval pipeline](../feast/scripts/feature-retrieval-pipeline.py)
 - **configs** (4): [Feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml), [Training/serving config](../feast/configs/feature-store-training-serving.yaml), [feature_store.yaml](../feast/configs/feature_store.yaml), [Config README](../feast/configs/README.md)
 
-## KServe · 4 files
+## KServe · 5 files
 
 - **primer:** [KServe overview](../kserve/notes/0000-primer-kserve.md)
+- **notes:** [KServe quickstart trip-ups](../kserve/notes/2026-08-22-kserve-quickstart-trip-ups.md) — Gotchas from the KServe quickstart
 - **snippets** (2): [Custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py), [First InferenceService](../kserve/snippets/first_inferenceservice.py)
 - **configs:** [Minimal sklearn InferenceService](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml)
 
@@ -144,10 +151,10 @@
 - **templates** (26): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
 - _…and 23 more under `wnb/templates/` — browse the folder._
 
-## ZenML · 8 files
+## ZenML · 9 files
 
 - **primer:** [ZenML overview](../zenml/notes/0000-primer-zenml.md)
-- **notes:** [Dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md)
+- **notes:** [Install ZenML and explore CLI](../zenml/notes/2026-08-22-install-zenml-and-explore-cli.md), [Dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md)
 - **snippets:** [First training pipeline](../zenml/snippets/tried_first_training_pipeline.py)
 - **scripts:** [Multi-step ZenML+MLflow pipeline](../zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py)
 - **configs** (2): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml)

@@ -1,0 +1,17 @@
+# last_verified: 2026-08-22 · BentoML 1.4.39
+# Minimal BentoML service config — drop this next to your service.py
+# Run with: bentoml serve service:MyService
+
+service: "service:MyService"
+workers: 1
+timeout: 60
+
+# model discovery — BentoML looks for models saved with these names
+models:
+  - name: "iris"
+    tag: "latest"
+
+# you can also pin resources here later
+# resources:
+#   cpu: 2
+#   memory: "4Gi"

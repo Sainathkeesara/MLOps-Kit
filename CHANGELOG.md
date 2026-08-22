@@ -5,6 +5,9 @@
 - bentoml-001: notes — Install BentoML and produce my first service (L1)
 - zenml-012: notes — Install ZenML and explore the CLI (L1)
 - kserve-008: notes — Follow the official KServe quickstart and write up what tripped me up (L2)
+- bentoml-002: snippet — Log my first BentoML prediction with the Python SDK (L1)
+- bentoml-003: config — Minimal BentoML service configuration (L1)
+- clml-008: notes — Install ClearML and log my first experiment (L1)
 
 ## 2026-08-15
 

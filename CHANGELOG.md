@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-22
+
+- feast-010: config(yaml) — Reworked Feast feature store config with batch/streaming sources, entities, feature views, and feature service for training and serving (L3)
+- kub-040: config(yaml) — Minimal Kubeflow pipeline configuration with a single component (L1)
+
 ## 2026-08-15
 
 - feast-008: script(python) — Feature retrieval pipeline with Feast: register entities and feature views, then serve offline and online features (L3)

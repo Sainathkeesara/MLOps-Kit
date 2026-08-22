@@ -1,0 +1,35 @@
+# last_verified: 2026-08-22 · Kubeflow n/a
+#
+# kub-040 — Minimal Kubeflow pipeline configuration with a single component (L1)
+#
+# The simplest possible KFP v2 pipeline: one component that prints a message.
+# Use this as a starting point — add more components and wire dependencies
+# in the root dag as you build out your pipeline.
+
+apiVersion: pipelines.kubeflow.org/v2beta1
+kind: Pipeline
+metadata:
+  name: hello-pipeline
+  annotations:
+    pipelines.kubeflow.org/description: "Minimal single-component pipeline"
+spec:
+  pipelineInfo:
+    name: hello-pipeline
+    description: "A minimal pipeline with one component"
+  root:
+    dag:
+      tasks:
+        greet:
+          componentRef:
+            name: greet-comp
+  components:
+    greet-comp:
+      implementation:
+        container:
+          image: python:3.11-slim
+          command:
+            - python
+            - -c
+            - |
+              print("Hello from Kubeflow Pipelines!")
+              print("This is a single-component pipeline.")

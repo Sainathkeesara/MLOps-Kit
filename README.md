@@ -76,4 +76,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Currently working through first-contact notes for ClearML and containerization, alongside Feast feature-store configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-19_
+_Last updated: 2026-08-22_

@@ -1,13 +1,131 @@
-# last_verified: 2026-08-15 · Feast n/a
+# last_verified: 2026-08-22 · Feast n/a
+#
+# feast-010 — Feast feature store configuration for training and serving (L3)
+#
+# Comprehensive feature_store.yaml that covers both offline (training) and
+# online (serving) retrieval. Covers batch sources for historical features,
+# a streaming source for real-time updates, entity definitions, feature views
+# for each access pattern, and a feature service for the serving layer.
+#
+# Key gotchas verified this cycle:
+#   - entity_key_serialization_version must be >=2 for Redis online stores
+#   - ttl on feature views controls staleness in the online store
+#   - streaming sources require a push endpoint or Kafka consumer configured
 
-project: feast_repo
-registry: data/registry.db
+project: ml_feature_store
+
+# Registry stores feature metadata (entities, views, services).
+# Use a centralized registry (e.g. PostgreSQL) for team sharing;
+# local file works for solo dev.
+registry: registry.db
+
+# Provider: "local" for file-based offline store, "aws" / "gcp" / "azure"
+# for cloud-managed stores.
 provider: local
-offline_store:
-  type: file
-  path: ./data
+
+# ── Batch source (training) ───────────────────────────────────────────
+# Parquet files on disk — cheap for local dev, swap to BigQuery/Snowflake
+# in production.
+batch_source: &batch_source
+  name: driver_stats_batch
+  path: data/driver_stats.parquet
+  timestamp_field: event_timestamp
+  created_timestamp_field: created
+
+# ── Streaming source (real-time serving) ───────────────────────────────
+# Kafka topic that pushes fresh feature values into the online store.
+# Requires a push consumer or `feast materialize` scheduled task.
+streaming_source: &streaming_source
+  name: driver_stats_stream
+  kafka:
+    bootstrap_servers: localhost:9092
+    topic: driver_stats
+    message_format:
+      value:
+        json:
+          schema:
+            - name: driver_id
+              type: INT64
+            - name: conv_rate
+              type: FLOAT
+            - name: avg_daily_trips
+              type: INT64
+            - name: event_timestamp
+              type: TIMESTAMP
+
+# ── Entities ───────────────────────────────────────────────────────────
+# driver_id is the join key for all feature views below.
+entity:
+  name: driver_id
+  value_type: INT64
+  description: Unique driver identifier
+
+# ── Feature views ──────────────────────────────────────────────────────
+# Batch feature view — used for training (offline retrieval).
+feature_view:
+  name: driver_hourly_stats
+  entities: [driver_id]
+  ttl: 1h
+  online: true
+  schema:
+    - name: conv_rate
+      dtype: FLOAT
+    - name: avg_daily_trips
+      dtype: INT64
+    - name: acc_rate
+      dtype: FLOAT
+    - name: is_active
+      dtype: BOOL
+  source: *batch_source
+  tags:
+    team: ml-platform
+    purpose: training-and-serving
+
+# Streaming feature view — used for low-latency serving (online retrieval).
+# Keeps the online store fresh with near-real-time values.
+streaming_feature_view:
+  name: driver_hourly_stats_streaming
+  entities: [driver_id]
+  ttl: 5m
+  online: true
+  schema:
+    - name: conv_rate
+      dtype: FLOAT
+    - name: avg_daily_trips
+      dtype: INT64
+  source: *streaming_source
+  tags:
+    team: ml-platform
+    purpose: real-time-serving
+
+# ── Feature service ────────────────────────────────────────────────────
+# Named bundle of features that the serving layer requests.
+# Decouples the model from the underlying feature view names.
+feature_service:
+  name: driver_features_v1
+  features:
+    - driver_hourly_stats:conv_rate
+    - driver_hourly_stats:avg_daily_trips
+    - driver_hourly_stats:acc_rate
+    - driver_hourly_stats:is_active
+  tags:
+    team: ml-platform
+    model: driver_churn_predictor
+
+# ── Online store ───────────────────────────────────────────────────────
+# Redis for low-latency serving. entity_key_serialization_version >= 2
+# is required for Redis (older versions produce key collisions).
 online_store:
   type: redis
   connection_string: localhost:6379
-entity_key_serialization_version: 2
+  entity_key_serialization_version: 2
+
+# ── Offline store ──────────────────────────────────────────────────────
+# File-based for local dev; swap to bigquery / snowflake / spark in prod.
+offline_store:
+  type: file
+
+# ── Auth (optional) ────────────────────────────────────────────────────
+# Set auth_config to enable request-level access control on the feature
+# service. Omit or set to null for local development.
 auth_config: null

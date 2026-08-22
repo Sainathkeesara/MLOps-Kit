@@ -4,7 +4,7 @@
 
 - feast-008: script(python) — Feature retrieval pipeline with Feast: register entities and feature views, then serve offline and online features (L3)
 - feast-009: docs — Comparing online vs offline feature serving with Feast (L3)
-- feast-010: config(yaml) — Feast feature store configuration for training and serving (L3)
+- feast-010 (rework): config(yaml) — Feast feature store configuration for training and serving (L3) — reworked with batch/streaming sources, entities, feature views, and feature service for training and serving
 
 ## 2026-08-14
 

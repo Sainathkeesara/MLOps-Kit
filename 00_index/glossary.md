@@ -1,5 +1,11 @@
 # Glossary
 
+## BentoML
+- **Bento** — A BentoML packaging format that bundles a trained model, its dependencies, and a service definition into a deployable unit.
+- **Service** — A BentoML Python class that defines how a model is loaded and how requests are processed, using decorators like `@svc.api`.
+- **Runner** — A BentoML component that handles model inference, managing batching, parallelism, and resource allocation for a deployed model.
+- **Artifact** — A trained model or data file saved with BentoML's artifact store, ready to be packaged into a Bento.
+
 ## Foundations
 - **Experiment tracking** — The practice of recording hyperparameters, metrics, dataset versions, and artifacts during ML training runs for reproducibility and comparison.
 - **Data versioning** — The practice of taking snapshots of datasets so you can recreate any past state, similar to git but for data files.

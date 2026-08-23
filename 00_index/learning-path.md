@@ -48,7 +48,7 @@ Platform-specific deployment, advanced HPO, and cross-tool integration patterns.
 
 - ⏳ **SageMaker** — AWS-native managed MLOps. Requires Model Serving + Pipeline Orchestration. Prerequisite: Metaflow L5.
 - ⏳ **Vertex AI** — GCP-native managed MLOps. Requires Model Serving + Containerization. Prerequisite: Kubeflow L5.
-- ⏳ **BentoML** — Model serving and packaging. Requires Model Registry + Containerization + Data Versioning.
+- **BentoML** — Model serving and packaging. Requires Model Registry + Containerization + Data Versioning. [Install BentoML and first service](../bentoml/notes/2026-08-22-install-bentoml-and-first-service.md), [First BentoML prediction](../bentoml/snippets/2026-08-22-first-bentoml-prediction.py), [Minimal BentoML service config](../bentoml/configs/2026-08-22-minimal-bentoml-service.yaml).
 
 ## Progression Map
 

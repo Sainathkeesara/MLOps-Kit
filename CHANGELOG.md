@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-23
+
+- con-109: notebook — Comparing experiment tracking approaches across MLflow, W&B, and ClearML (L3)
+- con-110: docs — Pipeline orchestration patterns for production MLOps (L3, rework)
+
 ## 2026-08-22
 
 - bentoml-001: notes — Install BentoML and produce my first service (L1)

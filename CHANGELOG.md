@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-23
+
+- zenml-013: snippet(python) — Log my first ZenML pipeline run with the Python SDK (L1)
+- zenml-014: config(yaml) — Minimal ZenML pipeline configuration (L1)
+
 ## 2026-08-22
 
 - bentoml-001: notes — Install BentoML and produce my first service (L1)

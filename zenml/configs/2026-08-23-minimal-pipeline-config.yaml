@@ -1,0 +1,16 @@
+# last_verified: 2026-08-23 · zenml n/a
+# zenml-014 — Minimal ZenML pipeline configuration
+
+# This is the pipeline-level config you pass to `zenml pipeline run`.
+# It sets the stack, schedule, and step-level settings.
+
+steps:
+  load_data:
+    enable_cache: true
+  train_model:
+    enable_cache: false
+
+stack: default
+
+extra:
+  description: "First pipeline run — just testing the basics"

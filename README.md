@@ -18,17 +18,18 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Quick links
 
-- [ClearML remote execution notebook](clearml/notes/Getting_Started_3_Remote_Execution.ipynb) — First-contact notes for running ClearML tasks on remote GPUs
-- [Containerization config](docs/concepts/containerization/config.yaml) — Base image and dependency config for ML container builds
-- [Containerization requirements](docs/concepts/containerization/requirements.txt) — Training and serving dependency lists for multi-stage builds
-- [Containerization serve script](docs/concepts/containerization/serve.py) — Minimal serving entrypoint for multi-stage Docker workflows
-- [Containerization serve notes](docs/concepts/containerization/serve.txt) — Quick reference for serving container setup
+- [Install BentoML and first service](bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
+- [Install ClearML and first experiment](clearml/notes/2026-08-22-install-clearml-and-first-experiment.md) — First experiment with ClearML tracking
+- [KServe quickstart trip-ups](kserve/notes/2026-08-22-kserve-quickstart-trip-ups.md) — Gotchas from the KServe quickstart
+- [BentoML service config](bentoml/configs/2026-08-22-minimal-bentoml-service.yaml) — Minimal BentoML service YAML
+- [First BentoML prediction](bentoml/snippets/2026-08-22-first-bentoml-prediction.py) — Minimal prediction snippet for BentoML
 
 ## Layout
 
 - **`README.md`** — This file
 - **`CHANGELOG.md`** — Chronological record of project changes
 - **`00_index/`** — Topic map, quick links, glossary, and learning path
+- **`bentoml/`** — BentoML model serving notes, snippets, and configs
 - **`clearml/`** — ClearML orchestration notes, snippets, and configs
 - **`databricks/`** — Databricks ML configs and scripts
 - **`docs/`** — Cross-cutting concept primers and scripts (containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, pipeline orchestration)
@@ -68,12 +69,13 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 | MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
 | Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-13 |
 | Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
+| BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | — |
 
 </details>
 
 ## Status
 
-Currently working through first-contact notes for ClearML and containerization, alongside Feast feature-store configuration and cross-tool CI/CD scaffolding.
+Currently working through first-contact notes for BentoML, ClearML, and KServe, alongside Feast feature-store configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-22_
+_Last updated: 2026-08-23_

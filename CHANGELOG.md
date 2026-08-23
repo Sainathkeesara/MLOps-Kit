@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-23
+
+- con-108 (rework): docs — Experiment Tracking in real MLOps projects: patterns and pitfalls (L3) — fixed path from nested docs/ subdirectory to docs/concepts/experiment-tracking/, added missing mlflow.org source to research.md, PR description mentions closed task IDs
+
 ## 2026-08-22
 
 - bentoml-001: notes — Install BentoML and produce my first service (L1)

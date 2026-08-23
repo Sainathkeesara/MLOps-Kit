@@ -3,6 +3,10 @@
 ## I need to...
 
 ### Set up a tool for the first time
+- [Install BentoML and first service](../bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
+- [Install ClearML and first experiment](../clearml/notes/2026-08-22-install-clearml-and-first-experiment.md) — First experiment with ClearML tracking
+- [KServe quickstart trip-ups](../kserve/notes/2026-08-22-kserve-quickstart-trip-ups.md) — Gotchas from the KServe quickstart
+- [Install ZenML and explore CLI](../zenml/notes/2026-08-22-install-zenml-and-explore-cli.md) — First ZenML CLI exploration
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md) — Install, run the UI, and log my first experiment
 - [W&B primer](../wnb/notes/0000-primer-wnb.md) — SDK setup, first run, and dashboard tour
 - [Install W&B and log my first run](../wnb/notes/2026-08-11-install-wandb-and-log-my-first-run.md) — First experiment, first metric, and a tour of the dashboard

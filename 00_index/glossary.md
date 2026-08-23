@@ -22,6 +22,7 @@
 - **Manual promotion** — Moving a model version from staging to production after a human reviewer inspects run metrics, validation artifacts, and approves the transition.
 - **Snapshot** — A point-in-time copy of a dataset or model artifact, tracked so you can reproduce any past training run exactly.
 - **Version** — A specific iteration of a registered model, identified by a version number or alias for promotion and rollback.
+- **Anti-pattern** — A common mistake or poor practice in experiment tracking that reduces reproducibility, clarity, or maintainability of ML workflows.
 
 ## Databricks
 - **Unity Catalog** — A unified governance solution for data and AI assets on Databricks, providing fine-grained access control, data lineage, and a central catalog for tables, models, and notebooks.

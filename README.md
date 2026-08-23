@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Quick links
 
-- [Install BentoML and first service](bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
-- [Install ClearML and first experiment](clearml/notes/2026-08-22-install-clearml-and-first-experiment.md) — First experiment with ClearML tracking
-- [KServe quickstart trip-ups](kserve/notes/2026-08-22-kserve-quickstart-trip-ups.md) — Gotchas from the KServe quickstart
-- [BentoML service config](bentoml/configs/2026-08-22-minimal-bentoml-service.yaml) — Minimal BentoML service YAML
-- [First BentoML prediction](bentoml/snippets/2026-08-22-first-bentoml-prediction.py) — Minimal prediction snippet for BentoML
+- [Log first pipeline run with ZenML](zenml/snippets/2026-08-23-log-first-pipeline-run.py) — Minimal ZenML pipeline run with MLflow tracking
+- [Minimal pipeline config for ZenML](zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — ZenML pipeline configuration with MLflow integration
+- [Experiment tracking patterns and pitfalls](docs/concepts/experiment-tracking/experiment-tracking-patterns-pitfalls.md) — Common mistakes and anti-patterns in experiment tracking
+- [Pipeline orchestration patterns for production](docs/concepts/pipeline-orchestration/pipeline-orchestration-patterns-for-production-mlops.md) — Production-grade orchestration patterns for MLOps
+- [Comparing experiment tracking approaches](docs/concepts/experiment-tracking/notebooks/comparing-experiment-tracking-approaches.ipynb) — Notebook comparing MLflow and W&B approaches
 
 ## Layout
 
@@ -78,4 +78,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Currently working through first-contact notes for BentoML, ClearML, and KServe, alongside Feast feature-store configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-23_
+_Last updated: 2026-08-24_

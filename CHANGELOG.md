@@ -2,6 +2,8 @@
 
 ## 2026-08-23
 
+- zenml-013: snippet(python) — Log my first ZenML pipeline run with the Python SDK (L1)
+- zenml-014: config(yaml) — Minimal ZenML pipeline configuration (L1)
 - con-108 (rework): docs — Experiment Tracking in real MLOps projects: patterns and pitfalls (L3) — fixed path from nested docs/ subdirectory to docs/concepts/experiment-tracking/, added missing mlflow.org source to research.md, PR description mentions closed task IDs
 - con-109: notebook — Comparing experiment tracking approaches across MLflow, W&B, and ClearML (L3)
 - con-110: docs — Pipeline orchestration patterns for production MLOps (L3, rework)

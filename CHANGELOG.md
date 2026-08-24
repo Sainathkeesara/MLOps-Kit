@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-24
+
+- kub-042: manifest(yaml) — CI/CD workflow for kubeflow-pipeline-scaffold template with lint, test, compile, and deploy steps (L2)
+- con-111: script(python) — DAG-based pipeline with error handling and retry logic (L3)
+
 ## 2026-08-23
 
 - zenml-013: snippet(python) — Log my first ZenML pipeline run with the Python SDK (L1)

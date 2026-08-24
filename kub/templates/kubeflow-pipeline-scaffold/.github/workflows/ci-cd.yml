@@ -1,0 +1,69 @@
+# last_verified: 2026-08-24 · kub n/a
+# kub-042 — CI/CD workflow for kubeflow-pipeline-scaffold (L2)
+#
+# The README lists .github/workflows/ci-cd.yml in its project tree, but
+# the file was only a one-line stub. I filled it in with the four steps
+# the scaffold promises: lint, test, compile, and deploy.
+#
+# The scaffold ships pipeline.py, run.py, components/, scripts/, tests/,
+# and requirements.txt, so each job resolves against those paths.
+#
+# Notes:
+#   - Deploy is a placeholder — wire it to your KFP cluster via kubectl
+#     or the KFP SDK if you have a running instance.
+#   - Lint uses ruff because it is already the kit convention for Python
+#     repos and the scaffold has no other linter pinned.
+
+name: kubeflow-pipeline-scaffold-ci-cd
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      - run: ruff check pipeline.py components/ scripts/
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: pytest tests/ -v
+
+  compile:
+    name: Compile
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python pipeline.py
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: compile
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Deploy step — upload compiled pipeline.yaml to your Kubeflow cluster or artifact store here."

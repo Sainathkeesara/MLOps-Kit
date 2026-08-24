@@ -66,6 +66,8 @@
 - [MLflow Kubernetes manifest with Service and Ingress](../mlf/manifests/mlflow-ui-kubernetes.yaml) — Kubernetes manifest for MLflow tracking server with Service and Ingress
 - [Metaflow event trigger tests](../metaflow/templates/metaflow-project-scaffold/tests/test_event_trigger.py) — Unit tests for Metaflow event trigger component
 - [Experiment tracking workflow](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md) — End-to-end experiment tracking workflow with MLflow and W&B
+- [Experiment tracking patterns and pitfalls](../docs/concepts/experiment-tracking/experiment-tracking-patterns-pitfalls.md) — Common mistakes and anti-patterns in experiment tracking
+- [Comparing experiment tracking approaches](../docs/concepts/experiment-tracking/notebooks/comparing-experiment-tracking-approaches.ipynb) — Notebook comparing MLflow and W&B approaches
 
 ### Orchestrate a pipeline
 - [KFP v2 SDK gotchas](../kubeflow/notes/2026-06-09-kfp-v2-sdk-gotchas.md) — Component writing and compilation pitfalls
@@ -91,6 +93,7 @@
 - [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml) — CI/CD with lint, test, flow-run, and deploy jobs for the Metaflow template
 - [Containerization + pipeline orchestration pattern](../docs/concepts/containerization/docs/containerization-pipeline-orchestration-pattern.md) — Combining containerization with pipeline orchestration for ML workloads
 - [Combining containerization with model serving](../docs/concepts/containerization/scripts/combining-containerization-with-model-serving.py) — End-to-end script tying containerization to model serving
+- [Pipeline orchestration patterns for production](../docs/concepts/pipeline-orchestration/pipeline-orchestration-patterns-for-production-mlops.md) — Production-grade orchestration patterns for MLOps
 
 ### Version and register models
 - [Comparing registered model versions](../mlflow/docs/comparing-model-versions.md) — MLflow Model Registry version comparison
@@ -159,6 +162,7 @@
 - [Feast feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml) — Feast config with Redis online store and Parquet offline store
 - [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml) — KFP pipeline deployment manifest for production
 - [SeldonDeployment manifest](../seldon/manifests/seldondeployment.yaml) — Minimal sklearn SeldonDeployment manifest
+- [Minimal pipeline config for ZenML](../zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — ZenML pipeline configuration with MLflow integration
 
 ### Learn foundational concepts
 - [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)

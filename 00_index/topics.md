@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 48 files
+## Concepts · 51 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — build-stage training, slim runtime serving image
@@ -13,14 +13,14 @@
   - [Containerization base config](../docs/concepts/containerization/config.yaml) — base image and dependency setup
   - [Containerization requirements](../docs/concepts/containerization/requirements.txt) — training and serving dependency lists
 - **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md) — with [exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py), [snapshot script](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py), [DVC versions script](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py), [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py), [DVC-style versioning pipeline](../docs/concepts/data-versioning/scripts/dvc-style-versioning-pipeline.py), and [snapshot vs diff versioning](../docs/concepts/data-versioning/snapshot-vs-diff-versioning.md)
-- **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — with [exercises](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py), [workflow doc](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md), and [run comparison script](../docs/concepts/experiment-tracking/scripts/tried_comparing_training_runs.py)
+- **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md) — with [exercises](../docs/concepts/experiment-tracking/snippets/tried_experiment_tracking_fundamentals.py), [workflow doc](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md), [patterns and pitfalls](../docs/concepts/experiment-tracking/experiment-tracking-patterns-pitfalls.md), and [run comparison notebook](../docs/concepts/experiment-tracking/notebooks/comparing-experiment-tracking-approaches.ipynb)
 - **primer:** [Feature Store](../docs/concepts/feature-store/0000-primer-feature-store.md) — with [exercises](../docs/concepts/feature-store/snippets/2026-07-10-feature-store-fundamentals.py), [online store script](../docs/concepts/feature-store/scripts/2026-07-12-writing-and-reading-features-online-store.py), [register and retrieve features](../docs/concepts/feature-store/scripts/2026-08-09-register-and-retrieve-features.py), and [offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md)
 - **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md) — with [exercises](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py), [apply script](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py), [versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py), [automated versioning workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py), and [automated vs manual promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md)
 - **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md) — with [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py), [minimal FastAPI endpoint](../docs/concepts/model-serving/snippets/2026-08-11-minimal-fastapi-inference-endpoint.py), and [serving config](../docs/concepts/model-serving/configs/2026-08-11-model-serving-config.yaml)
 - **primer:** [Monitoring & Drift](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — with [monitoring and drift patterns](../docs/concepts/monitoring-drift/2026-08-11-monitoring-drift-patterns.md) and [data drift detection script](../docs/concepts/monitoring-drift/scripts/2026-08-11-data-drift-detection.py)
-- **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py), [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py), [build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py), and [simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py)
+- **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py), [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py), [build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py), [simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py), and [production orchestration patterns](../docs/concepts/pipeline-orchestration/pipeline-orchestration-patterns-for-production-mlops.md)
 
-## BentoML · 4 files
+## BentoML · 3 files
 
 - **primer:** [Install BentoML and first service](../bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
 - **snippets:** [First BentoML prediction](../bentoml/snippets/2026-08-22-first-bentoml-prediction.py) — Minimal prediction snippet for BentoML
@@ -151,11 +151,11 @@
 - **templates** (26): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
 - _…and 23 more under `wnb/templates/` — browse the folder._
 
-## ZenML · 9 files
+## ZenML · 11 files
 
 - **primer:** [ZenML overview](../zenml/notes/0000-primer-zenml.md)
 - **notes:** [Install ZenML and explore CLI](../zenml/notes/2026-08-22-install-zenml-and-explore-cli.md), [Dashboard and first stack](../zenml/notes/2026-06-19-first-dashboard-and-stack.md)
-- **snippets:** [First training pipeline](../zenml/snippets/tried_first_training_pipeline.py)
+- **snippets** (2): [First training pipeline](../zenml/snippets/tried_first_training_pipeline.py), [Log first pipeline run](../zenml/snippets/2026-08-23-log-first-pipeline-run.py)
 - **scripts:** [Multi-step ZenML+MLflow pipeline](../zenml/scripts/2026-07-13-multi-step-zenml-mlflow-pipeline.py)
-- **configs** (2): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml)
+- **configs** (3): [Stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml), [ZenML stack config](../zenml/configs/zenml-stack.yaml), [Minimal pipeline config](../zenml/configs/2026-08-23-minimal-pipeline-config.yaml)
 - **notebooks:** [Parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb)

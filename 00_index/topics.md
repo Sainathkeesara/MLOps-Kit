@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 51 files
+## Concepts · 52 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md) — build-stage training, slim runtime serving image
@@ -18,7 +18,7 @@
 - **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md) — with [exercises](../docs/concepts/model-registry/snippets/tried_model_registry_fundamentals.py), [apply script](../docs/concepts/model-registry/scripts/2026-07-10-apply-model-registry.py), [versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py), [automated versioning workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py), and [automated vs manual promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md)
 - **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md) — with [FastAPI inference endpoint](../docs/concepts/model-serving/scripts/2026-07-12-fastapi-inference-endpoint.py), [minimal FastAPI endpoint](../docs/concepts/model-serving/snippets/2026-08-11-minimal-fastapi-inference-endpoint.py), and [serving config](../docs/concepts/model-serving/configs/2026-08-11-model-serving-config.yaml)
 - **primer:** [Monitoring & Drift](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md) — with [monitoring and drift patterns](../docs/concepts/monitoring-drift/2026-08-11-monitoring-drift-patterns.md) and [data drift detection script](../docs/concepts/monitoring-drift/scripts/2026-08-11-data-drift-detection.py)
-- **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py), [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py), [build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py), [simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py), and [production orchestration patterns](../docs/concepts/pipeline-orchestration/pipeline-orchestration-patterns-for-production-mlops.md)
+- **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md) — with [exercises](../docs/concepts/pipeline-orchestration/snippets/2026-07-10-pipeline-orchestration-fundamentals.py), [DAG workflow script](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py), [build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py), [simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py), [DAG error handling](../docs/concepts/pipeline-orchestration/scripts/dag-pipeline-error-handling.py), and [production orchestration patterns](../docs/concepts/pipeline-orchestration/pipeline-orchestration-patterns-for-production-mlops.md)
 
 ## BentoML · 3 files
 
@@ -68,11 +68,12 @@
 - **snippets** (2): [Custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py), [First InferenceService](../kserve/snippets/first_inferenceservice.py)
 - **configs:** [Minimal sklearn InferenceService](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml)
 
-## kub (KFP SDK) · 5 files
+## kub (KFP SDK) · 7 files
 
 - **configs** (3): [Minimal Kubeflow pipeline](../kub/configs/2026-08-11-minimal-kubeflow-pipeline.yaml), [Kind config](../kub/configs/kind-config.yaml), [Pipeline YAML](../kub/configs/pipeline.yaml)
 - **scripts:** [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py)
-- **manifests:** [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml)
+- **manifests** (2): [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml), [Pipeline scaffold CI/CD](../kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml)
+- **templates:** [KFP pipeline scaffold](../kub/templates/kubeflow-pipeline-scaffold/.github/workflows/ci-cd.yml)
 
 ## Kubeflow · 78 files
 

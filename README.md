@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Quick links
 
-- [Log first pipeline run with ZenML](zenml/snippets/2026-08-23-log-first-pipeline-run.py) — Minimal ZenML pipeline run with MLflow tracking
+- [DAG pipeline error handling](docs/concepts/pipeline-orchestration/scripts/dag-pipeline-error-handling.py) — Error handling and retry patterns for DAG-based ML pipelines
+- [Kubeflow pipeline scaffold CI/CD workflow](kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml) — CI/CD workflow manifest for Kubeflow pipeline scaffold
+- [KFP pipeline scaffold CI/CD workflow (template)](kub/templates/kubeflow-pipeline-scaffold/.github/workflows/ci-cd.yml) — CI/CD workflow template for KFP pipeline scaffold
 - [Minimal pipeline config for ZenML](zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — ZenML pipeline configuration with MLflow integration
-- [Experiment tracking patterns and pitfalls](docs/concepts/experiment-tracking/experiment-tracking-patterns-pitfalls.md) — Common mistakes and anti-patterns in experiment tracking
-- [Pipeline orchestration patterns for production](docs/concepts/pipeline-orchestration/pipeline-orchestration-patterns-for-production-mlops.md) — Production-grade orchestration patterns for MLOps
-- [Comparing experiment tracking approaches](docs/concepts/experiment-tracking/notebooks/comparing-experiment-tracking-approaches.ipynb) — Notebook comparing MLflow and W&B approaches
+- [Log first pipeline run with ZenML](zenml/snippets/2026-08-23-log-first-pipeline-run.py) — Minimal ZenML pipeline run with MLflow tracking
 
 ## Layout
 
@@ -53,23 +53,23 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 23 | 4 | 2026-08-04 |
-| Metaflow | 22 | 7 | 8 | 2 | 11 | 4 | 5 | 24 | 1 | 2026-08-05 |
-| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 3 | 3 | 26 | 0 | 2026-08-14 |
+| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 23 | 4 | 2026-07-14 |
+| Metaflow | 22 | 7 | 8 | 2 | 11 | 4 | 5 | 24 | 1 | 2026-08-04 |
+| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 3 | 3 | 26 | 0 | 2026-08-11 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 11 | 4 | 2026-07-30 |
-| Concepts | 16 | 6 | 21 | 3 | 1 | 0 | 0 | 0 | 1 | 2026-08-14 |
+| Concepts | 16 | 6 | 21 | 3 | 1 | 0 | 0 | 0 | 1 | 2026-08-24 |
 | Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
 | DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
-| ClearML | 5 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-23 |
-| ZenML | 2 | 1 | 2 | 2 | 0 | 0 | 1 | 0 | 0 | 2026-07-13 |
-| KServe | 1 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-14 |
+| ClearML | 6 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
+| ZenML | 3 | 2 | 2 | 3 | 0 | 0 | 1 | 0 | 0 | 2026-08-22 |
+| KServe | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
 | Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
-| Databricks | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-07-14 |
-| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 1 | 0 | 0 | 0 | 2026-08-11 |
+| Databricks | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | — |
+| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 2 | 0 | 1 | 0 | — |
 | MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
-| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-13 |
+| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-06 |
 | Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
-| BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | — |
+| BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
 
 </details>
 

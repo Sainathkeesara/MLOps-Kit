@@ -1,11 +1,12 @@
 ---
-last_verified: 2026-08-23
+last_verified: 2026-08-24
 tool_version: n/a
 sources:
   - https://mlflow.org/articles/mlops-pipeline-automation-best-practices-in-2026/
   - https://docs.nvidia.com/datascience/deployment/stable/examples/fraud-detection-mlops-pipeline/notebook/index.html
   - https://www.youngju.dev/blog/ai-platform/2026-03-07-ai-platform-mlflow-experiment-tracking-model-registry.en
   - https://loftllc.dev/en/docs/tech/infrastructure/devstack-mlflow-integration/
+  - https://mlflow.org/articles/ml-pipeline-orchestration-a-practical-guide-for-engineers
 ---
 
 # Experiment Tracking in real MLOps projects — patterns and pitfalls
@@ -32,13 +33,18 @@ query. The NVIDIA fraud-detection example chains orchestrator stages and
 passes the MLflow `run_id` between them so preprocessing, training,
 evaluation, and deployment all attach to the same experiment trace
 [source: https://docs.nvidia.com/datascience/deployment/stable/examples/fraud-detection-mlops-pipeline/notebook/index.html].
+The mlflow.org orchestration guide frames centralized tracking as the single
+source of truth across pipeline versions, with typed-artifact passing between
+stages
+[source: https://mlflow.org/articles/ml-pipeline-orchestration-a-practical-guide-for-engineers].
 
 ### Link runs to model versions
 
 MLflow 2.9+ deprecated stage labels in favor of aliases such as
 `candidate`, `challenger`, and `champion`. Each experiment run should link
 to a registered model version so the lineage from "this training run" to
-"this deployed model" is unambiguous [source: https://www.youngju.dev/blog/ai-platform/2026-03-07-ai-platform-mlflow-experiment-tracking-model-registry.en].
+"this deployed model" is unambiguous
+[source: https://www.youngju.dev/blog/ai-platform/2026-03-07-ai-platform-mlflow-experiment-tracking-model-registry.en].
 
 ### Enforce performance gates in CI/CD
 
@@ -52,7 +58,8 @@ champion promotion with environment-based approval flows
 The orchestrator (Airflow, Prefect, Dagster) manages the pipeline's
 bird's-eye view, while the experiment tracker provides per-run detail. A
 shared `correlation_id` or run tag links the two without coupling scheduling
-state to tracking state [source: https://loftllc.dev/en/docs/tech/infrastructure/devstack-mlflow-integration/].
+state to tracking state
+[source: https://loftllc.dev/en/docs/tech/infrastructure/devstack-mlflow-integration/].
 
 ## Common pitfalls
 

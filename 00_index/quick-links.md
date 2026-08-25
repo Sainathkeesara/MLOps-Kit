@@ -54,6 +54,7 @@
 - [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb) — Compare artifact lineage and model registry entries across W&B and MLflow
 - [ZenML first training pipeline](../zenml/snippets/tried_first_training_pipeline.py) — Data loading, training, and artifact logging
 - [ZenML parent-child pipelines and artifact lineage](../zenml/notebooks/2026-07-14-parent-child-pipelines-artifact-lineage.ipynb) — Multi-pipeline DAGs and artifact tracking with ZenML
+- [Log first pipeline run with ZenML](../zenml/snippets/2026-08-23-log-first-pipeline-run.py) — Minimal ZenML pipeline run with MLflow tracking
 - [Evidently first drift report](../evidently/snippets/first_drift_report.py) — Generate and view a data drift report
 - [Metaflow Kubernetes flow with metadata tracking](../metaflow/scripts/2026-07-12-kubernetes-flow-metadata-tracking.py) — Run Metaflow on Kubernetes with cloud metadata
 - [Feast data source registration and schema inspection](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py) — Register a data source and inspect its schema with the Feast Python SDK
@@ -84,9 +85,11 @@
 - [Applying DAG-based ML workflow](../docs/concepts/pipeline-orchestration/scripts/2026-07-10-dag-ml-workflow.py) — Build and run a DAG-based ML pipeline
 - [Build DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-build-dag-pipeline.py) — Build and run a DAG-based ML pipeline with step dependencies
 - [Simple DAG pipeline](../docs/concepts/pipeline-orchestration/scripts/2026-08-07-simple-dag-pipeline.py) — Minimal DAG-based ML workflow with training, evaluation, and registration
+- [DAG pipeline error handling](../docs/concepts/pipeline-orchestration/scripts/dag-pipeline-error-handling.py) — Error handling and retry patterns for DAG-based ML pipelines
 - [First flow data transform](../mfl/scripts/2026-08-12-first-flow-data-transform.py) — My first Metaflow flow end-to-end with a simple data transform
 - [Kubeflow CI/CD pipeline](../kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh) — Lint, test, compile, and deploy a pipeline scaffold template
 - [Kubeflow pipeline scaffold CI/CD workflow](../kubeflow/manifests/2026-08-02-kubeflow-pipeline-scaffold-ci-cd.yml) — CI/CD workflow for kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps
+- [KFP pipeline scaffold CI/CD workflow (kub)](../kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml) — CI/CD workflow manifest for KFP pipeline scaffold
 - [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
 - [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
 - [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py) — KFP v2 pipeline with conditional branching and parallel execution

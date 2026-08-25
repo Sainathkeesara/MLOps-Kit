@@ -73,7 +73,6 @@
 - **configs** (3): [Minimal Kubeflow pipeline](../kub/configs/2026-08-11-minimal-kubeflow-pipeline.yaml), [Kind config](../kub/configs/kind-config.yaml), [Pipeline YAML](../kub/configs/pipeline.yaml)
 - **scripts:** [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py)
 - **manifests** (2): [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml), [Pipeline scaffold CI/CD](../kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml)
-- **templates:** [KFP pipeline scaffold](../kub/templates/kubeflow-pipeline-scaffold/.github/workflows/ci-cd.yml)
 
 ## Kubeflow · 78 files
 

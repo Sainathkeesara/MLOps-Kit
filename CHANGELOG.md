@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-26
+
+- wnb-051: manifest(yaml) — CI/CD workflow (.github/workflows/ci-cd.yml) for the wandb-cicd-project template with lint, test, and deploy jobs (L2)
+
 ## 2026-08-24
 
 - kub-042: manifest(yaml) — CI/CD workflow for kubeflow-pipeline-scaffold template with lint, test, compile, and deploy steps (L2)

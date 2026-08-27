@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-26
+
+- wnb-052: manifest(yaml) — CI/CD workflow for wandb-pytorch-scaffold template with lint, test, and deploy jobs (L2)
+
 ## 2026-08-24
 
 - kub-042: manifest(yaml) — CI/CD workflow for kubeflow-pipeline-scaffold template with lint, test, compile, and deploy steps (L2)

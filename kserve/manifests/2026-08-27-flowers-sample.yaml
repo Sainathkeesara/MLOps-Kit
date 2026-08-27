@@ -1,0 +1,24 @@
+# last_verified: 2026-08-27 · kserve n/a
+
+apiVersion: serving.kserve.io/v1beta1
+kind: InferenceService
+metadata:
+  name: flowers-sample
+  namespace: kserve-test
+  annotations:
+    serving.kserve.io/enable-prometheus-scoring: "true"
+spec:
+  predictor:
+    minReplicas: 1
+    maxReplicas: 3
+    model:
+      modelFormat:
+        name: sklearn
+      storageUri: "gs://your-bucket/models/sklearn/flowers"
+      resources:
+        requests:
+          cpu: 100m
+          memory: 256Mi
+        limits:
+          cpu: 500m
+          memory: 512Mi

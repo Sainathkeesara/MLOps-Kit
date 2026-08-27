@@ -27,6 +27,11 @@
 ## Databricks
 - **Unity Catalog** — A unified governance solution for data and AI assets on Databricks, providing fine-grained access control, data lineage, and a central catalog for tables, models, and notebooks.
 - **Unity Catalog model registry** — MLflow Model Registry backed by Unity Catalog, enabling model versioning, stage transitions (Staging → Production → Archived), and RBAC for model access.
+- **Workspace** — The top-level Databricks container that holds notebooks, clusters, jobs, and models.
+- **Cluster** — A managed Spark pool of VMs attached to notebooks or jobs for compute.
+- **MLflow on Databricks** — Managed MLflow tracking, model registry, and experiment UI built into the Databricks workspace.
+- **Databricks Workflows** — Multi-task job orchestration for running notebooks and tasks in sequence or with conditional branching.
+- **Delta Live Tables (DLT)** — Declarative ETL pipelines on Databricks that handle incremental processing, expectations, and lineage.
 
 ## ClearML
 - **Task** — The atomic unit of work in ClearML; a single script execution logged as an experiment with parameters, metrics, and artifacts.

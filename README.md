@@ -1,5 +1,5 @@
 # MLOps-Kit
-> A working MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for MLflow, Kubeflow, Metaflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, Databricks, and Evidently AI.
+> An MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for MLflow, Kubeflow, Metaflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, Databricks, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Quick links
 
-- [DAG pipeline error handling](docs/concepts/pipeline-orchestration/scripts/dag-pipeline-error-handling.py) — Error handling and retry patterns for DAG-based ML pipelines
-- [Kubeflow pipeline scaffold CI/CD manifest](kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml) — CI/CD workflow manifest for Kubeflow pipeline scaffold
-- [Minimal pipeline config for ZenML](zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — ZenML pipeline configuration with MLflow integration
-- [Log first pipeline run with ZenML](zenml/snippets/2026-08-23-log-first-pipeline-run.py) — Minimal ZenML pipeline run with MLflow tracking
-- [Comparing experiment tracking approaches](docs/concepts/experiment-tracking/notebooks/comparing-experiment-tracking-approaches.ipynb) — Notebook comparing MLflow, W&B, and ClearML approaches
+- [Databricks ML primer](databricks/notes/0000-primer-databricks.md) — Databricks ML primer: Unity Catalog, workspace setup, and first experiments
+- [First Databricks run](databricks/snippets/2026-08-27-first-databricks-run.py) — First-contact script for running a Databricks workload
+- [KServe flowers sample](kserve/manifests/2026-08-27-flowers-sample.yaml) — Sample KServe InferenceService manifest for the flowers model
+- [W&B PyTorch scaffold CI/CD](wnb/manifests/2026-08-26-wandb-pytorch-scaffold-ci-cd.yaml) — CI/CD workflow manifest for the W&B PyTorch scaffold
+- [ZenML minimal pipeline config](zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — Minimal ZenML pipeline configuration with MLflow tracking
 
 ## Layout
 
@@ -36,7 +36,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 - **`dvc/`** — DVC notes, snippets, scripts, and configs
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, scripts, configs, and docs
-- **`kserve/`** — KServe model serving notes, snippets, and configs
+- **`kserve/`** — KServe model serving notes, snippets, configs, and manifests
 - **`kub/`** — Kubeflow Pipelines SDK configs, scripts, and manifests (KFP v2)
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
@@ -53,29 +53,29 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 22 | 4 | 2026-07-14 |
 | Metaflow | 22 | 7 | 8 | 2 | 11 | 4 | 5 | 23 | 1 | 2026-08-04 |
-| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 3 | 3 | 23 | 0 | 2026-08-11 |
+| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 22 | 4 | 2026-07-14 |
+| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 4 | 3 | 23 | 0 | 2026-08-11 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 10 | 4 | 2026-07-30 |
-| Concepts | 16 | 6 | 20 | 3 | 1 | 0 | 1 | 0 | 1 | 2026-08-24 |
+| Concepts | 16 | 6 | 20 | 2 | 1 | 0 | 1 | 0 | 1 | 2026-08-24 |
 | Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
 | DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
 | ClearML | 6 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
 | ZenML | 3 | 2 | 2 | 3 | 0 | 0 | 1 | 0 | 0 | 2026-08-22 |
-| KServe | 2 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
+| KServe | 2 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-08-22 |
 | Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
-| Databricks | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | — |
-| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 2 | 0 | 0 | 0 | — |
 | MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
 | Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-06 |
-| Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 | BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
+| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 2 | 0 | 0 | 0 | — |
+| Databricks | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | — |
+| Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 
 </details>
 
 ## Status
 
-Currently working through first-contact notes for BentoML, ClearML, and KServe, alongside Feast feature-store configuration and cross-tool CI/CD scaffolding.
+Currently working through first-contact notes for Databricks ML, BentoML, ClearML, and KServe, alongside ZenML pipeline configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-26_
+_Last updated: 2026-08-27_

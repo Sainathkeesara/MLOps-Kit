@@ -3,6 +3,15 @@
 ## 2026-08-26
 
 - wnb-051: manifest(yaml) — CI/CD workflow (.github/workflows/ci-cd.yml) for the wandb-cicd-project template with lint, test, and deploy jobs (L2)
+## 2026-08-27
+
+- databricks-005: notes(primer) — What is Databricks ML? — quick primer (L1)
+- databricks-006: snippet(python) — Log my first Databricks ML experiment with the Python SDK (L1)
+- kserve-009: manifest(yaml) — Deploy a minimal model with KServe on Kubernetes (L2)
+
+## 2026-08-26
+
+- wnb-052: manifest(yaml) — CI/CD workflow for wandb-pytorch-scaffold template with lint, test, and deploy jobs (L2)
 
 ## 2026-08-24
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-26
+
+- wnb-051: manifest(yaml) — CI/CD workflow (.github/workflows/ci-cd.yml) for the wandb-cicd-project template with lint, test, and deploy jobs (L2)
 ## 2026-08-27
 
 - databricks-005: notes(primer) — What is Databricks ML? — quick primer (L1)

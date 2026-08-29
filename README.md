@@ -55,7 +55,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
 | Metaflow | 22 | 7 | 8 | 2 | 11 | 4 | 5 | 23 | 1 | 2026-08-04 |
 | Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 22 | 4 | 2026-07-14 |
-| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 4 | 3 | 23 | 0 | 2026-08-11 |
+| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 5 | 3 | 24 | 0 | 2026-08-11 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 10 | 4 | 2026-07-30 |
 | Concepts | 16 | 6 | 20 | 2 | 1 | 0 | 1 | 0 | 1 | 2026-08-24 |
 | Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
@@ -78,4 +78,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Currently working through first-contact notes for Databricks ML, BentoML, ClearML, and KServe, alongside ZenML pipeline configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-27_
+_Last updated: 2026-08-29_

@@ -34,6 +34,8 @@
 ### Set up Databricks
 - [Databricks Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
 - [Databricks model promotion to Unity Catalog](../databricks/scripts/2026-07-14-model-promotion-unity-catalog.py) — Promote MLflow models to Unity Catalog
+- [Databricks ML primer](../databricks/notes/0000-primer-databricks.md) — Databricks ML primer: Unity Catalog, workspace setup, and first experiments
+- [First Databricks run](../databricks/snippets/2026-08-27-first-databricks-run.py) — First-contact script for running a Databricks workload
 
 ### Run an experiment
 - [Install MLflow and log first experiment](../mlf/scripts/2026-08-02-run-first-mlflow-experiment.py) — Install MLflow and log your first experiment with the Python SDK

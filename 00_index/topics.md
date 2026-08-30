@@ -39,7 +39,7 @@
   - [DAG pipeline error handling](../docs/concepts/pipeline-orchestration/scripts/dag-pipeline-error-handling.py)
   - _…and 15 more under `docs/concepts/` — browse the folder._
 
-## Metaflow · 60 files
+## Metaflow · 83 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - **notes** (22): most recent → [Install and hello world](../metaflow/notes/2026-07-14-install-and-hello-world.md), [Metaflow quickstart trip-ups](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md)
@@ -52,7 +52,7 @@
 - **templates** (23): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
 - _…and 22 more under `metaflow/templates/` — browse the folder._
 
-## Kubeflow · 55 files
+## Kubeflow · 77 files
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
 - **notes** (18): most recent → [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md)
@@ -66,7 +66,7 @@
 - **templates** (22): [Kubeflow pipeline scaffold](../kubeflow/templates/kubeflow-pipeline-scaffold/README.md), [Kubeflow + MLflow project](../kubeflow/templates/kubeflow-mlflow-project/README.md)
 - _…and 20 more under `kubeflow/templates/` — browse the folder._
 
-## Weights & Biases · 47 files
+## Weights & Biases · 72 files
 
 - **primer:** [W&B primer](../wnb/notes/0000-primer-wnb.md)
 - **notes** (15): most recent → [Install W&B and log my first run](../wnb/notes/2026-08-11-install-wandb-and-log-my-first-run.md), [W&B quickstart trip-ups](../wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md), [Dashboard exploration](../wnb/notes/2026-07-09-explore-wandb-dashboard.md)
@@ -74,12 +74,12 @@
 - **scripts** (5): [Custom sweep with early termination](../wnb/scripts/custom-sweep-early-termination.py), [Sweep and eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py), [Hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py)
 - **configs** (6): [Declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml), [First sweep config](../wnb/configs/2026-06-08-first-sweep-config.yaml), [Sweep config](../wnb/configs/sweep_config.yaml)
 - **docs** (5): [Artifact + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md), [Artifact tracking in data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md), [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md)
-- **manifests** (4): [CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml), [W&B PyTorch scaffold CI/CD](../wnb/manifests/2026-08-26-wandb-pytorch-scaffold-ci-cd.yaml)
+- **manifests** (5): [CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml), [W&B PyTorch scaffold CI/CD](../wnb/manifests/2026-08-26-wandb-pytorch-scaffold-ci-cd.yaml)
 - **notebooks** (3): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb), [Run comparison with parallel coords](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb), [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb)
-- **templates** (23): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
-- _…and 20 more under `wnb/templates/` — browse the folder._
+- **templates** (24): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
+- _…and 21 more under `wnb/templates/` — browse the folder._
 
-## MLflow · 41 files
+## MLflow · 55 files
 
 - **primer:** [MLflow concepts and setup](../mlflow/notes/0000-primer-mlflow.md)
 - **notes** (7): [UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md), [Quickstart trip-ups (Jul 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md), [First MLflow server](../mlflow/notes/2026-05-24-first-mlflow-server.md)

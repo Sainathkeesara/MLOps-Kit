@@ -170,3 +170,20 @@
 
 ## Hybrid tracking
 - **Hybrid tracking** — Running two experiment tracking systems in parallel (e.g., W&B and MLflow) and synchronizing metadata so a single training run appears in both systems, enabling comparison of features and metrics across platforms.
+
+## Project scaffolds
+- **Project scaffold** — A self-contained template directory (e.g. `kubeflow/templates/kubeflow-pipeline-scaffold/`) that packages a runnable ML project: components, pipeline definition, configs, tests, and a CI/CD workflow, ready to copy and adapt for a new project.
+- **CI/CD workflow** — A YAML pipeline definition (typically `.github/workflows/ci-cd.yml`) that lints, tests, and deploys the project end-to-end, often wired into a project scaffold so a new project inherits the same automation.
+
+## Data versioning in practice
+- **DVC remote** — A storage backend (S3, GCS, SSH, local) configured with `dvc remote add` where DVC pushes and pulls dataset artifacts tracked by `.dvc` pointer files in the repo.
+- **DVC stage** — A named step in `dvc.yaml` with declared inputs, outputs, parameters, and a command; `dvc repro` re-runs only stages whose dependencies changed.
+
+## Kubeflow CI/CD
+- **Katib HPO** — Kubeflow's hyperparameter tuning service that runs search algorithms (random, grid, Bayesian, early-stopping) over a configured search space.
+- **KFP compile** — The SDK call (`kfp.compiler.Compiler().compile(...)`) that turns a Python pipeline definition into a YAML manifest loadable by the Kubeflow Pipelines backend.
+- **KFP run** — A single submitted execution of a compiled pipeline, tracked in the Kubeflow Pipelines UI with per-step status, logs, and artifacts.
+
+## W&B sweeps
+- **Sweep config** — A YAML or Python dictionary that declares the search space, method (grid, random, bayes), early-termination strategy, and target metric for a W&B hyperparameter sweep.
+- **Early termination** — A sweep hyperband/early-stopping policy that halts under-performing runs partway through, freeing compute for more promising configurations.

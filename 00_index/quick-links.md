@@ -168,6 +168,8 @@
 - [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml) — KFP pipeline deployment manifest for production
 - [SeldonDeployment manifest](../seldon/manifests/seldondeployment.yaml) — Minimal sklearn SeldonDeployment manifest
 - [Minimal pipeline config for ZenML](../zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — ZenML pipeline configuration with MLflow integration
+- [KServe flowers sample](../kserve/manifests/2026-08-27-flowers-sample.yaml) — Sample KServe InferenceService manifest for the flowers model
+- [W&B CI/CD project workflow](../wnb/templates/wandb-cicd-project/.github/workflows/ci-cd.yml) — CI/CD workflow for the W&B CI/CD project template
 
 ### Learn foundational concepts
 - [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)

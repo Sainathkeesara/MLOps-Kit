@@ -1,5 +1,5 @@
 # MLOps-Kit
-> An MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for MLflow, Kubeflow, Metaflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, Databricks, and Evidently AI.
+> An MLOps engineer's quick-reference: first-contact notes, runnable snippets, and configs for MLflow, Kubeflow, Metaflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, BentoML, Databricks, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -14,7 +14,7 @@ A working MLOps engineer's shelf: first-contact notes, runnable snippets, and co
 
 ## What's in here
 
-Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, drift monitoring with Evidently AI, and model serving with KServe and Seldon Core. Eight cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project scaffolds for Kubeflow, Metaflow, MLflow, and W&B ship with tests and CI/CD wiring.
+Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, drift monitoring with Evidently AI, model serving with KServe, Seldon Core, and BentoML, and the Databricks ML platform. Eight cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project scaffolds for Kubeflow, Metaflow, MLflow, and W&B ship with tests and CI/CD wiring.
 
 ## Quick links
 
@@ -22,7 +22,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 - [First Databricks run](databricks/snippets/2026-08-27-first-databricks-run.py) — First-contact script for running a Databricks workload
 - [KServe flowers sample](kserve/manifests/2026-08-27-flowers-sample.yaml) — Sample KServe InferenceService manifest for the flowers model
 - [W&B PyTorch scaffold CI/CD](wnb/manifests/2026-08-26-wandb-pytorch-scaffold-ci-cd.yaml) — CI/CD workflow manifest for the W&B PyTorch scaffold
-- [ZenML minimal pipeline config](zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — Minimal ZenML pipeline configuration with MLflow tracking
+- [W&B CI/CD project workflow](wnb/templates/wandb-cicd-project/.github/workflows/ci-cd.yml) — CI/CD workflow for the W&B CI/CD project template
 
 ## Layout
 
@@ -68,7 +68,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 | Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-06 |
 | BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
 | kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 2 | 0 | 0 | 0 | — |
-| Databricks | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | — |
+| Databricks | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-27 |
 | Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 
 </details>
@@ -78,4 +78,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Currently working through first-contact notes for Databricks ML, BentoML, ClearML, and KServe, alongside ZenML pipeline configuration and cross-tool CI/CD scaffolding.
 
 ---
-_Last updated: 2026-08-29_
+_Last updated: 2026-08-30_

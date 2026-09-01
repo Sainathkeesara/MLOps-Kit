@@ -32,6 +32,7 @@
 - **MLflow on Databricks** — Managed MLflow tracking, model registry, and experiment UI built into the Databricks workspace.
 - **Databricks Workflows** — Multi-task job orchestration for running notebooks and tasks in sequence or with conditional branching.
 - **Delta Live Tables (DLT)** — Declarative ETL pipelines on Databricks that handle incremental processing, expectations, and lineage.
+- **AutoML** — Automated machine learning on Databricks that runs parallel trials over algorithms and hyperparameters to find the best model for a given dataset.
 
 ## ClearML
 - **Task** — The atomic unit of work in ClearML; a single script execution logged as an experiment with parameters, metrics, and artifacts.

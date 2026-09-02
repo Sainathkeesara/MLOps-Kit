@@ -187,3 +187,16 @@
 ## W&B sweeps
 - **Sweep config** — A YAML or Python dictionary that declares the search space, method (grid, random, bayes), early-termination strategy, and target metric for a W&B hyperparameter sweep.
 - **Early termination** — A sweep hyperband/early-stopping policy that halts under-performing runs partway through, freeing compute for more promising configurations.
+
+## W&B Launch
+- **Launch agent** — A long-running W&B service that polls a queue for queued jobs and executes them on the host machine (local, Docker, Kubernetes, or Slurm), enabling W&B sweep and run execution on remote compute.
+- **Launch queue** — A W&B configuration that targets a specific execution backend (e.g. a Kubernetes cluster or Docker host) where Launch agents listen for jobs to run.
+
+## Pipeline orchestration patterns
+- **DAG** — Directed acyclic graph; the graph structure underlying pipeline orchestration, where nodes are steps and edges are dependencies.
+- **Step dependency** — A declaration that a pipeline step cannot run until one or more upstream steps have completed, forming an edge in the pipeline DAG.
+- **Conditional branching** — A pipeline pattern where downstream steps execute only when an evaluated boolean expression over upstream outputs is true, enabling different paths through the DAG based on runtime results.
+- **Parallel fan-out** — A pipeline pattern where a single step branches into multiple parallel steps executed concurrently, often used to parallelise hyperparameter trials or per-entity processing.
+- **Retry policy** — A pipeline configuration that re-runs a failed step a specified number of times before marking the pipeline as failed, useful for handling transient infrastructure or API errors.
+
+

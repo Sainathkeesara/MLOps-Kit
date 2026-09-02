@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-02
+
+- con-117: script(python) — DVC-style dataset versioning pipeline with reproducible training and content-addressed cache (L3)
+- con-118: docs — Comparing snapshot-based vs diff-based versioning for ML datasets — trade-offs, comparison table, and verification (L3)
+- con-119: docs — Comparing automated vs manual model promotion strategies with gate tuning and verification (L3)
+
 ## 2026-08-28
 
 - wnb-049: manifest(yaml) — Fill in the missing `.github/workflows/ci-cd.yml` for the wandb-cicd-project template with lint, test, and deploy jobs (L2)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-03
+
+- mlf-028: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in mlflow-model-registry-scaffold template with test, train, register, and deploy workflow (L2)
+
 ## 2026-09-02
 
 - con-117: script(python) — DVC-style dataset versioning pipeline with reproducible training and content-addressed cache (L3)

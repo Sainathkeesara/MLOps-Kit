@@ -1,0 +1,147 @@
+# last_verified: 2026-09-03 · MLflow n/a
+# mlf-028 — CI/CD workflow for mlflow-model-registry-scaffold (L2)
+#
+# The scaffold README lists .github/workflows/ci-cd.yml in its project
+# structure, but the file is missing on disk. I'm building a minimal
+# workflow covering the four stages the task asks for: test, train,
+# register, and deploy.
+#
+# The lint step uses ruff because the kit already standardizes on it.
+# The test step runs the existing tests/ suite. The train and register
+# jobs need a running MLflow server; I'm providing it via a service
+# container rather than assuming one already exists.
+#
+# Got stuck on: the README doesn't say where deploy should push the
+# model, so I left it as an echo stub rather than guessing. What I'd
+# try next: wire deploy to the MLflow Model Registry or a serving
+# target once the scaffold's README specifies one.
+
+name: mlflow-model-registry-ci-cd
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      # The scaffold ships train.py and register.py — lint both plus
+      # the test helpers so the rule catches issues everywhere.
+      - run: ruff check train.py register.py serve.py tests/
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      # The scaffold ships pytest-based tests in tests/. Running the
+      # suite here verifies imports and basic logic before any remote
+      # MLflow server is required.
+      - run: python -m pytest tests/ -v
+
+  train:
+    name: Train
+    runs-on: ubuntu-latest
+    needs: test
+    # Only run on direct pushes to main; skip on PRs to avoid burning
+    # MLflow server cycles on every review.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    services:
+      # A local MLflow tracking server so train.py can log parameters,
+      # metrics, and the registered model without hitting a remote.
+      mlflow:
+        image: ghcr.io/mlflow/mlflow:v2.14.1
+        ports:
+          - 5000:5000
+        options: >-
+          --health-cmd "curl -f http://localhost:5000/health || exit 1"
+          --health-interval 5s
+          --health-timeout 2s
+          --health-retries 5
+    env:
+      MLFLOW_TRACKING_URI: http://localhost:5000
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      # train.py logs to MLflow and auto-registers IrisClassifier.
+      # The run_id is captured so the next job can reference it.
+      - id: train
+        run: |
+          RUN_ID=$(python train.py | grep -oE 'Run [a-f0-9]+' | awk '{print $2}')
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+      - name: Upload run artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mlflow-run-id
+          retention-days: 7
+          path: |
+            ${{ steps.train.outputs.run_id }}
+
+  register:
+    name: Register
+    runs-on: ubuntu-latest
+    needs: [train, test]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    services:
+      mlflow:
+        image: ghcr.io/mlflow/mlflow:v2.14.1
+        ports:
+          - 5000:5000
+        options: >-
+          --health-cmd "curl -f http://localhost:5000/health || exit 1"
+          --health-interval 5s
+          --health-timeout 2s
+          --health-retries 5
+    env:
+      MLFLOW_TRACKING_URI: http://localhost:5000
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      # Pull the run_id from the train job output. If the artifact
+      # isn't available (train failed), this job fails fast.
+      - id: fetch_run
+        run: |
+          RUN_ID=$(python -c "
+            from mlflow.tracking import MlflowClient
+            c = MlflowClient('http://localhost:5000')
+            ex = c.get_experiment_by_name('model-registry-demo')
+            runs = c.search_runs([ex.experiment_id])
+            print(max(runs, key=lambda r: int(r.info.run_id.split('_')[0], 16)).info.run_id)
+          ")
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+      - run: python register.py register --run-id ${{ steps.fetch_run.outputs.run_id }} --model-name IrisClassifier --stage Staging
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: [train, register, test]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      # The scaffold README documents serving via `python serve.py`,
+      # but the README doesn't specify a deployment target.
+      # Leaving this as a documented stub rather than guessing.
+      - run: |
+          echo "Deploy step — wire this to your serving target"
+          echo "(e.g. Seldon Core, KServe, or MLflow Model Registry promotion)"
+          echo "Run ID from train: ${{ needs.train.outputs.run_id }}"

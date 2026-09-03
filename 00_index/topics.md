@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 52 files
+## Concepts · 55 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md)
@@ -10,10 +10,11 @@
   - [Multistage ONNX Runtime serving](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py)
   - [Multi-stage ML training-serving Dockerfile](../docs/concepts/containerization/dockerfiles/2026-08-09-multi-stage-ml-training-serving.Dockerfile)
 - **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md)
-  - [Snapshot vs diff versioning](../docs/concepts/data-versioning/snapshot-vs-diff-versioning.md)
+  - [Snapshot vs diff versioning](../docs/concepts/data-versioning/comparing-snapshot-vs-diff-versioning.md)
   - [Track dataset snapshots](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py)
   - [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py)
   - [Track DVC versions](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py)
+  - [Reproducible training pipeline](../docs/concepts/data-versioning/scripts/reproducible-training-pipeline.py)
 - **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)
   - [Experiment tracking workflow](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md)
   - [Patterns and pitfalls](../docs/concepts/experiment-tracking/experiment-tracking-patterns-pitfalls.md)
@@ -25,6 +26,7 @@
   - [Automated vs manual promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md)
   - [Model versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py)
   - [Automated model promotion workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py)
+  - [Comparing promotion strategies](../docs/concepts/model-registry/comparing-promotion-strategies.md)
 - **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md)
   - [Minimal FastAPI inference endpoint](../docs/concepts/model-serving/snippets/2026-08-11-minimal-fastapi-inference-endpoint.py)
   - [Serving config](../docs/concepts/model-serving/configs/2026-08-11-model-serving-config.yaml)
@@ -39,7 +41,7 @@
   - [DAG pipeline error handling](../docs/concepts/pipeline-orchestration/scripts/dag-pipeline-error-handling.py)
   - _…and 15 more under `docs/concepts/` — browse the folder._
 
-## Metaflow · 83 files
+## Metaflow · 75 files
 
 - **primer:** [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md)
 - **notes** (14): most recent → [Install and hello world](../metaflow/notes/2026-07-14-install-and-hello-world.md), [Metaflow quickstart trip-ups](../metaflow/notes/2026-07-11-metaflow-quickstart-trip-ups.md), [CLI and local dev UI](../metaflow/notes/2026-07-09-explore-cli-local-dev-ui.md)
@@ -79,7 +81,7 @@
 - **templates** (24): [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md), [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md), [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md)
   - _…and 21 more under `wnb/templates/` — browse the folder._
 
-## MLflow · 52 files
+## MLflow · 55 files
 
 - **primer:** [MLflow concepts and setup](../mlflow/notes/0000-primer-mlflow.md)
 - **notes** (7): [UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md), [Quickstart trip-ups (Jul 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md), [First MLflow server](../mlflow/notes/2026-05-24-first-mlflow-server.md)

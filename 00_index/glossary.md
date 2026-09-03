@@ -23,6 +23,9 @@
 - **Snapshot** — A point-in-time copy of a dataset or model artifact, tracked so you can reproduce any past training run exactly.
 - **Version** — A specific iteration of a registered model, identified by a version number or alias for promotion and rollback.
 - **Anti-pattern** — A common mistake or poor practice in experiment tracking that reduces reproducibility, clarity, or maintainability of ML workflows.
+- **Content-addressed cache** — A storage backend where artifacts are retrieved by the hash of their contents rather than by filename or path, ensuring integrity and deduplication.
+- **Delta chain** — A sequence of incremental changes (deltas) between versions in a diff-based versioning system, replayed to reconstruct any historical state.
+- **Transaction log** — An append-only record of changes used by diff-based systems (e.g. Delta Lake) to reconstruct table versions and enforce ordering.
 
 ## Databricks
 - **Unity Catalog** — A unified governance solution for data and AI assets on Databricks, providing fine-grained access control, data lineage, and a central catalog for tables, models, and notebooks.
@@ -33,6 +36,8 @@
 - **Databricks Workflows** — Multi-task job orchestration for running notebooks and tasks in sequence or with conditional branching.
 - **Delta Live Tables (DLT)** — Declarative ETL pipelines on Databricks that handle incremental processing, expectations, and lineage.
 - **AutoML** — Automated machine learning on Databricks that runs parallel trials over algorithms and hyperparameters to find the best model for a given dataset.
+- **Lakehouse** — Databricks' unified data architecture that combines data warehousing and data lakes on top of Delta Lake, supporting both BI and ML workloads.
+- **Delta Lake** — An open-source storage layer that brings ACID transactions, schema enforcement, and time travel to data lakes, used as the foundation for Databricks tables and feature stores.
 
 ## ClearML
 - **Task** — The atomic unit of work in ClearML; a single script execution logged as an experiment with parameters, metrics, and artifacts.
@@ -92,6 +97,11 @@
 - **Transformer** — An optional component in KServe that pre-processes requests before they reach the predictor and post-processes responses.
 - **Explainer** — An optional KServe component that provides model explanation and interpretability for prediction requests.
 - **KNative** — The underlying serverless platform that KServe uses for auto-scaling, revision management, and traffic splitting.
+
+## Model Registry
+- **Promotion gate** — A configurable threshold or checklist that a model must pass before being promoted from staging to production, either enforced by a pipeline or reviewed by a human.
+- **Canary stage** — An intermediate deployment stage where a small percentage of live traffic is routed to a new model version to validate performance before full promotion.
+- **Shadow deployment** — Running a new model version in parallel with production, receiving the same requests but not returning its predictions to users, used to compare behavior without risk.
 
 ## Model Serving
 - **Liveness check** — A health probe reporting whether the serving process is alive; orchestrators use it to decide whether a container needs restarting.

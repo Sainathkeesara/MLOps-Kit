@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-03
+
+- con-112: docs — Feature store patterns for online and offline serving — model serving, pipeline orchestration, experiment tracking, and data versioning integration patterns (L3)
+- con-113: script(python) — Feature retrieval pipeline with Feast SDK — setup, materialize, online/historical retrieval, and validation (L3)
+
 ## 2026-09-02
 
 - con-117: script(python) — DVC-style dataset versioning pipeline with reproducible training and content-addressed cache (L3)

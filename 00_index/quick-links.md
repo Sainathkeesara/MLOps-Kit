@@ -96,7 +96,7 @@
 - [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
 - [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py) — KFP v2 pipeline with conditional branching and parallel execution
 - [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml) — CI/CD with lint, test, flow-run, and deploy jobs for the Metaflow template
-- [Containerization + pipeline orchestration pattern](../docs/concepts/containerization/docs/containerization-pipeline-orchestration-pattern.md) — Combining containerization with pipeline orchestration for ML workloads
+- [Containerization + pipeline orchestration pattern](../docs/concepts/containerization/containerization-pipeline-orchestration-pattern.md) — Combining containerization with pipeline orchestration for ML workloads
 - [Combining containerization with model serving](../docs/concepts/containerization/scripts/combining-containerization-with-model-serving.py) — End-to-end script tying containerization to model serving
 - [Pipeline orchestration patterns for production](../docs/concepts/pipeline-orchestration/pipeline-orchestration-patterns-for-production-mlops.md) — Production-grade orchestration patterns for MLOps
 
@@ -107,12 +107,15 @@
 - [MLflow experiment comparison + promotion script](../mlflow/scripts/experiment-compare-and-promote.py) — Reusable helper for automated experiment comparison and model promotion
 - [Model versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py) — Model versioning workflow with MLflow Model Registry
 - [Automated vs manual model promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md) — Comparing automated and manual promotion strategies
+- [Comparing promotion strategies](../docs/concepts/model-registry/comparing-promotion-strategies.md) — Automated vs manual promotion for staging-to-production transitions
 - [Automated model promotion workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py) — Automated promotion script with metric thresholds
 - [MLflow Model Registry CI/CD manifest](../mlf/manifests/2026-08-09-mlflow-model-registry-ci-cd.yaml) — CI/CD workflow for MLflow Model Registry promotions
 - [MLflow model registry scaffold CI/CD](../mlf/manifests/mlflow-model-registry-scaffold-ci-cd.yaml) — CI/CD workflow for mlflow-model-registry-scaffold with lint, test, train, register, and deploy jobs
 
 ### Version data
+- [Comparing snapshot and diff versioning](../docs/concepts/data-versioning/comparing-snapshot-vs-diff-versioning.md) — Snapshot vs diff strategies for ML datasets
 - [Data versioning fundamentals exercises](../docs/concepts/data-versioning/snippets/2026-07-10-data-versioning-fundamentals.py) — Pointer files, snapshots, and restore logic
+- [Reproducible training pipeline](../docs/concepts/data-versioning/scripts/reproducible-training-pipeline.py) — Content-addressed dataset versioning with deterministic training runs
 - [Track dataset snapshots for reproducible training](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py) — Snapshot datasets and pin to training runs
 - [DVC end-to-end CLI walkthrough](../dvc/scripts/2026-07-22-dvc-end-to-end.sh) — Init repo, track dataset, set remote, push, and verify cache
 - [DVC repro + metrics diff end-to-end](../dvc/scripts/2026-07-28-dvc-repro-metrics-diff.sh) — Run `dvc repro` and compare metrics across commits

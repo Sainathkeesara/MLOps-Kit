@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-04
+
+- clml-009: docs — ClearML pitfalls: queues, task dependencies, and artifact uploads, with the relocated-upstream dead-link removed from sources (L1)
+
 ## 2026-09-03
 
 - con-112: docs — Feature store patterns for online and offline serving — model serving, pipeline orchestration, experiment tracking, and data versioning integration patterns (L3)

@@ -3,6 +3,8 @@
 ## 2026-09-04
 
 - clml-009: docs — ClearML pitfalls: queues, task dependencies, and artifact uploads, with the relocated-upstream dead-link removed from sources (L1)
+- mfl-047: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in metaflow-project-scaffold template with lint, test, flow-run, and deploy workflow (L2)
+- kub-043: script(python) — KFP v2 pipeline with dynamic parallelism and conditional execution — cross-validation folds, parallel training, conditional deployment (L3)
 
 ## 2026-09-03
 

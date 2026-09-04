@@ -4,6 +4,7 @@
 
 - con-112: docs — Feature store patterns for online and offline serving — model serving, pipeline orchestration, experiment tracking, and data versioning integration patterns (L3)
 - con-113: script(python) — Feature retrieval pipeline with Feast SDK — setup, materialize, online/historical retrieval, and validation (L3)
+- mlf-028: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in mlflow-model-registry-scaffold template with test, train, register, and deploy workflow (L2)
 
 ## 2026-09-02
 

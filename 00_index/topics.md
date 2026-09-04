@@ -2,18 +2,21 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 52 files
+## Concepts · 55 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md)
-  - [Containerization + pipeline orchestration pattern](../docs/concepts/containerization/docs/containerization-pipeline-orchestration-pattern.md)
+  - [Containerization + pipeline orchestration pattern](../docs/concepts/containerization/containerization-pipeline-orchestration-pattern.md)
   - [Multistage ONNX Runtime serving](../docs/concepts/containerization/scripts/2026-07-13-multistage-onnxruntime-serving.py)
   - [Multi-stage ML training-serving Dockerfile](../docs/concepts/containerization/dockerfiles/2026-08-09-multi-stage-ml-training-serving.Dockerfile)
 - **primer:** [Data Versioning](../docs/concepts/data-versioning/0000-primer-data-versioning.md)
   - [Snapshot vs diff versioning](../docs/concepts/data-versioning/snapshot-vs-diff-versioning.md)
+  - [Comparing snapshot and diff versioning](../docs/concepts/data-versioning/comparing-snapshot-vs-diff-versioning.md)
   - [Track dataset snapshots](../docs/concepts/data-versioning/scripts/2026-07-10-track-dataset-snapshots.py)
   - [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py)
   - [Track DVC versions](../docs/concepts/data-versioning/scripts/2026-08-07-track-dvc-versions.py)
+  - [Reproducible training pipeline](../docs/concepts/data-versioning/scripts/reproducible-training-pipeline.py)
+  - _…and 4 more under `docs/concepts/data-versioning/scripts/` — browse the folder._
 - **primer:** [Experiment Tracking](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)
   - [Experiment tracking workflow](../docs/concepts/experiment-tracking/2026-08-04-experiment-tracking-workflow.md)
   - [Patterns and pitfalls](../docs/concepts/experiment-tracking/experiment-tracking-patterns-pitfalls.md)
@@ -23,7 +26,9 @@
   - [Register and retrieve features](../docs/concepts/feature-store/scripts/2026-08-09-register-and-retrieve-features.py)
 - **primer:** [Model Registry](../docs/concepts/model-registry/0000-primer-model-registry.md)
   - [Automated vs manual promotion](../docs/concepts/model-registry/automated-vs-manual-promotion.md)
+  - [Comparing promotion strategies](../docs/concepts/model-registry/comparing-promotion-strategies.md)
   - [Model versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py)
+  - [Automated model promotion workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py)
   - [Automated model promotion workflow](../docs/concepts/model-registry/scripts/automated-model-promotion-workflow.py)
 - **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md)
   - [Minimal FastAPI inference endpoint](../docs/concepts/model-serving/snippets/2026-08-11-minimal-fastapi-inference-endpoint.py)
@@ -52,7 +57,7 @@
 - **templates** (13): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
   - _…and 22 more under `metaflow/templates/` — browse the folder._
 
-## Kubeflow · 75 files
+## Kubeflow · 76 files
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
 - **notes** (18): most recent → [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md)

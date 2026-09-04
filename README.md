@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Quick links
 
-- [Databricks ML primer](databricks/notes/0000-primer-databricks.md) — Unity Catalog, workspace setup, and first experiments
-- [First Databricks run](databricks/snippets/2026-08-27-first-databricks-run.py) — First-contact script for running a Databricks workload
-- [KServe flowers sample](kserve/manifests/2026-08-27-flowers-sample.yaml) — Sample KServe InferenceService manifest for the flowers model
-- [W&B PyTorch scaffold CI/CD](wnb/manifests/2026-08-26-wandb-pytorch-scaffold-ci-cd.yaml) — CI/CD workflow manifest for the W&B PyTorch scaffold
+- [Comparing snapshot and diff versioning](docs/concepts/data-versioning/comparing-snapshot-vs-diff-versioning.md) — Snapshot vs diff strategies for ML datasets
+- [Reproducible training pipeline](docs/concepts/data-versioning/scripts/reproducible-training-pipeline.py) — Content-addressed dataset versioning with deterministic training runs
+- [Comparing promotion strategies](docs/concepts/model-registry/comparing-promotion-strategies.md) — Automated vs manual model promotion for staging-to-production transitions
 - [W&B CI/CD project workflow](wnb/templates/wandb-cicd-project/.github/workflows/ci-cd.yml) — CI/CD workflow for the W&B CI/CD project template
+- [Databricks ML primer](databricks/notes/0000-primer-databricks.md) — Unity Catalog, workspace setup, and first experiments
 
 ## Layout
 
@@ -53,11 +53,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Metaflow | 14 | 15 | 8 | 2 | 11 | 4 | 5 | 23 | 1 | 2026-07-14 |
-| Kubeflow | 18 | 10 | 8 | 3 | 4 | 7 | 2 | 22 | 3 | 2026-07-14 |
+| Metaflow | 14 | 7 | 8 | 2 | 11 | 4 | 5 | 23 | 1 | 2026-08-04 |
+| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 22 | 3 | 2026-07-14 |
 | Weights & Biases | 15 | 9 | 5 | 6 | 5 | 5 | 3 | 24 | 0 | 2026-08-11 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 10 | 4 | 2026-07-30 |
-| Concepts | 16 | 6 | 20 | 1 | 1 | 0 | 1 | 0 | 1 | 2026-08-11 |
+| Concepts | 19 | 6 | 23 | 2 | 5 | 0 | 1 | 0 | 1 | 2026-09-02 |
 | Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
 | DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
 | ClearML | 6 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
@@ -75,7 +75,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Status
 
-Currently working through first-contact notes for Databricks ML, BentoML, ClearML, and KServe, alongside ZenML pipeline configuration and cross-tool CI/CD scaffolding.
+Active across BentoML, ClearML, Databricks ML, DVC, KServe, Metaflow, W&B, and ZenML — filling first-contact notes, snippets, and project scaffolds.
 
 ---
-_Last updated: 2026-09-02_
+_Last updated: 2026-09-03_

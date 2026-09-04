@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-04
+
+- mfl-047: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in metaflow-project-scaffold template with lint, test, flow-run, and deploy workflow (L2)
+- kub-043: script(python) — KFP v2 pipeline with dynamic parallelism and conditional execution — cross-validation folds, parallel training, conditional deployment (L3)
+
 ## 2026-09-03
 
 - con-112: docs — Feature store patterns for online and offline serving — model serving, pipeline orchestration, experiment tracking, and data versioning integration patterns (L3)

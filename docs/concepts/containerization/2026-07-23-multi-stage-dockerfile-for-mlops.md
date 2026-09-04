@@ -1,5 +1,5 @@
 ---
-last_verified: 2026-07-23
+last_verified: 2026-09-04
 tool_version: n/a
 ---
 
@@ -37,7 +37,7 @@ I built it with `docker build -t churn-predictor:1.0.0 --target serving .` and v
 
 ## Got stuck on
 
-**File not found at runtime.** The first time I ran the container it crashed because `app:app` expects `serve.py` to be at `/app/serve.py` but the `COPY` path was wrong. Double-checking the working directory in `serve.py`'s import paths fixed it.
+**File not found at runtime.** The first time I ran the container it crashed because `app:app` expects `serve.py` to match the `COPY` destination but the `COPY` path was wrong. Double-checking the working directory in `serve.py`'s import paths fixed it.
 
 **Training stage cached bad model.** I iterated on `train.py` but Docker used the cached layer from the first build. Adding `--no-cache-filter=trainer` to the build command forced a re-run of just the training stage.
 

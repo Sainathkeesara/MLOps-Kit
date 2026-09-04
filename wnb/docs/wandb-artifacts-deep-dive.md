@@ -1,5 +1,5 @@
 ---
-last_verified: 2026-07-19
+last_verified: 2026-09-04
 tool_version: n/a
 sources: []
 ---
@@ -105,7 +105,7 @@ evaluation.
 run = wandb.init(project="mlops-kit-demo", name="evaluate-v1")
 model = run.use_artifact("churn-model:latest")
 eval_report = wandb.Artifact("churn-eval", type="evaluation")
-eval_report.add_file("reports/metrics.json")
+eval_report.add_file("evaluation_results.json")
 run.log_artifact(eval_report)
 run.finish()
 ```

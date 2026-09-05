@@ -30,7 +30,6 @@
 - [Follow Feast quickstart](../feast/notes/2026-08-02-follow-feast-quickstart.md) — Follow the Feast quickstart with feature retrieval and online store setup
 - [Online vs offline feature serving](../feast/docs/comparing-online-vs-offline-serving.md) — When to use `get_historical_features()` vs `get_online_features()`
 - [Offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md) — Offline vs online stores and point-in-time joins in Feast
-- [ClearML pitfalls](../clearml/docs/clearml-pitfalls.md) — Common pitfalls and workarounds for ClearML
 
 ### Set up Databricks
 - [Databricks Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
@@ -94,7 +93,6 @@
 - [Kubeflow pipeline scaffold CI/CD workflow](../kubeflow/manifests/2026-08-02-kubeflow-pipeline-scaffold-ci-cd.yml) — CI/CD workflow for kubeflow-pipeline-scaffold with lint, test, compile, and deploy steps
 - [KFP pipeline scaffold CI/CD workflow (kub)](../kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml) — CI/CD workflow manifest for KFP pipeline scaffold
 - [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
-- [Dynamic parallelism pipeline](../kubeflow/scripts/2026-09-04-dynamic-parallelism-conditional.py) — KFP v2 pipeline with dynamic parallelism and conditional execution
 - [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
 - [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py) — KFP v2 pipeline with conditional branching and parallel execution
 - [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml) — CI/CD with lint, test, flow-run, and deploy jobs for the Metaflow template
@@ -133,7 +131,6 @@
 - [DVC dataset versioning](../docs/concepts/data-versioning/scripts/2026-08-07-dvc-dataset-versioning.py) — Version datasets and pin them to training runs with DVC
 - [Track dataset versions with DVC and reproduce a training run](../docs/concepts/data-versioning/scripts/2026-08-08-track-dataset-versions-with-dvc-and-reproduce-a-training-run.py) — End-to-end demo tracking a dataset, mutating it, and restoring the original version
 - [Snapshot vs diff versioning](../docs/concepts/data-versioning/snapshot-vs-diff-versioning.md) — Comparing versioning strategies for ML datasets
-- [Feature retrieval pipeline](../docs/concepts/feature-store/scripts/feature-retrieval-pipeline.py) — End-to-end feature retrieval workflow
 
 ### Monitor models and drift
 - [Monitoring and drift detection patterns](../docs/concepts/monitoring-drift/2026-08-11-monitoring-drift-patterns.md) — Baseline snapshots, scheduled checks, threshold alerting, and retraining triggers

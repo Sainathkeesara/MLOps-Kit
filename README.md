@@ -54,7 +54,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
 | Metaflow | 14 | 7 | 8 | 2 | 11 | 4 | 5 | 23 | 1 | 2026-08-04 |
-| Kubeflow | 18 | 10 | 7 | 3 | 4 | 7 | 2 | 22 | 3 | 2026-07-14 |
+| Kubeflow | 15 | 10 | 7 | 3 | 4 | 7 | 2 | 22 | 3 | 2026-07-14 |
 | Weights & Biases | 15 | 9 | 5 | 6 | 5 | 5 | 3 | 24 | 0 | 2026-08-11 |
 | MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 10 | 4 | 2026-07-30 |
 | Concepts | 19 | 6 | 23 | 2 | 5 | 0 | 1 | 0 | 1 | 2026-09-02 |
@@ -78,4 +78,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Active across BentoML, ClearML, Databricks ML, DVC, KServe, Metaflow, W&B, and ZenML — filling first-contact notes, snippets, and project scaffolds.
 
 ---
-_Last updated: 2026-09-03_
+_Last updated: 2026-09-05_

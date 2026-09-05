@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-05
+
+- kub-044: docs — Documenting the kub folder contents and its distinction from kubeflow/ (L1)
+
 ## 2026-09-04
 
 - clml-009: docs — ClearML pitfalls: queues, task dependencies, and artifact uploads, with the relocated-upstream dead-link removed from sources (L1)

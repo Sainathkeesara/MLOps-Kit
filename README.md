@@ -1,5 +1,4 @@
 # MLOps-Kit
-
 > A working engineer's MLOps reference for MLflow, Kubeflow, Metaflow, W&B, DVC, Feast, ClearML, ZenML, KServe, Seldon Core, BentoML, Databricks, and Evidently AI.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
@@ -19,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Quick links
 
-- [KFP v2 dynamic parallelism pipeline](kubeflow/scripts/2026-09-04-dynamic-parallelism-conditional.py) — Pipeline with conditional branching and parallel execution
-- [Feature store patterns](docs/concepts/feature-store/feature-store-patterns.md) — Common patterns for feature store architecture
-- [Feature retrieval pipeline](docs/concepts/feature-store/scripts/feature-retrieval-pipeline.py) — End-to-end feature retrieval workflow
-- [Comparing promotion strategies](docs/concepts/model-registry/comparing-promotion-strategies.md) — Automated vs manual model promotion
-- [Databricks ML primer](databricks/notes/0000-primer-databricks.md) — Unity Catalog, workspace setup, and first experiments
+- [KFP v2 pipeline with dynamic parallelism and conditional execution](kubeflow/scripts/2026-09-04-dynamic-parallelism-conditional.py) — Cross-validation folds, parallel training, conditional deployment
+- [Metaflow project scaffold CI/CD workflow](metaflow/templates/metaflow-project-scaffold/.github/workflows/ci-cd.yml) — CI/CD workflow for the Metaflow project scaffold template
+- [ClearML pitfalls](clearml/docs/clearml-pitfalls.md) — Queues, task dependencies, and artifact uploads
+- [Feature store patterns](docs/concepts/feature-store/feature-store-patterns.md) — Online and offline serving integration patterns
+- [Feature retrieval pipeline](docs/concepts/feature-store/scripts/feature-retrieval-pipeline.py) — Feast SDK setup, materialize, online/historical retrieval
 
 ## Layout
 
@@ -54,23 +53,23 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
+| Metaflow | 14 | 7 | 8 | 2 | 11 | 4 | 5 | 24 | 1 | 2026-09-04 |
 | Kubeflow | 18 | 10 | 8 | 3 | 4 | 7 | 2 | 22 | 3 | 2026-09-04 |
-| Metaflow | 14 | 7 | 8 | 2 | 11 | 4 | 5 | 24 | 1 | 2026-08-04 |
-| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 5 | 3 | 24 | 0 | 2026-08-11 |
-| Concepts | 19 | 6 | 23 | 2 | 5 | 0 | 1 | 0 | 1 | 2026-09-02 |
-| MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 11 | 4 | 2026-07-30 |
-| ClearML | 6 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 2026-08-22 |
-| Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
-| DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
-| ZenML | 3 | 2 | 2 | 3 | 0 | 0 | 1 | 0 | 0 | 2026-08-22 |
-| KServe | 2 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-08-22 |
-| Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
-| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-06 |
+| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 5 | 3 | 24 | 0 | 2026-09-05 |
+| MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 11 | 4 | 2026-09-03 |
+| Concepts | 8 | 6 | 24 | 2 | 15 | 0 | 1 | 0 | 1 | 2026-09-05 |
+| Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-22 |
+| DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-15 |
+| ClearML | 6 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 2026-09-04 |
+| ZenML | 3 | 2 | 2 | 3 | 0 | 0 | 1 | 0 | 0 | 2026-08-23 |
+| KServe | 2 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-08-27 |
+| Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-08-15 |
 | MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
-| Databricks | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-27 |
-| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 2 | 0 | 0 | 0 | — |
+| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-15 |
 | BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
-| Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
+| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 2 | 0 | 0 | 0 | 2026-08-25 |
+| Databricks | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-27 |
+| Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2026-07-03 |
 
 </details>
 
@@ -79,4 +78,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Active across BentoML, ClearML, Databricks ML, DVC, KServe, Metaflow, W&B, and ZenML — filling first-contact notes, snippets, and project scaffolds.
 
 ---
-_Last updated: 2026-09-04_
+_Last updated: 2026-09-05_

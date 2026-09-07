@@ -24,6 +24,13 @@
 - **Version** — A specific iteration of a registered model, identified by a version number or alias for promotion and rollback.
 - **Anti-pattern** — A common mistake or poor practice in experiment tracking that reduces reproducibility, clarity, or maintainability of ML workflows.
 
+## CI/CD for ML
+- **GitHub Actions workflow** — A YAML pipeline definition in `.github/workflows/` that runs CI/CD jobs on push, PR, or schedule events.
+- **Lint** — Static analysis step that checks code style and correctness (e.g. `ruff`, `black`, `flake8`).
+- **Test** — Automated verification step that runs unit or integration tests.
+- **Compile** — Step that builds or transpiles artifacts (e.g. `kfp.compiler.Compiler().compile(...)` for KFP pipelines).
+- **Deploy** — Step that pushes built artifacts to a target environment (cluster, registry, server).
+
 ## Databricks
 - **Unity Catalog** — A unified governance solution for data and AI assets on Databricks, providing fine-grained access control, data lineage, and a central catalog for tables, models, and notebooks.
 - **Unity Catalog model registry** — MLflow Model Registry backed by Unity Catalog, enabling model versioning, stage transitions (Staging → Production → Archived), and RBAC for model access.
@@ -198,5 +205,5 @@
 - **Conditional branching** — A pipeline pattern where downstream steps execute only when an evaluated boolean expression over upstream outputs is true, enabling different paths through the DAG based on runtime results.
 - **Parallel fan-out** — A pipeline pattern where a single step branches into multiple parallel steps executed concurrently, often used to parallelise hyperparameter trials or per-entity processing.
 - **Retry policy** — A pipeline configuration that re-runs a failed step a specified number of times before marking the pipeline as failed, useful for handling transient infrastructure or API errors.
-
-
+- **Dynamic parallelism** — A KFP v2 pattern where the number of parallel branches is determined at runtime rather than compile time, enabling adaptive fan-out based on data or configuration.
+- **Resource management** — Declaring CPU, memory, and GPU requirements for pipeline steps so the orchestrator can schedule them on appropriate compute.

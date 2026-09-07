@@ -23,6 +23,7 @@
 - [ZenML primer](../zenml/notes/0000-primer-zenml.md) — Stack setup and first pipeline
 - [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md) — Kubeflow Pipelines on a local Kind cluster
 - [ClearML common pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md) — Gotchas and workarounds for ClearML
+- [ClearML pitfalls](../clearml/docs/clearml-pitfalls.md) — Common pitfalls and workarounds for ClearML
 - [Seldon Core vs KServe for sklearn](../seldon/notes/2026-07-12-seldon-vs-kserve-sklearn.md) — Comparing two model-serving frameworks
 - [KServe custom predictor with explainer](../kserve/snippets/2026-07-14-custom-predictor-explainer.py) — Custom model predictor and explainer for KServe
 - [ClearML remote GPU execution config](../clearml/configs/2026-07-14-remote-gpu-execution.yaml) — Remote GPU execution configuration for ClearML
@@ -95,6 +96,7 @@
 - [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py) — KFP v2 pipeline with conditional branching and parallel execution
 - [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py) — Install the KFP SDK and verify the installation
 - [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py) — KFP v2 pipeline with conditional branching and parallel execution
+- [Dynamic parallelism and conditional branching](../kubeflow/scripts/2026-09-04-dynamic-parallelism-conditional.py) — KFP v2 pipeline with dynamic fan-out and conditional step execution
 - [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml) — CI/CD with lint, test, flow-run, and deploy jobs for the Metaflow template
 - [Containerization + pipeline orchestration pattern](../docs/concepts/containerization/containerization-pipeline-orchestration-pattern.md) — Combining containerization with pipeline orchestration for ML workloads
 - [Combining containerization with model serving](../docs/concepts/containerization/scripts/combining-containerization-with-model-serving.py) — End-to-end script tying containerization to model serving
@@ -173,6 +175,8 @@
 - [Minimal pipeline config for ZenML](../zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — ZenML pipeline configuration with MLflow integration
 - [KServe flowers sample](../kserve/manifests/2026-08-27-flowers-sample.yaml) — Sample KServe InferenceService manifest for the flowers model
 - [W&B CI/CD project workflow](../wnb/templates/wandb-cicd-project/.github/workflows/ci-cd.yml) — CI/CD workflow for the W&B CI/CD project template
+- [kub folder overview (Sep 7)](../kub/docs/2026-09-07-documenting-kub-folder.md) — kub folder overview and file inventory
+- [kub folder overview (Sep 5)](../kub/docs/2026-09-05-documenting-kub-folder.md) — kub folder overview and file inventory
 
 ### Learn foundational concepts
 - [Experiment Tracking primer](../docs/concepts/experiment-tracking/0000-primer-experiment-tracking.md)

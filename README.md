@@ -18,11 +18,11 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Quick links
 
-- [Comparing snapshot and diff versioning](docs/concepts/data-versioning/comparing-snapshot-vs-diff-versioning.md) — Snapshot vs diff strategies for ML datasets
-- [Reproducible training pipeline](docs/concepts/data-versioning/scripts/reproducible-training-pipeline.py) — Content-addressed dataset versioning with deterministic training runs
-- [Comparing promotion strategies](docs/concepts/model-registry/comparing-promotion-strategies.md) — Automated vs manual model promotion for staging-to-production transitions
-- [W&B CI/CD project workflow](wnb/templates/wandb-cicd-project/.github/workflows/ci-cd.yml) — CI/CD workflow for the W&B CI/CD project template
-- [Databricks ML primer](databricks/notes/0000-primer-databricks.md) — Unity Catalog, workspace setup, and first experiments
+- [Documenting kub folder (Sep 7)](kub/docs/2026-09-07-documenting-kub-folder.md) — kub folder overview and file inventory
+- [Documenting kub folder (Sep 5)](kub/docs/2026-09-05-documenting-kub-folder.md) — kub folder overview and file inventory
+- [Dynamic parallelism and conditional branching](kubeflow/scripts/2026-09-04-dynamic-parallelism-conditional.py) — KFP v2 pipeline with dynamic fan-out and conditional step execution
+- [Metaflow project scaffold CI/CD workflow](metaflow/templates/metaflow-project-scaffold/.github/workflows/ci-cd.yml) — CI/CD workflow for the Metaflow project scaffold template
+- [ClearML pitfalls](clearml/docs/clearml-pitfalls.md) — Common pitfalls and workarounds for ClearML
 
 ## Layout
 
@@ -37,7 +37,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 - **`evidently/`** — Evidently AI monitoring and drift detection notes and snippets
 - **`feast/`** — Feast feature store notes, snippets, scripts, configs, and docs
 - **`kserve/`** — KServe model serving notes, snippets, configs, and manifests
-- **`kub/`** — Kubeflow Pipelines SDK configs, scripts, and manifests (KFP v2)
+- **`kub/`** — Kubeflow Pipelines SDK configs, scripts, docs, and manifests (KFP v2)
 - **`kubeflow/`** — Kubeflow notes, configs, manifests, docs, notebooks, scripts, snippets, templates, and dockerfiles
 - **`metaflow/`** — Metaflow notes, configs, docs, notebooks, scripts, snippets, manifests, templates, and dockerfiles
 - **`mfl/`** — Metaflow crossover docs, configs, scripts, and manifests
@@ -53,21 +53,21 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 | Tool | Notes | Snippets | Scripts | Configs | Docs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|----------|---------|---------|------|-----------|-----------|-----------|-------------|---------------|
-| Metaflow | 14 | 7 | 8 | 2 | 11 | 4 | 5 | 23 | 1 | 2026-08-04 |
-| Kubeflow | 15 | 10 | 7 | 3 | 4 | 7 | 2 | 22 | 3 | 2026-07-14 |
-| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 5 | 3 | 24 | 0 | 2026-08-11 |
-| MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 10 | 4 | 2026-07-30 |
-| Concepts | 19 | 6 | 23 | 2 | 5 | 0 | 1 | 0 | 1 | 2026-09-02 |
-| Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
-| DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | 2026-08-13 |
-| ClearML | 6 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
-| ZenML | 3 | 2 | 2 | 3 | 0 | 0 | 1 | 0 | 0 | 2026-08-22 |
-| KServe | 2 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-08-22 |
-| Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
-| MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
-| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | 2026-08-06 |
+| Metaflow | 14 | 7 | 8 | 2 | 11 | 4 | 5 | 24 | 1 | — |
+| Kubeflow | 15 | 10 | 8 | 3 | 4 | 7 | 2 | 22 | 3 | — |
+| Weights & Biases | 15 | 9 | 5 | 6 | 5 | 5 | 3 | 24 | 0 | — |
+| MLflow | 7 | 13 | 5 | 9 | 4 | 0 | 3 | 11 | 4 | — |
+| Concepts | 0 | 0 | 14 | 2 | 39 | 0 | 1 | 0 | 1 | 2026-07-25 |
+| Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-07-27 |
+| DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | — |
+| ClearML | 6 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | — |
+| ZenML | 3 | 2 | 2 | 3 | 0 | 0 | 1 | 0 | 0 | — |
+| KServe | 2 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | — |
+| Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-07-04 |
+| MLflow first-experiments | 1 | 1 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | — |
+| Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | — |
 | BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
-| kub (KFP SDK) | 0 | 0 | 1 | 3 | 0 | 2 | 0 | 0 | 0 | — |
+| kub (KFP SDK) | 0 | 0 | 1 | 3 | 2 | 2 | 0 | 0 | 0 | — |
 | Databricks | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-27 |
 | Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 
@@ -78,4 +78,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Active across BentoML, ClearML, Databricks ML, DVC, KServe, Metaflow, W&B, and ZenML — filling first-contact notes, snippets, and project scaffolds.
 
 ---
-_Last updated: 2026-09-06_
+_Last updated: 2026-09-07_

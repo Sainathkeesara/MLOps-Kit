@@ -50,10 +50,10 @@
 - **templates** (24): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
   - _…and 23 more under `metaflow/templates/` — browse the folder._
 
-## Kubeflow · 77 files
+## Kubeflow · 74 files
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
-- **notes** (18): most recent → [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md)
+- **notes** (14): most recent → [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md)
 - **snippets** (10): [Verify KFP install](../kubeflow/snippets/2026-07-06-verify-kfp-install.py), [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py), [Conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py), [Minimal KFP v2](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py)
 - **scripts** (8): [Kubeflow CI/CD pipeline](../kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh), [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py), [Kubeflow health diagnosis](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
 - **configs** (3): [Pipeline resources](../kubeflow/configs/pipeline-resources.yaml), [Config README](../kubeflow/configs/README.md)
@@ -132,8 +132,9 @@
 - **configs:** [Minimal sklearn InferenceService](../kserve/configs/2026-07-04-minimal-sklearn-inferenceservice.yaml)
 - **manifests:** [Flowers sample](../kserve/manifests/2026-08-27-flowers-sample.yaml) — Sample InferenceService for the flowers model
 
-## kub (KFP SDK) · 6 files
+## kub (KFP SDK) · 8 files
 
+- **docs** (2): [Documenting kub folder (Sep 7)](../kub/docs/2026-09-07-documenting-kub-folder.md), [Documenting kub folder (Sep 5)](../kub/docs/2026-09-05-documenting-kub-folder.md)
 - **configs** (3): [Minimal Kubeflow pipeline](../kub/configs/2026-08-11-minimal-kubeflow-pipeline.yaml), [Kind config](../kub/configs/kind-config.yaml), [Pipeline YAML](../kub/configs/pipeline.yaml)
 - **scripts:** [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py)
 - **manifests** (2): [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml), [Pipeline scaffold CI/CD](../kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml)

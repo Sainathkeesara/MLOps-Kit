@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-07
+
+- wnb-045: script(python) — Reusable W&B report generator: multi-metric statistics, state/tag/date filtering, Markdown and CSV output, artifact logging (L4)
+
 ## 2026-09-05
 
 - kub-044: docs — Documenting the kub folder contents and its distinction from kubeflow/ (L1)

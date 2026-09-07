@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-07
+
+- mfl-048: docs — Metaflow CI/CD with GitHub Actions: first-run setup notes (L2)
+- mfl-049: docs — Removed dead link to Miniconda installer from Metaflow resource management notes (L3)
+- mfl-050: docs — Removed dead link to `/tmp/model.json` from Metaflow + W&B integration notes (L3)
+
 ## 2026-09-05
 
 - kub-044: docs — Documenting the kub folder contents and its distinction from kubeflow/ (L1)

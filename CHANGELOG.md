@@ -2,6 +2,9 @@
 
 ## 2026-09-07
 
+- mfl-048: docs — Metaflow CI/CD with GitHub Actions: first-run setup notes (L2)
+- mfl-049: docs — Removed dead link to Miniconda installer from Metaflow resource management notes (L3)
+- mfl-050: docs — Removed dead link to `/tmp/model.json` from Metaflow + W&B integration notes (L3)
 - wnb-045: script(python) — Reusable W&B report generator: multi-metric statistics, state/tag/date filtering, Markdown and CSV output, artifact logging (L4)
 
 ## 2026-09-05

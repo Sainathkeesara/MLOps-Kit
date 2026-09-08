@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-08
+
+- con-115: script(python) — Combining Model Serving with Containerization for ML deployment (L3)
+- con-116: docs — Model Serving patterns in production MLOps projects (L3)
+
 ## 2026-09-07
 
 - mfl-048: docs — Metaflow CI/CD with GitHub Actions: first-run setup notes (L2)

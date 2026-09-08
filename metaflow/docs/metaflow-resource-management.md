@@ -23,11 +23,9 @@ All three are optional. A flow without them runs in the system Python environmen
 Metaflow does not bundle conda. The `@conda` decorator requires conda to be available on the system.
 
 ```bash
-# Install miniconda (Linux/macOS)
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/miniconda3
-eval "$(~/miniconda3/bin/conda shell.bash hook)"
-conda init
+# Install miniconda or mamba using your preferred method
+# Verify conda is on PATH:
+which conda
 ```
 
 Verify conda is on `PATH` before running any flow that uses `@conda`:

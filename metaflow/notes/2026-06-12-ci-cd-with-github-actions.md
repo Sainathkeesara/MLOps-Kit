@@ -11,7 +11,7 @@ A GitHub Actions workflow that:
 
 ## Step 1 — basic workflow file
 
-Started with a `.github/workflows/metaflow-ci.yml`:
+Started with a minimal workflow file:
 
 ```yaml
 name: metaflow-ci

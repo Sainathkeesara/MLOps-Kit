@@ -130,7 +130,7 @@ class ArtifactFlow(FlowSpec):
     @step
     def train(self):
         model_data = {"coef": [0.3, -1.2], "intercept": 0.5}
-        model_path = "/tmp/model.json"
+        model_path = "model.json"
         with open(model_path, "w") as f:
             json.dump(model_data, f)
 

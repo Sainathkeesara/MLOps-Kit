@@ -1,4 +1,4 @@
-# last_verified: 2026-09-08 · model-serving n/a
+# last_verified: 2026-09-09 · model-serving n/a
 
 """Combine model serving with containerization for ML deployment.
 
@@ -146,7 +146,7 @@ def predict(request: PredictRequest) -> PredictResponse:
 
 def generate_container_config(
     bundle_dir: Path,
-    base_image: str = "python:3.11-slim",
+    base_image: str = "python:slim",
     port: int = 8080,
 ) -> Path:
     """Produce a container configuration that packages the FastAPI app,
@@ -162,17 +162,17 @@ def generate_container_config(
     """
     bundle_dir.mkdir(parents=True, exist_ok=True)
 
-    requirements = "fastapi==0.115.0\nuvicorn==0.30.0\npydantic==2.9.0\n"
+    requirements = "fastapi\nuvicorn\npydantic\n"
     (bundle_dir / "requirements.txt").write_text(requirements)
 
     dockerfile = f"""FROM {base_image} AS builder
 WORKDIR /install
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
 
 FROM {base_image}
 WORKDIR /app
-COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /install /usr/local
 COPY app.py .
 COPY model/ ./model/
 COPY features/ ./features/
@@ -234,7 +234,7 @@ def main() -> None:
     parser.add_argument("--model-dir", type=Path, default=Path("./model"), help="Source model directory")
     parser.add_argument("--feature-def", type=Path, default=None, help="Optional feature definition file")
     parser.add_argument("--bundle-dir", type=Path, default=Path("./serve-bundle"), help="Output bundle directory")
-    parser.add_argument("--base-image", default="python:3.11-slim", help="Container base image")
+    parser.add_argument("--base-image", default="python:slim", help="Container base image")
     parser.add_argument("--port", type=int, default=8080, help="Serving port inside the container")
     args = parser.parse_args()
 

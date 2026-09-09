@@ -2,7 +2,7 @@
 
 > A map of what's here. For a beginner-to-advanced reading order, see [learning-path.md](learning-path.md).
 
-## Concepts · 57 files
+## Concepts · 59 files
 
 - **primer:** [Containerization](../docs/concepts/containerization/0000-primer-containerization.md)
   - [Multi-stage Dockerfile for MLOps](../docs/concepts/containerization/2026-07-23-multi-stage-dockerfile-for-mlops.md)
@@ -26,6 +26,7 @@
   - [Comparing promotion strategies](../docs/concepts/model-registry/comparing-promotion-strategies.md)
   - [Model versioning workflow](../docs/concepts/model-registry/scripts/2026-08-04-model-versioning-workflow.py)
 - **primer:** [Model Serving](../docs/concepts/model-serving/0000-primer-model-serving.md)
+  - [Model serving patterns in production MLOps projects](../docs/concepts/model-serving/model-serving-patterns-in-production-mlops-projects.md)
   - [Minimal FastAPI inference endpoint](../docs/concepts/model-serving/snippets/2026-08-11-minimal-fastapi-inference-endpoint.py)
   - [Serving config](../docs/concepts/model-serving/configs/2026-08-11-model-serving-config.yaml)
 - **primer:** [Monitoring & Drift](../docs/concepts/monitoring-drift/0000-primer-monitoring-drift.md)
@@ -47,17 +48,17 @@
 - **manifests** (4): [DevStack compose](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml), [AWS Batch infrastructure](../metaflow/manifests/aws-batch-infrastructure.yaml), [Production Argo deployment](../metaflow/manifests/production-metaflow-argo-deployment.yaml)
 - **notebooks** (5): [Full run vs resume](../metaflow/notebooks/2026-06-17-full-run-vs-resume.ipynb), [End-to-end flow with data](../metaflow/notebooks/2026-05-28-first-end-to-end-flow-with-data.ipynb), [Batch vs Kubernetes vs local](../metaflow/notebooks/2026-07-19-batch-vs-kubernetes-vs-local-alt.ipynb)
 - **dockerfiles** (1): [Metaflow development container](../metaflow/dockerfiles/metaflow-dev.Dockerfile)
-- **configs** (4): [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml), [DevStack compose](../metaflow/manifests/2026-07-13-metaflow-devstack-compose.yaml)
+- **configs** (2): [Metaflow project scaffold](../metaflow/configs/metaflow-project-scaffold.yaml)
 - **templates** (24): [Metaflow project scaffold](../metaflow/templates/metaflow-project-scaffold/README.md)
   - _…and 23 more under `metaflow/templates/` — browse the folder._
 
-## Kubeflow · 77 files
+## Kubeflow · 74 files
 
 - **primer:** [Kubeflow overview](../kubeflow/notes/0000-primer-kubeflow.md)
 - **notes** (15): most recent → [Install KFP on Kind](../kubeflow/notes/2026-07-14-install-kfp-on-kind.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-11-kfp-v2-quickstart-trip-ups.md), [KFP v2 quickstart trip-ups](../kubeflow/notes/2026-07-06-kfp-v2-quickstart-trip-ups.md)
 - **snippets** (10): [Verify KFP install](../kubeflow/snippets/2026-07-06-verify-kfp-install.py), [Install KFP SDK](../kubeflow/snippets/2026-08-04-install-kfp-sdk.py), [Conditional branching pipeline](../kubeflow/snippets/2026-06-15-conditional-branching-pipeline.py), [Minimal KFP v2](../kubeflow/snippets/2026-06-09-minimal-kfp-v2-end-to-end.py)
-- **scripts** (10): [Kubeflow CI/CD pipeline](../kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh), [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py), [Dynamic parallelism and conditionals](../kubeflow/scripts/2026-09-04-dynamic-parallelism-conditional.py), [Kubeflow health diagnosis](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
-- **configs** (4): [Pipeline resources](../kubeflow/configs/pipeline-resources.yaml), [Config README](../kubeflow/configs/README.md)
+- **scripts** (8): [Kubeflow CI/CD pipeline](../kubeflow/scripts/2026-07-23-kubeflow-ci-cd.sh), [KFP v2 pipeline conditionals](../kubeflow/scripts/2026-08-04-tried-kfp-v2-pipeline-conditionals.py), [Dynamic parallelism and conditionals](../kubeflow/scripts/2026-09-04-dynamic-parallelism-conditional.py), [Kubeflow health diagnosis](../kubeflow/scripts/tried_diagnosing_kubeflow_health.sh)
+- **configs** (3): [Pipeline resources](../kubeflow/configs/pipeline-resources.yaml), [Config README](../kubeflow/configs/README.md)
 - **docs** (4): [KFP v1 vs v2 DSL](../kubeflow/docs/choosing-between-kfp-v1-and-v2-dsl.md), [Kubeflow + MLflow tracking](../kubeflow/docs/kubeflow-mlflow-tracking-integration.md), [Pipeline debugging](../kubeflow/docs/kubeflow-pipeline-debugging.md)
 - **manifests** (7): [Pipeline CI/CD workflow](../kubeflow/manifests/2026-07-27-kubeflow-pipeline-scaffold-ci-cd.yaml), [CI/CD workflow for scaffold](../kubeflow/manifests/2026-08-02-kubeflow-pipeline-scaffold-ci-cd.yml), [Minimal hello pipeline](../kubeflow/manifests/minimal-hello-pipeline.yaml), [Katib HPO random search](../kubeflow/manifests/katib-hpo-random-search-pytorch.yaml)
 - **notebooks** (2): [Katib vs ParallelFor HPO](../kubeflow/notebooks/kfp-hp-tuning-katib-vs-parallelfor.ipynb)
@@ -71,7 +72,7 @@
 - **notes** (15): most recent → [Install W&B and log my first run](../wnb/notes/2026-08-11-install-wandb-and-log-my-first-run.md), [W&B quickstart trip-ups](../wnb/notes/2026-07-11-first-wandb-quickstart-trip-ups.md), [Dashboard exploration](../wnb/notes/2026-07-09-explore-wandb-dashboard.md)
 - **snippets** (9): [Log my first metric](../wnb/snippets/2026-08-11-log-my-first-metric.py), [First experiment SDK](../wnb/snippets/2026-07-04-first-experiment-wb-sdk.py), [Minimal tracking](../wnb/snippets/2026-06-06-minimal-tracking.py)
 - **scripts** (5): [Custom sweep with early termination](../wnb/scripts/custom-sweep-early-termination.py), [Sweep and eval pipeline](../wnb/scripts/sweep_and_eval_pipeline.py), [Hyperparameter sweep](../wnb/scripts/hyperparameter_sweep.py)
-- **configs** (9): [Declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml), [First sweep config](../wnb/configs/2026-06-08-first-sweep-config.yaml), [Sweep config](../wnb/configs/sweep_config.yaml)
+- **configs** (6): [Declarative sweep config](../wnb/configs/2026-06-17-declarative-sweep-config.yaml), [First sweep config](../wnb/configs/2026-06-08-first-sweep-config.yaml), [Sweep config](../wnb/configs/sweep_config.yaml)
 - **docs** (5): [Artifact + Model Registry workflow](../wnb/docs/artifact-model-registry-workflow.md), [Artifact tracking in data pipeline](../wnb/docs/artifact-tracking-in-data-pipeline.md), [W&B quickstart trip-ups](../wnb/docs/wandb-quickstart-trip-ups.md)
 - **manifests** (5): [CI/CD workflow manifest](../wnb/manifests/2026-07-13-wandb-ci-cd-workflow.yaml), [Launch agent Docker Compose](../wnb/manifests/wandb-launch-agent-docker-compose.yaml), [W&B PyTorch scaffold CI/CD](../wnb/manifests/2026-08-26-wandb-pytorch-scaffold-ci-cd.yaml)
 - **notebooks** (3): [Sweep config vs Python API](../wnb/notebooks/2026-06-16-sweep-config-vs-python-api.ipynb), [Run comparison with parallel coords](../wnb/notebooks/compare-runs-parallel-coords-correlation-diff.ipynb), [Comparing W&B Artifacts vs MLflow Model Registry](../wnb/notebooks/comparing-wb-artifacts-vs-mlflow-model-registry.ipynb)
@@ -84,7 +85,7 @@
 - **notes** (7): [UI exploration](../mlflow/notes/2026-06-30-exploring-mlflow-ui.md), [Quickstart trip-ups (Jul 2026)](../mlflow/notes/2026-07-01-mlflow-quickstart-trip-ups.md), [First MLflow server](../mlflow/notes/2026-05-24-first-mlflow-server.md)
 - **snippets** (13): [MLflow tracking quickstart](../mlflow/snippets/2026-07-14-mlflow-tracking-quickstart.py), [Minimal autologging](../mlflow/snippets/2026-07-02-minimal-autologging.py), [End-to-end autologging pipeline](../mlflow/snippets/2026-06-12-end-to-end-autologging-pipeline.py)
 - **scripts** (5): [Experiment comparison + promotion](../mlflow/scripts/experiment-compare-and-promote.py), [End-to-end experiment](../mlflow/scripts/2026-07-06-end-to-end-experiment.py), [End-to-end experiment](../mlflow/scripts/2026-07-05-end-to-end-experiment.py)
-- **configs** (10): [Sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml), [Tracking server Postgres+S3](../mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml), [Tracking server Postgres+S3](../mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml)
+- **configs** (9): [Sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml), [Tracking server Postgres+S3](../mlflow/configs/2026-07-14-tracking-server-postgres-s3.yaml), [Tracking server Postgres+S3](../mlflow/configs/2026-07-06-tracking-server-postgres-s3.yaml)
 - **docs** (4): [Comparing model versions](../mlflow/docs/comparing-model-versions.md), [Production tracking server with Nginx auth](../mlflow/docs/production-tracking-server-nginx-auth.md), [MLflow + W&B hybrid tracking](../mlflow/docs/integrating-mlflow-with-weights-and-biases.md)
 - **notebooks** (3): [Experiment comparison via Search API](../mlflow/notebooks/mlflow-experiment-comparison-search-api.ipynb), [Exploring runs, experiments, and model registry](../mlflow/notebooks/2026-07-09-exploring-runs-experiments-and-model-registry.ipynb), [Autologging vs manual tracking](../mlflow/notebooks/2026-06-01-autologging-vs-manual-tracking.ipynb)
 - **dockerfiles** (4): [Tracking server Postgres+MinIO](../mlflow/dockerfiles/tracking-server-postgres-minio/README.md)
@@ -135,8 +136,8 @@
 
 ## kub (KFP SDK) · 8 files
 
+- **docs** (2): [Documenting the kub folder (Sep 7)](../kub/docs/2026-09-07-documenting-kub-folder.md), [Documenting the kub folder (Sep 5)](../kub/docs/2026-09-05-documenting-kub-folder.md)
 - **configs** (3): [Minimal Kubeflow pipeline](../kub/configs/2026-08-11-minimal-kubeflow-pipeline.yaml), [Kind config](../kub/configs/kind-config.yaml), [Pipeline YAML](../kub/configs/pipeline.yaml)
-- **docs** (2): [Documenting the kub folder](../kub/docs/2026-09-07-documenting-kub-folder.md), [Documenting the kub folder](../kub/docs/2026-09-05-documenting-kub-folder.md)
 - **scripts:** [KFP v2 branching and parallel pipeline](../kub/scripts/2026-08-07-kfp-v2-branching-parallel-pipeline.py)
 - **manifests** (2): [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml), [Pipeline scaffold CI/CD](../kub/manifests/kubeflow-pipeline-scaffold-ci-cd.yaml)
 
@@ -167,10 +168,10 @@
 - **notes:** [Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md)
 - **snippets:** [First drift report](../evidently/snippets/first_drift_report.py)
 
-## Metaflow crossover · 10 files
+## Metaflow crossover · 7 files
 
-- **docs** (7): [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments, [CI/CD with GitHub Actions](../mfl/docs/ci-cd-with-github-actions.md), [Resource management](../mfl/docs/metaflow-resource-management.md), [W&B integration](../mfl/docs/metaflow-wandb-integration.md)
-  - _…and 4 more under `mfl/docs/` — browse the folder._
+- **docs** (4): [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments
+  - _…and 3 more under `mfl/docs/` — browse the folder._
 - **scripts:** [First flow data transform](../mfl/scripts/2026-08-12-first-flow-data-transform.py)
 - **manifests:** [Metaflow scaffold CI/CD manifest](../mfl/manifests/2026-08-13-metaflow-project-scaffold-ci-cd.yaml)
 - **configs:** [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml)

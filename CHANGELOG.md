@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-10
+
+- clml-010: notes — Install ClearML and log my first experiment (L1)
+- databricks-007: config(yaml) — Minimal Databricks ML workspace configuration (L1)
+
 ## 2026-09-08
 
 - con-115: script(python) — Combining Model Serving with Containerization for ML deployment (L3)

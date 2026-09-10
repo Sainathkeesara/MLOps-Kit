@@ -26,8 +26,6 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 ## Layout
 
-- **`README.md`** — This file
-- **`CHANGELOG.md`** — Chronological record of project changes
 - **`00_index/`** — Topic map, quick links, glossary, and learning path
 - **`bentoml/`** — BentoML model serving notes, snippets, and configs
 - **`clearml/`** — ClearML orchestration notes, snippets, and configs
@@ -60,7 +58,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 | Concepts | 0 | 6 | 23 | 1 | 21 | 0 | 1 | 0 | 1 | 2026-09-08 |
 | Feast | 5 | 3 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | 2026-08-15 |
 | DVC | 4 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 0 | — |
-| ClearML | 6 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 2026-09-04 |
+| ClearML | 7 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 2026-09-10 |
 | ZenML | 3 | 2 | 2 | 3 | 0 | 0 | 1 | 0 | 0 | — |
 | KServe | 2 | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | — |
 | Seldon Core | 2 | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 2026-07-12 |
@@ -68,7 +66,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 | Metaflow crossover | 0 | 0 | 1 | 1 | 4 | 1 | 0 | 0 | 0 | — |
 | BentoML | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-22 |
 | kub (KFP SDK) | 0 | 0 | 1 | 3 | 2 | 2 | 0 | 0 | 0 | 2026-09-07 |
-| Databricks | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2026-08-27 |
+| Databricks | 1 | 1 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 2026-09-10 |
 | Evidently AI | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 
 </details>
@@ -78,4 +76,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Active across BentoML, ClearML, Databricks ML, DVC, KServe, Metaflow, W&B, and ZenML — filling first-contact notes, snippets, and project scaffolds.
 
 ---
-_Last updated: 2026-09-09_
+_Last updated: 2026-09-10_

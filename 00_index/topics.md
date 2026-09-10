@@ -109,10 +109,10 @@
 - **scripts** (5): [End-to-end DVC CLI walkthrough](../dvc/scripts/2026-07-22-dvc-end-to-end.sh), [Repro + metrics diff end-to-end](../dvc/scripts/2026-07-28-dvc-repro-metrics-diff.sh), [Init DVC and track dataset](../dvc/scripts/tried_init_dvc_and_track_dataset.sh)
 - **configs** (3): [dvc.yaml](../dvc/configs/dvc.yaml), [Pipeline YAML](../dvc/configs/pipeline.yaml), [Stage pipeline config](../dvc/configs/2026-07-28-dvc-stage-pipeline.yaml)
 
-## ClearML · 9 files
+## ClearML · 10 files
 
 - **primer:** [ClearML orchestration](../clearml/notes/0000-primer-clearml-orchestration.md)
-- **notes** (6): most recent → [Install ClearML and first experiment](../clearml/notes/2026-08-22-install-clearml-and-first-experiment.md), [Agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md), [Pitfalls](../clearml/notes/2026-07-12-clearml-pitfalls.md)
+- **notes** (7): most recent → [Install ClearML and first experiment (Sep 10)](../clearml/notes/2026-09-10-install-clearml-and-first-experiment.md), [Install ClearML and first experiment (Aug 22)](../clearml/notes/2026-08-22-install-clearml-and-first-experiment.md), [Agent first tasks](../clearml/notes/2026-07-23-clearml-agent-first-tasks.md)
 - **snippets:** [Install and first task](../clearml/snippets/tried_install_and_first_task.py)
 - **configs:** [Remote GPU execution](../clearml/configs/2026-07-14-remote-gpu-execution.yaml)
 - **docs:** [ClearML pitfalls](../clearml/docs/clearml-pitfalls.md)
@@ -149,12 +149,12 @@
 - **manifests:** [SeldonDeployment manifest](../seldon/manifests/seldondeployment.yaml)
 - **configs:** [SeldonDeployment config](../seldon/configs/seldondeployment.yaml)
 
-## Databricks · 4 files
+## Databricks · 5 files
 
 - **notes:** [Databricks primer](../databricks/notes/0000-primer-databricks.md) — Unity Catalog, workspace setup, and first experiments
 - **snippets:** [First Databricks run](../databricks/snippets/2026-08-27-first-databricks-run.py) — First-contact script for running a Databricks workload
 - **scripts:** [Model promotion to Unity Catalog](../databricks/scripts/2026-07-14-model-promotion-unity-catalog.py)
-- **configs:** [Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml)
+- **configs** (2): [Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml), [Minimal workspace config](../databricks/configs/2026-09-10-minimal-workspace-config.yaml)
 
 ## BentoML · 3 files
 
@@ -168,10 +168,10 @@
 - **notes:** [Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md)
 - **snippets:** [First drift report](../evidently/snippets/first_drift_report.py)
 
-## Metaflow crossover · 7 files
+## Metaflow crossover · 10 files
 
-- **docs** (4): [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments
-  - _…and 3 more under `mfl/docs/` — browse the folder._
+- **docs** (7): [Metaflow Argo vs Kubeflow Pipelines](../mfl/docs/metaflow-argo-vs-kubeflow-pipelines.md) — Comparing orchestration backends for Metaflow deployments
+  - _…and 6 more under `mfl/docs/` — browse the folder._
 - **scripts:** [First flow data transform](../mfl/scripts/2026-08-12-first-flow-data-transform.py)
 - **manifests:** [Metaflow scaffold CI/CD manifest](../mfl/manifests/2026-08-13-metaflow-project-scaffold-ci-cd.yaml)
 - **configs:** [Metaflow scaffold CI/CD workflow](../mfl/configs/2026-08-12-metaflow-project-scaffold-ci-cd.yaml)

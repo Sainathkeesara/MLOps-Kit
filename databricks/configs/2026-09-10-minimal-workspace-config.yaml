@@ -1,0 +1,26 @@
+# last_verified: 2026-09-10 · databricks n/a
+
+workspace:
+  name: my-mlops-workspace
+  description: Minimal Databricks ML workspace for experiment tracking and model serving
+
+clusters:
+  - name: default
+    spark_version: "13.3.x-scala2.12"
+    node_type_id: "i3.xlarge"
+    num_workers: 2
+    autotermination_minutes: 30
+
+permissions:
+  - group: ml-engineers
+    level: CAN_MANAGE
+  - group: data-scientists
+    level: CAN_RUN
+
+experiment_tracking:
+  default_experiment: /Shared/ml-experiments
+  log_model_artifacts: true
+
+model_registry:
+  enabled: true
+  storage: unity_catalog

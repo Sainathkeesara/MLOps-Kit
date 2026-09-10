@@ -105,6 +105,8 @@
 - **Readiness check** — A health probe reporting whether the model is loaded and the endpoint is ready to accept traffic.
 - **Batching** — Grouping inference requests into a single scoring call to improve throughput on serving containers.
 - **Request logging** — Capturing each prediction request (payload, latency, response) for observability and debugging in a serving service.
+- **Bundle** — A versioned directory that stages a model artifact, feature definitions, and serving code together before containerization, used in the model-serving + containerization integration pattern.
+- **Rollback manifest** — A Kubernetes deployment manifest that references the previous production image tag, kept alongside the current manifest so an orchestrator can revert within seconds if a promotion fails validation.
 
 ## Kubeflow
 - **Pipeline** — A DAG-based definition of an ML workflow composed of components, defined as a YAML manifest or compiled from the Kubeflow Pipelines SDK.

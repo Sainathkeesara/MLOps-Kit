@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-11
+
+- kub-045: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in kubeflow-pipeline-scaffold template with lint, test, compile, and deploy workflow (L2)
+
 ## 2026-09-10
 
 - clml-010: notes — Install ClearML and log my first experiment (L1)

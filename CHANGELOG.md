@@ -2,7 +2,10 @@
 
 ## 2026-09-12
 
-- dvc-007: notes — Install DVC and log my first dataset version (L1)
+- bentoml-004: notes(primer) — What is BentoML? — quick primer (L1)
+- dvc-012: project — Companion data files for DVC notes (train.csv, sample.csv, .dvc pointer files) (L1)
+- feast-011: project — Companion registry.db data file for Feast notes (L2)
+- Passed ([x]) dvc-007 — DVC: notes — Install DVC and log my first dataset version · Level: L1 · 2026-09-12
 
 ## 2026-09-11
 

@@ -3,6 +3,7 @@
 ## 2026-09-11
 
 - kub-045: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in kubeflow-pipeline-scaffold template with lint, test, compile, and deploy workflow (L2)
+- wnb-055: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in wandb-pytorch-scaffold template with lint, test, and deploy workflow (L2)
 
 ## 2026-09-10
 

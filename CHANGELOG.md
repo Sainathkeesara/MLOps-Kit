@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-12
+
+- dvc-007: notes — Install DVC and log my first dataset version (L1)
+
 ## 2026-09-11
 
 - kub-045: manifest(yaml) — Create `.github/workflows/ci-cd.yml` in kubeflow-pipeline-scaffold template with lint, test, compile, and deploy workflow (L2)

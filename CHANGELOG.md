@@ -3,6 +3,7 @@
 ## 2026-09-13
 
 - bentoml-004: notes(primer) — BentoML quick primer (L1, rework)
+- dvc-012: docs — Missing companion data files for DVC notes (L1, rework)
 
 ## 2026-09-12
 

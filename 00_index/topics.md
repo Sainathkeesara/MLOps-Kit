@@ -14,8 +14,9 @@
 - **primer:** [Pipeline Orchestration](../docs/concepts/pipeline-orchestration/0000-primer-pipeline-orchestration.md)
 - **notes** (0): _…and 59 files under `docs/concepts/` — browse the folder._
 
-## BentoML · 3 files
+## BentoML · 4 files
 
+- **primer:** [BentoML overview](../bentoml/notes/0000-primer-bentoml.md)
 - **notes:** [Install BentoML and first service](../bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
 - **snippets:** [First BentoML prediction](../bentoml/snippets/2026-08-22-first-bentoml-prediction.py) — Minimal prediction snippet for BentoML
 - **configs:** [Minimal BentoML service](../bentoml/configs/2026-08-22-minimal-bentoml-service.yaml) — Minimal BentoML service YAML

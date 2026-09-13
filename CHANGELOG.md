@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-13
+
+- bentoml-004: notes(primer) — BentoML quick primer (L1, rework)
+
 ## 2026-09-12
 
 - dvc-007: notes — Install DVC and log my first dataset version (L1)

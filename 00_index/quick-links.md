@@ -5,6 +5,7 @@
 ### Set up a tool for the first time
 - [Install BentoML and first service](../bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
 - [Install ClearML and first experiment](../clearml/notes/2026-08-22-install-clearml-and-first-experiment.md) — First experiment with ClearML tracking
+- [Install ClearML and first experiment (Sep 10)](../clearml/notes/2026-09-10-install-clearml-and-first-experiment.md) — ClearML server setup and first tracked experiment (Sep 2026)
 - [KServe quickstart trip-ups](../kserve/notes/2026-08-22-kserve-quickstart-trip-ups.md) — Gotchas from the KServe quickstart
 - [Install ZenML and explore CLI](../zenml/notes/2026-08-22-install-zenml-and-explore-cli.md) — First ZenML CLI exploration
 - [MLflow primer](../mlflow/notes/0000-primer-mlflow.md) — Install, run the UI, and log my first experiment
@@ -14,6 +15,7 @@
 - [Metaflow primer](../metaflow/notes/0000-primer-metaflow.md) — Local install, first flow, and CLI/UI
 - [DVC primer](../dvc/notes/0000-primer-dvc.md) — Data versioning setup and first snapshot
 - [Install DVC and log first dataset version](../dvc/notes/2026-08-13-install-dvc-and-log-first-dataset-version.md) — First DVC dataset version and tracking walkthrough
+- [Install DVC and log first dataset version (Sep 12)](../dvc/notes/2026-09-12-install-dvc-and-log-first-dataset-version.md) — First DVC dataset version and tracking walkthrough (Sep 2026)
 - [Feast primer](../feast/notes/0000-primer-feast.md) — Feature store setup and first retrieval
 - [KServe primer](../kserve/notes/0000-primer-kserve.md) — Model serving setup and first InferenceService
 - [Seldon Core primer](../seldon/notes/0000-primer-seldon-core.md) — Model serving setup and first deploy
@@ -164,6 +166,8 @@
 - [W&B CI/CD project scaffold](../wnb/templates/wandb-cicd-project/README.md) — W&B tracking with GitHub Actions
 - [W&B + PyTorch scaffold](../wnb/templates/wandb-pytorch-scaffold/README.md) — PyTorch training with W&B sweep, artifact logging, and CI/CD
 - [W&B + PyTorch CI/CD scaffold](../wnb/templates/wandb-pytorch-ci-scaffold/README.md) — PyTorch training with W&B sweep and CI/CD
+- [W&B PyTorch scaffold CI/CD manifest](../wnb/manifests/2026-09-11-wandb-pytorch-scaffold-ci-cd.yaml) — CI/CD workflow manifest for W&B PyTorch training with sweep
+- [W&B PyTorch CI/CD workflow](../wnb/templates/wandb-pytorch-scaffold/.github/workflows/ci-cd.yml) — CI/CD workflow for W&B + PyTorch scaffold
 - [MLflow project config](../mlflow/configs/mlflow-project.yaml) — Project packaging and entry points
 - [MLflow sklearn model serving project](../mlflow/configs/sklearn-model-serving-project.yaml) — Packaged serving project with Conda env and entry points
 - [DVC pipeline config](../dvc/configs/pipeline.yaml) — Data and model pipeline stages

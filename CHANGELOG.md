@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-15
+
+- sag-001: notes(primer) — SageMaker quick primer (L1)
+- sag-002: snippet(python) — First SageMaker session and training job (L1)
+- sag-003: notes — Studio console first impressions (L1)
+
 ## 2026-09-13
 
 - bentoml-004: notes(primer) — BentoML quick primer (L1, rework)

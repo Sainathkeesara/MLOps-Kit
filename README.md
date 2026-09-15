@@ -64,7 +64,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 | Seldon Core | 2 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | — |
 | kub (KFP SDK) | 0 | 2 | 0 | 1 | 3 | 2 | 0 | 0 | 0 | — |
 | Databricks | 1 | 0 | 1 | 1 | 2 | 0 | 0 | 0 | 0 | — |
-| BentoML | 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | — |
+| BentoML | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | — |
 | Evidently AI | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | — |
 | mfl (Metaflow crossover) | 0 | 4 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | — |
 | mlf (MLflow first-experiments) | 1 | 0 | 1 | 1 | 0 | 3 | 0 | 0 | 0 | — |
@@ -76,4 +76,4 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 Active across BentoML, ClearML, Databricks ML, DVC, KServe, Metaflow, W&B, and ZenML — filling first-contact notes, snippets, and project scaffolds.
 
 ---
-_Last updated: 2026-09-12_
+_Last updated: 2026-09-13_

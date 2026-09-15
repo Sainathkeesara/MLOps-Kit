@@ -5,6 +5,7 @@
 - sag-001: notes(primer) — SageMaker quick primer (L1)
 - sag-002: snippet(python) — First SageMaker session and training job (L1)
 - sag-003: notes — Studio console first impressions (L1)
+- feast-011: docs — Write missing `data/registry.db` companion file referenced in Feast notes (L2)
 
 ## 2026-09-13
 

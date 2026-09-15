@@ -1,5 +1,5 @@
 # MLOps-Kit
-> A working engineer's MLOps reference for MLflow, Kubeflow, Metaflow, W&B, DVC, Feast, ClearML, BentoML, and more.
+> A working engineer's MLOps reference for MLflow, Kubeflow, Metaflow, W&B, DVC, Feast, ClearML, BentoML, SageMaker, and more.
 
 ![Last commit](https://img.shields.io/github/last-commit/Sainathkeesara/MLOps-Kit)
 ![Top language](https://img.shields.io/github/languages/top/Sainathkeesara/MLOps-Kit)
@@ -14,15 +14,15 @@ A working MLOps engineer's shelf: first-contact notes, runnable snippets, and co
 
 ## What's in here
 
-Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, drift monitoring with Evidently AI, model serving with KServe, Seldon Core, and BentoML, and the Databricks ML platform. Cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project scaffolds for Kubeflow, Metaflow, MLflow, and W&B ship with tests and CI/CD wiring.
+Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps lifecycle — experiment tracking with MLflow and W&B, data versioning with DVC, pipeline orchestration with Kubeflow and Metaflow, feature stores with Feast, orchestration with ClearML and ZenML, drift monitoring with Evidently AI, model serving with KServe, Seldon Core, and BentoML, managed training and endpoints with SageMaker, and the Databricks ML platform. Cross-cutting concept primers cover containerization, data versioning, experiment tracking, feature stores, model registry, model serving, monitoring & drift, and pipeline orchestration. Project scaffolds for Kubeflow, Metaflow, MLflow, and W&B ship with tests and CI/CD wiring.
 
 ## Quick links
 
-- [Install DVC and log first dataset version](dvc/notes/2026-09-12-install-dvc-and-log-first-dataset-version.md) — DVC init, dataset tracking, and first version in 30 minutes
-- [W&B PyTorch scaffold CI/CD](wnb/manifests/2026-09-11-wandb-pytorch-scaffold-ci-cd.yaml) — CI/CD workflow manifest for PyTorch training with W&B sweep
-- [W&B + PyTorch CI scaffold README](wnb/templates/wandb-pytorch-ci-scaffold/README.md) — PyTorch training with W&B sweep and CI/CD wiring
-- [Install ClearML and first experiment](clearml/notes/2026-09-10-install-clearml-and-first-experiment.md) — ClearML server setup and first tracked experiment
-- [Minimal Databricks workspace config](databricks/configs/2026-09-10-minimal-workspace-config.yaml) — Databricks workspace configuration for ML workloads
+- [SageMaker quick primer](sag/notes/0000-primer-sag.md) — Managed training jobs, endpoints, and Studio in plain language
+- [My first look at the SageMaker Studio console](sag/notes/2026-09-15-studio-console-first-impressions.md) — Notebooks, job lists, and permission trip-ups from a first visit
+- [First SageMaker session](sag/snippets/2026-09-15-first-sagemaker-session.py) — Session, script-mode estimator, and one test prediction
+- [Feast — writing the `data/registry.db` companion file](feast/docs/2026-09-15-write-registry-db-companion-data-file.md) — Closing the gap between the notes and the local registry path
+- [BentoML quick primer](bentoml/notes/0000-primer-bentoml.md) — Service, API methods, Bento bundles, and containerize in one sitting
 
 ## Layout
 
@@ -41,6 +41,7 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 - **`mfl/`** — Metaflow crossover docs, configs, scripts, and manifests
 - **`mlf/`** — MLflow first-experiment scripts, snippets, notes, and manifests
 - **`mlflow/`** — MLflow notes, configs, docs, scripts, snippets, notebooks, templates, and dockerfiles
+- **`sag/`** — SageMaker first-contact notes and snippets (sessions, training jobs, Studio)
 - **`seldon/`** — Seldon Core model serving notes, snippets, configs, and manifests
 - **`wnb/`** — Weights & Biases notes, docs, scripts, snippets, configs, manifests, notebooks, and templates
 - **`zenml/`** — ZenML notes, snippets, scripts, configs, and notebooks
@@ -51,29 +52,30 @@ Hands-on notes, runnable snippets, and ready-to-use configs spanning the MLOps l
 
 | Tool | Notes | Docs | Snippets | Scripts | Configs | Manifests | Notebooks | Templates | Dockerfiles | Last verified |
 |------|-------|------|----------|---------|---------|-----------|-----------|-----------|-------------|---------------|
-| Metaflow | 14 | 11 | 7 | 8 | 2 | 4 | 5 | 24 | 1 | — |
-| Kubeflow | 15 | 4 | 10 | 8 | 3 | 7 | 2 | 23 | 3 | — |
+| Metaflow | 14 | 11 | 7 | 8 | 2 | 4 | 5 | 24 | 1 | 2026-08-04 |
+| Kubeflow | 15 | 4 | 10 | 8 | 3 | 7 | 2 | 23 | 3 | 2026-07-14 |
 | Weights & Biases | 15 | 5 | 9 | 5 | 6 | 6 | 3 | 25 | 0 | 2026-09-04 |
-| MLflow | 7 | 4 | 13 | 5 | 9 | 0 | 3 | 11 | 4 | — |
+| MLflow | 7 | 4 | 13 | 5 | 9 | 0 | 3 | 11 | 4 | 2026-07-30 |
 | Concepts | 0 | 59 | 6 | 23 | 1 | 0 | 1 | 0 | 1 | 2026-09-08 |
-| Feast | 5 | 1 | 3 | 2 | 4 | 0 | 0 | 0 | 0 | 2026-08-15 |
-| DVC | 5 | 0 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | — |
-| ClearML | 7 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 2026-09-04 |
-| ZenML | 3 | 0 | 2 | 2 | 3 | 0 | 1 | 0 | 0 | — |
-| KServe | 2 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | — |
-| Seldon Core | 2 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | — |
-| kub (KFP SDK) | 0 | 2 | 0 | 1 | 3 | 2 | 0 | 0 | 0 | — |
-| Databricks | 1 | 0 | 1 | 1 | 2 | 0 | 0 | 0 | 0 | — |
-| BentoML | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | — |
+| Feast | 5 | 2 | 3 | 2 | 4 | 0 | 0 | 0 | 0 | 2026-09-15 |
+| DVC | 5 | 0 | 2 | 5 | 3 | 0 | 0 | 0 | 0 | 2026-09-12 |
+| ClearML | 7 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 2026-09-10 |
+| ZenML | 3 | 0 | 2 | 2 | 3 | 0 | 1 | 0 | 0 | 2026-08-22 |
+| KServe | 2 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | 0 | 2026-08-22 |
+| Seldon Core | 2 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 2026-07-12 |
+| kub (KFP SDK) | 0 | 2 | 0 | 1 | 3 | 2 | 0 | 0 | 0 | 2026-09-07 |
+| Databricks | 1 | 0 | 1 | 1 | 2 | 0 | 0 | 0 | 0 | 2026-08-27 |
+| BentoML | 2 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 2026-09-13 |
 | Evidently AI | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | — |
-| mfl (Metaflow crossover) | 0 | 4 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | — |
-| mlf (MLflow first-experiments) | 1 | 0 | 1 | 1 | 0 | 3 | 0 | 0 | 0 | — |
+| SageMaker | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2026-09-15 |
+| mfl (Metaflow crossover) | 0 | 4 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 2026-08-06 |
+| mlf (MLflow first-experiments) | 1 | 0 | 1 | 1 | 0 | 3 | 0 | 0 | 0 | 2026-08-12 |
 
 </details>
 
 ## Status
 
-Active across BentoML, ClearML, Databricks ML, DVC, KServe, Metaflow, W&B, and ZenML — filling first-contact notes, snippets, and project scaffolds.
+SageMaker just landed its first-contact notes — primer, Studio walkthrough, and a session snippet. Feast's local registry companion file is now on disk alongside the doc that explains it. BentoML has a fresh primer too.
 
 ---
-_Last updated: 2026-09-13_
+_Last updated: 2026-09-15_

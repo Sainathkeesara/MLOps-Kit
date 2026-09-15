@@ -50,11 +50,11 @@
 - **notes:** [Report vs TestSuite APIs](../evidently/notes/2026-07-03-comparing-report-and-testsuite-apis.md) — Choosing between Evidently's two check styles
 - **snippets:** [First drift report](../evidently/snippets/first_drift_report.py)
 
-## Feast · 15 files
+## Feast · 17 files
 
 - **primer:** [Feast overview](../feast/notes/0000-primer-feast.md)
 - **notes** (5): most recent → [Follow Feast quickstart](../feast/notes/2026-08-02-follow-feast-quickstart.md), [Parquet offline store (Jul 23)](../feast/notes/2026-07-23-install-feast-parquet-offline-store.md), [Parquet offline store (Jul 22)](../feast/notes/2026-07-22-install-feast-parquet-offline-store.md)
-- **docs:** [Online vs offline feature serving](../feast/docs/comparing-online-vs-offline-serving.md) — when to use `get_historical_features()` vs `get_online_features()`
+- **docs** (2): [Writing the `data/registry.db` companion file](../feast/docs/2026-09-15-write-registry-db-companion-data-file.md), [Online vs offline feature serving](../feast/docs/comparing-online-vs-offline-serving.md) — when to use `get_historical_features()` vs `get_online_features()`
 - **snippets** (3): [Minimal feature retrieval](../feast/snippets/2026-08-02-minimal-feature-retrieval.py), [Register data source and inspect schema](../feast/snippets/2026-07-23-register-data-source-and-inspect-schema.py), [First feature view](../feast/snippets/tried_first_feature_view.py)
 - **scripts** (2): [Entity/FeatureView historical retrieval](../feast/scripts/2026-07-22-entity-and-featureview-historical-retrieval.py), [Feature retrieval pipeline](../feast/scripts/feature-retrieval-pipeline.py)
 - **configs** (4): [Feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml), [Training/serving config](../feast/configs/feature-store-training-serving.yaml), [feature_store.yaml](../feast/configs/feature_store.yaml), [Config README](../feast/configs/README.md)
@@ -129,6 +129,12 @@
 - **dockerfiles** (4): [Tracking server Postgres+MinIO](../mlflow/dockerfiles/tracking-server-postgres-minio/README.md)
 - **templates** (11): [MLflow model registry scaffold](../mlflow/templates/mlflow-model-registry-scaffold/README.md)
   - _…and 10 more under `mlflow/templates/` — browse the folder._
+
+## SageMaker · 3 files
+
+- **primer:** [SageMaker quick primer](../sag/notes/0000-primer-sag.md)
+- **notes:** [Studio console first impressions](../sag/notes/2026-09-15-studio-console-first-impressions.md) — Notebooks, job lists, and permission trip-ups from a first visit
+- **snippets:** [First SageMaker session](../sag/snippets/2026-09-15-first-sagemaker-session.py) — Session, script-mode estimator, and one test prediction
 
 ## Seldon Core · 5 files
 

@@ -209,3 +209,13 @@
 - **Retry policy** — A pipeline configuration that re-runs a failed step a specified number of times before marking the pipeline as failed, useful for handling transient infrastructure or API errors.
 - **Dynamic parallelism** — A KFP v2 pattern where the number of parallel branches is determined at runtime rather than compile time, enabling adaptive fan-out based on data or configuration.
 - **Resource management** — Declaring CPU, memory, and GPU requirements for pipeline steps so the orchestrator can schedule them on appropriate compute.
+
+## SageMaker
+- **Session** — The Python entry point (`sagemaker.Session()`) that ties code to account defaults such as the bucket and execution role.
+- **Execution role** — The IAM role a training machine assumes so it can read input buckets and write outputs, instead of using laptop credentials.
+- **Training job** — One managed run of a training script on a chosen instance type, launched with a single SDK call.
+- **Estimator** — The SDK object configured with container image, role, and instance type before calling `fit()` to start a training job.
+- **Input channel** — A named data feed into a training job (e.g. `"training"` mapped to an S3 prefix) that the script reads from its local input path.
+- **Model** — Saved weights plus loading code registered after training, ready to be deployed to an endpoint.
+- **Endpoint** — A live HTTPS address fronting a deployed model for real-time prediction requests.
+- **Studio** — The web IDE where notebooks, training jobs, and endpoints are browsed side by side.

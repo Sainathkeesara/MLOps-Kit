@@ -4,6 +4,7 @@
 
 ### Set up a tool for the first time
 - [Install BentoML and first service](../bentoml/notes/2026-08-22-install-bentoml-and-first-service.md) — First-contact notes for BentoML service setup
+- [BentoML quick primer](../bentoml/notes/0000-primer-bentoml.md) — Service, API methods, and Bento bundles in one sitting
 - [Install ClearML and first experiment](../clearml/notes/2026-08-22-install-clearml-and-first-experiment.md) — First experiment with ClearML tracking
 - [Install ClearML and first experiment (Sep 10)](../clearml/notes/2026-09-10-install-clearml-and-first-experiment.md) — ClearML server setup and first tracked experiment (Sep 2026)
 - [KServe quickstart trip-ups](../kserve/notes/2026-08-22-kserve-quickstart-trip-ups.md) — Gotchas from the KServe quickstart
@@ -33,6 +34,9 @@
 - [Follow Feast quickstart](../feast/notes/2026-08-02-follow-feast-quickstart.md) — Follow the Feast quickstart with feature retrieval and online store setup
 - [Online vs offline feature serving](../feast/docs/comparing-online-vs-offline-serving.md) — When to use `get_historical_features()` vs `get_online_features()`
 - [Offline vs online stores](../docs/concepts/feature-store/2026-08-09-offline-vs-online-stores.md) — Offline vs online stores and point-in-time joins in Feast
+- [SageMaker quick primer](../sag/notes/0000-primer-sag.md) — Managed training jobs, endpoints, and Studio in plain language
+- [Studio console first impressions](../sag/notes/2026-09-15-studio-console-first-impressions.md) — Notebooks, job lists, and permission trip-ups from a first visit
+- [First SageMaker session](../sag/snippets/2026-09-15-first-sagemaker-session.py) — Session, script-mode estimator, and one test prediction
 
 ### Set up Databricks
 - [Databricks Unity Catalog setup](../databricks/configs/2026-07-14-unity-catalog-setup.yaml) — Unity Catalog configuration for Databricks ML
@@ -175,6 +179,7 @@
 - [MLflow tracking server Postgres+MinIO](../mlflow/dockerfiles/tracking-server-postgres-minio/README.md) — Self-hosted MLflow server via Docker Compose
 - [ZenML stack with MLflow+S3](../zenml/configs/2026-07-12-zenml-stack-mlflow-s3.yaml) — ZenML stack config with MLflow tracking and S3 artifact store
 - [Feast feature store Redis Parquet config](../feast/configs/2026-08-02-feast-feature-store-redis-parquet.yaml) — Feast config with Redis online store and Parquet offline store
+- [Feast local registry companion file](../feast/docs/2026-09-15-write-registry-db-companion-data-file.md) — Companion doc for the `data/registry.db` local registry
 - [KFP pipeline deployment manifest](../kub/manifests/2026-08-06-kfp-pipeline-deployment-manifest.yaml) — KFP pipeline deployment manifest for production
 - [SeldonDeployment manifest](../seldon/manifests/seldondeployment.yaml) — Minimal sklearn SeldonDeployment manifest
 - [Minimal pipeline config for ZenML](../zenml/configs/2026-08-23-minimal-pipeline-config.yaml) — ZenML pipeline configuration with MLflow integration

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-15
+
+- feast-011: docs — Write missing `data/registry.db` companion file referenced in Feast notes (L2)
+
 ## 2026-09-13
 
 - bentoml-004: notes(primer) — BentoML quick primer (L1, rework)
